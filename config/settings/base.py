@@ -235,6 +235,10 @@ LOGGING = {
             '()': 'django.utils.log.RequireDebugFalse',
         },
     },
+    'root': {                  # ✅ ADDED
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
     'handlers': {
         'console': {
             'level': 'INFO',
@@ -265,7 +269,7 @@ LOGGING = {
 }
 
 # Email Configuration (for password reset, notifications)
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
 EMAIL_HOST = config('EMAIL_HOST', default='smtp.gmail.com')
 EMAIL_PORT = config('EMAIL_PORT', default=587, cast=int)
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
@@ -277,15 +281,44 @@ DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL', default='noreply@aidetection.c
 ML_SERVICE_URL = config('ML_SERVICE_URL', default='http://localhost:8001')
 ML_SERVICE_API_KEY = config('ML_SERVICE_API_KEY', default='your-ml-api-key')
 
-# File Storage (can switch to S3 in production)
-DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+# File Storage Configuration
+USE_MINIO = config('USE_MINIO', default=False, cast=bool)
 
-# AWS S3 Settings (uncomment for production)
-# DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-# AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID', default='')
-# AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY', default='')
-# AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME', default='')
-# AWS_S3_REGION_NAME = config('AWS_S3_REGION_NAME', default='us-east-1')
-# AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-# AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
-# AWS_DEFAULT_ACL = 'private'
+if USE_MINIO:
+    # MinIO Configuration (S3-compatible storage)
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    
+    AWS_ACCESS_KEY_ID = config('MINIO_ACCESS_KEY', default='minioadmin')
+    AWS_SECRET_ACCESS_KEY = config('MINIO_SECRET_KEY', default='minioadmin')
+    AWS_STORAGE_BUCKET_NAME = config('MINIO_BUCKET_NAME', default='ai-detection-uploads')
+    AWS_S3_ENDPOINT_URL = f"http://{config('MINIO_ENDPOINT', default='localhost:9000')}"
+    AWS_S3_USE_SSL = config('MINIO_USE_SSL', default=False, cast=bool)
+    AWS_S3_SIGNATURE_VERSION = 's3v4'
+    AWS_S3_REGION_NAME = 'us-east-1'  # MinIO doesn't care, but boto3 requires it
+    AWS_DEFAULT_ACL = None
+    AWS_S3_FILE_OVERWRITE = False
+    AWS_QUERYSTRING_AUTH = True
+    AWS_S3_CUSTOM_DOMAIN = None
+    
+    # Media files will be stored in MinIO
+    MEDIA_URL = f'{AWS_S3_ENDPOINT_URL}/{AWS_STORAGE_BUCKET_NAME}/'
+else:
+    # Local File Storage (development fallback)
+    DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+    # MEDIA_URL and MEDIA_ROOT already defined above
+
+# Production AWS S3 Settings (used when USE_MINIO=False and in production)
+# These will be loaded from environment variables in production
+# Uncomment and configure when deploying to production with real AWS S3:
+# 
+# if not USE_MINIO and config('ENVIRONMENT', default='development') == 'production':
+#     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+#     AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+#     AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+#     AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
+#     AWS_S3_REGION_NAME = config('AWS_S3_REGION_NAME', default='us-east-1')
+#     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+#     AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
+#     AWS_DEFAULT_ACL = 'private'
+#     AWS_S3_FILE_OVERWRITE = False
+#     AWS_QUERYSTRING_AUTH = True
