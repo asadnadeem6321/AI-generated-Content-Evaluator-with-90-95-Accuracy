@@ -7,3 +7,6 @@ INFO 2026-02-06 17:10:36,108 autoreload 10237 129000652558464 Watching for file 
 INFO 2026-02-06 17:10:45,503 autoreload 10237 129000652558464 /home/salman/FYP/Backend/ace_backend/config/settings/development.py changed, reloading.
 INFO 2026-02-06 17:10:46,151 autoreload 10281 125545937739904 Watching for file changes with StatReloader
 INFO 2026-02-06 17:13:28,095 autoreload 10439 134167719661696 Watching for file changes with StatReloader
+INFO 2026-02-08 10:22:18,807 autoreload 11588 124357480304768 Watching for file changes with StatReloader
+INFO 2026-02-08 10:29:15,146 autoreload 11588 124357480304768 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 10:29:15,839 autoreload 11796 130477083218048 Watching for file changes with StatReloader

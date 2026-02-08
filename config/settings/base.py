@@ -29,12 +29,12 @@ INSTALLED_APPS = [
     'drf_spectacular',
     
     # Local apps
-    'apps.authentication',
-    'apps.submissions',
-    'apps.results',
-    'apps.classes',
-    'apps.dashboard',
-    'apps.core',
+    'apps.authentication.apps.AuthenticationConfig',  # ✅ include apps.
+    'apps.submissions.apps.SubmissionsConfig',
+    'apps.results.apps.ResultsConfig',
+    'apps.classes.apps.ClassesConfig',
+    'apps.dashboard.apps.DashboardConfig',
+    'apps.core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [
@@ -235,7 +235,7 @@ LOGGING = {
             '()': 'django.utils.log.RequireDebugFalse',
         },
     },
-    'root': {                  # ✅ ADDED
+    'root': {                  
         'handlers': ['console'],
         'level': 'INFO',
     },
