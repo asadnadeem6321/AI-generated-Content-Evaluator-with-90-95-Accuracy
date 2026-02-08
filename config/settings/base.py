@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     
     # Local apps
-    'authentication',  # ✅ include apps.
+    'apps.authentication.apps.AuthenticationConfig',  # ✅ include apps.
     'submissions',
     'results',
     'classes',
@@ -257,7 +257,7 @@ LOGGING = {
     'loggers': {
         'django': {
             'handlers': ['console', 'file'],
-            'level': 'INFO',
+            'level': 'WARNING',
             'propagate': False,
         },
         'apps': {

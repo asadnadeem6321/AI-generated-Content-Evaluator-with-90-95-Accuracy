@@ -4,4 +4,5 @@ from django.contrib.auth.models import AbstractUser
 
 class User(AbstractUser):
     # agar custom fields chahiye to yahan add karo
+    name = models.CharField()
     pass

@@ -10,3 +10,69 @@ INFO 2026-02-06 17:13:28,095 autoreload 10439 134167719661696 Watching for file 
 INFO 2026-02-08 10:22:18,807 autoreload 11588 124357480304768 Watching for file changes with StatReloader
 INFO 2026-02-08 10:29:15,146 autoreload 11588 124357480304768 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
 INFO 2026-02-08 10:29:15,839 autoreload 11796 130477083218048 Watching for file changes with StatReloader
+INFO 2026-02-08 15:15:46,597 autoreload 30050 131420496556160 Watching for file changes with StatReloader
+INFO 2026-02-08 15:16:13,828 middleware 30050 131420403001024 Request: GET / from 127.0.0.1
+INFO 2026-02-08 15:16:13,872 middleware 30050 131420403001024 Response: GET / [404] - 0.044s
+WARNING 2026-02-08 15:16:13,873 log 30050 131420403001024 Not Found: /
+WARNING 2026-02-08 15:16:13,874 basehttp 30050 131420403001024 "GET / HTTP/1.1" 404 3663
+INFO 2026-02-08 15:16:14,092 middleware 30050 131420403001024 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-02-08 15:16:14,118 middleware 30050 131420403001024 Response: GET /favicon.ico [404] - 0.026s
+WARNING 2026-02-08 15:16:14,119 log 30050 131420403001024 Not Found: /favicon.ico
+WARNING 2026-02-08 15:16:14,119 basehttp 30050 131420403001024 "GET /favicon.ico HTTP/1.1" 404 3714
+INFO 2026-02-08 15:16:19,432 middleware 30050 131420403001024 Request: GET /admin from 127.0.0.1
+INFO 2026-02-08 15:16:19,460 middleware 30050 131420403001024 Response: GET /admin [404] - 0.029s
+INFO 2026-02-08 15:16:19,462 basehttp 30050 131420403001024 "GET /admin HTTP/1.1" 301 0
+INFO 2026-02-08 15:16:19,472 middleware 30050 131420394608320 Request: GET /admin/ from 127.0.0.1
+INFO 2026-02-08 15:16:19,488 middleware 30050 131420394608320 Response: GET /admin/ [302] - 0.016s
+INFO 2026-02-08 15:16:19,489 basehttp 30050 131420394608320 "GET /admin/ HTTP/1.1" 302 0
+INFO 2026-02-08 15:16:19,508 middleware 30050 131420394608320 Request: GET /admin/login/ from 127.0.0.1
+INFO 2026-02-08 15:16:19,562 middleware 30050 131420394608320 Response: GET /admin/login/ [200] - 0.054s
+INFO 2026-02-08 15:16:19,563 basehttp 30050 131420394608320 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4163
+INFO 2026-02-08 15:16:19,682 basehttp 30050 131420403001024 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2026-02-08 15:16:19,683 basehttp 30050 131420394608320 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2026-02-08 15:16:19,704 basehttp 30050 131420384118464 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2026-02-08 15:16:19,708 basehttp 30050 131420375725760 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2026-02-08 15:16:19,713 basehttp 30050 131420026566336 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2026-02-08 15:16:19,726 basehttp 30050 131420384118464 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2026-02-08 15:16:19,728 basehttp 30050 131420375725760 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2026-02-08 15:16:24,195 middleware 30050 131420375725760 Request: POST /admin/login/ from 127.0.0.1
+INFO 2026-02-08 15:16:24,934 middleware 30050 131420375725760 Response: POST /admin/login/ [302] - 0.738s
+INFO 2026-02-08 15:16:24,947 basehttp 30050 131420375725760 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2026-02-08 15:16:24,954 middleware 30050 131420375725760 Request: GET /admin/ from 127.0.0.1
+INFO 2026-02-08 15:16:24,996 middleware 30050 131420375725760 Response: GET /admin/ [200] - 0.042s
+INFO 2026-02-08 15:16:24,997 basehttp 30050 131420375725760 "GET /admin/ HTTP/1.1" 200 5172
+INFO 2026-02-08 15:16:25,104 basehttp 30050 131420375725760 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2026-02-08 15:16:25,144 basehttp 30050 131420375725760 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2026-02-08 15:16:25,144 basehttp 30050 131420384118464 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2026-02-08 15:18:33,616 autoreload 30050 131420496556160 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 15:18:34,770 autoreload 31506 123626855362688 Watching for file changes with StatReloader
+INFO 2026-02-08 15:18:38,856 autoreload 31506 123626855362688 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 15:18:39,838 autoreload 31573 132278938521728 Watching for file changes with StatReloader
+INFO 2026-02-08 15:18:42,844 autoreload 31573 132278938521728 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 15:18:43,627 autoreload 31629 131346531836032 Watching for file changes with StatReloader
+INFO 2026-02-08 15:18:53,796 autoreload 31629 131346531836032 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 15:18:54,645 autoreload 31755 129722115051648 Watching for file changes with StatReloader
+INFO 2026-02-08 15:19:01,582 autoreload 31834 128909053796480 Watching for file changes with StatReloader
+INFO 2026-02-08 15:19:06,524 autoreload 31834 128909053796480 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 15:19:07,531 autoreload 31913 136622259372160 Watching for file changes with StatReloader
+INFO 2026-02-08 15:19:10,513 autoreload 31913 136622259372160 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 15:19:11,307 autoreload 31962 134537791266944 Watching for file changes with StatReloader
+INFO 2026-02-08 15:19:17,322 autoreload 31962 134537791266944 /home/salman/FYP/Backend/ace_backend/config/settings/base.py changed, reloading.
+INFO 2026-02-08 15:19:24,108 autoreload 32125 128137498894464 Watching for file changes with StatReloader
+INFO 2026-02-08 15:20:33,332 autoreload 32125 128137498894464 /home/salman/FYP/Backend/ace_backend/config/settings/development.py changed, reloading.
+INFO 2026-02-08 15:21:03,693 autoreload 33065 127471455228032 Watching for file changes with StatReloader
+INFO 2026-02-08 15:21:07,699 autoreload 33065 127471455228032 /home/salman/FYP/Backend/ace_backend/config/settings/development.py changed, reloading.
+INFO 2026-02-08 15:21:08,437 autoreload 33124 132793329406080 Watching for file changes with StatReloader
+INFO 2026-02-08 15:21:12,362 autoreload 33124 132793329406080 /home/salman/FYP/Backend/ace_backend/config/settings/development.py changed, reloading.
+INFO 2026-02-08 15:21:13,178 autoreload 33187 128717440802944 Watching for file changes with StatReloader
+INFO 2026-02-08 15:22:16,493 middleware 33187 128717346039488 Request: GET /admin/ from 127.0.0.1
+ERROR 2026-02-08 15:22:16,521 basehttp 33187 128717346039488 "GET /admin/ HTTP/1.1" 500 59
+INFO 2026-02-08 15:22:25,611 autoreload 33187 128717440802944 /home/salman/FYP/Backend/ace_backend/config/settings/development.py changed, reloading.
+INFO 2026-02-08 15:23:55,528 middleware 35592 136484857308864 Request: GET /admin/ from 127.0.0.1
+INFO 2026-02-08 15:23:55,591 middleware 35592 136484857308864 Response: GET /admin/ [200] - 0.063s
+INFO 2026-02-08 15:24:10,330 middleware 35592 136484857308864 Request: GET /admin/ from 127.0.0.1
+ERROR 2026-02-08 15:24:10,350 basehttp 35592 136484857308864 "GET /admin/ HTTP/1.1" 500 59
+INFO 2026-02-08 15:24:18,803 middleware 35592 136484857308864 Request: GET /admin/ from 127.0.0.1
+INFO 2026-02-08 15:24:18,846 middleware 35592 136484857308864 Response: GET /admin/ [200] - 0.043s
+INFO 2026-02-08 15:24:20,817 middleware 35592 136484857308864 Request: GET /admin/ from 127.0.0.1
+INFO 2026-02-08 15:24:20,852 middleware 35592 136484857308864 Response: GET /admin/ [200] - 0.035s
