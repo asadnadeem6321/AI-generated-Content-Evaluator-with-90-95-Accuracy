@@ -18,7 +18,7 @@ from rest_framework_simplejwt.views import (
 
 urlpatterns = [
     # Admin
-    path('admin/', admin.site.admin_urls),
+    path('admin/', admin.site.urls),
     
     # API Documentation
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),

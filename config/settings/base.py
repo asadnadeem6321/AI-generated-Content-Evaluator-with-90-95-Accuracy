@@ -29,12 +29,12 @@ INSTALLED_APPS = [
     'drf_spectacular',
     
     # Local apps
-    'apps.authentication.apps.AuthenticationConfig',  # ✅ include apps.
-    'apps.submissions.apps.SubmissionsConfig',
-    'apps.results.apps.ResultsConfig',
-    'apps.classes.apps.ClassesConfig',
-    'apps.dashboard.apps.DashboardConfig',
-    'apps.core.apps.CoreConfig',
+    'authentication',  # ✅ include apps.
+    'submissions',
+    'results',
+    'classes',
+    'dashboard',
+    'core',
 ]
 
 MIDDLEWARE = [
