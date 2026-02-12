@@ -40,8 +40,8 @@ DEBUG_PROPAGATE_EXCEPTIONS = True
 # CSP_DEFAULT_SRC = ("'self'", "'unsafe-inline'", "'unsafe-eval'")
 
 # Development-specific logging (more verbose)
-LOGGING['loggers']['django']['level'] = 'DEBUG'
-LOGGING['loggers']['apps']['level'] = 'DEBUG'
-LOGGING['handlers']['console']['level'] = 'DEBUG'
+# LOGGING['loggers']['django']['level'] = 'DEBUG'
+# LOGGING['loggers']['apps']['level'] = 'DEBUG'
+# LOGGING['handlers']['console']['level'] = 'DEBUG'
 
 print("🚀 Running in DEVELOPMENT mode")
