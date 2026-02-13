@@ -31,6 +31,9 @@ class AuthViewSet(viewsets.GenericViewSet):
     def register(self, request):
         '''
         User Registration
+
+        Endpoints:
+        POST /api/auth/register/
         
         request: 
             email, 'email', 'username', 'password', 'confirm_password', 'first_name', 'last_name', 'role'
@@ -60,6 +63,10 @@ class AuthViewSet(viewsets.GenericViewSet):
         Get or update user profile
 
         used in dashboard to show user profile and update it
+
+        Endpoints:
+        GET /api/auth/profile/
+        PUT /api/auth/profile/
         '''
         if request.method == 'get':
             serializer = UserSerializer(request.user)
