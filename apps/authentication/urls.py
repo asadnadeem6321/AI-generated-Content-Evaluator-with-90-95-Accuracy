@@ -1,20 +1,29 @@
 """
 Authentication app URLs
 """
-from django.urls import path
-# from .views import (
-#     RegisterView,
-#     LoginView,
-#     LogoutView,
-#     UserProfileView,
-# )
 
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from rest_framework_simplejwt.views import (
+    TokenObtainPairView,
+    TokenRefreshView,
+)
+from .views import AuthViewSet
+
+router = DefaultRouter()
+router.register("", AuthViewSet, basename='auth')
 app_name = 'authentication'
 
+
 urlpatterns = [
-    # Will be implemented in Phase 1.2
-    # path('register/', RegisterView.as_view(), name='register'),
-    # path('login/', LoginView.as_view(), name='login'),
-    # path('logout/', LogoutView.as_view(), name='logout'),
-    # path('profile/', UserProfileView.as_view(), name='profile'),
+    path('', include(router.urls)),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
+
+
+# END POINTS OF THIS APP
+
+# POST /api/auth/register/
+# GET /api/auth/profile/
+# PUT /api/auth/profile/
+# POST /api/auth/token/refresh/
