@@ -134,3 +134,24 @@ INFO 2026-02-12 07:32:28,325 middleware 13565 124721605629632 Request: GET /admi
 INFO 2026-02-12 07:32:28,370 middleware 13565 124721605629632 Response: GET /admin/auth/group/ [200] - 0.045s
 INFO 2026-02-12 07:32:28,435 middleware 13565 124721605629632 Request: GET /admin/jsi18n/ from 127.0.0.1
 INFO 2026-02-12 07:32:28,461 middleware 13565 124721605629632 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-02-12 07:44:53,330 middleware 14491 127548416583360 Request: GET /admin/auth/group/ from 127.0.0.1
+WARNING 2026-02-12 07:44:53,348 base 14491 127548416583360 Session data corrupted
+INFO 2026-02-12 07:44:53,356 middleware 14491 127548416583360 Response: GET /admin/auth/group/ [302] - 0.026s
+INFO 2026-02-12 07:44:53,363 middleware 14491 127548416583360 Request: GET /admin/login/ from 127.0.0.1
+WARNING 2026-02-12 07:44:53,385 base 14491 127548416583360 Session data corrupted
+INFO 2026-02-12 07:44:53,422 middleware 14491 127548416583360 Response: GET /admin/login/ [200] - 0.060s
+INFO 2026-02-12 07:45:00,099 middleware 14491 127548416583360 Request: POST /admin/login/ from 127.0.0.1
+WARNING 2026-02-12 07:45:00,118 base 14491 127548416583360 Session data corrupted
+INFO 2026-02-12 07:45:00,829 middleware 14491 127548416583360 Response: POST /admin/login/ [302] - 0.730s
+INFO 2026-02-12 07:45:00,844 middleware 14491 127548416583360 Request: GET /admin/auth/group/ from 127.0.0.1
+INFO 2026-02-12 07:45:00,904 middleware 14491 127548416583360 Response: GET /admin/auth/group/ [200] - 0.060s
+INFO 2026-02-12 07:45:01,045 middleware 14491 127548416583360 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-02-12 07:45:01,084 middleware 14491 127548416583360 Response: GET /admin/jsi18n/ [200] - 0.039s
+INFO 2026-02-12 07:45:04,853 middleware 14491 127548416583360 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-02-12 07:45:04,899 middleware 14491 127548416583360 Response: GET /admin/authentication/user/ [200] - 0.046s
+INFO 2026-02-12 07:45:04,943 middleware 14491 127548416583360 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-02-12 07:45:04,974 middleware 14491 127548416583360 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-02-12 07:45:10,903 middleware 14491 127548416583360 Request: GET /admin/authentication/user/1/change/ from 127.0.0.1
+INFO 2026-02-12 07:45:11,035 middleware 14491 127548416583360 Response: GET /admin/authentication/user/1/change/ [200] - 0.132s
+INFO 2026-02-12 07:45:11,132 middleware 14491 127548408190656 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-02-12 07:45:11,187 middleware 14491 127548408190656 Response: GET /admin/jsi18n/ [200] - 0.054s
