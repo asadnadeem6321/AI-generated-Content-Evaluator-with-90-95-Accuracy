@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import User
 from django.contrib.auth.password_validation import validate_password
+from .validators import validate_password_strength
+
 
 class UserSerializer(serializers.ModelSerializer):
     """Serializer for the User model.
@@ -13,7 +15,10 @@ class UserSerializer(serializers.ModelSerializer):
     
 class RegisterSerializer(serializers.ModelSerializer):
     """Serializer for user registration"""
-    password = serializers.CharField(write_only=True, validators=[validate_password])
+    password = serializers.CharField(
+        write_only=True,
+        validators=[validate_password, validate_password_strength]
+        )
     confirm_password = serializers.CharField(write_only=True)
     
     class Meta:
