@@ -54,7 +54,7 @@ class ClassViewSet(viewsets.ModelViewSet):
 
     @action(detail=True, methods=['post'])
     def enroll(self, request, pk=None):
-        """Student enrolled in class using class code
+        """Student enrolled in class using class code (student's api)
         
         POST /api/classes/{CODE}/enroll/
         """
