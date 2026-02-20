@@ -1,10 +1,10 @@
 from rest_framework import serializers
 from .models import Class, Enrollment
-from authentication.serializers import UserSerializer
+from apps.authentication.serializers import UserSerializer
 
 class ClassSerializer(serializers.ModelSerializer):
     """serializer for class model"""
-    teacher = UserSerializer(readonly=True)
+    teacher = UserSerializer(read_only=True)
     student_count = serializers.IntegerField(read_only=True)
 
     class Meta:
@@ -38,4 +38,3 @@ class EnrolledStudentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Enrollment
         fields = ['id','student', 'enrolled_at']
-        

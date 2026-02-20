@@ -30,9 +30,9 @@ INSTALLED_APPS = [
     
     # Local apps
     'apps.authentication.apps.AuthenticationConfig',  # ✅ include apps.
+    'apps.classes.apps.ClassesConfig',
     'submissions',
     'results',
-    'classes',
     'dashboard',
     'core',
 ]
