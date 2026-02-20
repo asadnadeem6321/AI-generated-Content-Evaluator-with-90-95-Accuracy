@@ -48,4 +48,25 @@ class Class(models.Model):
     def __str__(self):
         return f"{self.students.count()}"
     
-    
+
+class Enrollment(models.Model):
+    """Student enrolled in classes"""
+
+    student = models.ForeignKey(
+        User,
+        on_delete=models.CASCADE
+    )
+    class_obj = models.ForeignKey(
+        Class,
+        on_delete=models.CASCADE,
+        related_name='enrollement'
+    )
+    enrolled_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = 'enrollemant'
+        unique_together = ['student', 'class_obj'] # So student can not enrolled twise
+        ordering = ['-enrolled_at']
+
+    def __str__(self):
+        return f"{self.student.username} enrolled in {self.class_obj.name}"
