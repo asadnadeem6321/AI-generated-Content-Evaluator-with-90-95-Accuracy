@@ -24,34 +24,33 @@ class SubmissionSerializer(serializers.ModelSerializer):
                     return request.build_absolute_uri(obj.file.url)
             return None
         
-    class SubmissionCreateSerializer(serializers.ModelSerializer):
-        """Serializer for creating submissions"""
-        class Meta:
-            model = Submission
-            fields = ['assignment_name', 'class_obj', 'assignment_deadline', 'file']
+class SubmissionCreateSerializer(serializers.ModelSerializer):
+    """Serializer for creating submissions"""
+    class Meta:
+        model = Submission
+        fields = ['assignment_name', 'class_obj', 'assignment_deadline', 'file']
 
-        def validate_file(self, file):
-            # Check file extension
-            if not file.name.lower().endswith('.pdf'):
-                raise serializers.ValidationError("Only PDF files are allowed")
+    def validate_file(self, file):
+        # Check file extension
+        if not file.name.lower().endswith('.pdf'):
+            raise serializers.ValidationError("Only PDF files are allowed")
             
-            # Check file size
-            if file.size > settings.MAX_UPLOAD_SIZE:
-                raise serializers.ValidationError("File size must be less then 50MB")
+        # Check file size
+        if file.size > settings.MAX_UPLOAD_SIZE:
+            raise serializers.ValidationError("File size must be less then 50MB")
 
-            return file
+        return file
         
-        def validate(self, attrs):
-            #  Check if past deadline
-            class_obj = attrs.get('class_obj')
-            deadline = attrs.get('assignment_deadline')
+    def validate(self, attrs):
+        #  Check if past deadline
+        class_obj = attrs.get('class_obj')
+        deadline = attrs.get('assignment_deadline')
 
-            if deadline and class_obj:
-                pass
-            return attrs
+        if deadline and class_obj:
+            pass
+        return attrs
         
 class ExtensionRequestSerializer(serializers.Serializer):
     """Serializer for extension requests"""
     reason = serializers.CharField(max_length=500)
 
-        
