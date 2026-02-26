@@ -1,6 +1,6 @@
 from django.db import models
-from authentication.models import User  
-from classes.models import Class
+from apps.authentication.models import User  
+from apps.classes.models import Class
 import uuid
 from django.utils import timezone
 # Create your models here.
@@ -36,10 +36,10 @@ class Submission(models.Model):
     extension_reason = models.TextField(blank=True)
 
     class Meta:
-        db_name = 'submissions'
+        db_table = 'submissions'
         ordering = ['-submitted_at']
         indexes = [
-            models.Index(fields=['user', '-submission_at']),
+            models.Index(fields=['user', '-submitted_at']),
             models.Index(fields=['status']),
             models.Index(fields=['assignment_deadline'])
         ]

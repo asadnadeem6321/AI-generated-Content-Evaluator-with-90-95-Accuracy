@@ -31,10 +31,10 @@ INSTALLED_APPS = [
     # Local apps
     'apps.authentication.apps.AuthenticationConfig',  # ✅ include apps.
     'apps.classes.apps.ClassesConfig',
-    'submissions',
-    'results',
-    'dashboard',
-    'core',
+    'apps.submissions.apps.SubmissionsConfig',
+    'apps.results.apps.ResultsConfig',
+    'apps.dashboard.apps.DashboardConfig',
+    'apps.core.apps.CoreConfig',
 ]
 
 MIDDLEWARE = [

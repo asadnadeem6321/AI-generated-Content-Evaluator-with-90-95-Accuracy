@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.conf import settings
 from .models import Submission
-from authentication.serializers import UserSerializer
+from apps.authentication.serializers import UserSerializer
 
 class SubmissionSerializer(serializers.ModelSerializer):
     """Serializers for submissions"""

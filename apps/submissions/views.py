@@ -112,3 +112,8 @@ class SubmissionViewSet(viewsets.ModelViewSet):
                 'processed_at': submission.processed_at
             }
         )
+
+
+
+
+        #i want you to in every api write a doc string with its request and expected respoce sample so that in future developer knows that what api accepr what and return what is not it a best practice? and also write all the end points of that file include custom ones in the end of file as comment
