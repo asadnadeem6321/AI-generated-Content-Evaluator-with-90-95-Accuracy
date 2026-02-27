@@ -1,10 +1,14 @@
 """
 Results app URLs
 """
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import ResultViewSet
 
+router = DefaultRouter()
+router.register('', ResultViewSet, basename='result')
 app_name = 'results'
 
 urlpatterns = [
-    # Will be implemented in Phase 1.5
+    path('', include(router.urls))
 ]
