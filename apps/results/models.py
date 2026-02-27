@@ -1,5 +1,5 @@
 from django.db import models
-from submissions.models import Submission
+from apps.submissions.models import Submission
 # Create your models here.
 
 
