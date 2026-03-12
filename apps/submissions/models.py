@@ -28,6 +28,15 @@ class Submission(models.Model):
 
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='queued')
 
+    # processing tracking
+    total_paragraphs = models.IntegerField(default=0, help_text='Total paragraphs extracted from PDF')
+    processed_paragraphs = models.IntegerField(default=0, help_text='Paragraphs analyzed so far')
+
+    # Teacher controls for processing
+    is_paused = models.BooleanField(default=False, help_text='Teacher paused this submission')
+    paused_at = models.DateTimeField(blank=True, null=True)
+    paused_by =models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL, related_name='paused_submission')
+
     submitted_at = models.DateTimeField(auto_now_add=True)
     processed_at =  models.DateTimeField(null=True, blank=True)
 
@@ -60,3 +69,23 @@ class Submission(models.Model):
         if self.extension_granted:
             return True
         return not self.is_past_deadline()
+    
+    def processing_percentage(self):
+        '''Calculate Processing Progress'''
+        if self.total_paragraphs == 0:
+            return 0
+        return round((self.processed_paragraphs / self.total_paragraphs) * 100, 2)
+
+    def pause(self, user):
+        '''Pause submission processing'''
+        self.is_paused = True
+        self.paused_at = timezone.now()
+        self.paused_by = user
+        self.save()
+
+    def resume(self, user):
+        '''Pause submission processing'''
+        self.is_paused = False
+        self.paused_at = None
+        self.paused_by = None
+        self.save()
