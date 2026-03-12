@@ -14,6 +14,10 @@ class Result(models.Model):
     total_paragraphs = models.IntegerField(default=0)
     ai_paragraphs = models.IntegerField(default=0 , help_text='Number of AI-flagged paragraphs')
 
+    # COmpletion tracking
+    is_complete = models.BooleanField(default=False, help_text='All paragraphs analyzed')
+    completed_paragraphs = models.IntegerField(default=0, help_text='Paragraphs with results')
+
     report_pdf = models.FileField(upload_to='reports/%Y/%m/%d/', null=True, blank= True)
     processing_time = models.FloatField(help_text='Processing time in seconds', null=True)
     
@@ -25,6 +29,47 @@ class Result(models.Model):
 
     def __str__(self):
         return f'Result for {self.submission.assignment_name}'
+    
+    @property
+    def completion_percentage(self):
+        """Calculate result completion progress"""
+        if self.total_paragraphs == 0:
+            return 0
+        return round((self.completed_paragraphs / self.total_paragraphs) * 100, 2)
+    
+    def update_completion(self):
+        """Update completion status and calculate final scores"""
+        completed = self.paragraphs.filter(status='completed').count()
+        self.completed_paragraphs = completed
+        
+        if completed == self.total_paragraphs and self.total_paragraphs > 0:
+            self.is_complete = True
+            self.calculate_final_scores()
+        
+        self.save()
+    
+    def calculate_final_scores(self):
+        """Calculate overall AI percentage and grammar score"""
+        paragraphs = self.paragraphs.filter(status='completed')
+        
+        if paragraphs.exists():
+            # Calculate average AI percentage
+            total_ai = sum(float(p.ai_probability) for p in paragraphs)
+            self.ai_percentage = round((total_ai / paragraphs.count()) * 100, 2)
+            self.human_percentage = round(100 - self.ai_percentage, 2)
+            
+            # Count AI-flagged paragraphs
+            self.ai_paragraphs = paragraphs.filter(is_flagged=True).count()
+            
+            # Calculate grammar score (100 - error rate)
+            total_errors = sum(p.grammar_error_count for p in paragraphs)
+            total_words = sum(p.features.get('word_count', 0) for p in paragraphs)
+            if total_words > 0:
+                error_rate = (total_errors / total_words) * 100
+                self.grammar_score = max(0, round(100 - error_rate, 2))
+            
+            self.save()
+
     
 
 class ParagraphResult(models.Model):
