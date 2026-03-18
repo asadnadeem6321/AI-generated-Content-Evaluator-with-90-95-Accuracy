@@ -5,6 +5,8 @@ from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from django.utils import timezone
 from authentication.permissions import IsStudent, IsTeacher
+from .tasks import queue_paragraph_tasks
+
 # Modes
 from .models import Submission
 # Serializers
@@ -114,6 +116,57 @@ class SubmissionViewSet(viewsets.ModelViewSet):
         )
 
 
+    # API for teachers to pause replay submission processing 
+    @action(detail=True, methods=['post'], permission_classes=[IsTeacher])
+    def pause(self, request, pk=None):
+        """
+        Teacher pauses submission's processing
+        POST /api/submission/{id}/pause
+        """
+        submission = self.get_object()
 
+        # Verify teacher owns this submission
+        if submission.class_obj and submission.calss_obj.teacher != request.user:
+            return Response(
+                {'error': 'Access denied'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        if submission.is_paused:
+            return Response({'message': 'Already paused'})
+        submission.pause(request.user)
 
-        #i want you to in every api write a doc string with its request and expected respoce sample so that in future developer knows that what api accepr what and return what is not it a best practice? and also write all the end points of that file include custom ones in the end of file as comment
+        return Response({
+            'message': 'Submission paused',
+            'paused_at': submission.paused_at
+        })
+    
+    @action(detail=True, methods=['post'], permission_classes = [IsTeacher])
+    def resume(self, request, pk=None):
+        """
+        Teacher resume submission processing
+        POST /api/submissions/{id}/resume/
+        """
+        submission = self.get_object()
+        
+        if submission.class_obj and submission.class_obj.teacher != request.user:
+            return Response(
+                {'error': 'Access denied'},
+                status=status.HTTP_403_FORBIDDEN
+            )
+        
+        if not submission.is_paused:
+            return Response({'message': 'Not paused'})
+        
+        submission.resume()
+        
+        # Re-queue pending paragraphs
+        if hasattr(submission, 'result'):
+            pending_count = submission.result.paragraphs.filter(status='pending').count()
+            if pending_count > 0:
+                queue_paragraph_tasks(str(submission.id), submission.user.role)
+        
+        return Response({
+            'message': 'Submission resumed',
+            'pending_paragraphs': pending_count
+        })
