@@ -148,3 +148,24 @@ def process_paragraph(self, paragraph_id):
         # Retry with exponential backoff
         raise self.retry(exc=e, countdown=30 * (2 ** paragraph.retry_count))
 
+
+@shared_task
+def generate_report(result_id):
+    """
+    Stage 3 : Generate pdf report after all paragraphs processed
+    """
+
+    try:
+        result = Result.objects.get(id=result_id)
+
+        # Here we will call report generation service
+        # and implement pdf generation
+
+        result.submission.status = 'completed'
+        result.submission.processed_at = timezone.now()
+        result.submission.save()
+
+        return{'status':'report_generated'}
+    except Exception as e:
+        return {'status':'error', 'message':str(e)}
+    
