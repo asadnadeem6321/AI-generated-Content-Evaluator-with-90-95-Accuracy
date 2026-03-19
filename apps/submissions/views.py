@@ -170,3 +170,60 @@ class SubmissionViewSet(viewsets.ModelViewSet):
             'message': 'Submission resumed',
             'pending_paragraphs': pending_count
         })
+
+    
+    @action(detail=False, method=['post'], permission_classes=[IsTeacher])
+    def bulk_pause(self, request):
+        """
+        Teacher can pause multiple submissions
+
+        POST /api/submissions/bulk_pause/
+        request body : {"submission_ids": ["id1", "id2", "id3"]}
+        """
+        submission_ids = request.data.get('submission_ids', [])
+
+        submissions = Submission.objects.filter(
+            id__in = submission_ids,
+            class_obj__teacher = request.user
+        )
+
+        paused_count = 0
+        for submission in submissions:
+            if not submissions.is_paused:
+                submission.pause(request.user)
+                paused_count += 1
+            
+        return Response({
+            'message': f'Paused {paused_count} submissions',
+            'paused_count': paused_count
+        })
+    
+
+    @action(detail=False, methods=['post'], permission_classes=[IsTeacher])
+    def bulk_resume(self, request):
+        """
+        Teacher can resumes multiple submissions
+
+        POST /api/submissions/bulk_resume/
+        request body : {"submission_ids": ["id1", "id2", "id3"]}
+        """
+
+        submission_ids = request.data.get('submissions_ids', [])
+
+        submissions = Submission.objects.filter(
+             id__in=submission_ids,
+            class_obj__teacher=request.user,
+            is_paused=True
+        )
+
+        resumed_count = 0
+        for submission in submissions:
+            submissions.resume()
+            if hasattr(submission, 'result'):
+                queue_paragraph_tasks(str(submission.id), submission.user.role)
+            resumed_count += 1
+        
+        return Response({
+            'message': f'Resumed {resumed_count} submissions',
+            'resumed_count': resumed_count
+        })
