@@ -1,3 +1,5 @@
+import uuid
+from django.utils import timezone
 from django.db import models
 from django.utils.crypto import get_random_string
 from apps.authentication.models import User
@@ -70,3 +72,48 @@ class Enrollment(models.Model):
 
     def __str__(self):
         return f"{self.student.username} enrolled in {self.class_obj.name}"
+
+class Assignment(models.Model):
+    '''Assignment create by teacher within the class'''
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    class_obj = models.ForeignKey(blank=True, on_delete=models.CASCADE, related_name='assignments')
+
+    title = models.CharField(max_length=255, help_text='Assignment title (e.g., Research Paper 1)')
+    description = models.TextField(blank=True, help_text='Assignment instructions')
+    
+    deadline = models.DateTimeField(help_text='Submission deadline')
+    max_score = models.DecimalField(max_digits=5, decimal_places=2, default=100.00)
+
+    created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='assignments_created')
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    is_active = models.BooleanField(default=True, help_text='Is assignment accepting submissions')
+    
+    # Teacher controls
+    allow_late_submissions = models.BooleanField(default=False, help_text='Allow submissions after deadline')
+
+    class Meta:
+        db_table = 'assignments'
+        ordering = ['-created_at']
+        unique_together = ['class_obj', 'title']
+
+    def __str__(self):
+        return f"{self.title} - {self.class_obj.name}"
+
+
+    @property
+    def submission_count(self):
+        return self.submissions.count()
+    
+    @property
+    def is_past_deadline(self):
+        return timezone.now() > self.deadline
+    
+    def extend_deadline(self, new_deadline):
+        """Teacher extends deadline for entire assignment"""
+        self.deadline = new_deadline
+        self.save()
+
+
+    
