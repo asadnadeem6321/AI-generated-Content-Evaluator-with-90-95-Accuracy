@@ -5,13 +5,16 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from authentication.permissions import IsTeacher, IsStudent
 # Models import 
-from .models import Class, Enrollment
+from .models import Class, Enrollment, Assignment
 # Serializers
 from .serializers import (
     ClassSerializer,
     ClassCreateSerializer,
     EnrollmentSerializer,
-    EnrolledStudentSerializer
+    EnrolledStudentSerializer,
+    AssignmentCreateSerializer,
+    AssignmentSerializer,
+    AssignmentUpdateSerializer
 )
 
 # Create your views here.
@@ -82,3 +85,61 @@ class ClassViewSet(viewsets.ModelViewSet):
         serializer = EnrolledStudentSerializers(enrollments, many=True)
         return Response(serializer.data)
 
+
+# Assignment view sset
+class AssignmentViewSet(viewsets.ModelViewSet):
+    """Assignment curd operations"""
+
+    permission_classes = [IsAuthenticated]
+
+    def get_serializer_class(self):
+        if self.action == 'create':
+            return AssignmentCreateSerializer
+        elif self.action in ['update', 'partial_update']:
+            return AssignmentUpdateSerializer
+        return AssignmentSerializer
+    
+    def get_permissions(self):
+        if self.action in ['create', 'update', 'partial_update', 'destroy', 'extend_deadline']:
+            return [IsTeacher()]
+        return [IsAuthenticated()]
+    
+    def get_queryset(self):
+        user = self.request.user
+        class_id = self.request.query_params.get('class_id')
+        
+        if user.is_teacher():
+            queryset = Assignment.objects.filter(created_by=user)
+        elif user.is_student():
+            queryset = Assignment.objects.filter(class_obj__students=user)
+        else:
+            return Assignment.objects.none()
+        
+        if class_id:
+            queryset = queryset.filter(class_obj_id=class_id)
+        
+        return queryset
+    
+    def perform_create(self, serializer):
+        class_id = self.request.data.get('class_id')
+        class_obj = Class.objects.get(id=class_id, teacher=self.request.user)
+        serializer.save(created_by=self.request.user, class_obj=class_obj)
+    
+
+
+    
+    @action(detail=True, methods=['post'])
+    def extend_deadline(self, request, pk=None):
+        """Teacher extends assignment deadline"""
+        assignment = self.get_object()
+        new_deadline = request.data.get('new_deadline')
+        
+        if not new_deadline:
+            return Response({'error': 'new_deadline required'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        assignment.extend_deadline(new_deadline)
+        
+        return Response({
+            'message': 'Deadline extended',
+            'new_deadline': assignment.deadline
+        })
