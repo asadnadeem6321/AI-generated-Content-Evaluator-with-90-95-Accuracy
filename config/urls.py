@@ -5,6 +5,9 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from rest_framework_simplejwt.views import TokenRefreshView
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
+from apps.core.views import HealthCheckView
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularSwaggerView,
@@ -30,7 +33,7 @@ urlpatterns = [
     path('api/auth/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('api/auth/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
     
-    # App URLs
+    # App URLs Api endpoints
     path('api/auth/', include('apps.authentication.urls')),
     path('api/classes/', include('apps.classes.urls')),
     path('api/submissions/', include('apps.submissions.urls')),
@@ -38,7 +41,7 @@ urlpatterns = [
     path('api/dashboard/', include('apps.dashboard.urls')),
     
     # Health check
-    path('health/', include('apps.core.urls')),
+    path('health/', HealthCheckView.as_view(), name='health-check'),
 ]
 
 # Serve media files in development

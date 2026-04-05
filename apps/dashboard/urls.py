@@ -1,10 +1,12 @@
-"""
-Dashboard app URLs
-"""
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import DashboardViewSet
+
+router = DefaultRouter()
+router.register('', DashboardViewSet, basename='dashboard')
 
 app_name = 'dashboard'
 
 urlpatterns = [
-    # Will be implemented in Phase 1.7
+    path('', include(router.urls)),
 ]

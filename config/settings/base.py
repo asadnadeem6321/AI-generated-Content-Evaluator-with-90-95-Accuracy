@@ -29,7 +29,7 @@ INSTALLED_APPS = [
     'drf_spectacular',
     
     # Local apps
-    'apps.authentication.apps.AuthenticationConfig',  # ✅ include apps.
+    'apps.authentication.apps.AuthenticationConfig',  
     'apps.classes.apps.ClassesConfig',
     'apps.submissions.apps.SubmissionsConfig',
     'apps.results.apps.ResultsConfig',
