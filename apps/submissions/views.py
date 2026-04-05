@@ -172,7 +172,7 @@ class SubmissionViewSet(viewsets.ModelViewSet):
         })
 
     
-    @action(detail=False, method=['post'], permission_classes=[IsTeacher])
+    @action(detail=False, methods=['post'], permission_classes=[IsTeacher])
     def bulk_pause(self, request):
         """
         Teacher can pause multiple submissions

@@ -76,7 +76,7 @@ class Enrollment(models.Model):
 class Assignment(models.Model):
     '''Assignment create by teacher within the class'''
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    class_obj = models.ForeignKey(blank=True, on_delete=models.CASCADE, related_name='assignments')
+    class_obj = models.ForeignKey(Class, blank=True, on_delete=models.CASCADE, related_name='assignments')
 
     title = models.CharField(max_length=255, help_text='Assignment title (e.g., Research Paper 1)')
     description = models.TextField(blank=True, help_text='Assignment instructions')
