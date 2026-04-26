@@ -281,6 +281,9 @@ DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL', default='noreply@aidetection.c
 ML_SERVICE_URL = config('ML_SERVICE_URL', default='http://localhost:8001')
 ML_SERVICE_API_KEY = config('ML_SERVICE_API_KEY', default='your-ml-api-key')
 
+# Processing settings
+PARAGRAPH_MIN_WORDS = 50 
+
 # File Storage Configuration
 USE_MINIO = config('USE_MINIO', default=False, cast=bool)
 
