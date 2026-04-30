@@ -21,15 +21,15 @@ class ClassCreateSerializer(serializers.ModelSerializer):
         fields = ['name', 'description']
 
 
-class EnrollmentSerializer(serializers.ModelSerializer):
+class EnrollmentSerializer(serializers.Serializer):
     """Serializer for enrolling in class with code """
-    
-    code = serializers.CharField(max_length = 6)
+
+    code = serializers.CharField(max_length=6)
 
     def validate_code(self, value):
         try:
             Class.objects.get(code=value.upper(), is_active=True)
-        except:
+        except Class.DoesNotExist:
             raise serializers.ValidationError("Invalid code")
         return value.upper()
 
@@ -59,12 +59,14 @@ class AssignmentSerializer(serializers.ModelSerializer):
 
 class AssignmentCreateSerializer(serializers.ModelSerializer):
     """Serializer for creating assignment"""
+    class_id = serializers.UUIDField(write_only=True, required=False)
+
     class Meta:
         model = Assignment
-        fieds = ['title', 'description', 'deadline', 'max_score', 'allow_late_submissions']
+        fields = ['class_id', 'title', 'description', 'deadline', 'max_score', 'allow_late_submissions']
 
     def validate_deadline(self, value):
-        if value > timezone.now():
+        if value < timezone.now():
             raise serializers.ValidationError("Deadline cannot be in the past")
         return value
 

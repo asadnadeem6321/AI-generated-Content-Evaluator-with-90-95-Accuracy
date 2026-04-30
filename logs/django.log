@@ -215,3 +215,1833 @@ INFO 2026-04-05 14:27:55,191 middleware 15178 126806947694272 Request: GET /favi
 INFO 2026-04-05 14:27:55,215 middleware 15178 126806947694272 Response: GET /favicon.ico [404] - 0.024s
 WARNING 2026-04-05 14:27:55,220 log 15178 126806947694272 Not Found: /favicon.ico
 WARNING 2026-04-05 14:27:55,220 basehttp 15178 126806947694272 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-04-26 10:38:17,512 middleware 22227 130937562064576 Request: GET / from 127.0.0.1
+INFO 2026-04-26 10:38:17,559 middleware 22227 130937562064576 Response: GET / [404] - 0.047s
+WARNING 2026-04-26 10:38:17,559 log 22227 130937562064576 Not Found: /
+WARNING 2026-04-26 10:38:17,560 basehttp 22227 130937562064576 "GET / HTTP/1.1" 404 3810
+INFO 2026-04-26 10:38:17,963 middleware 22227 130937562064576 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-04-26 10:38:17,979 middleware 22227 130937562064576 Response: GET /favicon.ico [404] - 0.016s
+WARNING 2026-04-26 10:38:17,980 log 22227 130937562064576 Not Found: /favicon.ico
+WARNING 2026-04-26 10:38:17,981 basehttp 22227 130937562064576 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-04-26 10:38:20,784 middleware 22227 130937562064576 Request: GET /admin/ from 127.0.0.1
+INFO 2026-04-26 10:38:20,846 middleware 22227 130937562064576 Response: GET /admin/ [302] - 0.061s
+INFO 2026-04-26 10:38:20,874 middleware 22227 130937562064576 Request: GET /admin/login/ from 127.0.0.1
+INFO 2026-04-26 10:38:20,918 middleware 22227 130937562064576 Response: GET /admin/login/ [200] - 0.044s
+INFO 2026-04-26 10:38:30,167 middleware 22227 130937562064576 Request: POST /admin/login/ from 127.0.0.1
+INFO 2026-04-26 10:38:30,897 middleware 22227 130937562064576 Response: POST /admin/login/ [302] - 0.730s
+INFO 2026-04-26 10:38:30,910 middleware 22227 130937562064576 Request: GET /admin/ from 127.0.0.1
+INFO 2026-04-26 10:38:30,971 middleware 22227 130937562064576 Response: GET /admin/ [200] - 0.060s
+INFO 2026-04-26 12:55:31,137 middleware 23426 129212480485056 Request: GET / from 127.0.0.1
+INFO 2026-04-26 12:55:31,218 middleware 23426 129212480485056 Response: GET / [404] - 0.081s
+WARNING 2026-04-26 12:55:31,219 log 23426 129212480485056 Not Found: /
+WARNING 2026-04-26 12:55:31,220 basehttp 23426 129212480485056 "GET / HTTP/1.1" 404 3810
+INFO 2026-04-26 12:58:18,681 middleware 23426 129212472092352 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-26 12:58:18,684 exceptions 23426 129212472092352 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-04-26 12:58:18,685 middleware 23426 129212472092352 Response: POST /api/auth/register/ [401] - 0.004s
+WARNING 2026-04-26 12:58:18,686 log 23426 129212472092352 Unauthorized: /api/auth/register/
+WARNING 2026-04-26 12:58:18,686 basehttp 23426 129212472092352 "POST /api/auth/register/ HTTP/1.1" 401 132
+INFO 2026-04-26 12:58:33,198 middleware 23426 129212472092352 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-26 12:58:33,198 exceptions 23426 129212472092352 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-04-26 12:58:33,199 middleware 23426 129212472092352 Response: POST /api/auth/register/ [401] - 0.002s
+WARNING 2026-04-26 12:58:33,200 log 23426 129212472092352 Unauthorized: /api/auth/register/
+WARNING 2026-04-26 12:58:33,200 basehttp 23426 129212472092352 "POST /api/auth/register/ HTTP/1.1" 401 132
+INFO 2026-04-26 13:00:34,431 middleware 24117 140090779100864 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-26 13:00:35,425 middleware 24117 140090779100864 Response: POST /api/auth/register/ [200] - 0.994s
+INFO 2026-04-26 13:05:39,218 middleware 24117 140090693121728 Request: POST /api/auth/login/ from 127.0.0.1
+INFO 2026-04-26 13:05:39,235 middleware 24117 140090693121728 Response: POST /api/auth/login/ [404] - 0.017s
+WARNING 2026-04-26 13:05:39,236 log 24117 140090693121728 Not Found: /api/auth/login/
+WARNING 2026-04-26 13:05:39,236 basehttp 24117 140090693121728 "POST /api/auth/login/ HTTP/1.1" 404 5432
+INFO 2026-04-26 13:05:46,866 middleware 24117 140090693121728 Request: POST /api/auth/token/ from 127.0.0.1
+INFO 2026-04-26 13:05:47,703 middleware 24117 140090693121728 Response: POST /api/auth/token/ [200] - 0.837s
+INFO 2026-04-26 13:06:44,162 middleware 24117 140090693121728 Request: POST /api/auth/token/ from 127.0.0.1
+INFO 2026-04-26 13:06:44,980 middleware 24117 140090693121728 Response: POST /api/auth/token/ [200] - 0.818s
+INFO 2026-04-26 13:06:50,646 middleware 24117 140090693121728 Request: POST /api/auth/login/ from 127.0.0.1
+INFO 2026-04-26 13:06:50,655 middleware 24117 140090693121728 Response: POST /api/auth/login/ [404] - 0.009s
+WARNING 2026-04-26 13:06:50,655 log 24117 140090693121728 Not Found: /api/auth/login/
+WARNING 2026-04-26 13:06:50,656 basehttp 24117 140090693121728 "POST /api/auth/login/ HTTP/1.1" 404 5432
+INFO 2026-04-26 13:06:57,535 middleware 24117 140090693121728 Request: POST /api/auth/profile/ from 127.0.0.1
+ERROR 2026-04-26 13:06:57,539 exceptions 24117 140090693121728 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-04-26 13:06:57,541 middleware 24117 140090693121728 Response: POST /api/auth/profile/ [401] - 0.006s
+WARNING 2026-04-26 13:06:57,542 log 24117 140090693121728 Unauthorized: /api/auth/profile/
+WARNING 2026-04-26 13:06:57,543 basehttp 24117 140090693121728 "POST /api/auth/profile/ HTTP/1.1" 401 132
+INFO 2026-04-26 13:07:11,235 middleware 24117 140090693121728 Request: POST /api/auth/profile/ from 127.0.0.1
+ERROR 2026-04-26 13:07:11,254 exceptions 24117 140090693121728 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 13:07:11,255 middleware 24117 140090693121728 Response: POST /api/auth/profile/ [405] - 0.020s
+WARNING 2026-04-26 13:07:11,256 log 24117 140090693121728 Method Not Allowed: /api/auth/profile/
+WARNING 2026-04-26 13:07:11,256 basehttp 24117 140090693121728 "POST /api/auth/profile/ HTTP/1.1" 405 98
+INFO 2026-04-26 13:07:20,584 middleware 24117 140090693121728 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-04-26 13:07:20,611 middleware 24117 140090693121728 Response: GET /api/auth/profile/ [200] - 0.026s
+INFO 2026-04-26 13:07:54,374 middleware 24117 140090693121728 Request: GET /api/auth/login/ from 127.0.0.1
+INFO 2026-04-26 13:07:54,388 middleware 24117 140090693121728 Response: GET /api/auth/login/ [404] - 0.014s
+WARNING 2026-04-26 13:07:54,390 log 24117 140090693121728 Not Found: /api/auth/login/
+WARNING 2026-04-26 13:07:54,391 basehttp 24117 140090693121728 "GET /api/auth/login/ HTTP/1.1" 404 5431
+INFO 2026-04-26 13:12:19,381 middleware 24876 127978235225792 Request: GET /api/auth/login/ from 127.0.0.1
+INFO 2026-04-26 13:12:19,439 middleware 24876 127978235225792 Response: GET /api/auth/login/ [404] - 0.058s
+WARNING 2026-04-26 13:12:19,439 log 24876 127978235225792 Not Found: /api/auth/login/
+WARNING 2026-04-26 13:12:19,441 basehttp 24876 127978235225792 "GET /api/auth/login/ HTTP/1.1" 404 6475
+INFO 2026-04-26 13:12:38,796 middleware 24876 127978235225792 Request: GET /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-26 13:12:38,806 middleware 24876 127978235225792 Response: GET /api/auth/student_login/ [404] - 0.010s
+WARNING 2026-04-26 13:12:38,807 log 24876 127978235225792 Not Found: /api/auth/student_login/
+WARNING 2026-04-26 13:12:38,807 basehttp 24876 127978235225792 "GET /api/auth/student_login/ HTTP/1.1" 404 6499
+INFO 2026-04-26 13:13:01,751 middleware 25089 132995955549888 Request: GET /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-26 13:13:01,766 middleware 25089 132995955549888 Response: GET /api/auth/student_login/ [404] - 0.015s
+WARNING 2026-04-26 13:13:01,767 log 25089 132995955549888 Not Found: /api/auth/student_login/
+WARNING 2026-04-26 13:13:01,767 basehttp 25089 132995955549888 "GET /api/auth/student_login/ HTTP/1.1" 404 6499
+INFO 2026-04-26 13:13:35,777 middleware 25089 132995955549888 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-26 13:13:35,787 middleware 25089 132995955549888 Response: POST /api/auth/student_login/ [404] - 0.010s
+WARNING 2026-04-26 13:13:35,787 log 25089 132995955549888 Not Found: /api/auth/student_login/
+WARNING 2026-04-26 13:13:35,788 basehttp 25089 132995955549888 "POST /api/auth/student_login/ HTTP/1.1" 404 6500
+INFO 2026-04-26 13:14:25,596 middleware 25089 132995955549888 Request: POST /api/auth/student/login/ from 127.0.0.1
+INFO 2026-04-26 13:14:26,421 middleware 25089 132995955549888 Response: POST /api/auth/student/login/ [200] - 0.825s
+INFO 2026-04-26 13:18:27,097 middleware 25491 138865312523968 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-26 13:18:27,865 middleware 25491 138865312523968 Response: POST /api/auth/student_login/ [200] - 0.769s
+INFO 2026-04-26 13:18:51,911 middleware 25587 129330227177152 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+ERROR 2026-04-26 13:18:52,803 exceptions 25587 129330227177152 Exception occurred: Use the student login page for student accounts
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 69, in teacher_login
+    raise PermissionDenied('Use the student login page for student accounts')
+rest_framework.exceptions.PermissionDenied: Use the student login page for student accounts
+INFO 2026-04-26 13:18:52,804 middleware 25587 129330227177152 Response: POST /api/auth/teacher_login/ [403] - 0.893s
+WARNING 2026-04-26 13:18:52,805 log 25587 129330227177152 Forbidden: /api/auth/teacher_login/
+WARNING 2026-04-26 13:18:52,805 basehttp 25587 129330227177152 "POST /api/auth/teacher_login/ HTTP/1.1" 403 136
+INFO 2026-04-26 13:19:12,676 middleware 25587 129330227177152 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-26 13:19:12,715 exceptions 25587 129330227177152 Exception occurred: {'email': [ErrorDetail(string='Users with this email already exists.', code='unique')], 'username': [ErrorDetail(string='This field is required.', code='required')], 'confirm_password': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 95, in register
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='Users with this email already exists.', code='unique')], 'username': [ErrorDetail(string='This field is required.', code='required')], 'confirm_password': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-04-26 13:19:12,717 middleware 25587 129330227177152 Response: POST /api/auth/register/ [400] - 0.042s
+WARNING 2026-04-26 13:19:12,717 log 25587 129330227177152 Bad Request: /api/auth/register/
+WARNING 2026-04-26 13:19:12,718 basehttp 25587 129330227177152 "POST /api/auth/register/ HTTP/1.1" 400 183
+INFO 2026-04-26 13:19:32,402 middleware 25587 129330227177152 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-26 13:19:32,428 exceptions 25587 129330227177152 Exception occurred: {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 95, in register
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+INFO 2026-04-26 13:19:32,429 middleware 25587 129330227177152 Response: POST /api/auth/register/ [400] - 0.027s
+WARNING 2026-04-26 13:19:32,430 log 25587 129330227177152 Bad Request: /api/auth/register/
+WARNING 2026-04-26 13:19:32,430 basehttp 25587 129330227177152 "POST /api/auth/register/ HTTP/1.1" 400 104
+INFO 2026-04-26 13:20:53,763 middleware 25587 129330214586048 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-26 13:20:54,570 middleware 25587 129330214586048 Response: POST /api/auth/register/ [200] - 0.807s
+INFO 2026-04-26 13:21:11,565 middleware 25587 129330206193344 Request: GET /admin/ from 127.0.0.1
+INFO 2026-04-26 13:21:11,698 middleware 25587 129330206193344 Response: GET /admin/ [200] - 0.133s
+INFO 2026-04-26 13:21:14,209 middleware 25587 129330206193344 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-26 13:21:14,278 middleware 25587 129330206193344 Response: GET /admin/authentication/user/ [200] - 0.068s
+INFO 2026-04-26 13:21:14,402 middleware 25587 129329988105920 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-26 13:21:14,474 middleware 25587 129329988105920 Response: GET /admin/jsi18n/ [200] - 0.071s
+INFO 2026-04-26 13:21:22,061 middleware 25587 129329971320512 Request: GET /admin/authentication/user/4/change/ from 127.0.0.1
+INFO 2026-04-26 13:21:22,293 middleware 25587 129329971320512 Response: GET /admin/authentication/user/4/change/ [200] - 0.231s
+INFO 2026-04-26 13:21:22,373 middleware 25587 129330206193344 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-26 13:21:22,428 middleware 25587 129330206193344 Response: GET /admin/jsi18n/ [200] - 0.055s
+INFO 2026-04-26 13:21:25,140 middleware 25587 129329979713216 Request: GET /admin/authentication/user/4/delete/ from 127.0.0.1
+INFO 2026-04-26 13:21:25,215 middleware 25587 129329979713216 Response: GET /admin/authentication/user/4/delete/ [200] - 0.075s
+INFO 2026-04-26 13:21:26,803 middleware 25587 129329979713216 Request: POST /admin/authentication/user/4/delete/ from 127.0.0.1
+INFO 2026-04-26 13:21:26,879 middleware 25587 129329979713216 Response: POST /admin/authentication/user/4/delete/ [302] - 0.075s
+INFO 2026-04-26 13:21:26,890 middleware 25587 129329979713216 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-26 13:21:26,935 middleware 25587 129329979713216 Response: GET /admin/authentication/user/ [200] - 0.045s
+INFO 2026-04-26 13:21:27,034 middleware 25587 129329979713216 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-26 13:21:27,064 middleware 25587 129329979713216 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-04-26 13:22:07,910 middleware 26062 128360127657664 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-26 13:22:07,956 exceptions 26062 128360127657664 Exception occurred: {'email': [ErrorDetail(string='Users with this email already exists.', code='unique')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 95, in register
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='Users with this email already exists.', code='unique')]}
+INFO 2026-04-26 13:22:07,958 middleware 26062 128360127657664 Response: POST /api/auth/register/ [400] - 0.048s
+WARNING 2026-04-26 13:22:07,959 log 26062 128360127657664 Bad Request: /api/auth/register/
+WARNING 2026-04-26 13:22:07,959 basehttp 26062 128360127657664 "POST /api/auth/register/ HTTP/1.1" 400 97
+INFO 2026-04-26 13:22:25,455 middleware 26159 134679220971200 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-26 13:22:25,624 middleware 26159 134679220971200 Response: GET /admin/authentication/user/ [200] - 0.170s
+INFO 2026-04-26 13:22:25,690 middleware 26159 134679193695936 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-26 13:22:25,733 middleware 26159 134679193695936 Response: GET /admin/jsi18n/ [200] - 0.042s
+INFO 2026-04-26 13:22:47,919 middleware 26159 134678833002176 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-26 13:22:48,917 middleware 26159 134678833002176 Response: POST /api/auth/register/ [200] - 0.998s
+INFO 2026-04-26 13:22:53,424 middleware 26291 133364158817984 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-26 13:22:53,528 middleware 26291 133364158817984 Response: GET /admin/authentication/user/ [200] - 0.104s
+INFO 2026-04-26 13:22:53,665 middleware 26291 133364158817984 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-26 13:22:53,696 middleware 26291 133364158817984 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-04-26 13:30:02,348 middleware 26600 127137201776320 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-04-26 13:30:03,195 middleware 26600 127137201776320 Response: POST /api/auth/teacher_login/ [200] - 0.847s
+INFO 2026-04-26 13:41:24,304 middleware 26600 127137192335040 Request: POST /api/classes/classes/ from 127.0.0.1
+ERROR 2026-04-26 13:41:24,323 exceptions 26600 127137192335040 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 13:41:24,324 middleware 26600 127137192335040 Response: POST /api/classes/classes/ [405] - 0.020s
+WARNING 2026-04-26 13:41:24,324 log 26600 127137192335040 Method Not Allowed: /api/classes/classes/
+WARNING 2026-04-26 13:41:24,325 basehttp 26600 127137192335040 "POST /api/classes/classes/ HTTP/1.1" 405 98
+INFO 2026-04-26 13:42:34,522 middleware 26600 127137183942336 Request: POST /api/classes/classes from 127.0.0.1
+INFO 2026-04-26 13:42:34,538 middleware 26600 127137183942336 Response: POST /api/classes/classes [404] - 0.016s
+ERROR 2026-04-26 13:42:34,544 basehttp 26600 127137183942336 "POST /api/classes/classes HTTP/1.1" 500 59
+INFO 2026-04-26 13:42:55,664 middleware 27412 125192758093504 Request: POST /api/classes/classes from 127.0.0.1
+INFO 2026-04-26 13:42:55,683 middleware 27412 125192758093504 Response: POST /api/classes/classes [404] - 0.019s
+ERROR 2026-04-26 13:42:55,687 basehttp 27412 125192758093504 "POST /api/classes/classes HTTP/1.1" 500 59
+INFO 2026-04-26 13:43:01,725 middleware 27412 125192758093504 Request: POST /api/classes/classes/ from 127.0.0.1
+ERROR 2026-04-26 13:43:01,754 exceptions 27412 125192758093504 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 13:43:01,755 middleware 27412 125192758093504 Response: POST /api/classes/classes/ [405] - 0.030s
+WARNING 2026-04-26 13:43:01,756 log 27412 125192758093504 Method Not Allowed: /api/classes/classes/
+WARNING 2026-04-26 13:43:01,756 basehttp 27412 125192758093504 "POST /api/classes/classes/ HTTP/1.1" 405 98
+INFO 2026-04-26 13:43:08,586 middleware 27412 125192758093504 Request: GET /api/classes/classes/ from 127.0.0.1
+ERROR 2026-04-26 13:43:08,605 exceptions 27412 125192758093504 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'classes'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'classes'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-04-26 13:43:08,626 middleware 27412 125192758093504 Response: GET /api/classes/classes/ [404] - 0.040s
+WARNING 2026-04-26 13:43:08,627 log 27412 125192758093504 Not Found: /api/classes/classes/
+WARNING 2026-04-26 13:43:08,629 basehttp 27412 125192758093504 "GET /api/classes/classes/ HTTP/1.1" 404 62
+INFO 2026-04-26 13:43:58,923 middleware 27412 125192758093504 Request: POST /api/classes/classes/ from 127.0.0.1
+ERROR 2026-04-26 13:43:58,949 exceptions 27412 125192758093504 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 13:43:58,950 middleware 27412 125192758093504 Response: POST /api/classes/classes/ [405] - 0.027s
+WARNING 2026-04-26 13:43:58,950 log 27412 125192758093504 Method Not Allowed: /api/classes/classes/
+WARNING 2026-04-26 13:43:58,951 basehttp 27412 125192758093504 "POST /api/classes/classes/ HTTP/1.1" 405 98
+INFO 2026-04-26 13:44:59,638 middleware 27412 125192747603648 Request: POST /api/classes/ from 127.0.0.1
+ERROR 2026-04-26 13:44:59,662 exceptions 27412 125192747603648 Exception occurred: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (1, Post ADP IT 8, QNM6DR, Cyber Security, 2026-04-26 13:44:59.656784+00, 2026-04-26 13:44:59.656816+00, t, null).
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (1, Post ADP IT 8, QNM6DR, Cyber Security, 2026-04-26 13:44:59.656784+00, 2026-04-26 13:44:59.656816+00, t, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (1, Post ADP IT 8, QNM6DR, Cyber Security, 2026-04-26 13:44:59.656784+00, 2026-04-26 13:44:59.656816+00, t, null).
+
+INFO 2026-04-26 13:44:59,669 middleware 27412 125192747603648 Response: POST /api/classes/ [500] - 0.031s
+ERROR 2026-04-26 13:44:59,670 log 27412 125192747603648 Internal Server Error: /api/classes/
+ERROR 2026-04-26 13:44:59,670 basehttp 27412 125192747603648 "POST /api/classes/ HTTP/1.1" 500 299
+INFO 2026-04-26 13:45:40,677 middleware 27412 125192747603648 Request: POST /api/classes/ from 127.0.0.1
+ERROR 2026-04-26 13:45:40,699 exceptions 27412 125192747603648 Exception occurred: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (2, Post ADP IT 8, 70DK6G, Cyber Security, 2026-04-26 13:45:40.698123+00, 2026-04-26 13:45:40.698138+00, t, null).
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (2, Post ADP IT 8, 70DK6G, Cyber Security, 2026-04-26 13:45:40.698123+00, 2026-04-26 13:45:40.698138+00, t, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (2, Post ADP IT 8, 70DK6G, Cyber Security, 2026-04-26 13:45:40.698123+00, 2026-04-26 13:45:40.698138+00, t, null).
+
+INFO 2026-04-26 13:45:40,703 middleware 27412 125192747603648 Response: POST /api/classes/ [500] - 0.027s
+ERROR 2026-04-26 13:45:40,704 log 27412 125192747603648 Internal Server Error: /api/classes/
+ERROR 2026-04-26 13:45:40,705 basehttp 27412 125192747603648 "POST /api/classes/ HTTP/1.1" 500 299
+INFO 2026-04-26 14:41:27,639 middleware 27412 125192739210944 Request: POST /api/classes/ from 127.0.0.1
+ERROR 2026-04-26 14:41:27,640 exceptions 27412 125192739210944 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-04-26 14:41:27,645 middleware 27412 125192739210944 Response: POST /api/classes/ [401] - 0.006s
+WARNING 2026-04-26 14:41:27,645 log 27412 125192739210944 Unauthorized: /api/classes/
+WARNING 2026-04-26 14:41:27,646 basehttp 27412 125192739210944 "POST /api/classes/ HTTP/1.1" 401 252
+INFO 2026-04-26 14:44:18,509 middleware 27412 125192525313728 Request: POST /api/auth/teacherlogin/ from 127.0.0.1
+INFO 2026-04-26 14:44:18,519 middleware 27412 125192525313728 Response: POST /api/auth/teacherlogin/ [404] - 0.010s
+WARNING 2026-04-26 14:44:18,520 log 27412 125192525313728 Not Found: /api/auth/teacherlogin/
+WARNING 2026-04-26 14:44:18,521 basehttp 27412 125192525313728 "POST /api/auth/teacherlogin/ HTTP/1.1" 404 6497
+INFO 2026-04-26 14:45:03,729 middleware 27412 125192525313728 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+ERROR 2026-04-26 14:45:03,731 exceptions 27412 125192525313728 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-04-26 14:45:03,733 middleware 27412 125192525313728 Response: POST /api/auth/teacher_login/ [401] - 0.004s
+WARNING 2026-04-26 14:45:03,734 log 27412 125192525313728 Unauthorized: /api/auth/teacher_login/
+WARNING 2026-04-26 14:45:03,736 basehttp 27412 125192525313728 "POST /api/auth/teacher_login/ HTTP/1.1" 401 252
+INFO 2026-04-26 14:46:21,406 middleware 27412 125192516921024 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-04-26 14:46:22,209 middleware 27412 125192516921024 Response: POST /api/auth/teacher_login/ [200] - 0.803s
+INFO 2026-04-26 14:46:39,711 middleware 27412 125192516921024 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+ERROR 2026-04-26 14:46:39,712 exceptions 27412 125192516921024 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token has wrong type', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token has wrong type', code='token_not_valid')}]}
+INFO 2026-04-26 14:46:39,713 middleware 27412 125192516921024 Response: POST /api/auth/teacher_login/ [401] - 0.002s
+WARNING 2026-04-26 14:46:39,714 log 27412 125192516921024 Unauthorized: /api/auth/teacher_login/
+WARNING 2026-04-26 14:46:39,714 basehttp 27412 125192516921024 "POST /api/auth/teacher_login/ HTTP/1.1" 401 245
+INFO 2026-04-26 14:49:48,868 middleware 27412 125192508528320 Request: POST /api/classes/ from 127.0.0.1
+ERROR 2026-04-26 14:49:48,869 exceptions 27412 125192508528320 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token has wrong type', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token has wrong type', code='token_not_valid')}]}
+INFO 2026-04-26 14:49:48,877 middleware 27412 125192508528320 Response: POST /api/classes/ [401] - 0.009s
+WARNING 2026-04-26 14:49:48,879 log 27412 125192508528320 Unauthorized: /api/classes/
+WARNING 2026-04-26 14:49:48,885 basehttp 27412 125192508528320 "POST /api/classes/ HTTP/1.1" 401 245
+INFO 2026-04-26 15:00:59,754 middleware 27412 125192500135616 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-04-26 15:01:00,575 middleware 27412 125192500135616 Response: POST /api/auth/teacher_login/ [200] - 0.821s
+INFO 2026-04-26 15:01:45,057 middleware 27412 125192500135616 Request: POST /api/classes/ from 127.0.0.1
+ERROR 2026-04-26 15:01:45,085 exceptions 27412 125192500135616 Exception occurred: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (3, Computer Science 101, KRVLM8, Intro to CS, 2026-04-26 15:01:45.08328+00, 2026-04-26 15:01:45.083304+00, t, null).
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (3, Computer Science 101, KRVLM8, Intro to CS, 2026-04-26 15:01:45.08328+00, 2026-04-26 15:01:45.083304+00, t, null).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 24, in perform_create
+    serializer.save()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "teacher_id" of relation "classes" violates not-null constraint
+DETAIL:  Failing row contains (3, Computer Science 101, KRVLM8, Intro to CS, 2026-04-26 15:01:45.08328+00, 2026-04-26 15:01:45.083304+00, t, null).
+
+INFO 2026-04-26 15:01:45,089 middleware 27412 125192500135616 Response: POST /api/classes/ [500] - 0.032s
+ERROR 2026-04-26 15:01:45,090 log 27412 125192500135616 Internal Server Error: /api/classes/
+ERROR 2026-04-26 15:01:45,091 basehttp 27412 125192500135616 "POST /api/classes/ HTTP/1.1" 500 302
+INFO 2026-04-26 15:19:50,530 middleware 29374 133884022875840 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-04-26 15:19:50,564 middleware 29374 133884022875840 Response: POST /api/classes/ [201] - 0.034s
+INFO 2026-04-26 15:20:09,621 middleware 29374 133884022875840 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-04-26 15:20:09,653 middleware 29374 133884022875840 Response: GET /api/classes/ [200] - 0.033s
+INFO 2026-04-26 15:30:46,329 middleware 30022 123895041488576 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-26 15:30:47,166 middleware 30022 123895041488576 Response: POST /api/auth/student_login/ [200] - 0.837s
+INFO 2026-04-26 15:31:43,686 middleware 30022 123895041488576 Request: POST /api/classes/{FE16VM}/enroll/ from 127.0.0.1
+ERROR 2026-04-26 15:31:43,704 exceptions 30022 123895041488576 Exception occurred: Class EnrollmentSerializer missing "Meta" attribute
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 68, in enroll
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1027, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Class EnrollmentSerializer missing "Meta" attribute
+INFO 2026-04-26 15:31:43,706 middleware 30022 123895041488576 Response: POST /api/classes/{FE16VM}/enroll/ [500] - 0.020s
+ERROR 2026-04-26 15:31:43,706 log 30022 123895041488576 Internal Server Error: /api/classes/{FE16VM}/enroll/
+ERROR 2026-04-26 15:31:43,707 basehttp 30022 123895041488576 "POST /api/classes/%7BFE16VM%7D/enroll/ HTTP/1.1" 500 116
+INFO 2026-04-26 15:33:32,248 middleware 30022 123895032047296 Request: POST /api/classes/FE16VM/enroll/ from 127.0.0.1
+ERROR 2026-04-26 15:33:32,264 exceptions 30022 123895032047296 Exception occurred: Class EnrollmentSerializer missing "Meta" attribute
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 68, in enroll
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1027, in get_fields
+    assert hasattr(self, 'Meta'), (
+           ^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Class EnrollmentSerializer missing "Meta" attribute
+INFO 2026-04-26 15:33:32,265 middleware 30022 123895032047296 Response: POST /api/classes/FE16VM/enroll/ [500] - 0.017s
+ERROR 2026-04-26 15:33:32,266 log 30022 123895032047296 Internal Server Error: /api/classes/FE16VM/enroll/
+ERROR 2026-04-26 15:33:32,266 basehttp 30022 123895032047296 "POST /api/classes/FE16VM/enroll/ HTTP/1.1" 500 116
+INFO 2026-04-26 15:40:32,960 middleware 30629 132757282875072 Request: POST /api/classes/FE16VM/enroll/ from 127.0.0.1
+INFO 2026-04-26 15:40:33,040 middleware 30629 132757282875072 Response: POST /api/classes/FE16VM/enroll/ [200] - 0.081s
+INFO 2026-04-26 15:44:48,147 middleware 30629 132757273433792 Request: GET /api/classes/students from 127.0.0.1
+INFO 2026-04-26 15:44:48,171 middleware 30629 132757273433792 Response: GET /api/classes/students [404] - 0.024s
+INFO 2026-04-26 15:44:48,178 middleware 30629 132757273433792 Request: GET /api/classes/students/ from 127.0.0.1
+ERROR 2026-04-26 15:44:48,194 exceptions 30629 132757273433792 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'students'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'students'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-04-26 15:44:48,204 middleware 30629 132757273433792 Response: GET /api/classes/students/ [404] - 0.026s
+WARNING 2026-04-26 15:44:48,204 log 30629 132757273433792 Not Found: /api/classes/students/
+WARNING 2026-04-26 15:44:48,205 basehttp 30629 132757273433792 "GET /api/classes/students/ HTTP/1.1" 404 62
+INFO 2026-04-26 15:49:39,604 middleware 30629 132757263992512 Request: GET /api/classes/FE16VM/students from 127.0.0.1
+INFO 2026-04-26 15:49:39,618 middleware 30629 132757263992512 Response: GET /api/classes/FE16VM/students [404] - 0.014s
+INFO 2026-04-26 15:49:39,625 middleware 30629 132757263992512 Request: GET /api/classes/FE16VM/students/ from 127.0.0.1
+ERROR 2026-04-26 15:49:39,643 exceptions 30629 132757263992512 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'FE16VM'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'FE16VM'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 86, in students
+    class_obj = self.get_object()
+                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-04-26 15:49:39,645 middleware 30629 132757263992512 Response: GET /api/classes/FE16VM/students/ [404] - 0.020s
+WARNING 2026-04-26 15:49:39,646 log 30629 132757263992512 Not Found: /api/classes/FE16VM/students/
+WARNING 2026-04-26 15:49:39,647 basehttp 30629 132757263992512 "GET /api/classes/FE16VM/students/ HTTP/1.1" 404 62
+INFO 2026-04-26 15:51:37,059 middleware 30629 132757255599808 Request: GET /api/classes/4/students from 127.0.0.1
+INFO 2026-04-26 15:51:37,070 middleware 30629 132757255599808 Response: GET /api/classes/4/students [404] - 0.011s
+INFO 2026-04-26 15:51:37,077 middleware 30629 132757255599808 Request: GET /api/classes/4/students/ from 127.0.0.1
+INFO 2026-04-26 15:51:37,104 middleware 30629 132757255599808 Response: GET /api/classes/4/students/ [200] - 0.027s
+INFO 2026-04-26 15:58:07,692 middleware 30629 132757247207104 Request: POST /api/assignments from 127.0.0.1
+INFO 2026-04-26 15:58:07,704 middleware 30629 132757247207104 Response: POST /api/assignments [404] - 0.012s
+WARNING 2026-04-26 15:58:07,705 log 30629 132757247207104 Not Found: /api/assignments
+WARNING 2026-04-26 15:58:07,706 basehttp 30629 132757247207104 "POST /api/assignments HTTP/1.1" 404 3874
+INFO 2026-04-26 16:01:03,992 middleware 30629 132756902246080 Request: POST /api/assignments from 127.0.0.1
+INFO 2026-04-26 16:01:04,000 middleware 30629 132756902246080 Response: POST /api/assignments [404] - 0.008s
+WARNING 2026-04-26 16:01:04,001 log 30629 132756902246080 Not Found: /api/assignments
+WARNING 2026-04-26 16:01:04,002 basehttp 30629 132756902246080 "POST /api/assignments HTTP/1.1" 404 3874
+INFO 2026-04-26 16:02:21,079 middleware 30629 132756893853376 Request: POST /api/assignment from 127.0.0.1
+INFO 2026-04-26 16:02:21,092 middleware 30629 132756893853376 Response: POST /api/assignment [404] - 0.013s
+WARNING 2026-04-26 16:02:21,093 log 30629 132756893853376 Not Found: /api/assignment
+WARNING 2026-04-26 16:02:21,094 basehttp 30629 132756893853376 "POST /api/assignment HTTP/1.1" 404 3871
+INFO 2026-04-26 16:02:38,517 middleware 30629 132756893853376 Request: POST /api/classes/assignment from 127.0.0.1
+INFO 2026-04-26 16:02:38,532 middleware 30629 132756893853376 Response: POST /api/classes/assignment [404] - 0.015s
+ERROR 2026-04-26 16:02:38,538 basehttp 30629 132756893853376 "POST /api/classes/assignment HTTP/1.1" 500 59
+INFO 2026-04-26 16:02:58,398 middleware 30629 132756893853376 Request: POST /api/classes/assignments from 127.0.0.1
+INFO 2026-04-26 16:02:58,410 middleware 30629 132756893853376 Response: POST /api/classes/assignments [404] - 0.012s
+ERROR 2026-04-26 16:02:58,415 basehttp 30629 132756893853376 "POST /api/classes/assignments HTTP/1.1" 500 59
+INFO 2026-04-26 16:06:24,235 middleware 30629 132756885460672 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:06:24,253 exceptions 30629 132756885460672 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:06:24,254 middleware 30629 132756885460672 Response: POST /api/classes/assignments/ [405] - 0.019s
+WARNING 2026-04-26 16:06:24,254 log 30629 132756885460672 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:06:24,255 basehttp 30629 132756885460672 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:06:44,866 middleware 30629 132756885460672 Request: GET /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:06:44,883 exceptions 30629 132756885460672 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'assignments'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'assignments'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-04-26 16:06:44,885 middleware 30629 132756885460672 Response: GET /api/classes/assignments/ [404] - 0.019s
+WARNING 2026-04-26 16:06:44,886 log 30629 132756885460672 Not Found: /api/classes/assignments/
+WARNING 2026-04-26 16:06:44,886 basehttp 30629 132756885460672 "GET /api/classes/assignments/ HTTP/1.1" 404 62
+INFO 2026-04-26 16:06:52,296 middleware 30629 132756885460672 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:06:52,314 exceptions 30629 132756885460672 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:06:52,315 middleware 30629 132756885460672 Response: POST /api/classes/assignments/ [405] - 0.019s
+WARNING 2026-04-26 16:06:52,315 log 30629 132756885460672 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:06:52,316 basehttp 30629 132756885460672 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:07:50,148 middleware 30629 132756885460672 Request: POST /api/assignment/assignments/ from 127.0.0.1
+INFO 2026-04-26 16:07:50,159 middleware 30629 132756885460672 Response: POST /api/assignment/assignments/ [404] - 0.011s
+WARNING 2026-04-26 16:07:50,160 log 30629 132756885460672 Not Found: /api/assignment/assignments/
+WARNING 2026-04-26 16:07:50,161 basehttp 30629 132756885460672 "POST /api/assignment/assignments/ HTTP/1.1" 404 3910
+INFO 2026-04-26 16:07:57,201 middleware 30629 132756885460672 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:07:57,235 exceptions 30629 132756885460672 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:07:57,237 middleware 30629 132756885460672 Response: POST /api/classes/assignments/ [405] - 0.036s
+WARNING 2026-04-26 16:07:57,238 log 30629 132756885460672 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:07:57,240 basehttp 30629 132756885460672 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:08:22,144 middleware 30629 132756885460672 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:08:22,163 exceptions 30629 132756885460672 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:08:22,164 middleware 30629 132756885460672 Response: POST /api/classes/assignments/ [405] - 0.019s
+WARNING 2026-04-26 16:08:22,164 log 30629 132756885460672 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:08:22,165 basehttp 30629 132756885460672 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:08:34,270 middleware 30629 132756885460672 Request: POST /api/classes/assignments from 127.0.0.1
+INFO 2026-04-26 16:08:34,288 middleware 30629 132756885460672 Response: POST /api/classes/assignments [404] - 0.018s
+ERROR 2026-04-26 16:08:34,292 basehttp 30629 132756885460672 "POST /api/classes/assignments HTTP/1.1" 500 59
+INFO 2026-04-26 16:08:39,139 middleware 30629 132756885460672 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:08:39,158 exceptions 30629 132756885460672 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:08:39,159 middleware 30629 132756885460672 Response: POST /api/classes/assignments/ [405] - 0.020s
+WARNING 2026-04-26 16:08:39,160 log 30629 132756885460672 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:08:39,160 basehttp 30629 132756885460672 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:10:52,894 middleware 32486 133342826591936 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:10:52,906 exceptions 32486 133342826591936 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-04-26 16:10:52,908 middleware 32486 133342826591936 Response: POST /api/classes/assignments/ [401] - 0.014s
+WARNING 2026-04-26 16:10:52,909 log 32486 133342826591936 Unauthorized: /api/classes/assignments/
+WARNING 2026-04-26 16:10:52,909 basehttp 32486 133342826591936 "POST /api/classes/assignments/ HTTP/1.1" 401 252
+INFO 2026-04-26 16:11:19,741 middleware 32486 133342826591936 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:11:19,759 exceptions 32486 133342826591936 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:11:19,761 middleware 32486 133342826591936 Response: POST /api/classes/assignments/ [405] - 0.020s
+WARNING 2026-04-26 16:11:19,761 log 32486 133342826591936 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:11:19,762 basehttp 32486 133342826591936 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:12:46,808 middleware 32641 137016100517568 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:12:46,848 exceptions 32641 137016100517568 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:12:46,849 middleware 32641 137016100517568 Response: POST /api/classes/assignments/ [405] - 0.041s
+WARNING 2026-04-26 16:12:46,850 log 32641 137016100517568 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:12:46,850 basehttp 32641 137016100517568 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:13:16,622 middleware 32641 137016100517568 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:13:16,647 exceptions 32641 137016100517568 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:13:16,649 middleware 32641 137016100517568 Response: POST /api/classes/assignments/ [405] - 0.026s
+WARNING 2026-04-26 16:13:16,649 log 32641 137016100517568 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:13:16,650 basehttp 32641 137016100517568 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:13:59,872 middleware 32641 137016100517568 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:13:59,889 exceptions 32641 137016100517568 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:13:59,890 middleware 32641 137016100517568 Response: POST /api/classes/assignments/ [405] - 0.018s
+WARNING 2026-04-26 16:13:59,891 log 32641 137016100517568 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:13:59,891 basehttp 32641 137016100517568 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:17:11,197 middleware 32641 137016092124864 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:17:11,217 exceptions 32641 137016092124864 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:17:11,218 middleware 32641 137016092124864 Response: POST /api/classes/assignments/ [405] - 0.020s
+WARNING 2026-04-26 16:17:11,218 log 32641 137016092124864 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:17:11,219 basehttp 32641 137016092124864 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:17:20,980 middleware 32641 137016092124864 Request: POST /api/classes/assignments/1/ from 127.0.0.1
+ERROR 2026-04-26 16:17:20,999 exceptions 32641 137016092124864 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:17:21,001 middleware 32641 137016092124864 Response: POST /api/classes/assignments/1/ [405] - 0.021s
+WARNING 2026-04-26 16:17:21,001 log 32641 137016092124864 Method Not Allowed: /api/classes/assignments/1/
+WARNING 2026-04-26 16:17:21,015 basehttp 32641 137016092124864 "POST /api/classes/assignments/1/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:17:27,020 middleware 32641 137016092124864 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:17:27,037 exceptions 32641 137016092124864 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:17:27,037 middleware 32641 137016092124864 Response: POST /api/classes/assignments/ [405] - 0.018s
+WARNING 2026-04-26 16:17:27,038 log 32641 137016092124864 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:17:27,039 basehttp 32641 137016092124864 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:18:55,688 middleware 33523 131336423597760 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:18:55,715 exceptions 33523 131336423597760 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-04-26 16:18:55,716 middleware 33523 131336423597760 Response: POST /api/classes/assignments/ [403] - 0.028s
+WARNING 2026-04-26 16:18:55,717 log 33523 131336423597760 Forbidden: /api/classes/assignments/
+WARNING 2026-04-26 16:18:55,718 basehttp 33523 131336423597760 "POST /api/classes/assignments/ HTTP/1.1" 403 142
+INFO 2026-04-26 16:19:28,652 middleware 33523 131336423597760 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:19:28,654 exceptions 33523 131336423597760 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-04-26 16:19:28,657 middleware 33523 131336423597760 Response: POST /api/classes/assignments/ [401] - 0.005s
+WARNING 2026-04-26 16:19:28,658 log 33523 131336423597760 Unauthorized: /api/classes/assignments/
+WARNING 2026-04-26 16:19:28,659 basehttp 33523 131336423597760 "POST /api/classes/assignments/ HTTP/1.1" 401 252
+INFO 2026-04-26 16:21:18,976 middleware 33787 139489119823552 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:21:19,020 exceptions 33787 139489119823552 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:21:19,022 middleware 33787 139489119823552 Response: POST /api/classes/assignments/ [405] - 0.046s
+WARNING 2026-04-26 16:21:19,023 log 33787 139489119823552 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:21:19,024 basehttp 33787 139489119823552 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:21:37,704 middleware 33787 139489119823552 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:21:37,705 exceptions 33787 139489119823552 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-04-26 16:21:37,707 middleware 33787 139489119823552 Response: POST /api/classes/assignments/ [401] - 0.002s
+WARNING 2026-04-26 16:21:37,707 log 33787 139489119823552 Unauthorized: /api/classes/assignments/
+WARNING 2026-04-26 16:21:37,708 basehttp 33787 139489119823552 "POST /api/classes/assignments/ HTTP/1.1" 401 252
+INFO 2026-04-26 16:21:44,935 middleware 33787 139489119823552 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:21:44,954 exceptions 33787 139489119823552 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:21:44,954 middleware 33787 139489119823552 Response: POST /api/classes/assignments/ [405] - 0.019s
+WARNING 2026-04-26 16:21:44,955 log 33787 139489119823552 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:21:44,955 basehttp 33787 139489119823552 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:22:03,997 middleware 33980 136464698435264 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:22:04,036 exceptions 33980 136464698435264 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-04-26 16:22:04,037 middleware 33980 136464698435264 Response: POST /api/classes/assignments/ [403] - 0.040s
+WARNING 2026-04-26 16:22:04,038 log 33980 136464698435264 Forbidden: /api/classes/assignments/
+WARNING 2026-04-26 16:22:04,038 basehttp 33980 136464698435264 "POST /api/classes/assignments/ HTTP/1.1" 403 142
+INFO 2026-04-26 16:25:31,995 middleware 34277 139288511506112 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:25:32,035 exceptions 34277 139288511506112 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:25:32,036 middleware 34277 139288511506112 Response: POST /api/classes/assignments/ [405] - 0.041s
+WARNING 2026-04-26 16:25:32,036 log 34277 139288511506112 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-04-26 16:25:32,037 basehttp 34277 139288511506112 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:26:02,660 middleware 34277 139288511506112 Request: POST /api/classes/FE16VM/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:26:02,680 exceptions 34277 139288511506112 Exception occurred: ClassViewSet.assignments() got an unexpected keyword argument 'code'
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ClassViewSet.assignments() got an unexpected keyword argument 'code'
+INFO 2026-04-26 16:26:02,681 middleware 34277 139288511506112 Response: POST /api/classes/FE16VM/assignments/ [500] - 0.021s
+ERROR 2026-04-26 16:26:02,682 log 34277 139288511506112 Internal Server Error: /api/classes/FE16VM/assignments/
+ERROR 2026-04-26 16:26:02,683 basehttp 34277 139288511506112 "POST /api/classes/FE16VM/assignments/ HTTP/1.1" 500 131
+INFO 2026-04-26 16:26:44,499 middleware 34277 139288511506112 Request: POST /api/classes/assignments/FE16VM/ from 127.0.0.1
+ERROR 2026-04-26 16:26:44,516 exceptions 34277 139288511506112 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-26 16:26:44,517 middleware 34277 139288511506112 Response: POST /api/classes/assignments/FE16VM/ [405] - 0.018s
+WARNING 2026-04-26 16:26:44,517 log 34277 139288511506112 Method Not Allowed: /api/classes/assignments/FE16VM/
+WARNING 2026-04-26 16:26:44,518 basehttp 34277 139288511506112 "POST /api/classes/assignments/FE16VM/ HTTP/1.1" 405 98
+INFO 2026-04-26 16:26:55,299 middleware 34277 139288511506112 Request: POST /api/classes/FE16VM/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:26:55,316 exceptions 34277 139288511506112 Exception occurred: ClassViewSet.assignments() got an unexpected keyword argument 'code'
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: ClassViewSet.assignments() got an unexpected keyword argument 'code'
+INFO 2026-04-26 16:26:55,316 middleware 34277 139288511506112 Response: POST /api/classes/FE16VM/assignments/ [500] - 0.018s
+ERROR 2026-04-26 16:26:55,317 log 34277 139288511506112 Internal Server Error: /api/classes/FE16VM/assignments/
+ERROR 2026-04-26 16:26:55,318 basehttp 34277 139288511506112 "POST /api/classes/FE16VM/assignments/ HTTP/1.1" 500 131
+INFO 2026-04-26 16:30:31,440 middleware 34858 140582164883136 Request: POST /api/classes/FE16VM/assignments/ from 127.0.0.1
+INFO 2026-04-26 16:30:31,492 middleware 34858 140582164883136 Response: POST /api/classes/FE16VM/assignments/ [201] - 0.052s
+INFO 2026-04-26 16:31:50,696 middleware 34858 140582155441856 Request: POST /api/classes/FE16VM/assignments/ from 127.0.0.1
+ERROR 2026-04-26 16:31:50,697 exceptions 34858 140582155441856 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-04-26 16:31:50,701 middleware 34858 140582155441856 Response: POST /api/classes/FE16VM/assignments/ [401] - 0.006s
+WARNING 2026-04-26 16:31:50,702 log 34858 140582155441856 Unauthorized: /api/classes/FE16VM/assignments/
+WARNING 2026-04-26 16:31:50,703 basehttp 34858 140582155441856 "POST /api/classes/FE16VM/assignments/ HTTP/1.1" 401 252
+INFO 2026-04-30 07:40:24,775 middleware 12703 124424191731392 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-30 07:40:25,752 exceptions 12703 124424191731392 Exception occurred: relation "otp_verifications" does not exist
+LINE 1: INSERT INTO "otp_verifications" ("user_id", "code", "created...
+                    ^
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "otp_verifications" does not exist
+LINE 1: INSERT INTO "otp_verifications" ("user_id", "code", "created...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 126, in register
+    otp_code = self._create_otp(user)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 111, in _create_otp
+    OTPVerification.objects.create(user=user, code=otp_code, expires_at=expires_at)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 677, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 822, in save
+    self.save_base(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1067, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/base.py", line 1108, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1845, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "otp_verifications" does not exist
+LINE 1: INSERT INTO "otp_verifications" ("user_id", "code", "created...
+                    ^
+
+INFO 2026-04-30 07:40:25,781 middleware 12703 124424191731392 Response: POST /api/auth/register/ [500] - 1.005s
+ERROR 2026-04-30 07:40:25,785 log 12703 124424191731392 Internal Server Error: /api/auth/register/
+ERROR 2026-04-30 07:40:25,789 basehttp 12703 124424191731392 "POST /api/auth/register/ HTTP/1.1" 500 213
+INFO 2026-04-30 08:09:41,691 middleware 15595 123476773955264 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-30 08:09:41,742 exceptions 15595 123476773955264 Exception occurred: {'email': [ErrorDetail(string='Users with this email already exists.', code='unique')], 'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 273, in register
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='Users with this email already exists.', code='unique')], 'username': [ErrorDetail(string='A user with that username already exists.', code='unique')]}
+INFO 2026-04-30 08:09:41,744 middleware 15595 123476773955264 Response: POST /api/auth/register/ [400] - 0.053s
+WARNING 2026-04-30 08:09:41,744 log 15595 123476773955264 Bad Request: /api/auth/register/
+WARNING 2026-04-30 08:09:41,745 basehttp 15595 123476773955264 "POST /api/auth/register/ HTTP/1.1" 400 154
+INFO 2026-04-30 08:10:07,394 middleware 15595 123476685878976 Request: GET / from 127.0.0.1
+INFO 2026-04-30 08:10:07,461 middleware 15595 123476685878976 Response: GET / [404] - 0.067s
+WARNING 2026-04-30 08:10:07,462 log 15595 123476685878976 Not Found: /
+WARNING 2026-04-30 08:10:07,463 basehttp 15595 123476685878976 "GET / HTTP/1.1" 404 3810
+INFO 2026-04-30 08:10:07,785 middleware 15595 123476685878976 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-04-30 08:10:07,800 middleware 15595 123476685878976 Response: GET /favicon.ico [404] - 0.015s
+WARNING 2026-04-30 08:10:07,801 log 15595 123476685878976 Not Found: /favicon.ico
+WARNING 2026-04-30 08:10:07,803 basehttp 15595 123476685878976 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-04-30 08:10:12,442 middleware 15595 123476685878976 Request: GET /admin/ from 127.0.0.1
+INFO 2026-04-30 08:10:12,580 middleware 15595 123476685878976 Response: GET /admin/ [200] - 0.138s
+INFO 2026-04-30 08:10:14,681 middleware 15595 123476677486272 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:10:14,755 middleware 15595 123476677486272 Response: GET /admin/authentication/user/ [200] - 0.074s
+INFO 2026-04-30 08:10:14,856 middleware 15595 123476677486272 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:10:14,908 middleware 15595 123476677486272 Response: GET /admin/jsi18n/ [200] - 0.052s
+INFO 2026-04-30 08:10:22,991 middleware 15595 123476677486272 Request: POST /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:10:23,094 middleware 15595 123476677486272 Response: POST /admin/authentication/user/ [200] - 0.102s
+INFO 2026-04-30 08:10:24,891 middleware 15595 123476677486272 Request: POST /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:10:24,970 middleware 15595 123476677486272 Response: POST /admin/authentication/user/ [302] - 0.078s
+INFO 2026-04-30 08:10:24,977 middleware 15595 123476677486272 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:10:25,038 middleware 15595 123476677486272 Response: GET /admin/authentication/user/ [200] - 0.061s
+INFO 2026-04-30 08:10:25,128 middleware 15595 123476677486272 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:10:25,159 middleware 15595 123476677486272 Response: GET /admin/jsi18n/ [200] - 0.032s
+INFO 2026-04-30 08:10:31,592 middleware 15595 123476773955264 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 08:10:32,424 middleware 15595 123476773955264 Response: POST /api/auth/register/ [201] - 0.832s
+INFO 2026-04-30 08:19:22,148 middleware 15595 123476669093568 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:19:22,200 middleware 15595 123476669093568 Response: GET /admin/authentication/user/ [200] - 0.052s
+INFO 2026-04-30 08:19:22,336 middleware 15595 123476677486272 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:19:22,465 middleware 15595 123476677486272 Response: GET /admin/jsi18n/ [200] - 0.129s
+INFO 2026-04-30 08:19:55,500 middleware 15595 123476677486272 Request: POST /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:19:55,584 middleware 15595 123476677486272 Response: POST /admin/authentication/user/ [200] - 0.084s
+INFO 2026-04-30 08:19:56,894 middleware 15595 123476677486272 Request: POST /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:19:56,976 middleware 15595 123476677486272 Response: POST /admin/authentication/user/ [302] - 0.082s
+INFO 2026-04-30 08:19:56,983 middleware 15595 123476677486272 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:19:57,046 middleware 15595 123476677486272 Response: GET /admin/authentication/user/ [200] - 0.063s
+INFO 2026-04-30 08:19:57,163 middleware 15595 123476677486272 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:19:57,189 middleware 15595 123476677486272 Response: GET /admin/jsi18n/ [200] - 0.026s
+INFO 2026-04-30 08:30:05,688 middleware 17833 123646758610624 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-30 08:30:06,634 exceptions 17833 123646758610624 Exception occurred: 'str' object has no attribute 'email'
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 274, in register
+    self._send_otp_email(pending.email, pending.otp)
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 256, in _send_otp_email
+    recipient_list = [user.email]
+                      ^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'email'
+INFO 2026-04-30 08:30:06,637 middleware 17833 123646758610624 Response: POST /api/auth/register/ [500] - 0.949s
+ERROR 2026-04-30 08:30:06,638 log 17833 123646758610624 Internal Server Error: /api/auth/register/
+ERROR 2026-04-30 08:30:06,639 basehttp 17833 123646758610624 "POST /api/auth/register/ HTTP/1.1" 500 100
+INFO 2026-04-30 08:30:46,419 middleware 17833 123646672631488 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:30:46,561 middleware 17833 123646672631488 Response: GET /admin/authentication/user/ [200] - 0.142s
+INFO 2026-04-30 08:30:46,679 middleware 17833 123646655846080 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:30:46,714 middleware 17833 123646655846080 Response: GET /admin/jsi18n/ [200] - 0.035s
+INFO 2026-04-30 08:31:19,725 middleware 18066 124470470633152 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-30 08:31:19,775 exceptions 18066 124470470633152 Exception occurred: {'email': [ErrorDetail(string='A pending registration already exists for this email.', code='invalid')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 271, in register
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='A pending registration already exists for this email.', code='invalid')]}
+INFO 2026-04-30 08:31:19,776 middleware 18066 124470470633152 Response: POST /api/auth/register/ [400] - 0.052s
+WARNING 2026-04-30 08:31:19,777 log 18066 124470470633152 Bad Request: /api/auth/register/
+WARNING 2026-04-30 08:31:19,777 basehttp 18066 124470470633152 "POST /api/auth/register/ HTTP/1.1" 400 113
+INFO 2026-04-30 08:32:13,697 middleware 18066 124470458042048 Request: GET /admin/authentication/otp/ from 127.0.0.1
+INFO 2026-04-30 08:32:13,836 middleware 18066 124470458042048 Response: GET /admin/authentication/otp/ [200] - 0.139s
+INFO 2026-04-30 08:32:13,949 middleware 18066 124470449649344 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:32:13,991 middleware 18066 124470449649344 Response: GET /admin/jsi18n/ [200] - 0.042s
+INFO 2026-04-30 08:32:16,655 middleware 18066 124470449649344 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:32:16,729 middleware 18066 124470449649344 Response: GET /admin/authentication/user/ [200] - 0.073s
+INFO 2026-04-30 08:32:16,943 middleware 18066 124470449649344 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:32:16,998 middleware 18066 124470449649344 Response: GET /admin/jsi18n/ [200] - 0.055s
+INFO 2026-04-30 08:35:04,909 middleware 18415 129214665713344 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 08:35:05,808 middleware 18415 129214665713344 Response: POST /api/auth/register/ [201] - 0.899s
+INFO 2026-04-30 08:36:36,595 middleware 18415 129214653122240 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 08:36:37,403 middleware 18415 129214653122240 Response: POST /api/auth/register/ [201] - 0.808s
+INFO 2026-04-30 08:36:55,186 middleware 18415 129214644729536 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:36:55,313 middleware 18415 129214644729536 Response: GET /admin/authentication/user/ [200] - 0.127s
+INFO 2026-04-30 08:36:55,387 middleware 18415 129214644729536 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:36:55,443 middleware 18415 129214644729536 Response: GET /admin/jsi18n/ [200] - 0.056s
+INFO 2026-04-30 08:36:57,017 middleware 18415 129214644729536 Request: GET /admin/authentication/otp/ from 127.0.0.1
+INFO 2026-04-30 08:36:57,059 middleware 18415 129214644729536 Response: GET /admin/authentication/otp/ [200] - 0.042s
+INFO 2026-04-30 08:36:57,107 middleware 18415 129214644729536 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:36:57,139 middleware 18415 129214644729536 Response: GET /admin/jsi18n/ [200] - 0.032s
+INFO 2026-04-30 08:36:58,630 middleware 18415 129214644729536 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:36:58,669 middleware 18415 129214644729536 Response: GET /admin/authentication/user/ [200] - 0.039s
+INFO 2026-04-30 08:36:58,759 middleware 18415 129214644729536 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:36:58,796 middleware 18415 129214644729536 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-04-30 08:39:34,632 middleware 19041 130232732346048 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 08:39:35,503 middleware 19041 130232732346048 Response: POST /api/auth/register/ [201] - 0.871s
+INFO 2026-04-30 08:41:52,904 middleware 19041 130232719754944 Request: POST /api/auth/verify_otp/ from 127.0.0.1
+ERROR 2026-04-30 08:41:52,908 exceptions 19041 130232719754944 Exception occurred: {'email': [ErrorDetail(string='This field is required.', code='required')], 'otp': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 316, in verify_otp
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'email': [ErrorDetail(string='This field is required.', code='required')], 'otp': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-04-30 08:41:52,910 middleware 19041 130232719754944 Response: POST /api/auth/verify_otp/ [400] - 0.006s
+WARNING 2026-04-30 08:41:52,911 log 19041 130232719754944 Bad Request: /api/auth/verify_otp/
+WARNING 2026-04-30 08:41:52,912 basehttp 19041 130232719754944 "POST /api/auth/verify_otp/ HTTP/1.1" 400 117
+INFO 2026-04-30 08:42:12,589 middleware 19041 130232719754944 Request: POST /api/auth/verify_otp/ from 127.0.0.1
+INFO 2026-04-30 08:42:12,650 middleware 19041 130232719754944 Response: POST /api/auth/verify_otp/ [201] - 0.061s
+INFO 2026-04-30 08:42:25,569 middleware 19041 130232710313664 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:42:25,734 middleware 19041 130232710313664 Response: GET /admin/authentication/user/ [200] - 0.165s
+INFO 2026-04-30 08:42:25,813 middleware 19041 130232710313664 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:42:25,853 middleware 19041 130232710313664 Response: GET /admin/jsi18n/ [200] - 0.040s
+INFO 2026-04-30 08:42:27,997 middleware 19041 130232710313664 Request: GET /admin/authentication/otp/ from 127.0.0.1
+INFO 2026-04-30 08:42:28,061 middleware 19041 130232710313664 Response: GET /admin/authentication/otp/ [200] - 0.064s
+INFO 2026-04-30 08:42:28,194 middleware 19041 130232710313664 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:42:28,223 middleware 19041 130232710313664 Response: GET /admin/jsi18n/ [200] - 0.029s
+INFO 2026-04-30 08:47:40,460 middleware 19670 125296700286656 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:47:40,586 middleware 19670 125296700286656 Response: GET /admin/authentication/user/ [200] - 0.126s
+INFO 2026-04-30 08:47:40,742 middleware 19670 125296691893952 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:47:40,776 middleware 19670 125296691893952 Response: GET /admin/jsi18n/ [200] - 0.034s
+INFO 2026-04-30 08:47:45,968 middleware 19670 125296476944064 Request: POST /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:47:46,056 middleware 19670 125296476944064 Response: POST /admin/authentication/user/ [200] - 0.087s
+INFO 2026-04-30 08:47:47,480 middleware 19670 125296476944064 Request: POST /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:47:47,574 middleware 19670 125296476944064 Response: POST /admin/authentication/user/ [302] - 0.094s
+INFO 2026-04-30 08:47:47,588 middleware 19670 125296476944064 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 08:47:47,640 middleware 19670 125296476944064 Response: GET /admin/authentication/user/ [200] - 0.052s
+INFO 2026-04-30 08:47:47,754 middleware 19670 125296476944064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 08:47:47,779 middleware 19670 125296476944064 Response: GET /admin/jsi18n/ [200] - 0.026s
+INFO 2026-04-30 08:48:19,523 middleware 19670 125296468551360 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 08:48:20,356 middleware 19670 125296468551360 Response: POST /api/auth/register/ [201] - 0.833s
+INFO 2026-04-30 08:55:31,928 middleware 20294 134014048396992 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 08:55:48,267 middleware 20294 134014048396992 Response: POST /api/auth/register/ [201] - 16.339s
+INFO 2026-04-30 08:57:17,114 middleware 20504 129433994258112 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 08:57:25,833 middleware 20504 129433994258112 Response: POST /api/auth/register/ [201] - 8.719s
+INFO 2026-04-30 08:57:55,581 middleware 20504 129433994258112 Request: POST /api/auth/verify_otp/ from 127.0.0.1
+INFO 2026-04-30 08:57:55,688 middleware 20504 129433994258112 Response: POST /api/auth/verify_otp/ [201] - 0.107s
+INFO 2026-04-30 09:03:56,017 middleware 20504 129433981667008 Request: POST /api/auth/profile/ from 127.0.0.1
+ERROR 2026-04-30 09:03:56,046 exceptions 20504 129433981667008 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-30 09:03:56,047 middleware 20504 129433981667008 Response: POST /api/auth/profile/ [405] - 0.031s
+WARNING 2026-04-30 09:03:56,048 log 20504 129433981667008 Method Not Allowed: /api/auth/profile/
+WARNING 2026-04-30 09:03:56,049 basehttp 20504 129433981667008 "POST /api/auth/profile/ HTTP/1.1" 405 98
+INFO 2026-04-30 09:04:01,980 middleware 20504 129433981667008 Request: GET /api/auth/profile/ from 127.0.0.1
+ERROR 2026-04-30 09:04:02,000 exceptions 20504 129433981667008 Exception occurred: JSON parse error - Expecting value: line 10 column 1 (char 9)
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 64, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 10 column 1 (char 9)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 394, in profile
+    serializer = UserSerializer(request.user, data = request.data, partial=True )
+                                                     ^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+                              ^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 66, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting value: line 10 column 1 (char 9)
+INFO 2026-04-30 09:04:02,018 middleware 20504 129433981667008 Response: GET /api/auth/profile/ [400] - 0.037s
+WARNING 2026-04-30 09:04:02,018 log 20504 129433981667008 Bad Request: /api/auth/profile/
+WARNING 2026-04-30 09:04:02,019 basehttp 20504 129433981667008 "GET /api/auth/profile/ HTTP/1.1" 400 164
+INFO 2026-04-30 09:04:17,572 middleware 20504 129433981667008 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-04-30 09:04:17,597 middleware 20504 129433981667008 Response: GET /api/auth/profile/ [200] - 0.025s
+INFO 2026-04-30 09:07:23,016 middleware 20504 129433972225728 Request: POST /api/auth/resend_otp/ from 127.0.0.1
+ERROR 2026-04-30 09:07:23,042 exceptions 20504 129433972225728 Exception occurred: Invalid email
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 364, in resend_otp
+    pending = PendingUserRegistration.objects.get(email=email)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.authentication.models.PendingUserRegistration.DoesNotExist: PendingUserRegistration matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 366, in resend_otp
+    raise AuthenticationFailed('Invalid email')
+rest_framework.exceptions.AuthenticationFailed: Invalid email
+INFO 2026-04-30 09:07:23,045 middleware 20504 129433972225728 Response: POST /api/auth/resend_otp/ [401] - 0.029s
+WARNING 2026-04-30 09:07:23,045 log 20504 129433972225728 Unauthorized: /api/auth/resend_otp/
+WARNING 2026-04-30 09:07:23,046 basehttp 20504 129433972225728 "POST /api/auth/resend_otp/ HTTP/1.1" 401 68
+INFO 2026-04-30 09:07:52,760 middleware 20504 129433972225728 Request: POST /api/auth/resend_otp/ from 127.0.0.1
+ERROR 2026-04-30 09:07:52,779 exceptions 20504 129433972225728 Exception occurred: Invalid email
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 364, in resend_otp
+    pending = PendingUserRegistration.objects.get(email=email)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.authentication.models.PendingUserRegistration.DoesNotExist: PendingUserRegistration matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 366, in resend_otp
+    raise AuthenticationFailed('Invalid email')
+rest_framework.exceptions.AuthenticationFailed: Invalid email
+INFO 2026-04-30 09:07:52,781 middleware 20504 129433972225728 Response: POST /api/auth/resend_otp/ [401] - 0.021s
+WARNING 2026-04-30 09:07:52,781 log 20504 129433972225728 Unauthorized: /api/auth/resend_otp/
+WARNING 2026-04-30 09:07:52,781 basehttp 20504 129433972225728 "POST /api/auth/resend_otp/ HTTP/1.1" 401 68
+INFO 2026-04-30 09:08:37,450 middleware 20504 129433972225728 Request: POST /api/auth/resend_otp/ from 127.0.0.1
+ERROR 2026-04-30 09:08:37,469 exceptions 20504 129433972225728 Exception occurred: Invalid email
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 364, in resend_otp
+    pending = PendingUserRegistration.objects.get(email=email)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.authentication.models.PendingUserRegistration.DoesNotExist: PendingUserRegistration matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 366, in resend_otp
+    raise AuthenticationFailed('Invalid email')
+rest_framework.exceptions.AuthenticationFailed: Invalid email
+INFO 2026-04-30 09:08:37,470 middleware 20504 129433972225728 Response: POST /api/auth/resend_otp/ [401] - 0.020s
+WARNING 2026-04-30 09:08:37,470 log 20504 129433972225728 Unauthorized: /api/auth/resend_otp/
+WARNING 2026-04-30 09:08:37,471 basehttp 20504 129433972225728 "POST /api/auth/resend_otp/ HTTP/1.1" 401 68
+INFO 2026-04-30 09:08:53,087 middleware 20504 129433972225728 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 09:09:01,619 middleware 20504 129433972225728 Response: POST /api/auth/register/ [201] - 8.531s
+INFO 2026-04-30 09:09:27,657 middleware 20504 129433972225728 Request: POST /api/auth/resend_otp/ from 127.0.0.1
+INFO 2026-04-30 09:09:35,691 middleware 20504 129433972225728 Response: POST /api/auth/resend_otp/ [200] - 8.034s
+INFO 2026-04-30 09:11:35,097 middleware 20504 129433963833024 Request: POST /api/auth/student_login/ from 127.0.0.1
+ERROR 2026-04-30 09:11:36,068 exceptions 20504 129433963833024 Exception occurred: Invalid email or password
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 62, in student_login
+    raise AuthenticationFailed('Invalid email or password')
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+INFO 2026-04-30 09:11:36,068 middleware 20504 129433963833024 Response: POST /api/auth/student_login/ [401] - 0.971s
+WARNING 2026-04-30 09:11:36,069 log 20504 129433963833024 Unauthorized: /api/auth/student_login/
+WARNING 2026-04-30 09:11:36,069 basehttp 20504 129433963833024 "POST /api/auth/student_login/ HTTP/1.1" 401 92
+INFO 2026-04-30 09:12:06,682 middleware 20504 129433963833024 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-30 09:12:07,629 middleware 20504 129433963833024 Response: POST /api/auth/student_login/ [200] - 0.947s
+INFO 2026-04-30 09:14:12,825 middleware 20504 129433955440320 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+ERROR 2026-04-30 09:14:13,637 exceptions 20504 129433955440320 Exception occurred: Invalid email or password
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 233, in teacher_login
+    raise AuthenticationFailed('Invalid email or password')
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+INFO 2026-04-30 09:14:13,638 middleware 20504 129433955440320 Response: POST /api/auth/teacher_login/ [401] - 0.812s
+WARNING 2026-04-30 09:14:13,638 log 20504 129433955440320 Unauthorized: /api/auth/teacher_login/
+WARNING 2026-04-30 09:14:13,639 basehttp 20504 129433955440320 "POST /api/auth/teacher_login/ HTTP/1.1" 401 92
+INFO 2026-04-30 09:14:39,170 middleware 20504 129433604191936 Request: GET /admin/authentication/user/5/change/ from 127.0.0.1
+INFO 2026-04-30 09:14:39,517 middleware 20504 129433604191936 Response: GET /admin/authentication/user/5/change/ [200] - 0.347s
+INFO 2026-04-30 09:14:39,752 middleware 20504 129433604191936 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 09:14:39,819 middleware 20504 129433604191936 Response: GET /admin/jsi18n/ [200] - 0.068s
+INFO 2026-04-30 09:14:55,728 middleware 20504 129433955440320 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-04-30 09:14:56,541 middleware 20504 129433955440320 Response: POST /api/auth/teacher_login/ [200] - 0.813s
+INFO 2026-04-30 09:18:50,914 middleware 20504 129433604191936 Request: POST /api/auth/change_password/ from 127.0.0.1
+INFO 2026-04-30 09:18:50,935 middleware 20504 129433604191936 Response: POST /api/auth/change_password/ [400] - 0.021s
+WARNING 2026-04-30 09:18:50,935 log 20504 129433604191936 Bad Request: /api/auth/change_password/
+WARNING 2026-04-30 09:18:50,937 basehttp 20504 129433604191936 "POST /api/auth/change_password/ HTTP/1.1" 400 27
+INFO 2026-04-30 09:19:21,697 middleware 20504 129433604191936 Request: POST /api/auth/change_password/ from 127.0.0.1
+INFO 2026-04-30 09:19:21,715 middleware 20504 129433604191936 Response: POST /api/auth/change_password/ [400] - 0.019s
+WARNING 2026-04-30 09:19:21,716 log 20504 129433604191936 Bad Request: /api/auth/change_password/
+WARNING 2026-04-30 09:19:21,716 basehttp 20504 129433604191936 "POST /api/auth/change_password/ HTTP/1.1" 400 27
+INFO 2026-04-30 09:20:18,995 middleware 20504 129433604191936 Request: POST /api/auth/change_password/ from 127.0.0.1
+INFO 2026-04-30 09:20:28,790 middleware 20504 129433604191936 Response: POST /api/auth/change_password/ [200] - 9.796s
+INFO 2026-04-30 09:22:36,049 middleware 20504 129433587406528 Request: POST /api/auth/login/ from 127.0.0.1
+INFO 2026-04-30 09:22:36,069 middleware 20504 129433587406528 Response: POST /api/auth/login/ [404] - 0.021s
+WARNING 2026-04-30 09:22:36,070 log 20504 129433587406528 Not Found: /api/auth/login/
+WARNING 2026-04-30 09:22:36,071 basehttp 20504 129433587406528 "POST /api/auth/login/ HTTP/1.1" 404 10716
+INFO 2026-04-30 09:23:13,405 middleware 20504 129433587406528 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-30 09:23:14,208 middleware 20504 129433587406528 Response: POST /api/auth/student_login/ [200] - 0.802s
+INFO 2026-04-30 09:24:50,276 middleware 20504 129433595799232 Request: POST /api/auth/change_password_otp_logout/ from 127.0.0.1
+INFO 2026-04-30 09:24:58,061 middleware 20504 129433595799232 Response: POST /api/auth/change_password_otp_logout/ [200] - 7.786s
+INFO 2026-04-30 09:26:45,318 middleware 20504 129433579013824 Request: POST /api/auth/confirm_password_otp/ from 127.0.0.1
+INFO 2026-04-30 09:26:45,383 middleware 20504 129433579013824 Response: POST /api/auth/confirm_password_otp/ [400] - 0.065s
+WARNING 2026-04-30 09:26:45,384 log 20504 129433579013824 Bad Request: /api/auth/confirm_password_otp/
+WARNING 2026-04-30 09:26:45,385 basehttp 20504 129433579013824 "POST /api/auth/confirm_password_otp/ HTTP/1.1" 400 33
+INFO 2026-04-30 09:27:31,369 middleware 20504 129433579013824 Request: POST /api/auth/confirm_password_otp/ from 127.0.0.1
+INFO 2026-04-30 09:27:39,843 middleware 20504 129433579013824 Response: POST /api/auth/confirm_password_otp/ [200] - 8.474s
+INFO 2026-04-30 09:29:01,582 middleware 20504 129433570621120 Request: POST /api/auth/logout/ from 127.0.0.1
+ERROR 2026-04-30 09:29:01,602 exceptions 20504 129433570621120 Exception occurred: JSON parse error - Expecting value: line 17 column 1 (char 16)
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 64, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 17 column 1 (char 16)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 195, in logout
+    refresh_token = request.data.get('refresh')
+                    ^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+                              ^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 66, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting value: line 17 column 1 (char 16)
+INFO 2026-04-30 09:29:01,604 middleware 20504 129433570621120 Response: POST /api/auth/logout/ [400] - 0.021s
+WARNING 2026-04-30 09:29:01,604 log 20504 129433570621120 Bad Request: /api/auth/logout/
+WARNING 2026-04-30 09:29:01,605 basehttp 20504 129433570621120 "POST /api/auth/logout/ HTTP/1.1" 400 166
+INFO 2026-04-30 09:30:09,285 middleware 20504 129433562228416 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-04-30 09:30:09,303 middleware 20504 129433562228416 Response: POST /api/auth/logout/ [400] - 0.018s
+WARNING 2026-04-30 09:30:09,303 log 20504 129433562228416 Bad Request: /api/auth/logout/
+WARNING 2026-04-30 09:30:09,304 basehttp 20504 129433562228416 "POST /api/auth/logout/ HTTP/1.1" 400 34
+INFO 2026-04-30 09:32:32,331 middleware 24341 138904275515072 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-04-30 09:32:33,481 middleware 24341 138904275515072 Response: POST /api/auth/student_login/ [200] - 1.150s
+INFO 2026-04-30 09:33:05,584 middleware 24341 138904275515072 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-04-30 09:33:05,609 middleware 24341 138904275515072 Response: POST /api/auth/logout/ [400] - 0.025s
+WARNING 2026-04-30 09:33:05,610 log 24341 138904275515072 Bad Request: /api/auth/logout/
+WARNING 2026-04-30 09:33:05,610 basehttp 24341 138904275515072 "POST /api/auth/logout/ HTTP/1.1" 400 82
+INFO 2026-04-30 09:35:38,223 middleware 24744 126971379971776 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-04-30 09:35:38,265 middleware 24744 126971379971776 Response: POST /api/auth/logout/ [400] - 0.042s
+WARNING 2026-04-30 09:35:38,266 log 24744 126971379971776 Bad Request: /api/auth/logout/
+WARNING 2026-04-30 09:35:38,267 basehttp 24744 126971379971776 "POST /api/auth/logout/ HTTP/1.1" 400 34
+INFO 2026-04-30 09:36:06,167 middleware 24744 126971379971776 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-04-30 09:36:06,209 middleware 24744 126971379971776 Response: POST /api/auth/logout/ [200] - 0.042s
+INFO 2026-04-30 09:40:30,130 middleware 24744 126971371579072 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-04-30 09:40:31,202 middleware 24744 126971371579072 Response: POST /api/auth/teacher_login/ [200] - 1.072s
+INFO 2026-04-30 09:41:47,243 middleware 24744 126971363186368 Request: POST /api/auth/delete_account/ from 127.0.0.1
+INFO 2026-04-30 09:41:47,327 middleware 24744 126971363186368 Response: POST /api/auth/delete_account/ [204] - 0.084s
+INFO 2026-04-30 09:49:26,612 middleware 24744 126971354793664 Request: POST /api/auth/change_password_otp/ from 127.0.0.1
+ERROR 2026-04-30 09:49:26,638 exceptions 24744 126971354793664 Exception occurred: {'detail': ErrorDetail(string='User not found', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 130, in get_user
+    user = self.user_model.objects.get(**{api_settings.USER_ID_FIELD: user_id})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.authentication.models.User.DoesNotExist: User matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 51, in authenticate
+    return self.get_user(validated_token), validated_token
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 132, in get_user
+    raise AuthenticationFailed(_("User not found"), code="user_not_found")
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='User not found', code='authentication_failed'), 'code': ErrorDetail(string='user_not_found', code='authentication_failed')}
+INFO 2026-04-30 09:49:26,644 middleware 24744 126971354793664 Response: POST /api/auth/change_password_otp/ [401] - 0.032s
+WARNING 2026-04-30 09:49:26,647 log 24744 126971354793664 Unauthorized: /api/auth/change_password_otp/
+WARNING 2026-04-30 09:49:26,648 basehttp 24744 126971354793664 "POST /api/auth/change_password_otp/ HTTP/1.1" 401 94
+INFO 2026-04-30 09:49:35,869 middleware 24744 126971354793664 Request: POST /api/auth/change_password_otp/ from 127.0.0.1
+INFO 2026-04-30 09:49:46,304 middleware 24744 126971354793664 Response: POST /api/auth/change_password_otp/ [200] - 10.434s
+INFO 2026-04-30 09:51:31,207 middleware 24744 126971346400960 Request: POST /api/auth/confirm_password_otp from 127.0.0.1
+INFO 2026-04-30 09:51:31,274 middleware 24744 126971346400960 Response: POST /api/auth/confirm_password_otp [404] - 0.067s
+ERROR 2026-04-30 09:51:31,279 basehttp 24744 126971346400960 "POST /api/auth/confirm_password_otp HTTP/1.1" 500 59
+INFO 2026-04-30 09:51:43,185 middleware 24744 126971346400960 Request: POST /api/auth/confirm_password_otp from 127.0.0.1
+INFO 2026-04-30 09:51:43,199 middleware 24744 126971346400960 Response: POST /api/auth/confirm_password_otp [404] - 0.014s
+ERROR 2026-04-30 09:51:43,203 basehttp 24744 126971346400960 "POST /api/auth/confirm_password_otp HTTP/1.1" 500 59
+INFO 2026-04-30 09:52:00,500 middleware 24744 126971346400960 Request: POST /api/auth/confirm_password_otp/ from 127.0.0.1
+INFO 2026-04-30 09:52:08,698 middleware 24744 126971346400960 Response: POST /api/auth/confirm_password_otp/ [200] - 8.198s
+INFO 2026-04-30 09:53:37,805 middleware 24744 126971338008256 Request: POST /api/auth/profile/ from 127.0.0.1
+ERROR 2026-04-30 09:53:37,823 exceptions 24744 126971338008256 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-04-30 09:53:37,824 middleware 24744 126971338008256 Response: POST /api/auth/profile/ [405] - 0.020s
+WARNING 2026-04-30 09:53:37,825 log 24744 126971338008256 Method Not Allowed: /api/auth/profile/
+WARNING 2026-04-30 09:53:37,826 basehttp 24744 126971338008256 "POST /api/auth/profile/ HTTP/1.1" 405 98
+INFO 2026-04-30 09:53:45,438 middleware 24744 126971338008256 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-04-30 09:53:45,464 middleware 24744 126971338008256 Response: GET /api/auth/profile/ [200] - 0.026s
+INFO 2026-04-30 09:54:30,745 middleware 24744 126971338008256 Request: PUT /api/auth/profile/ from 127.0.0.1
+INFO 2026-04-30 09:54:30,797 middleware 24744 126971338008256 Response: PUT /api/auth/profile/ [200] - 0.052s

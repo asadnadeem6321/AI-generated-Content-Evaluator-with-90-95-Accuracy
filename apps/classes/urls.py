@@ -7,8 +7,8 @@ from .views import ClassViewSet, AssignmentViewSet
 
 
 router = DefaultRouter()
-router.register('',ClassViewSet, basename='class')
-router.register('',AssignmentViewSet, basename='assignment')
+router.register('', ClassViewSet, basename='class')
+router.register('assignments', AssignmentViewSet, basename='assignment')
 
 app_name = 'classes'
 

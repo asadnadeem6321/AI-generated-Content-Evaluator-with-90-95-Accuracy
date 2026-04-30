@@ -1,4 +1,4 @@
-from rest_framework import viewsets, status
+from rest_framework import viewsets, status, serializers
 from django.shortcuts import render
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -23,6 +23,7 @@ class ClassViewSet(viewsets.ModelViewSet):
     """Viewset fot class CURD operations"""
 
     queryset = Class.objects.all()
+    lookup_field = 'code'
     permission_classes = [IsAuthenticated]
 
     def get_serializer_class(self):
@@ -38,7 +39,7 @@ class ClassViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         """Setting up role base access"""
-        if self.action in ['create', 'update', 'partial_update', 'destroy', 'student']:
+        if self.action in ['create', 'update', 'partial_update', 'destroy', 'students']:
             return [IsTeacher()]
         elif self.action in ['enroll']:
             return [IsStudent()]
@@ -52,16 +53,19 @@ class ClassViewSet(viewsets.ModelViewSet):
         elif user.is_student():
             return Class.objects.filter(students=user)
         else:
-            Class.objects.none() # Guest can't see classes
-    
+            return Class.objects.none()  # Guest can't see classes
+
+    def perform_create(self, serializer):
+        serializer.save(teacher=self.request.user)
+
 
     @action(detail=True, methods=['post'])
-    def enroll(self, request, pk=None):
+    def enroll(self, request, code=None):
         """Student enrolled in class using class code (student's api)
         
-        POST /api/classes/{CODE}/enroll/
+        POST /api/classes/{FE16VM}/enroll/
         """
-        serializer = EnrollmentSerializer(data={'code':pk})
+        serializer = EnrollmentSerializer(data={'code':code})
         serializer.is_valid(raise_exception=True)
 
         class_obj = Class.objects.get(code = serializer.validated_data['code'])
@@ -73,16 +77,34 @@ class ClassViewSet(viewsets.ModelViewSet):
         # Enroll student
         Enrollment.objects.create(student=request.user, class_obj=class_obj)
         return Response({'message':'Successfully enrolled', 'class':ClassSerializer(class_obj).data})
-    
+
+    @action(detail=True, methods=['post'])
+    def achaassignments(self, request, code=None):
+        """Create an assignment inside a specific class."""
+        class_obj = self.get_object()
+        serializer = AssignmentCreateSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        assignment = Assignment.objects.create(
+            class_obj=class_obj,
+            title=serializer.validated_data['title'],
+            description=serializer.validated_data.get('description', ''),
+            deadline=serializer.validated_data['deadline'],
+            max_score=serializer.validated_data['max_score'],
+            allow_late_submissions=serializer.validated_data.get('allow_late_submissions', False),
+            created_by=request.user,
+        )
+
+        return Response(AssignmentSerializer(assignment).data, status=status.HTTP_201_CREATED)
 
     @action(detail=True, methods=['get'])
-    def students(self, request, pk=None):
+    def students(self, request, code=None):
         """
         Get all enrolled students in the class (teacher's api)
         """
         class_obj = self.get_object()
-        enrollments = class_obj.enrollemant.all()
-        serializer = EnrolledStudentSerializers(enrollments, many=True)
+        enrollments = class_obj.enrollement.all()
+        serializer = EnrolledStudentSerializer(enrollments, many=True)
         return Response(serializer.data)
 
 
@@ -121,13 +143,17 @@ class AssignmentViewSet(viewsets.ModelViewSet):
         return queryset
     
     def perform_create(self, serializer):
-        class_id = self.request.data.get('class_id')
-        class_obj = Class.objects.get(id=class_id, teacher=self.request.user)
+        class_id = serializer.validated_data.get('class_id')
+        if not class_id:
+            raise serializers.ValidationError({'class_id': 'This field is required.'})
+
+        try:
+            class_obj = Class.objects.get(id=class_id, teacher=self.request.user)
+        except Class.DoesNotExist:
+            raise serializers.ValidationError({'class_id': 'Class not found or you are not the teacher for this class.'})
+
         serializer.save(created_by=self.request.user, class_obj=class_obj)
-    
 
-
-    
     @action(detail=True, methods=['post'])
     def extend_deadline(self, request, pk=None):
         """Teacher extends assignment deadline"""

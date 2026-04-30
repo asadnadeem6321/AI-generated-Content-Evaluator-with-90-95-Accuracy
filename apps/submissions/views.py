@@ -4,8 +4,9 @@ from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from django.utils import timezone
+from apps.dashboard import serializers
 from authentication.permissions import IsStudent, IsTeacher
-from .tasks import queue_paragraph_tasks
+from .tasks import queue_paragraph_tasks, queue_submission_processing
 
 # Modes
 from .models import Submission
@@ -30,33 +31,38 @@ class SubmissionViewSet(viewsets.ModelViewSet):
         return SubmissionSerializer
 
     def get_queryset(self):
-        user = user.request.user
+        user = request.user
         if user.is_teacher():
-            # Teacher can see all submissions in there classes
+            # Teacher can see all submissions in their classes
             return Submission.objects.filter(class_obj__teacher=user)
         else:
-        # Students and guest users can see only there submissions
+            # Students and guest users can see only their submissions
             return Submission.objects.filter(user=user)
         
     def perform_create(self, serializer):
-        # Check deadline if class submission
-        class_obj = serializer.validated_data.get('class_obj')
-        deadline = serializer.validated_data.get('assignment_deadline')
-
-        if deadline and timezone.now() > deadline:
-            # Check if extension granted
-            if not serializer.validate_data.get('extension_granted'):
-                raise serializer.ValidationError("Deadline has passed request an extension")
-            
+        """Create submission and queue for processing"""
+        
+        # Validate deadline
+        if serializer.validated_data.get('assignment'):
+            assignment = serializer.validated_data['assignment']
+            if assignment.is_past_deadline and not assignment.allow_late_submissions:
+                if not serializer.validated_data.get('extension_granted'):
+                    raise serializers.ValidationError("Deadline has passed. Request an extension.")
+        
+        # Save submission
         submission = serializer.save(
-            user = self.request.user,
-            orignal_filename = serializer.validated_data['file'].name,
-            file_size = serializer.validated_data['file'].size
+            user=self.request.user,
+            original_filename=serializer.validated_data['file'].name,
+            file_size=serializer.validated_data['file'].size,
+            status='queued'
         )
-
-        # TODO : Queue for ML processing
-        # from .task import process_submission
-        # process_submission.delay(str(submission.id))
+        
+        # Queue for processing
+        queue_submission_processing(
+            submission_id=str(submission.id),
+            user_role=self.request.user.role,
+            is_teacher_view=False
+        )
 
 
 
@@ -126,7 +132,7 @@ class SubmissionViewSet(viewsets.ModelViewSet):
         submission = self.get_object()
 
         # Verify teacher owns this submission
-        if submission.class_obj and submission.calss_obj.teacher != request.user:
+        if submission.class_obj and submission.class_obj.teacher != request.user:
             return Response(
                 {'error': 'Access denied'},
                 status=status.HTTP_403_FORBIDDEN
@@ -189,7 +195,7 @@ class SubmissionViewSet(viewsets.ModelViewSet):
 
         paused_count = 0
         for submission in submissions:
-            if not submissions.is_paused:
+            if not submission.is_paused:
                 submission.pause(request.user)
                 paused_count += 1
             
@@ -208,7 +214,7 @@ class SubmissionViewSet(viewsets.ModelViewSet):
         request body : {"submission_ids": ["id1", "id2", "id3"]}
         """
 
-        submission_ids = request.data.get('submissions_ids', [])
+        submission_ids = request.data.get('submission_ids', [])
 
         submissions = Submission.objects.filter(
              id__in=submission_ids,
@@ -218,7 +224,7 @@ class SubmissionViewSet(viewsets.ModelViewSet):
 
         resumed_count = 0
         for submission in submissions:
-            submissions.resume()
+            submission.resume()
             if hasattr(submission, 'result'):
                 queue_paragraph_tasks(str(submission.id), submission.user.role)
             resumed_count += 1

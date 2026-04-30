@@ -20,8 +20,7 @@ MIDDLEWARE += [
 ]
 
 # Console email backend for development
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # Disable HTTPS redirect in development
 SECURE_SSL_REDIRECT = False
 

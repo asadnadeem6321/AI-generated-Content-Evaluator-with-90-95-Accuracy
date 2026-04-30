@@ -35,8 +35,11 @@ class SubmissionOverviewSerializer(serializers.Serializer):
     status = serializers.CharField()
     processing_percentage = serializers.DecimalField(max_digits=5, decimal_places=2)
     ai_percentage = serializers.DecimalField(max_digits=5, decimal_places=2, allow_null=True)
-    grammar_score = serializers.DecimalField(max_digits=5, decimal_places=2, allow_null=True)
     is_flagged = serializers.BooleanField()
+    
+    # Add BERT-specific fields
+    bert_score = serializers.FloatField(allow_null=True, required=False)
+    avg_perplexity = serializers.FloatField(allow_null=True, required=False)
 
 
 class AssignmentStatisticsSerializer(serializers.Serializer):
