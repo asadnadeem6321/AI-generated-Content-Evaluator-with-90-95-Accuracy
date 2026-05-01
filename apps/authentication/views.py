@@ -44,7 +44,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         return UserSerializer
     
     def get_permissions(self):
-        if self.action in ['register', 'student_login', 'teacher_login', 'verify_otp', 'resend_otp']:
+        if self.action in ['register', 'student_login', 'teacher_login', 'verify_otp', 'resend_otp', 'change_password_otp_logout', 'confirm_password_otp']:
             return [AllowAny()]
         return [IsAuthenticated()]
     

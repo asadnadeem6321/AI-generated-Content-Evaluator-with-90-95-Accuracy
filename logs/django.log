@@ -2045,3 +2045,487 @@ INFO 2026-04-30 09:53:45,438 middleware 24744 126971338008256 Request: GET /api/
 INFO 2026-04-30 09:53:45,464 middleware 24744 126971338008256 Response: GET /api/auth/profile/ [200] - 0.026s
 INFO 2026-04-30 09:54:30,745 middleware 24744 126971338008256 Request: PUT /api/auth/profile/ from 127.0.0.1
 INFO 2026-04-30 09:54:30,797 middleware 24744 126971338008256 Response: PUT /api/auth/profile/ [200] - 0.052s
+INFO 2026-04-30 17:46:35,239 middleware 32945 125448839227072 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-04-30 17:46:35,387 middleware 32945 125448839227072 Response: GET /admin/authentication/user/ [200] - 0.148s
+INFO 2026-04-30 17:46:35,494 middleware 32945 125448830834368 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 17:46:35,544 middleware 32945 125448830834368 Response: GET /admin/jsi18n/ [200] - 0.049s
+INFO 2026-04-30 17:48:16,960 middleware 32945 125448604346048 Request: PUT /api/auth/register/ from 127.0.0.1
+ERROR 2026-04-30 17:48:16,964 exceptions 32945 125448604346048 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-04-30 17:48:16,968 middleware 32945 125448604346048 Response: PUT /api/auth/register/ [401] - 0.007s
+WARNING 2026-04-30 17:48:16,968 log 32945 125448604346048 Unauthorized: /api/auth/register/
+WARNING 2026-04-30 17:48:16,969 basehttp 32945 125448604346048 "PUT /api/auth/register/ HTTP/1.1" 401 132
+INFO 2026-04-30 17:48:30,122 middleware 32945 125448604346048 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-04-30 17:48:39,948 middleware 32945 125448604346048 Response: POST /api/auth/register/ [201] - 9.826s
+INFO 2026-04-30 17:51:18,462 middleware 32945 125448595953344 Request: POST /api/auth/verity_otp/ from 127.0.0.1
+INFO 2026-04-30 17:51:18,485 middleware 32945 125448595953344 Response: POST /api/auth/verity_otp/ [404] - 0.023s
+WARNING 2026-04-30 17:51:18,486 log 32945 125448595953344 Not Found: /api/auth/verity_otp/
+WARNING 2026-04-30 17:51:18,486 basehttp 32945 125448595953344 "POST /api/auth/verity_otp/ HTTP/1.1" 404 10731
+INFO 2026-04-30 17:51:50,215 middleware 32945 125448595953344 Request: POST /api/auth/verify_otp/ from 127.0.0.1
+INFO 2026-04-30 17:51:50,285 middleware 32945 125448595953344 Response: POST /api/auth/verify_otp/ [201] - 0.070s
+INFO 2026-04-30 17:53:12,852 middleware 32945 125448830834368 Request: POST /api/auth/login_teacher/ from 127.0.0.1
+INFO 2026-04-30 17:53:12,866 middleware 32945 125448830834368 Response: POST /api/auth/login_teacher/ [404] - 0.014s
+WARNING 2026-04-30 17:53:12,866 log 32945 125448830834368 Not Found: /api/auth/login_teacher/
+WARNING 2026-04-30 17:53:12,867 basehttp 32945 125448830834368 "POST /api/auth/login_teacher/ HTTP/1.1" 404 10740
+INFO 2026-04-30 17:53:32,349 middleware 32945 125448830834368 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-04-30 17:53:33,199 middleware 32945 125448830834368 Response: POST /api/auth/teacher_login/ [200] - 0.850s
+INFO 2026-04-30 18:00:57,543 middleware 32945 125448839227072 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-04-30 18:00:57,546 exceptions 32945 125448839227072 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token has wrong type', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token has wrong type', code='token_not_valid')}]}
+INFO 2026-04-30 18:00:57,548 middleware 32945 125448839227072 Response: GET /api/classes/ [401] - 0.005s
+WARNING 2026-04-30 18:00:57,549 log 32945 125448839227072 Unauthorized: /api/classes/
+WARNING 2026-04-30 18:00:57,550 basehttp 32945 125448839227072 "GET /api/classes/ HTTP/1.1" 401 245
+INFO 2026-04-30 18:04:30,936 middleware 32945 125448612738752 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:04:30,990 middleware 32945 125448612738752 Response: GET /api/classes/ [200] - 0.054s
+INFO 2026-04-30 18:12:36,229 middleware 34662 123797078271680 Request: POST /api/classes/ from 127.0.0.1
+ERROR 2026-04-30 18:12:36,274 exceptions 34662 123797078271680 Exception occurred: JSON parse error - Expecting value: line 7 column 1 (char 6)
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 64, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 7 column 1 (char 6)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 17, in create
+    serializer = self.get_serializer(data=request.data)
+                                          ^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+                              ^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 66, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting value: line 7 column 1 (char 6)
+INFO 2026-04-30 18:12:36,280 middleware 34662 123797078271680 Response: POST /api/classes/ [400] - 0.050s
+WARNING 2026-04-30 18:12:36,280 log 34662 123797078271680 Bad Request: /api/classes/
+WARNING 2026-04-30 18:12:36,281 basehttp 34662 123797078271680 "POST /api/classes/ HTTP/1.1" 400 162
+INFO 2026-04-30 18:13:21,435 middleware 34662 123797078271680 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:13:21,464 middleware 34662 123797078271680 Response: POST /api/classes/ [201] - 0.029s
+INFO 2026-04-30 18:13:33,193 middleware 34662 123796996486848 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:13:33,321 middleware 34662 123796996486848 Response: GET /admin/classes/class/ [200] - 0.128s
+INFO 2026-04-30 18:13:33,384 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:13:33,441 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.057s
+INFO 2026-04-30 18:13:35,477 middleware 34662 123796988094144 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:13:35,530 middleware 34662 123796988094144 Response: GET /admin/classes/class/ [200] - 0.053s
+INFO 2026-04-30 18:13:35,630 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:13:35,656 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-04-30 18:13:54,358 middleware 34662 123797078271680 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:13:54,381 middleware 34662 123797078271680 Response: GET /api/classes/ [200] - 0.023s
+INFO 2026-04-30 18:17:20,769 middleware 34662 123796971308736 Request: GET /api/classes/9O4CN2/ from 127.0.0.1
+INFO 2026-04-30 18:17:20,796 middleware 34662 123796971308736 Response: GET /api/classes/9O4CN2/ [200] - 0.026s
+INFO 2026-04-30 18:23:50,120 middleware 34662 123796979701440 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:23:50,198 middleware 34662 123796979701440 Response: GET /admin/classes/class/ [200] - 0.078s
+INFO 2026-04-30 18:23:50,307 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:23:50,347 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.040s
+INFO 2026-04-30 18:24:11,408 middleware 34662 123796988094144 Request: POST /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:11,464 middleware 34662 123796988094144 Response: POST /admin/classes/class/ [200] - 0.057s
+INFO 2026-04-30 18:24:12,943 middleware 34662 123796988094144 Request: POST /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:12,997 middleware 34662 123796988094144 Response: POST /admin/classes/class/ [302] - 0.054s
+INFO 2026-04-30 18:24:13,015 middleware 34662 123796988094144 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:13,057 middleware 34662 123796988094144 Response: GET /admin/classes/class/ [200] - 0.043s
+INFO 2026-04-30 18:24:13,151 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:24:13,181 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-04-30 18:24:16,605 middleware 34662 123796988094144 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:16,638 middleware 34662 123796988094144 Response: GET /admin/classes/class/ [200] - 0.034s
+INFO 2026-04-30 18:24:16,723 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:24:16,746 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.024s
+INFO 2026-04-30 18:24:17,852 middleware 34662 123796988094144 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:17,890 middleware 34662 123796988094144 Response: GET /admin/classes/class/ [200] - 0.039s
+INFO 2026-04-30 18:24:18,002 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:24:18,045 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.043s
+INFO 2026-04-30 18:24:18,109 middleware 34662 123796988094144 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:18,159 middleware 34662 123796988094144 Response: GET /admin/classes/class/ [200] - 0.050s
+INFO 2026-04-30 18:24:18,213 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:24:18,243 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-04-30 18:24:18,284 middleware 34662 123796988094144 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:18,339 middleware 34662 123796988094144 Response: GET /admin/classes/class/ [200] - 0.054s
+INFO 2026-04-30 18:24:18,437 middleware 34662 123796988094144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:24:18,466 middleware 34662 123796988094144 Response: GET /admin/jsi18n/ [200] - 0.029s
+INFO 2026-04-30 18:24:21,056 middleware 34662 123796988094144 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:24:21,094 middleware 34662 123796988094144 Response: GET /admin/classes/class/ [200] - 0.038s
+INFO 2026-04-30 18:24:21,266 middleware 34662 123796954523328 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:24:21,326 middleware 34662 123796954523328 Response: GET /admin/jsi18n/ [200] - 0.060s
+INFO 2026-04-30 18:24:21,531 middleware 34662 123796962916032 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-04-30 18:24:21,542 middleware 34662 123796962916032 Response: GET /favicon.ico [404] - 0.011s
+WARNING 2026-04-30 18:24:21,543 log 34662 123796962916032 Not Found: /favicon.ico
+WARNING 2026-04-30 18:24:21,543 basehttp 34662 123796962916032 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-04-30 18:27:35,894 middleware 36037 134028678129344 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:27:36,110 middleware 36037 134028678129344 Response: GET /admin/classes/class/ [200] - 0.215s
+INFO 2026-04-30 18:27:36,292 middleware 36037 134028678129344 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:27:36,408 middleware 36037 134028678129344 Response: GET /admin/jsi18n/ [200] - 0.116s
+INFO 2026-04-30 18:30:37,481 middleware 36278 132551558555328 Request: PUT /api/classes/9O4CN2/ from 127.0.0.1
+ERROR 2026-04-30 18:30:37,523 exceptions 36278 132551558555328 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-04-30 18:30:37,529 middleware 36278 132551558555328 Response: PUT /api/classes/9O4CN2/ [404] - 0.047s
+WARNING 2026-04-30 18:30:37,530 log 36278 132551558555328 Not Found: /api/classes/9O4CN2/
+WARNING 2026-04-30 18:30:37,531 basehttp 36278 132551558555328 "PUT /api/classes/9O4CN2/ HTTP/1.1" 404 62
+INFO 2026-04-30 18:33:19,515 middleware 36278 132551480964800 Request: DELETE /api/classes/9O4CN2/ from 127.0.0.1
+ERROR 2026-04-30 18:33:19,538 exceptions 36278 132551480964800 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 90, in destroy
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-04-30 18:33:19,539 middleware 36278 132551480964800 Response: DELETE /api/classes/9O4CN2/ [404] - 0.025s
+WARNING 2026-04-30 18:33:19,540 log 36278 132551480964800 Not Found: /api/classes/9O4CN2/
+WARNING 2026-04-30 18:33:19,541 basehttp 36278 132551480964800 "DELETE /api/classes/9O4CN2/ HTTP/1.1" 404 62
+INFO 2026-04-30 18:33:30,860 middleware 36278 132551480964800 Request: DELETE /api/classes/9O4CN2 from 127.0.0.1
+INFO 2026-04-30 18:33:30,883 middleware 36278 132551480964800 Response: DELETE /api/classes/9O4CN2 [404] - 0.024s
+INFO 2026-04-30 18:33:30,898 middleware 36278 132551480964800 Request: GET /api/classes/9O4CN2/ from 127.0.0.1
+ERROR 2026-04-30 18:33:30,917 exceptions 36278 132551480964800 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-04-30 18:33:30,918 middleware 36278 132551480964800 Response: GET /api/classes/9O4CN2/ [404] - 0.021s
+WARNING 2026-04-30 18:33:30,919 log 36278 132551480964800 Not Found: /api/classes/9O4CN2/
+WARNING 2026-04-30 18:33:30,919 basehttp 36278 132551480964800 "GET /api/classes/9O4CN2/ HTTP/1.1" 404 62
+INFO 2026-04-30 18:40:46,581 middleware 36278 132551472572096 Request: PATCH /api/classes/9O4CN2/ from 127.0.0.1
+ERROR 2026-04-30 18:40:46,611 exceptions 36278 132551472572096 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-04-30 18:40:46,615 middleware 36278 132551472572096 Response: PATCH /api/classes/9O4CN2/ [404] - 0.034s
+WARNING 2026-04-30 18:40:46,615 log 36278 132551472572096 Not Found: /api/classes/9O4CN2/
+WARNING 2026-04-30 18:40:46,617 basehttp 36278 132551472572096 "PATCH /api/classes/9O4CN2/ HTTP/1.1" 404 62
+INFO 2026-04-30 18:42:13,105 middleware 36278 132551464179392 Request: PATCH /api/classes/{9O4CN2}/ from 127.0.0.1
+ERROR 2026-04-30 18:42:13,132 exceptions 36278 132551464179392 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-04-30 18:42:13,133 middleware 36278 132551464179392 Response: PATCH /api/classes/{9O4CN2}/ [404] - 0.028s
+WARNING 2026-04-30 18:42:13,134 log 36278 132551464179392 Not Found: /api/classes/{9O4CN2}/
+WARNING 2026-04-30 18:42:13,134 basehttp 36278 132551464179392 "PATCH /api/classes/%7B9O4CN2%7D/ HTTP/1.1" 404 62
+INFO 2026-04-30 18:45:27,393 middleware 36278 132551455786688 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:45:27,422 middleware 36278 132551455786688 Response: POST /api/classes/ [201] - 0.029s
+INFO 2026-04-30 18:45:38,508 middleware 36278 132551455786688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:45:38,535 middleware 36278 132551455786688 Response: GET /api/classes/ [200] - 0.027s
+INFO 2026-04-30 18:45:48,141 middleware 36278 132551447393984 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:45:48,263 middleware 36278 132551447393984 Response: GET /admin/classes/class/ [200] - 0.122s
+INFO 2026-04-30 18:45:48,386 middleware 36278 132551447393984 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:45:48,425 middleware 36278 132551447393984 Response: GET /admin/jsi18n/ [200] - 0.039s
+INFO 2026-04-30 18:46:16,526 middleware 36278 132551455786688 Request: DELETE /api/classes/QHHYCY/ from 127.0.0.1
+INFO 2026-04-30 18:46:16,558 middleware 36278 132551455786688 Response: DELETE /api/classes/QHHYCY/ [204] - 0.032s
+INFO 2026-04-30 18:46:21,370 middleware 36278 132551447393984 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:46:21,410 middleware 36278 132551447393984 Response: GET /admin/classes/class/ [200] - 0.040s
+INFO 2026-04-30 18:46:21,489 middleware 36278 132551447393984 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:46:21,518 middleware 36278 132551447393984 Response: GET /admin/jsi18n/ [200] - 0.029s
+INFO 2026-04-30 18:47:08,839 middleware 36278 132551455786688 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:47:08,864 middleware 36278 132551455786688 Response: POST /api/classes/ [201] - 0.025s
+INFO 2026-04-30 18:47:39,901 middleware 36278 132551455786688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:47:39,940 middleware 36278 132551455786688 Response: GET /api/classes/ [200] - 0.039s
+INFO 2026-04-30 18:47:53,035 middleware 36278 132551455786688 Request: PATCH /api/classes/08Y025/ from 127.0.0.1
+INFO 2026-04-30 18:47:53,067 middleware 36278 132551455786688 Response: PATCH /api/classes/08Y025/ [200] - 0.032s
+INFO 2026-04-30 18:53:46,874 middleware 36278 132551447393984 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:53:46,903 middleware 36278 132551447393984 Response: POST /api/classes/ [201] - 0.029s
+INFO 2026-04-30 18:53:53,984 middleware 36278 132551447393984 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-04-30 18:53:54,029 middleware 36278 132551447393984 Response: GET /api/classes/ [200] - 0.044s
+INFO 2026-04-30 18:54:04,596 middleware 36278 132551439001280 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 18:54:04,656 middleware 36278 132551439001280 Response: GET /admin/classes/class/ [200] - 0.060s
+INFO 2026-04-30 18:54:04,768 middleware 36278 132551439001280 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:54:04,803 middleware 36278 132551439001280 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-04-30 18:54:07,094 middleware 36278 132551439001280 Request: GET /admin/classes/class/8/change/ from 127.0.0.1
+INFO 2026-04-30 18:54:07,175 middleware 36278 132551439001280 Response: GET /admin/classes/class/8/change/ [200] - 0.081s
+INFO 2026-04-30 18:54:07,249 middleware 36278 132551439001280 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 18:54:07,274 middleware 36278 132551439001280 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-04-30 18:59:24,901 middleware 36278 132551439001280 Request: DELETE /api/classes/IRQ394/ from 127.0.0.1
+INFO 2026-04-30 18:59:24,934 middleware 36278 132551439001280 Response: DELETE /api/classes/IRQ394/ [204] - 0.033s
+INFO 2026-04-30 19:00:13,086 middleware 36278 132551428511424 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 19:00:13,145 middleware 36278 132551428511424 Response: GET /admin/classes/class/ [200] - 0.060s
+INFO 2026-04-30 19:00:13,215 middleware 36278 132551428511424 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 19:00:13,265 middleware 36278 132551428511424 Response: GET /admin/jsi18n/ [200] - 0.050s
+INFO 2026-04-30 19:00:15,591 middleware 36278 132551428511424 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-04-30 19:00:15,637 middleware 36278 132551428511424 Response: GET /admin/classes/class/ [200] - 0.046s
+INFO 2026-04-30 19:00:15,733 middleware 36278 132551428511424 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 19:00:15,772 middleware 36278 132551428511424 Response: GET /admin/jsi18n/ [200] - 0.039s
+INFO 2026-04-30 19:03:36,181 middleware 36278 132550878033600 Request: POST /api/classes/IRQ394/enroll/ from 127.0.0.1
+ERROR 2026-04-30 19:03:36,213 exceptions 36278 132550878033600 Exception occurred: {'code': [ErrorDetail(string='Invalid code', code='invalid')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 69, in enroll
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'code': [ErrorDetail(string='Invalid code', code='invalid')]}
+INFO 2026-04-30 19:03:36,221 middleware 36278 132550878033600 Response: POST /api/classes/IRQ394/enroll/ [400] - 0.039s
+WARNING 2026-04-30 19:03:36,221 log 36278 132550878033600 Bad Request: /api/classes/IRQ394/enroll/
+WARNING 2026-04-30 19:03:36,222 basehttp 36278 132550878033600 "POST /api/classes/IRQ394/enroll/ HTTP/1.1" 400 71
+INFO 2026-04-30 19:03:57,902 middleware 36278 132550878033600 Request: POST /api/classes/08Y025/enroll/ from 127.0.0.1
+INFO 2026-04-30 19:03:57,939 middleware 36278 132550878033600 Response: POST /api/classes/08Y025/enroll/ [200] - 0.036s
+INFO 2026-04-30 19:13:59,957 middleware 36278 132551428511424 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-04-30 19:14:00,029 middleware 36278 132551428511424 Response: GET /admin/classes/enrollment/ [200] - 0.072s
+INFO 2026-04-30 19:14:00,135 middleware 36278 132551428511424 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 19:14:00,165 middleware 36278 132551428511424 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-04-30 19:14:05,755 middleware 36278 132551428511424 Request: GET /admin/classes/enrollment/2/change/ from 127.0.0.1
+INFO 2026-04-30 19:14:05,814 middleware 36278 132551428511424 Response: GET /admin/classes/enrollment/2/change/ [200] - 0.059s
+INFO 2026-04-30 19:14:05,892 middleware 36278 132551428511424 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-04-30 19:14:05,923 middleware 36278 132551428511424 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-04-30 19:16:47,078 middleware 36278 132550861248192 Request: GET /api/classes/IRQ394/students/ from 127.0.0.1
+ERROR 2026-04-30 19:16:47,104 exceptions 36278 132550861248192 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 105, in students
+    class_obj = self.get_object()
+                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-04-30 19:16:47,106 middleware 36278 132550861248192 Response: GET /api/classes/IRQ394/students/ [404] - 0.028s
+WARNING 2026-04-30 19:16:47,107 log 36278 132550861248192 Not Found: /api/classes/IRQ394/students/
+WARNING 2026-04-30 19:16:47,108 basehttp 36278 132550861248192 "GET /api/classes/IRQ394/students/ HTTP/1.1" 404 62
+INFO 2026-04-30 19:17:00,966 middleware 36278 132550861248192 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-04-30 19:17:00,992 middleware 36278 132550861248192 Response: GET /api/classes/08Y025/students/ [200] - 0.027s
+INFO 2026-05-01 10:31:47,534 middleware 7806 125807548683968 Request: GET / from 127.0.0.1
+INFO 2026-05-01 10:31:47,568 middleware 7806 125807548683968 Response: GET / [404] - 0.034s
+WARNING 2026-05-01 10:31:47,570 log 7806 125807548683968 Not Found: /
+WARNING 2026-05-01 10:31:47,573 basehttp 7806 125807548683968 "GET / HTTP/1.1" 404 3810
+INFO 2026-05-01 10:31:47,836 middleware 7806 125807548683968 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-01 10:31:47,851 middleware 7806 125807548683968 Response: GET /favicon.ico [404] - 0.015s
+WARNING 2026-05-01 10:31:47,852 log 7806 125807548683968 Not Found: /favicon.ico
+WARNING 2026-05-01 10:31:47,853 basehttp 7806 125807548683968 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-01 10:31:50,890 middleware 7806 125807548683968 Request: GET /admin/ from 127.0.0.1
+INFO 2026-05-01 10:31:51,023 middleware 7806 125807548683968 Response: GET /admin/ [200] - 0.133s
+INFO 2026-05-01 10:31:53,245 middleware 7806 125807548683968 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-01 10:31:53,347 middleware 7806 125807548683968 Response: GET /admin/authentication/user/ [200] - 0.102s
+INFO 2026-05-01 10:31:53,434 middleware 7806 125807548683968 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 10:31:53,466 middleware 7806 125807548683968 Response: GET /admin/jsi18n/ [200] - 0.032s
+INFO 2026-05-01 10:31:57,784 middleware 7806 125807548683968 Request: GET /admin/authentication/user/9/change/ from 127.0.0.1
+INFO 2026-05-01 10:31:57,959 middleware 7806 125807548683968 Response: GET /admin/authentication/user/9/change/ [200] - 0.175s
+INFO 2026-05-01 10:31:58,042 middleware 7806 125807548683968 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 10:31:58,074 middleware 7806 125807548683968 Response: GET /admin/jsi18n/ [200] - 0.032s
+INFO 2026-05-01 12:10:24,386 middleware 12612 136811856783040 Request: POST /api/auth/change_password_otp_logout/ from 127.0.0.1
+ERROR 2026-05-01 12:10:24,389 exceptions 12612 136811856783040 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-01 12:10:24,390 middleware 12612 136811856783040 Response: POST /api/auth/change_password_otp_logout/ [401] - 0.004s
+WARNING 2026-05-01 12:10:24,391 log 12612 136811856783040 Unauthorized: /api/auth/change_password_otp_logout/
+WARNING 2026-05-01 12:10:24,391 basehttp 12612 136811856783040 "POST /api/auth/change_password_otp_logout/ HTTP/1.1" 401 132
+INFO 2026-05-01 12:35:14,906 middleware 13107 125055309702848 Request: POST /api/auth/change_password_otp_logout/ from 127.0.0.1
+ERROR 2026-05-01 12:35:14,909 exceptions 13107 125055309702848 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-01 12:35:14,911 middleware 13107 125055309702848 Response: POST /api/auth/change_password_otp_logout/ [401] - 0.005s
+WARNING 2026-05-01 12:35:14,911 log 13107 125055309702848 Unauthorized: /api/auth/change_password_otp_logout/
+WARNING 2026-05-01 12:35:14,913 basehttp 13107 125055309702848 "POST /api/auth/change_password_otp_logout/ HTTP/1.1" 401 132
+INFO 2026-05-01 12:37:26,960 middleware 13329 129595537880768 Request: POST /api/auth/change_password_otp_logout/ from 127.0.0.1
+ERROR 2026-05-01 12:37:26,962 exceptions 13329 129595537880768 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-01 12:37:26,964 middleware 13329 129595537880768 Response: POST /api/auth/change_password_otp_logout/ [401] - 0.004s
+WARNING 2026-05-01 12:37:26,964 log 13329 129595537880768 Unauthorized: /api/auth/change_password_otp_logout/
+WARNING 2026-05-01 12:37:26,965 basehttp 13329 129595537880768 "POST /api/auth/change_password_otp_logout/ HTTP/1.1" 401 132
+INFO 2026-05-01 12:37:37,998 middleware 13407 136823540016832 Request: POST /api/auth/change_password_otp_logout/ from 127.0.0.1
+INFO 2026-05-01 12:37:46,628 middleware 13407 136823540016832 Response: POST /api/auth/change_password_otp_logout/ [200] - 8.629s

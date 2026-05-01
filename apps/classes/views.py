@@ -79,7 +79,7 @@ class ClassViewSet(viewsets.ModelViewSet):
         return Response({'message':'Successfully enrolled', 'class':ClassSerializer(class_obj).data})
 
     @action(detail=True, methods=['post'])
-    def achaassignments(self, request, code=None):
+    def assignments(self, request, code=None):
         """Create an assignment inside a specific class."""
         class_obj = self.get_object()
         serializer = AssignmentCreateSerializer(data=request.data)

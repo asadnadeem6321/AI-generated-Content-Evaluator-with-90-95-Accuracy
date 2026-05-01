@@ -182,10 +182,9 @@ SPECTACULAR_SETTINGS = {
 # CORS Settings
 CORS_ALLOWED_ORIGINS = config(
     'CORS_ALLOWED_ORIGINS',
-    default='http://localhost:3000,http://localhost:5173',
+    default='http://localhost:3000,http://localhost:5173,https://ai-content-evaluator.netlify.app',
     cast=lambda v: [s.strip() for s in v.split(',')]
 )
-
 CORS_ALLOW_CREDENTIALS = True
 
 # Celery Configuration
