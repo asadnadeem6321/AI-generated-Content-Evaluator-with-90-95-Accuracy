@@ -96,6 +96,14 @@ class ClassViewSet(viewsets.ModelViewSet):
         )
 
         return Response(AssignmentSerializer(assignment).data, status=status.HTTP_201_CREATED)
+    @action(detail=True, methods=['get'])
+    # get all assignments in a class (teacher's and student's api)
+    def assignment(self, request, code=None):
+        class_obj = self.get_object()
+        assignments = Assignment.objects.filter(class_obj=class_obj)
+
+        serializer = AssignmentSerializer(assignments, many=True)
+        return Response(serializer.data)
 
     @action(detail=True, methods=['get'])
     def students(self, request, code=None):
@@ -107,6 +115,57 @@ class ClassViewSet(viewsets.ModelViewSet):
         serializer = EnrolledStudentSerializer(enrollments, many=True)
         return Response(serializer.data)
 
+        
+    @action(detail=True, methods=['post'], permission_classes=[IsStudent])
+    # Student leaves the class (student's api)
+    def leave(self, request, code=None):
+        class_obj = self.get_object()
+
+        enrollment = Enrollment.objects.filter(
+            student=request.user,
+            class_obj=class_obj
+        ).first()
+
+        if not enrollment:
+            return Response(
+                {"error": "You are not enrolled in this class"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        enrollment.delete()
+
+        return Response(
+            {"message": "You left the class successfully"}
+        )
+    
+    @action(detail=True, methods=['post'], permission_classes=[IsTeacher])
+    # Teacher removes a student from the class (teacher's api)
+    def remove_student(self, request, code=None):
+        class_obj = self.get_object()
+        student_id = request.data.get("student_id")
+
+        if not student_id:
+            return Response(
+                {"error": "student_id is required"},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        enrollment = Enrollment.objects.filter(
+            student_id=student_id,
+            class_obj=class_obj
+        ).first()
+
+        if not enrollment:
+            return Response(
+                {"error": "Student not found in this class"},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        enrollment.delete()
+
+        return Response(
+            {"message": "Student removed from class successfully"}
+        )
 
 # Assignment view sset
 class AssignmentViewSet(viewsets.ModelViewSet):

@@ -2529,3 +2529,799 @@ WARNING 2026-05-01 12:37:26,964 log 13329 129595537880768 Unauthorized: /api/aut
 WARNING 2026-05-01 12:37:26,965 basehttp 13329 129595537880768 "POST /api/auth/change_password_otp_logout/ HTTP/1.1" 401 132
 INFO 2026-05-01 12:37:37,998 middleware 13407 136823540016832 Request: POST /api/auth/change_password_otp_logout/ from 127.0.0.1
 INFO 2026-05-01 12:37:46,628 middleware 13407 136823540016832 Response: POST /api/auth/change_password_otp_logout/ [200] - 8.629s
+INFO 2026-05-01 13:06:57,932 middleware 13761 131009316120256 Request: GET /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 13:06:57,976 exceptions 13761 131009316120256 Exception occurred: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2026-05-01 13:06:57,978 middleware 13761 131009316120256 Response: GET /api/classes/08Y025/assignments/ [405] - 0.046s
+WARNING 2026-05-01 13:06:57,979 log 13761 131009316120256 Method Not Allowed: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 13:06:57,979 basehttp 13761 131009316120256 "GET /api/classes/08Y025/assignments/ HTTP/1.1" 405 96
+INFO 2026-05-01 13:07:06,088 middleware 13761 131009316120256 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 13:07:06,113 exceptions 13761 131009316120256 Exception occurred: JSON parse error - Expecting value: line 4 column 1 (char 3)
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 64, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 4 column 1 (char 3)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 85, in assignments
+    serializer = AssignmentCreateSerializer(data=request.data)
+                                                 ^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+                              ^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 66, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting value: line 4 column 1 (char 3)
+INFO 2026-05-01 13:07:06,118 middleware 13761 131009316120256 Response: POST /api/classes/08Y025/assignments/ [400] - 0.030s
+WARNING 2026-05-01 13:07:06,118 log 13761 131009316120256 Bad Request: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 13:07:06,119 basehttp 13761 131009316120256 "POST /api/classes/08Y025/assignments/ HTTP/1.1" 400 162
+INFO 2026-05-01 13:12:38,397 middleware 13761 131009306678976 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 13:12:38,427 exceptions 13761 131009306678976 Exception occurred: {'deadline': [ErrorDetail(string='Datetime has wrong format. Use one of these formats instead: YYYY-MM-DDThh:mm[:ss[.uuuuuu]][+HH:MM|-HH:MM|Z].', code='invalid')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 86, in assignments
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'deadline': [ErrorDetail(string='Datetime has wrong format. Use one of these formats instead: YYYY-MM-DDThh:mm[:ss[.uuuuuu]][+HH:MM|-HH:MM|Z].', code='invalid')]}
+INFO 2026-05-01 13:12:38,429 middleware 13761 131009306678976 Response: POST /api/classes/08Y025/assignments/ [400] - 0.031s
+WARNING 2026-05-01 13:12:38,429 log 13761 131009306678976 Bad Request: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 13:12:38,430 basehttp 13761 131009306678976 "POST /api/classes/08Y025/assignments/ HTTP/1.1" 400 172
+INFO 2026-05-01 13:13:53,577 middleware 13761 131009298286272 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 13:13:53,599 exceptions 13761 131009298286272 Exception occurred: {'deadline': [ErrorDetail(string='Datetime has wrong format. Use one of these formats instead: YYYY-MM-DDThh:mm[:ss[.uuuuuu]][+HH:MM|-HH:MM|Z].', code='invalid')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 86, in assignments
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'deadline': [ErrorDetail(string='Datetime has wrong format. Use one of these formats instead: YYYY-MM-DDThh:mm[:ss[.uuuuuu]][+HH:MM|-HH:MM|Z].', code='invalid')]}
+INFO 2026-05-01 13:13:53,600 middleware 13761 131009298286272 Response: POST /api/classes/08Y025/assignments/ [400] - 0.023s
+WARNING 2026-05-01 13:13:53,600 log 13761 131009298286272 Bad Request: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 13:13:53,601 basehttp 13761 131009298286272 "POST /api/classes/08Y025/assignments/ HTTP/1.1" 400 172
+INFO 2026-05-01 13:16:31,454 middleware 13761 131009289893568 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+INFO 2026-05-01 13:16:31,506 middleware 13761 131009289893568 Response: POST /api/classes/08Y025/assignments/ [201] - 0.052s
+INFO 2026-05-01 13:19:41,425 middleware 13761 131009281500864 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-01 13:19:41,469 middleware 13761 131009281500864 Response: GET /api/classes/08Y025/students/ [200] - 0.043s
+INFO 2026-05-01 13:21:48,824 middleware 13761 131009273108160 Request: GET /api/assignments/ from 127.0.0.1
+INFO 2026-05-01 13:21:48,859 middleware 13761 131009273108160 Response: GET /api/assignments/ [404] - 0.035s
+WARNING 2026-05-01 13:21:48,859 log 13761 131009273108160 Not Found: /api/assignments/
+WARNING 2026-05-01 13:21:48,860 basehttp 13761 131009273108160 "GET /api/assignments/ HTTP/1.1" 404 3876
+INFO 2026-05-01 13:22:06,551 middleware 13761 131009273108160 Request: GET /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-05-01 13:22:06,573 exceptions 13761 131009273108160 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-01 13:22:06,579 middleware 13761 131009273108160 Response: GET /api/classes/assignments/ [404] - 0.028s
+WARNING 2026-05-01 13:22:06,579 log 13761 131009273108160 Not Found: /api/classes/assignments/
+WARNING 2026-05-01 13:22:06,580 basehttp 13761 131009273108160 "GET /api/classes/assignments/ HTTP/1.1" 404 62
+INFO 2026-05-01 13:22:12,975 middleware 13761 131009273108160 Request: GET /api/assignments/ from 127.0.0.1
+INFO 2026-05-01 13:22:12,985 middleware 13761 131009273108160 Response: GET /api/assignments/ [404] - 0.010s
+WARNING 2026-05-01 13:22:12,985 log 13761 131009273108160 Not Found: /api/assignments/
+WARNING 2026-05-01 13:22:12,986 basehttp 13761 131009273108160 "GET /api/assignments/ HTTP/1.1" 404 3876
+INFO 2026-05-01 13:23:18,623 middleware 13761 131009263666880 Request: GET /api/assignments/assignments/ from 127.0.0.1
+INFO 2026-05-01 13:23:18,633 middleware 13761 131009263666880 Response: GET /api/assignments/assignments/ [404] - 0.009s
+WARNING 2026-05-01 13:23:18,633 log 13761 131009263666880 Not Found: /api/assignments/assignments/
+WARNING 2026-05-01 13:23:18,634 basehttp 13761 131009263666880 "GET /api/assignments/assignments/ HTTP/1.1" 404 3912
+INFO 2026-05-01 13:24:18,968 middleware 13761 131008716338880 Request: GET /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-01 13:24:18,977 middleware 13761 131008716338880 Response: GET /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [404] - 0.010s
+WARNING 2026-05-01 13:24:18,978 log 13761 131008716338880 Not Found: /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/
+WARNING 2026-05-01 13:24:18,979 basehttp 13761 131008716338880 "GET /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ HTTP/1.1" 404 3987
+INFO 2026-05-01 13:25:59,339 middleware 13761 131008707946176 Request: POST /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ from 127.0.0.1
+INFO 2026-05-01 13:25:59,352 middleware 13761 131008707946176 Response: POST /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ [404] - 0.013s
+WARNING 2026-05-01 13:25:59,353 log 13761 131008707946176 Not Found: /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/
+WARNING 2026-05-01 13:25:59,353 basehttp 13761 131008707946176 "POST /api/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ HTTP/1.1" 404 4036
+INFO 2026-05-01 13:41:15,708 middleware 13761 131008699553472 Request: POST /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ from 127.0.0.1
+INFO 2026-05-01 13:41:15,737 middleware 13761 131008699553472 Response: POST /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ [400] - 0.029s
+WARNING 2026-05-01 13:41:15,738 log 13761 131008699553472 Bad Request: /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/
+WARNING 2026-05-01 13:41:15,739 basehttp 13761 131008699553472 "POST /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ HTTP/1.1" 400 33
+INFO 2026-05-01 13:41:27,169 middleware 13761 131008699553472 Request: POST /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ from 127.0.0.1
+INFO 2026-05-01 13:41:27,222 middleware 13761 131008699553472 Response: POST /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/extend_deadline/ [200] - 0.053s
+INFO 2026-05-01 13:45:00,519 middleware 13761 131008691160768 Request: POST /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-05-01 13:45:00,545 exceptions 13761 131008691160768 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-05-01 13:45:00,546 middleware 13761 131008691160768 Response: POST /api/classes/assignments/ [405] - 0.026s
+WARNING 2026-05-01 13:45:00,546 log 13761 131008691160768 Method Not Allowed: /api/classes/assignments/
+WARNING 2026-05-01 13:45:00,547 basehttp 13761 131008691160768 "POST /api/classes/assignments/ HTTP/1.1" 405 98
+INFO 2026-05-01 13:45:06,200 middleware 13761 131008691160768 Request: GET /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-05-01 13:45:06,223 exceptions 13761 131008691160768 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-01 13:45:06,224 middleware 13761 131008691160768 Response: GET /api/classes/assignments/ [404] - 0.024s
+WARNING 2026-05-01 13:45:06,224 log 13761 131008691160768 Not Found: /api/classes/assignments/
+WARNING 2026-05-01 13:45:06,225 basehttp 13761 131008691160768 "GET /api/classes/assignments/ HTTP/1.1" 404 62
+INFO 2026-05-01 13:45:21,978 middleware 13761 131008691160768 Request: GET /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-01 13:45:22,020 middleware 13761 131008691160768 Response: GET /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [200] - 0.042s
+INFO 2026-05-01 14:14:46,251 middleware 13761 131008682768064 Request: GET /api/classes/9O4CN2/ from 127.0.0.1
+ERROR 2026-05-01 14:14:46,273 exceptions 13761 131008682768064 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-01 14:14:46,275 middleware 13761 131008682768064 Response: GET /api/classes/9O4CN2/ [404] - 0.024s
+WARNING 2026-05-01 14:14:46,276 log 13761 131008682768064 Not Found: /api/classes/9O4CN2/
+WARNING 2026-05-01 14:14:46,277 basehttp 13761 131008682768064 "GET /api/classes/9O4CN2/ HTTP/1.1" 404 62
+INFO 2026-05-01 14:15:21,329 middleware 13761 131008682768064 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-01 14:15:21,360 middleware 13761 131008682768064 Response: GET /api/classes/ [200] - 0.030s
+INFO 2026-05-01 14:15:49,015 middleware 13761 131008682768064 Request: GET /api/classes/08Y025/ from 127.0.0.1
+INFO 2026-05-01 14:15:49,039 middleware 13761 131008682768064 Response: GET /api/classes/08Y025/ [200] - 0.024s
+INFO 2026-05-01 14:16:05,732 middleware 13761 131008682768064 Request: GET /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 14:16:05,760 exceptions 13761 131008682768064 Exception occurred: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2026-05-01 14:16:05,761 middleware 13761 131008682768064 Response: GET /api/classes/08Y025/assignments/ [405] - 0.029s
+WARNING 2026-05-01 14:16:05,761 log 13761 131008682768064 Method Not Allowed: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 14:16:05,762 basehttp 13761 131008682768064 "GET /api/classes/08Y025/assignments/ HTTP/1.1" 405 96
+INFO 2026-05-01 14:17:27,747 middleware 13761 131008674375360 Request: GET /api/assignments/08Y025/ from 127.0.0.1
+INFO 2026-05-01 14:17:27,758 middleware 13761 131008674375360 Response: GET /api/assignments/08Y025/ [404] - 0.010s
+WARNING 2026-05-01 14:17:27,758 log 13761 131008674375360 Not Found: /api/assignments/08Y025/
+WARNING 2026-05-01 14:17:27,759 basehttp 13761 131008674375360 "GET /api/assignments/08Y025/ HTTP/1.1" 404 3897
+INFO 2026-05-01 14:17:41,106 middleware 13761 131008674375360 Request: GET /api/classes/assignments/08Y025/ from 127.0.0.1
+ERROR 2026-05-01 14:17:41,126 exceptions 13761 131008674375360 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“08Y025” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-05-01 14:17:41,146 middleware 13761 131008674375360 Response: GET /api/classes/assignments/08Y025/ [404] - 0.040s
+WARNING 2026-05-01 14:17:41,147 log 13761 131008674375360 Not Found: /api/classes/assignments/08Y025/
+WARNING 2026-05-01 14:17:41,148 basehttp 13761 131008674375360 "GET /api/classes/assignments/08Y025/ HTTP/1.1" 404 62
+INFO 2026-05-01 14:17:54,258 middleware 13761 131008674375360 Request: GET /api/assignments/08Y025 from 127.0.0.1
+INFO 2026-05-01 14:17:54,269 middleware 13761 131008674375360 Response: GET /api/assignments/08Y025 [404] - 0.011s
+WARNING 2026-05-01 14:17:54,269 log 13761 131008674375360 Not Found: /api/assignments/08Y025
+WARNING 2026-05-01 14:17:54,270 basehttp 13761 131008674375360 "GET /api/assignments/08Y025 HTTP/1.1" 404 3894
+INFO 2026-05-01 14:18:28,485 middleware 13761 131008674375360 Request: GET /api/classes/08Y025/assignments from 127.0.0.1
+INFO 2026-05-01 14:18:28,501 middleware 13761 131008674375360 Response: GET /api/classes/08Y025/assignments [404] - 0.015s
+INFO 2026-05-01 14:18:28,508 middleware 13761 131008674375360 Request: GET /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 14:18:28,526 exceptions 13761 131008674375360 Exception occurred: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2026-05-01 14:18:28,527 middleware 13761 131008674375360 Response: GET /api/classes/08Y025/assignments/ [405] - 0.019s
+WARNING 2026-05-01 14:18:28,528 log 13761 131008674375360 Method Not Allowed: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 14:18:28,528 basehttp 13761 131008674375360 "GET /api/classes/08Y025/assignments/ HTTP/1.1" 405 96
+INFO 2026-05-01 14:18:34,839 middleware 13761 131008674375360 Request: GET /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 14:18:34,861 exceptions 13761 131008674375360 Exception occurred: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2026-05-01 14:18:34,865 middleware 13761 131008674375360 Response: GET /api/classes/08Y025/assignments/ [405] - 0.026s
+WARNING 2026-05-01 14:18:34,865 log 13761 131008674375360 Method Not Allowed: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 14:18:34,866 basehttp 13761 131008674375360 "GET /api/classes/08Y025/assignments/ HTTP/1.1" 405 96
+INFO 2026-05-01 14:18:39,774 middleware 13761 131008674375360 Request: GET /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 14:18:39,790 exceptions 13761 131008674375360 Exception occurred: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2026-05-01 14:18:39,791 middleware 13761 131008674375360 Response: GET /api/classes/08Y025/assignments/ [405] - 0.017s
+WARNING 2026-05-01 14:18:39,791 log 13761 131008674375360 Method Not Allowed: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 14:18:39,792 basehttp 13761 131008674375360 "GET /api/classes/08Y025/assignments/ HTTP/1.1" 405 96
+INFO 2026-05-01 14:22:10,186 middleware 18989 126078019430080 Request: GET /api/classes/08Y025/assignments/ from 127.0.0.1
+INFO 2026-05-01 14:22:10,244 middleware 18989 126078019430080 Response: GET /api/classes/08Y025/assignments/ [200] - 0.057s
+INFO 2026-05-01 14:22:54,182 middleware 18989 126078019430080 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 14:22:54,202 exceptions 18989 126078019430080 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-05-01 14:22:54,205 middleware 18989 126078019430080 Response: POST /api/classes/08Y025/assignments/ [405] - 0.022s
+WARNING 2026-05-01 14:22:54,205 log 18989 126078019430080 Method Not Allowed: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 14:22:54,206 basehttp 18989 126078019430080 "POST /api/classes/08Y025/assignments/ HTTP/1.1" 405 98
+INFO 2026-05-01 14:23:20,966 middleware 19138 129070809474752 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+ERROR 2026-05-01 14:23:20,998 exceptions 19138 129070809474752 Exception occurred: {'deadline': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 86, in assignments
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'deadline': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-05-01 14:23:21,011 middleware 19138 129070809474752 Response: POST /api/classes/08Y025/assignments/ [400] - 0.046s
+WARNING 2026-05-01 14:23:21,012 log 19138 129070809474752 Bad Request: /api/classes/08Y025/assignments/
+WARNING 2026-05-01 14:23:21,013 basehttp 19138 129070809474752 "POST /api/classes/08Y025/assignments/ HTTP/1.1" 400 86
+INFO 2026-05-01 14:23:31,524 middleware 19138 129070809474752 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+INFO 2026-05-01 14:23:31,562 middleware 19138 129070809474752 Response: POST /api/classes/08Y025/assignments/ [201] - 0.038s
+INFO 2026-05-01 14:23:43,205 middleware 19138 129070809474752 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-01 14:23:43,241 middleware 19138 129070809474752 Response: GET /api/classes/08Y025/assignment/ [200] - 0.036s
+INFO 2026-05-01 14:26:06,647 middleware 19138 129070800033472 Request: DELETE /api/classes/08Y025/assignment/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:26:06,672 middleware 19138 129070800033472 Response: DELETE /api/classes/08Y025/assignment/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.024s
+WARNING 2026-05-01 14:26:06,672 log 19138 129070800033472 Not Found: /api/classes/08Y025/assignment/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:26:06,674 basehttp 19138 129070800033472 "DELETE /api/classes/08Y025/assignment/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 9352
+INFO 2026-05-01 14:26:13,822 middleware 19138 129070800033472 Request: DELETE /api/classes/08Y025/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:26:13,833 middleware 19138 129070800033472 Response: DELETE /api/classes/08Y025/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.011s
+WARNING 2026-05-01 14:26:13,834 log 19138 129070800033472 Not Found: /api/classes/08Y025/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:26:13,834 basehttp 19138 129070800033472 "DELETE /api/classes/08Y025/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 9355
+INFO 2026-05-01 14:27:32,257 middleware 19138 129070791640768 Request: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:27:32,267 middleware 19138 129070791640768 Response: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.010s
+WARNING 2026-05-01 14:27:32,269 log 19138 129070791640768 Not Found: /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:27:32,273 basehttp 19138 129070791640768 "DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 3990
+INFO 2026-05-01 14:27:38,956 middleware 19138 129070791640768 Request: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70 from 127.0.0.1
+INFO 2026-05-01 14:27:38,965 middleware 19138 129070791640768 Response: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70 [404] - 0.009s
+WARNING 2026-05-01 14:27:38,966 log 19138 129070791640768 Not Found: /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70
+WARNING 2026-05-01 14:27:38,967 basehttp 19138 129070791640768 "DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70 HTTP/1.1" 404 3987
+INFO 2026-05-01 14:28:09,859 middleware 19138 129070791640768 Request: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:28:09,870 middleware 19138 129070791640768 Response: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.011s
+WARNING 2026-05-01 14:28:09,871 log 19138 129070791640768 Not Found: /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:28:09,872 basehttp 19138 129070791640768 "DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 3990
+INFO 2026-05-01 14:28:44,722 middleware 19138 129070783248064 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-05-01 14:28:44,860 middleware 19138 129070783248064 Response: GET /admin/classes/class/ [200] - 0.139s
+INFO 2026-05-01 14:28:45,013 middleware 19138 129070783248064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 14:28:45,068 middleware 19138 129070783248064 Response: GET /admin/jsi18n/ [200] - 0.055s
+INFO 2026-05-01 14:28:45,400 middleware 19138 129070783248064 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-01 14:28:45,415 middleware 19138 129070783248064 Response: GET /favicon.ico [404] - 0.015s
+WARNING 2026-05-01 14:28:45,416 log 19138 129070783248064 Not Found: /favicon.ico
+WARNING 2026-05-01 14:28:45,417 basehttp 19138 129070783248064 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-01 14:28:47,074 middleware 19138 129070783248064 Request: GET /admin/classes/class/7/change/ from 127.0.0.1
+INFO 2026-05-01 14:28:47,155 middleware 19138 129070783248064 Response: GET /admin/classes/class/7/change/ [200] - 0.081s
+INFO 2026-05-01 14:28:47,221 middleware 19138 129070783248064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 14:28:47,246 middleware 19138 129070783248064 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-05-01 14:29:22,327 middleware 19946 138447209621184 Request: GET /admin/classes/class/7/change/ from 127.0.0.1
+INFO 2026-05-01 14:29:22,464 middleware 19946 138447209621184 Response: GET /admin/classes/class/7/change/ [200] - 0.137s
+INFO 2026-05-01 14:29:22,556 middleware 19946 138447209621184 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 14:29:22,591 middleware 19946 138447209621184 Response: GET /admin/jsi18n/ [200] - 0.035s
+INFO 2026-05-01 14:29:24,859 middleware 19946 138447209621184 Request: GET /admin/classes/assignment/ from 127.0.0.1
+INFO 2026-05-01 14:29:24,930 middleware 19946 138447209621184 Response: GET /admin/classes/assignment/ [200] - 0.071s
+INFO 2026-05-01 14:29:24,996 middleware 19946 138447209621184 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 14:29:25,034 middleware 19946 138447209621184 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-01 14:29:28,212 middleware 19946 138447209621184 Request: GET /admin/classes/assignment/12ec757c-2c7c-4728-b358-26663edf6c70/change/ from 127.0.0.1
+INFO 2026-05-01 14:29:28,291 middleware 19946 138447209621184 Response: GET /admin/classes/assignment/12ec757c-2c7c-4728-b358-26663edf6c70/change/ [200] - 0.079s
+INFO 2026-05-01 14:29:28,351 middleware 19946 138447209621184 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 14:29:28,376 middleware 19946 138447209621184 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-05-01 14:29:30,934 middleware 19946 138447209621184 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-05-01 14:29:30,984 middleware 19946 138447209621184 Response: GET /admin/classes/class/ [200] - 0.051s
+INFO 2026-05-01 14:29:31,038 middleware 19946 138447209621184 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 14:29:31,071 middleware 19946 138447209621184 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-01 14:33:43,054 middleware 19946 138447129933504 Request: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:33:43,067 middleware 19946 138447129933504 Response: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.013s
+WARNING 2026-05-01 14:33:43,068 log 19946 138447129933504 Not Found: /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:33:43,069 basehttp 19946 138447129933504 "DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 3990
+INFO 2026-05-01 14:34:02,339 middleware 19946 138447129933504 Request: DELETE /api/assignments/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:34:02,349 middleware 19946 138447129933504 Response: DELETE /api/assignments/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.010s
+WARNING 2026-05-01 14:34:02,350 log 19946 138447129933504 Not Found: /api/assignments/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:34:02,350 basehttp 19946 138447129933504 "DELETE /api/assignments/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 4026
+INFO 2026-05-01 14:35:40,371 middleware 19946 138447121540800 Request: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:35:40,380 middleware 19946 138447121540800 Response: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.009s
+WARNING 2026-05-01 14:35:40,381 log 19946 138447121540800 Not Found: /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:35:40,382 basehttp 19946 138447121540800 "DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 3990
+INFO 2026-05-01 14:39:24,103 middleware 19946 138447209621184 Request: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:39:24,111 middleware 19946 138447209621184 Response: DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.008s
+WARNING 2026-05-01 14:39:24,111 log 19946 138447209621184 Not Found: /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 14:39:24,112 basehttp 19946 138447209621184 "DELETE /api/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 3990
+INFO 2026-05-01 14:41:25,797 middleware 19946 138447113148096 Request: DELETE /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+INFO 2026-05-01 14:41:25,846 middleware 19946 138447113148096 Response: DELETE /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [204] - 0.049s
+INFO 2026-05-01 14:46:51,467 middleware 19946 138447103706816 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-05-01 14:46:51,507 middleware 19946 138447103706816 Response: POST /api/classes/ [201] - 0.039s
+INFO 2026-05-01 14:47:00,352 middleware 19946 138447103706816 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-01 14:47:00,379 middleware 19946 138447103706816 Response: GET /api/classes/ [200] - 0.027s
+INFO 2026-05-01 14:47:18,939 middleware 19946 138447103706816 Request: DELETE /api/classes/55SO9F/ from 127.0.0.1
+INFO 2026-05-01 14:47:18,976 middleware 19946 138447103706816 Response: DELETE /api/classes/55SO9F/ [204] - 0.037s
+INFO 2026-05-01 15:22:20,223 middleware 21323 140211231123136 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-05-01 15:22:20,373 middleware 21323 140211231123136 Response: GET /admin/classes/class/ [200] - 0.150s
+INFO 2026-05-01 15:22:20,500 middleware 21323 140211231123136 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 15:22:20,548 middleware 21323 140211231123136 Response: GET /admin/jsi18n/ [200] - 0.047s
+INFO 2026-05-01 16:17:06,104 middleware 22721 130277482424000 Request: DELETE /api/classes/ from 127.0.0.1
+ERROR 2026-05-01 16:17:06,141 exceptions 22721 130277482424000 Exception occurred: Method "DELETE" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "DELETE" not allowed.
+INFO 2026-05-01 16:17:06,143 middleware 22721 130277482424000 Response: DELETE /api/classes/ [405] - 0.039s
+WARNING 2026-05-01 16:17:06,144 log 22721 130277482424000 Method Not Allowed: /api/classes/
+WARNING 2026-05-01 16:17:06,145 basehttp 22721 130277482424000 "DELETE /api/classes/ HTTP/1.1" 405 102
+INFO 2026-05-01 16:17:13,264 middleware 22721 130277482424000 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-01 16:17:13,289 middleware 22721 130277482424000 Response: GET /api/classes/ [200] - 0.026s
+INFO 2026-05-01 16:18:14,213 middleware 22721 130277472982720 Request: POST /api/classes/08Y025/leave/ from 127.0.0.1
+INFO 2026-05-01 16:18:14,245 middleware 22721 130277472982720 Response: POST /api/classes/08Y025/leave/ [200] - 0.032s
+INFO 2026-05-01 16:19:06,591 middleware 22721 130277464590016 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-01 16:19:06,728 middleware 22721 130277464590016 Response: GET /admin/classes/enrollment/ [200] - 0.138s
+INFO 2026-05-01 16:19:06,826 middleware 22721 130277464590016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 16:19:06,870 middleware 22721 130277464590016 Response: GET /admin/jsi18n/ [200] - 0.043s
+INFO 2026-05-01 16:19:11,387 middleware 22721 130277464590016 Request: GET /admin/classes/enrollment/add/ from 127.0.0.1
+INFO 2026-05-01 16:19:11,472 middleware 22721 130277464590016 Response: GET /admin/classes/enrollment/add/ [200] - 0.085s
+INFO 2026-05-01 16:19:11,532 middleware 22721 130277464590016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 16:19:11,569 middleware 22721 130277464590016 Response: GET /admin/jsi18n/ [200] - 0.037s
+INFO 2026-05-01 16:19:19,365 middleware 22721 130277464590016 Request: POST /admin/classes/enrollment/add/ from 127.0.0.1
+INFO 2026-05-01 16:19:19,406 middleware 22721 130277464590016 Response: POST /admin/classes/enrollment/add/ [302] - 0.041s
+INFO 2026-05-01 16:19:19,419 middleware 22721 130277464590016 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-01 16:19:19,481 middleware 22721 130277464590016 Response: GET /admin/classes/enrollment/ [200] - 0.062s
+INFO 2026-05-01 16:19:19,591 middleware 22721 130277464590016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 16:19:19,630 middleware 22721 130277464590016 Response: GET /admin/jsi18n/ [200] - 0.039s
+INFO 2026-05-01 16:19:25,164 middleware 22721 130277445707456 Request: POST /api/classes/08Y025/leave/ from 127.0.0.1
+INFO 2026-05-01 16:19:25,200 middleware 22721 130277445707456 Response: POST /api/classes/08Y025/leave/ [200] - 0.036s
+INFO 2026-05-01 16:19:27,215 middleware 22721 130277464590016 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-01 16:19:27,253 middleware 22721 130277464590016 Response: GET /admin/classes/enrollment/ [200] - 0.038s
+INFO 2026-05-01 16:19:27,346 middleware 22721 130277464590016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 16:19:27,369 middleware 22721 130277464590016 Response: GET /admin/jsi18n/ [200] - 0.023s
+INFO 2026-05-01 16:20:52,480 middleware 22721 130277464590016 Request: GET /admin/classes/enrollment/add/ from 127.0.0.1
+INFO 2026-05-01 16:20:52,537 middleware 22721 130277464590016 Response: GET /admin/classes/enrollment/add/ [200] - 0.057s
+INFO 2026-05-01 16:20:52,627 middleware 22721 130277464590016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 16:20:52,660 middleware 22721 130277464590016 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-01 16:20:57,038 middleware 22721 130277464590016 Request: POST /admin/classes/enrollment/add/ from 127.0.0.1
+INFO 2026-05-01 16:20:57,076 middleware 22721 130277464590016 Response: POST /admin/classes/enrollment/add/ [302] - 0.038s
+INFO 2026-05-01 16:20:57,087 middleware 22721 130277464590016 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-01 16:20:57,145 middleware 22721 130277464590016 Response: GET /admin/classes/enrollment/ [200] - 0.059s
+INFO 2026-05-01 16:20:57,249 middleware 22721 130277464590016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 16:20:57,279 middleware 22721 130277464590016 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-05-01 16:21:53,752 middleware 22721 130277464590016 Request: GET /api/auth/profile/ from 127.0.0.1
+ERROR 2026-05-01 16:21:53,775 exceptions 22721 130277464590016 Exception occurred: JSON parse error - Expecting value: line 16 column 1 (char 15)
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 64, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 16 column 1 (char 15)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 394, in profile
+    serializer = UserSerializer(request.user, data = request.data, partial=True )
+                                                     ^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+                              ^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 66, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting value: line 16 column 1 (char 15)
+INFO 2026-05-01 16:21:53,781 middleware 22721 130277464590016 Response: GET /api/auth/profile/ [400] - 0.029s
+WARNING 2026-05-01 16:21:53,782 log 22721 130277464590016 Bad Request: /api/auth/profile/
+WARNING 2026-05-01 16:21:53,782 basehttp 22721 130277464590016 "GET /api/auth/profile/ HTTP/1.1" 400 166
+INFO 2026-05-01 16:22:18,758 middleware 22721 130277464590016 Request: GET /api/auth/p from 127.0.0.1
+INFO 2026-05-01 16:22:18,773 middleware 22721 130277464590016 Response: GET /api/auth/p [404] - 0.015s
+WARNING 2026-05-01 16:22:18,774 log 22721 130277464590016 Not Found: /api/auth/p
+WARNING 2026-05-01 16:22:18,775 basehttp 22721 130277464590016 "GET /api/auth/p HTTP/1.1" 404 10700
+INFO 2026-05-01 16:22:22,282 middleware 22721 130277464590016 Request: POST /api/auth/profile/ from 127.0.0.1
+ERROR 2026-05-01 16:22:22,301 exceptions 22721 130277464590016 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-05-01 16:22:22,302 middleware 22721 130277464590016 Response: POST /api/auth/profile/ [405] - 0.020s
+WARNING 2026-05-01 16:22:22,302 log 22721 130277464590016 Method Not Allowed: /api/auth/profile/
+WARNING 2026-05-01 16:22:22,303 basehttp 22721 130277464590016 "POST /api/auth/profile/ HTTP/1.1" 405 98
+INFO 2026-05-01 16:22:28,243 middleware 22721 130277464590016 Request: GET /api/auth/profile/ from 127.0.0.1
+ERROR 2026-05-01 16:22:28,263 exceptions 22721 130277464590016 Exception occurred: JSON parse error - Expecting value: line 16 column 1 (char 15)
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 64, in parse
+    return json.load(decoded_stream, parse_constant=parse_constant)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/utils/json.py", line 31, in load
+    return json.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 16 column 1 (char 15)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 394, in profile
+    serializer = UserSerializer(request.user, data = request.data, partial=True )
+                                                     ^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 216, in data
+    self._load_data_and_files()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 279, in _load_data_and_files
+    self._data, self._files = self._parse()
+                              ^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 354, in _parse
+    parsed = parser.parse(stream, media_type, self.parser_context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/parsers.py", line 66, in parse
+    raise ParseError('JSON parse error - %s' % str(exc))
+rest_framework.exceptions.ParseError: JSON parse error - Expecting value: line 16 column 1 (char 15)
+INFO 2026-05-01 16:22:28,265 middleware 22721 130277464590016 Response: GET /api/auth/profile/ [400] - 0.022s
+WARNING 2026-05-01 16:22:28,266 log 22721 130277464590016 Bad Request: /api/auth/profile/
+WARNING 2026-05-01 16:22:28,266 basehttp 22721 130277464590016 "GET /api/auth/profile/ HTTP/1.1" 400 166
+INFO 2026-05-01 16:23:01,748 middleware 22721 130277464590016 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-01 16:23:01,783 middleware 22721 130277464590016 Response: GET /api/auth/profile/ [200] - 0.035s
+INFO 2026-05-01 16:23:18,821 middleware 22721 130277464590016 Request: POST /api/classes/08Y025/remove_student/ from 127.0.0.1
+INFO 2026-05-01 16:23:18,851 middleware 22721 130277464590016 Response: POST /api/classes/08Y025/remove_student/ [200] - 0.030s
+INFO 2026-05-01 16:43:52,389 middleware 22721 130277456197312 Request: PATCH /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+ERROR 2026-05-01 16:43:52,413 exceptions 22721 130277456197312 Exception occurred: No Assignment matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Assignment.DoesNotExist: Assignment matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Assignment matches the given query.
+INFO 2026-05-01 16:43:52,419 middleware 22721 130277456197312 Response: PATCH /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.030s
+WARNING 2026-05-01 16:43:52,419 log 22721 130277456197312 Not Found: /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 16:43:52,420 basehttp 22721 130277456197312 "PATCH /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 62
+INFO 2026-05-01 16:44:08,162 middleware 22721 130277456197312 Request: PUT /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+ERROR 2026-05-01 16:44:08,184 exceptions 22721 130277456197312 Exception occurred: No Assignment matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Assignment.DoesNotExist: Assignment matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Assignment matches the given query.
+INFO 2026-05-01 16:44:08,185 middleware 22721 130277456197312 Response: PUT /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.023s
+WARNING 2026-05-01 16:44:08,186 log 22721 130277456197312 Not Found: /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 16:44:08,187 basehttp 22721 130277456197312 "PUT /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 62
+INFO 2026-05-01 16:44:12,900 middleware 22721 130277456197312 Request: PUT /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+ERROR 2026-05-01 16:44:12,919 exceptions 22721 130277456197312 Exception occurred: No Assignment matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Assignment.DoesNotExist: Assignment matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Assignment matches the given query.
+INFO 2026-05-01 16:44:12,920 middleware 22721 130277456197312 Response: PUT /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.020s
+WARNING 2026-05-01 16:44:12,920 log 22721 130277456197312 Not Found: /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 16:44:12,921 basehttp 22721 130277456197312 "PUT /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 62
+INFO 2026-05-01 16:44:18,585 middleware 22721 130277456197312 Request: PATCH /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ from 127.0.0.1
+ERROR 2026-05-01 16:44:18,604 exceptions 22721 130277456197312 Exception occurred: No Assignment matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Assignment.DoesNotExist: Assignment matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 82, in partial_update
+    return self.update(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Assignment matches the given query.
+INFO 2026-05-01 16:44:18,605 middleware 22721 130277456197312 Response: PATCH /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ [404] - 0.020s
+WARNING 2026-05-01 16:44:18,605 log 22721 130277456197312 Not Found: /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/
+WARNING 2026-05-01 16:44:18,606 basehttp 22721 130277456197312 "PATCH /api/classes/assignments/12ec757c-2c7c-4728-b358-26663edf6c70/ HTTP/1.1" 404 62
+INFO 2026-05-01 16:45:03,211 middleware 22721 130277456197312 Request: GET /api/classes/assignments/ from 127.0.0.1
+ERROR 2026-05-01 16:45:03,240 exceptions 22721 130277456197312 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-01 16:45:03,242 middleware 22721 130277456197312 Response: GET /api/classes/assignments/ [404] - 0.031s
+WARNING 2026-05-01 16:45:03,243 log 22721 130277456197312 Not Found: /api/classes/assignments/
+WARNING 2026-05-01 16:45:03,245 basehttp 22721 130277456197312 "GET /api/classes/assignments/ HTTP/1.1" 404 62
+INFO 2026-05-01 16:45:40,628 middleware 22721 130277095503552 Request: GET /admin/classes/assignment/ from 127.0.0.1
+INFO 2026-05-01 16:45:40,697 middleware 22721 130277095503552 Response: GET /admin/classes/assignment/ [200] - 0.069s
+INFO 2026-05-01 16:45:40,785 middleware 22721 130277095503552 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 16:45:40,821 middleware 22721 130277095503552 Response: GET /admin/jsi18n/ [200] - 0.037s
+INFO 2026-05-01 16:46:29,868 middleware 22721 130277078718144 Request: GET /api/classes/08Y025/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-01 16:46:29,882 middleware 22721 130277078718144 Response: GET /api/classes/08Y025/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [404] - 0.013s
+WARNING 2026-05-01 16:46:29,882 log 22721 130277078718144 Not Found: /api/classes/08Y025/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/
+WARNING 2026-05-01 16:46:29,883 basehttp 22721 130277078718144 "GET /api/classes/08Y025/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ HTTP/1.1" 404 10476
+INFO 2026-05-01 16:46:35,917 middleware 22721 130277078718144 Request: GET /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-01 16:46:35,952 middleware 22721 130277078718144 Response: GET /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [200] - 0.035s
+INFO 2026-05-01 16:46:52,299 middleware 22721 130277078718144 Request: PATCH /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-01 16:46:52,324 middleware 22721 130277078718144 Response: PATCH /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [200] - 0.025s
