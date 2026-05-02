@@ -3,13 +3,16 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
+from django.http import Http404
 from django.utils import timezone
+from django.db.models import Q
 from apps.dashboard import serializers
-from authentication.permissions import IsStudent, IsTeacher
+from apps.authentication.permissions import IsStudent, IsTeacher
 from .tasks import queue_paragraph_tasks, queue_submission_processing
 
 # Modes
 from .models import Submission
+from apps.classes.models import Assignment
 # Serializers
 from .serializers import (
     SubmissionSerializer, 
@@ -31,13 +34,144 @@ class SubmissionViewSet(viewsets.ModelViewSet):
         return SubmissionSerializer
 
     def get_queryset(self):
-        user = request.user
+        user = self.request.user
+        assignment_id = self.request.query_params.get('assignment')
+        class_id = self.request.query_params.get('class_id') or self.request.query_params.get('class')
+        
+        # Teachers see all submissions in their classes
         if user.is_teacher():
-            # Teacher can see all submissions in their classes
-            return Submission.objects.filter(class_obj__teacher=user)
+            queryset = Submission.objects.filter(
+                assignment__class_obj__teacher=user
+            )
+        # Students see only their own
+        elif user.is_student():
+            queryset = Submission.objects.filter(user=user)
+        # Guests see only their own
         else:
-            # Students and guest users can see only their submissions
-            return Submission.objects.filter(user=user)
+            queryset = Submission.objects.filter(user=user, assignment__isnull=True)
+        
+        # Filter by assignment if provided
+        if assignment_id:
+            queryset = queryset.filter(assignment_id=assignment_id)
+
+        # Filter by class if provided
+        if class_id:
+            queryset = queryset.filter(assignment__class_obj_id=class_id)
+        
+        return queryset.select_related('user', 'assignment').order_by('-submitted_at')
+
+    def get_object(self):
+        try:
+            return super().get_object()
+        except Http404:
+            user = self.request.user
+            if not user.is_teacher():
+                raise
+
+            lookup_url_kwarg = self.lookup_url_kwarg or self.lookup_field
+            lookup_value = self.kwargs.get(lookup_url_kwarg)
+            if not lookup_value:
+                raise
+
+            submission = Submission.objects.filter(id=lookup_value).first()
+            if not submission:
+                raise
+
+            if submission.assignment and submission.assignment.class_obj.teacher == user:
+                return submission
+
+            if submission.assignment is None and submission.assignment_name:
+                teacher_titles = Assignment.objects.filter(
+                    class_obj__teacher=user
+                ).values_list('title', flat=True)
+                if any(title.lower() in submission.assignment_name.lower() for title in teacher_titles):
+                    return submission
+
+            raise
+
+    @action(detail=False, methods=['get'], permission_classes=[IsTeacher], url_path='assignment')
+    def teacher_assignment(self, request):
+        """Teacher: get all submissions for a specific assignment."""
+        assignment_id = request.query_params.get('assignment')
+        if not assignment_id:
+            return Response(
+                {'detail': 'assignment query parameter is required.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        assignment = Assignment.objects.filter(id=assignment_id).first()
+        if not assignment or assignment.class_obj.teacher != request.user:
+            return Response(
+                {'detail': 'Assignment not found or access denied.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        submissions = Submission.objects.filter(
+            Q(assignment_id=assignment_id) |
+            Q(assignment__isnull=True, assignment_name__icontains=assignment.title)
+        ).select_related('user', 'assignment').order_by('-submitted_at')
+
+        page = self.paginate_queryset(submissions)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(submissions, many=True)
+        return Response(serializer.data)
+
+    @action(detail=False, methods=['get'], permission_classes=[IsStudent], url_path='my-assignment')
+    def student_assignment(self, request):
+        """Student: get own submissions for a specific assignment."""
+        assignment_id = request.query_params.get('assignment')
+        if not assignment_id:
+            return Response(
+                {'detail': 'assignment query parameter is required.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        assignment = Assignment.objects.filter(id=assignment_id).first()
+        if not assignment:
+            return Response(
+                {'detail': 'Assignment not found.'},
+                status=status.HTTP_404_NOT_FOUND
+            )
+
+        submissions = Submission.objects.filter(
+            Q(assignment_id=assignment_id) |
+            Q(assignment__isnull=True, assignment_name__icontains=assignment.title),
+            user=request.user
+        ).select_related('user', 'assignment').order_by('-submitted_at')
+
+        page = self.paginate_queryset(submissions)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(submissions, many=True)
+        return Response(serializer.data)
+
+    @action(detail=False, methods=['get'], permission_classes=[IsTeacher], url_path='by-class')
+    def by_class(self, request):
+        """Return submissions for all assignments in a class for the logged-in teacher."""
+        class_id = request.query_params.get('class_id') or request.query_params.get('class')
+        if not class_id:
+            return Response(
+                {'detail': 'class_id query parameter is required.'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        submissions = Submission.objects.filter(
+            assignment__class_obj_id=class_id,
+            assignment__class_obj__teacher=request.user
+        ).select_related('user', 'assignment').order_by('-submitted_at')
+
+        page = self.paginate_queryset(submissions)
+        if page is not None:
+            serializer = self.get_serializer(page, many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = self.get_serializer(submissions, many=True)
+        return Response(serializer.data)
         
     def perform_create(self, serializer):
         """Create submission and queue for processing"""
@@ -111,15 +245,17 @@ class SubmissionViewSet(viewsets.ModelViewSet):
     
     @action(detail=True, methods=['get'])
     def status(self, request, pk=None):
-        """Check submission processing status"""
+        """Get submission processing status"""
         submission = self.get_object()
-        return Response(
-            {
-                'status': submission.status,
-                'submitted_at': submission.submitted_at,
-                'processed_at': submission.processed_at
-            }
-        )
+        
+        return Response({
+            'id': str(submission.id),
+            'status': submission.status,
+            'total_paragraphs': submission.total_paragraphs,
+            'processed_paragraphs': submission.processed_paragraphs,
+            'processing_percentage': submission.processing_percentage,
+            'is_complete': submission.status == 'completed'
+        })
 
 
     # API for teachers to pause replay submission processing 

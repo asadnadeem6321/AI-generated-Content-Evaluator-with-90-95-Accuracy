@@ -1,3 +1,13 @@
+celery -A config worker -l info -Q default,celery
+python manage.py runserver
+sudo docker-compose up -d
+sudo systemctl stop redis
+
+uvicorn app.main:app --reload --port 8001
+
+
+
+
 # AI Content Detection System - Backend
 
 A high-performance machine learning backend service for detecting AI-generated content in academic documents. This system provides enterprise-grade AI detection capabilities with 90-95% accuracy using advanced ensemble ML models and comprehensive linguistic feature analysis.

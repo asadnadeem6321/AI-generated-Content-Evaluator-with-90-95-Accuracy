@@ -3325,3 +3325,885 @@ INFO 2026-05-01 16:46:35,917 middleware 22721 130277078718144 Request: GET /api/
 INFO 2026-05-01 16:46:35,952 middleware 22721 130277078718144 Response: GET /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [200] - 0.035s
 INFO 2026-05-01 16:46:52,299 middleware 22721 130277078718144 Request: PATCH /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
 INFO 2026-05-01 16:46:52,324 middleware 22721 130277078718144 Response: PATCH /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [200] - 0.025s
+INFO 2026-05-01 17:09:28,461 middleware 27378 134572926822080 Request: POST /api/submissions/ from 127.0.0.1
+ERROR 2026-05-01 17:09:28,493 exceptions 27378 134572926822080 Exception occurred: Field name `assignment_deadline` is not valid for model `Submission`.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `assignment_deadline` is not valid for model `Submission`.
+INFO 2026-05-01 17:09:28,499 middleware 27378 134572926822080 Response: POST /api/submissions/ [500] - 0.038s
+ERROR 2026-05-01 17:09:28,499 log 27378 134572926822080 Internal Server Error: /api/submissions/
+ERROR 2026-05-01 17:09:28,500 basehttp 27378 134572926822080 "POST /api/submissions/ HTTP/1.1" 500 132
+INFO 2026-05-01 17:17:40,605 middleware 27682 129886119261888 Request: POST /api/submissions/ from 127.0.0.1
+ERROR 2026-05-01 17:17:40,648 exceptions 27682 129886119261888 Exception occurred: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-05-01 17:17:40,654 middleware 27682 129886119261888 Response: POST /api/submissions/ [400] - 0.049s
+WARNING 2026-05-01 17:17:40,654 log 27682 129886119261888 Bad Request: /api/submissions/
+WARNING 2026-05-01 17:17:40,655 basehttp 27682 129886119261888 "POST /api/submissions/ HTTP/1.1" 400 93
+INFO 2026-05-01 17:18:50,915 middleware 27756 132062334936768 Request: POST /api/submissions/ from 127.0.0.1
+ERROR 2026-05-01 17:18:50,947 exceptions 27756 132062334936768 Exception occurred: Field name `assignment_deadline` is not valid for model `Submission`.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 227, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 426, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 479, in to_internal_value
+    for field in fields:
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 362, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 356, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1076, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1222, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 1340, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `assignment_deadline` is not valid for model `Submission`.
+INFO 2026-05-01 17:18:50,952 middleware 27756 132062334936768 Response: POST /api/submissions/ [500] - 0.037s
+ERROR 2026-05-01 17:18:50,953 log 27756 132062334936768 Internal Server Error: /api/submissions/
+ERROR 2026-05-01 17:18:50,953 basehttp 27756 132062334936768 "POST /api/submissions/ HTTP/1.1" 500 132
+INFO 2026-05-01 17:19:15,685 middleware 27864 126156071237312 Request: POST /api/submissions/ from 127.0.0.1
+ERROR 2026-05-01 17:19:15,719 exceptions 27864 126156071237312 Exception occurred: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-05-01 17:19:15,721 middleware 27864 126156071237312 Response: POST /api/submissions/ [400] - 0.036s
+WARNING 2026-05-01 17:19:15,721 log 27864 126156071237312 Bad Request: /api/submissions/
+WARNING 2026-05-01 17:19:15,723 basehttp 27864 126156071237312 "POST /api/submissions/ HTTP/1.1" 400 93
+INFO 2026-05-01 17:20:37,357 middleware 27864 126156061796032 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-01 17:20:37,598 middleware 27864 126156061796032 Response: POST /api/submissions/ [201] - 0.241s
+INFO 2026-05-01 17:23:55,371 middleware 27864 126156046235328 Request: PATCH /api/submissions/ from 127.0.0.1
+ERROR 2026-05-01 17:23:55,393 exceptions 27864 126156046235328 Exception occurred: Method "PATCH" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "PATCH" not allowed.
+INFO 2026-05-01 17:23:55,394 middleware 27864 126156046235328 Response: PATCH /api/submissions/ [405] - 0.023s
+WARNING 2026-05-01 17:23:55,395 log 27864 126156046235328 Method Not Allowed: /api/submissions/
+WARNING 2026-05-01 17:23:55,395 basehttp 27864 126156046235328 "PATCH /api/submissions/?assignment=12ec757c-2c7c-4728-b358-26663edf6c70 HTTP/1.1" 405 100
+INFO 2026-05-01 17:24:02,161 middleware 27864 126156046235328 Request: GET /api/submissions/ from 127.0.0.1
+ERROR 2026-05-01 17:24:02,180 exceptions 27864 126156046235328 Exception occurred: Cannot resolve keyword 'class_obj' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 39, in get_queryset
+    queryset = Submission.objects.filter(class_obj__teacher=user)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'class_obj' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+INFO 2026-05-01 17:24:02,185 middleware 27864 126156046235328 Response: GET /api/submissions/ [500] - 0.023s
+ERROR 2026-05-01 17:24:02,185 log 27864 126156046235328 Internal Server Error: /api/submissions/
+ERROR 2026-05-01 17:24:02,186 basehttp 27864 126156046235328 "GET /api/submissions/?assignment=12ec757c-2c7c-4728-b358-26663edf6c70 HTTP/1.1" 500 409
+INFO 2026-05-01 17:25:27,390 middleware 28257 133563158619840 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-01 17:25:27,424 middleware 28257 133563158619840 Response: GET /api/submissions/ [200] - 0.033s
+INFO 2026-05-01 17:25:41,046 middleware 28257 133563081029312 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-01 17:25:41,194 middleware 28257 133563081029312 Response: GET /admin/submissions/submission/ [200] - 0.148s
+INFO 2026-05-01 17:25:41,304 middleware 28257 133563081029312 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-01 17:25:41,340 middleware 28257 133563081029312 Response: GET /admin/jsi18n/ [200] - 0.037s
+INFO 2026-05-01 17:26:00,448 middleware 28257 133563158619840 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-01 17:26:00,473 middleware 28257 133563158619840 Response: GET /api/submissions/ [200] - 0.025s
+INFO 2026-05-01 17:26:56,888 middleware 28257 133563158619840 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-01 17:26:56,914 middleware 28257 133563158619840 Response: GET /api/submissions/ [200] - 0.025s
+INFO 2026-05-01 17:27:05,525 middleware 28257 133563158619840 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-01 17:27:05,548 middleware 28257 133563158619840 Response: GET /api/submissions/ [200] - 0.023s
+INFO 2026-05-02 06:15:53,212 middleware 7428 138570744460992 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:15:53,264 middleware 7428 138570744460992 Response: GET /api/submissions/ [200] - 0.053s
+INFO 2026-05-02 06:16:50,712 middleware 7428 138570744460992 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:16:50,747 middleware 7428 138570744460992 Response: GET /api/submissions/ [200] - 0.035s
+INFO 2026-05-02 06:27:21,578 middleware 8521 135443555280576 Request: GET /api/submissions/by-assignment/ from 127.0.0.1
+INFO 2026-05-02 06:27:21,615 middleware 8521 135443555280576 Response: GET /api/submissions/by-assignment/ [200] - 0.036s
+INFO 2026-05-02 06:29:24,299 middleware 8521 135443471398592 Request: GET /api/submissions/by-assignment/ from 127.0.0.1
+INFO 2026-05-02 06:29:24,320 middleware 8521 135443471398592 Response: GET /api/submissions/by-assignment/ [200] - 0.021s
+INFO 2026-05-02 06:32:37,925 middleware 9292 128711140566720 Request: GET /api/submissions/by-assignment/ from 127.0.0.1
+INFO 2026-05-02 06:32:37,957 middleware 9292 128711140566720 Response: GET /api/submissions/by-assignment/ [200] - 0.032s
+INFO 2026-05-02 06:40:12,130 middleware 9741 123729350751936 Request: GET /api/submissions/by-assignment/ from 127.0.0.1
+ERROR 2026-05-02 06:40:12,166 exceptions 9741 123729350751936 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“by-assignment” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-05-02 06:40:12,176 middleware 9741 123729350751936 Response: GET /api/submissions/by-assignment/ [404] - 0.045s
+WARNING 2026-05-02 06:40:12,176 log 9741 123729350751936 Not Found: /api/submissions/by-assignment/
+WARNING 2026-05-02 06:40:12,177 basehttp 9741 123729350751936 "GET /api/submissions/by-assignment/?assignment_name=Deliverable%201 HTTP/1.1" 404 62
+INFO 2026-05-02 06:46:00,502 middleware 9741 123729342359232 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:46:00,528 middleware 9741 123729342359232 Response: GET /api/submissions/ [200] - 0.026s
+INFO 2026-05-02 06:49:06,515 middleware 10076 132247324714688 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:49:06,548 middleware 10076 132247324714688 Response: GET /api/submissions/ [200] - 0.033s
+INFO 2026-05-02 06:49:12,592 middleware 10124 128943027906240 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:49:12,625 middleware 10124 128943027906240 Response: GET /api/submissions/ [200] - 0.033s
+INFO 2026-05-02 06:49:33,931 middleware 10124 128943018464960 Request: GET / from 127.0.0.1
+INFO 2026-05-02 06:49:34,076 middleware 10124 128943018464960 Response: GET / [404] - 0.146s
+WARNING 2026-05-02 06:49:34,081 log 10124 128943018464960 Not Found: /
+WARNING 2026-05-02 06:49:34,085 basehttp 10124 128943018464960 "GET / HTTP/1.1" 404 3810
+INFO 2026-05-02 06:49:34,434 middleware 10124 128943018464960 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-02 06:49:34,450 middleware 10124 128943018464960 Response: GET /favicon.ico [404] - 0.016s
+WARNING 2026-05-02 06:49:34,452 log 10124 128943018464960 Not Found: /favicon.ico
+WARNING 2026-05-02 06:49:34,455 basehttp 10124 128943018464960 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-02 06:49:36,708 middleware 10124 128943018464960 Request: GET /admin/ from 127.0.0.1
+INFO 2026-05-02 06:49:36,879 middleware 10124 128943018464960 Response: GET /admin/ [200] - 0.171s
+INFO 2026-05-02 06:49:39,627 middleware 10124 128943018464960 Request: GET /admin/classes/assignment/ from 127.0.0.1
+INFO 2026-05-02 06:49:39,715 middleware 10124 128943018464960 Response: GET /admin/classes/assignment/ [200] - 0.088s
+INFO 2026-05-02 06:49:39,775 middleware 10124 128943018464960 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 06:49:39,823 middleware 10124 128943018464960 Response: GET /admin/jsi18n/ [200] - 0.048s
+INFO 2026-05-02 06:49:41,057 middleware 10124 128943018464960 Request: GET /admin/classes/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/change/ from 127.0.0.1
+INFO 2026-05-02 06:49:41,152 middleware 10124 128943018464960 Response: GET /admin/classes/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/change/ [200] - 0.094s
+INFO 2026-05-02 06:49:41,249 middleware 10124 128943018464960 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 06:49:41,285 middleware 10124 128943018464960 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-02 06:50:34,272 middleware 10124 128942998533824 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-02 06:50:34,307 middleware 10124 128942998533824 Response: GET /api/classes/08Y025/assignment/ [200] - 0.035s
+INFO 2026-05-02 06:51:12,766 middleware 10124 128942998533824 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:51:12,792 middleware 10124 128942998533824 Response: GET /api/submissions/ [200] - 0.026s
+INFO 2026-05-02 06:52:17,734 middleware 10463 135675764532928 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:52:17,780 middleware 10463 135675764532928 Response: GET /api/submissions/ [200] - 0.045s
+INFO 2026-05-02 06:52:31,033 middleware 10463 135675764532928 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:52:31,060 middleware 10463 135675764532928 Response: GET /api/submissions/ [200] - 0.026s
+INFO 2026-05-02 06:56:15,579 middleware 10463 135675756140224 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:56:15,605 middleware 10463 135675756140224 Response: GET /api/submissions/ [200] - 0.026s
+INFO 2026-05-02 06:58:14,039 middleware 10685 138296757839552 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 06:58:14,074 middleware 10685 138296757839552 Response: GET /api/submissions/ [200] - 0.035s
+INFO 2026-05-02 07:03:42,171 middleware 11059 132216665401024 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 07:03:42,205 middleware 11059 132216665401024 Response: GET /api/submissions/ [200] - 0.034s
+INFO 2026-05-02 07:30:46,605 middleware 11059 132216655959744 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 07:30:46,630 middleware 11059 132216655959744 Response: GET /api/submissions/ [200] - 0.025s
+INFO 2026-05-02 07:30:57,151 middleware 11059 132216655959744 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 07:30:57,360 middleware 11059 132216655959744 Response: POST /api/submissions/ [201] - 0.209s
+INFO 2026-05-02 07:32:17,367 middleware 11712 139653918222016 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:32:17,499 middleware 11712 139653918222016 Response: GET /admin/submissions/submission/ [200] - 0.132s
+INFO 2026-05-02 07:32:17,563 middleware 11712 139653918222016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:32:17,619 middleware 11712 139653918222016 Response: GET /admin/jsi18n/ [200] - 0.056s
+INFO 2026-05-02 07:32:25,580 middleware 11712 139653918222016 Request: GET /admin/submissions/submission/ca009942-9879-4324-850d-93a899aab38d/change/ from 127.0.0.1
+INFO 2026-05-02 07:32:25,686 middleware 11712 139653918222016 Response: GET /admin/submissions/submission/ca009942-9879-4324-850d-93a899aab38d/change/ [200] - 0.106s
+INFO 2026-05-02 07:32:25,731 middleware 11712 139653918222016 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:32:25,766 middleware 11712 139653918222016 Response: GET /admin/jsi18n/ [200] - 0.035s
+INFO 2026-05-02 07:35:33,751 middleware 11928 132976697403072 Request: GET /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+ERROR 2026-05-02 07:35:33,818 basehttp 11928 132976697403072 "GET /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ HTTP/1.1" 500 59
+INFO 2026-05-02 07:35:54,073 middleware 11928 132976697403072 Request: GET /api/submissions/by_assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-02 07:35:54,091 middleware 11928 132976697403072 Response: GET /api/submissions/by_assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ [404] - 0.019s
+WARNING 2026-05-02 07:35:54,092 log 11928 132976697403072 Not Found: /api/submissions/by_assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/
+WARNING 2026-05-02 07:35:54,093 basehttp 11928 132976697403072 "GET /api/submissions/by_assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ HTTP/1.1" 404 10631
+INFO 2026-05-02 07:36:00,402 middleware 11928 132976697403072 Request: GET /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+ERROR 2026-05-02 07:36:00,443 basehttp 11928 132976697403072 "GET /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ HTTP/1.1" 500 59
+INFO 2026-05-02 07:38:42,744 middleware 12325 138231509153472 Request: GET /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-02 07:38:42,793 middleware 12325 138231509153472 Response: GET /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ [500] - 0.049s
+ERROR 2026-05-02 07:38:42,793 log 12325 138231509153472 Internal Server Error: /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/
+ERROR 2026-05-02 07:38:42,794 basehttp 12325 138231509153472 "GET /api/submissions/assignment/2a3420f9-8d30-4108-9c47-b8805879efa1/ HTTP/1.1" 500 73
+INFO 2026-05-02 07:43:01,091 middleware 12536 127004786550464 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+INFO 2026-05-02 07:43:01,140 middleware 12536 127004786550464 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [200] - 0.049s
+INFO 2026-05-02 07:43:50,238 middleware 12536 127004778157760 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:43:50,382 middleware 12536 127004778157760 Response: GET /admin/submissions/submission/ [200] - 0.144s
+INFO 2026-05-02 07:43:50,456 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:43:50,497 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.041s
+INFO 2026-05-02 07:43:53,502 middleware 12536 127004778157760 Request: GET /admin/submissions/submission/d93aa3e7-744e-4c5a-9623-ede14f45b358/change/ from 127.0.0.1
+INFO 2026-05-02 07:43:53,613 middleware 12536 127004778157760 Response: GET /admin/submissions/submission/d93aa3e7-744e-4c5a-9623-ede14f45b358/change/ [200] - 0.110s
+INFO 2026-05-02 07:43:53,697 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:43:53,723 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.026s
+INFO 2026-05-02 07:44:00,750 middleware 12536 127004778157760 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:44:00,796 middleware 12536 127004778157760 Response: GET /admin/submissions/submission/ [200] - 0.046s
+INFO 2026-05-02 07:44:00,884 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:44:00,914 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-05-02 07:44:05,781 middleware 12536 127004778157760 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:44:05,841 middleware 12536 127004778157760 Response: POST /admin/submissions/submission/ [200] - 0.060s
+INFO 2026-05-02 07:44:09,182 middleware 12536 127004778157760 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:44:09,242 middleware 12536 127004778157760 Response: POST /admin/submissions/submission/ [302] - 0.059s
+INFO 2026-05-02 07:44:09,251 middleware 12536 127004778157760 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:44:09,296 middleware 12536 127004778157760 Response: GET /admin/submissions/submission/ [200] - 0.044s
+INFO 2026-05-02 07:44:09,389 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:44:09,422 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-02 07:45:02,916 middleware 12536 127004759275200 Request: POST /api/submissions/ from 127.0.0.1
+ERROR 2026-05-02 07:45:02,945 exceptions 12536 127004759275200 Exception occurred: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-05-02 07:45:02,950 middleware 12536 127004759275200 Response: POST /api/submissions/ [400] - 0.034s
+WARNING 2026-05-02 07:45:02,951 log 12536 127004759275200 Bad Request: /api/submissions/
+WARNING 2026-05-02 07:45:02,952 basehttp 12536 127004759275200 "POST /api/submissions/ HTTP/1.1" 400 93
+INFO 2026-05-02 07:45:18,552 middleware 12536 127004759275200 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 07:45:18,734 middleware 12536 127004759275200 Response: POST /api/submissions/ [201] - 0.182s
+INFO 2026-05-02 07:46:00,552 middleware 12536 127004759275200 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+INFO 2026-05-02 07:46:00,575 middleware 12536 127004759275200 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [200] - 0.024s
+INFO 2026-05-02 07:46:50,968 middleware 12536 127004759275200 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+ERROR 2026-05-02 07:46:50,986 exceptions 12536 127004759275200 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-02 07:46:50,986 middleware 12536 127004759275200 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [403] - 0.018s
+WARNING 2026-05-02 07:46:50,987 log 12536 127004759275200 Forbidden: /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/
+WARNING 2026-05-02 07:46:50,987 basehttp 12536 127004759275200 "GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ HTTP/1.1" 403 142
+INFO 2026-05-02 07:47:01,172 middleware 12536 127004759275200 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+INFO 2026-05-02 07:47:01,194 middleware 12536 127004759275200 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [200] - 0.023s
+INFO 2026-05-02 07:47:25,339 middleware 12536 127004778157760 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:47:25,384 middleware 12536 127004778157760 Response: GET /admin/submissions/submission/ [200] - 0.045s
+INFO 2026-05-02 07:47:25,509 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:47:25,542 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-02 07:48:06,725 middleware 12536 127004778157760 Request: GET /admin/classes/assignment/ from 127.0.0.1
+INFO 2026-05-02 07:48:06,773 middleware 12536 127004778157760 Response: GET /admin/classes/assignment/ [200] - 0.048s
+INFO 2026-05-02 07:48:06,893 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:48:06,924 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-05-02 07:48:22,020 middleware 12536 127004744763072 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 07:48:22,070 middleware 12536 127004744763072 Response: POST /api/submissions/ [201] - 0.050s
+INFO 2026-05-02 07:48:30,161 middleware 12536 127004778157760 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:48:30,213 middleware 12536 127004778157760 Response: GET /admin/submissions/submission/ [200] - 0.052s
+INFO 2026-05-02 07:48:30,261 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:48:30,303 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.041s
+INFO 2026-05-02 07:48:36,315 middleware 12536 127004778157760 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:48:36,373 middleware 12536 127004778157760 Response: POST /admin/submissions/submission/ [200] - 0.058s
+INFO 2026-05-02 07:48:37,613 middleware 12536 127004778157760 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:48:37,661 middleware 12536 127004778157760 Response: POST /admin/submissions/submission/ [302] - 0.049s
+INFO 2026-05-02 07:48:37,670 middleware 12536 127004778157760 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 07:48:37,725 middleware 12536 127004778157760 Response: GET /admin/submissions/submission/ [200] - 0.055s
+INFO 2026-05-02 07:48:37,808 middleware 12536 127004778157760 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 07:48:37,842 middleware 12536 127004778157760 Response: GET /admin/jsi18n/ [200] - 0.034s
+INFO 2026-05-02 07:48:44,677 middleware 12536 127004744763072 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+INFO 2026-05-02 07:48:44,699 middleware 12536 127004744763072 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [200] - 0.022s
+INFO 2026-05-02 07:51:57,380 middleware 13395 129064770729664 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+INFO 2026-05-02 07:51:57,412 middleware 13395 129064770729664 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [200] - 0.032s
+INFO 2026-05-02 07:53:12,573 middleware 13499 138751535740608 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+INFO 2026-05-02 07:53:12,609 middleware 13499 138751535740608 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [200] - 0.035s
+INFO 2026-05-02 07:53:16,836 middleware 13499 138751535740608 Request: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ from 127.0.0.1
+INFO 2026-05-02 07:53:16,859 middleware 13499 138751535740608 Response: GET /api/dashboard/2a3420f9-8d30-4108-9c47-b8805879efa1/assignment_submissions/ [200] - 0.023s
+INFO 2026-05-02 08:02:21,617 middleware 14087 128154643461824 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 08:02:21,648 middleware 14087 128154643461824 Response: GET /api/submissions/ [200] - 0.031s
+INFO 2026-05-02 08:03:38,050 middleware 14087 128154635069120 Request: GET /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-02 08:03:38,083 middleware 14087 128154635069120 Response: GET /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [200] - 0.033s
+INFO 2026-05-02 08:04:16,702 middleware 14087 128154635069120 Request: POST /api/submissions/ from 127.0.0.1
+ERROR 2026-05-02 08:04:16,724 exceptions 14087 128154635069120 Exception occurred: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'assignment_name': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-05-02 08:04:16,727 middleware 14087 128154635069120 Response: POST /api/submissions/ [400] - 0.025s
+WARNING 2026-05-02 08:04:16,727 log 14087 128154635069120 Bad Request: /api/submissions/
+WARNING 2026-05-02 08:04:16,728 basehttp 14087 128154635069120 "POST /api/submissions/ HTTP/1.1" 400 93
+INFO 2026-05-02 08:04:23,904 middleware 14087 128154635069120 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 08:04:24,116 middleware 14087 128154635069120 Response: POST /api/submissions/ [201] - 0.211s
+INFO 2026-05-02 08:05:07,091 middleware 14087 128154635069120 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 08:05:07,119 middleware 14087 128154635069120 Response: GET /api/submissions/ [200] - 0.028s
+INFO 2026-05-02 08:06:52,687 middleware 14394 129113174042304 Request: GET /api/submissions/ from 127.0.0.1
+ERROR 2026-05-02 08:06:52,713 exceptions 14394 129113174042304 Exception occurred: ['“2a3420f9-8d30-4108-9c47-b8805879efa1/” is not a valid UUID.']
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 38, in list
+    queryset = self.filter_queryset(self.get_queryset())
+                                    ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 51, in get_queryset
+    queryset = queryset.filter(assignment_id=assignment_id)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/related_lookups.py", line 156, in get_prep_lookup
+    self.rhs = target_field.get_prep_value(self.rhs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“2a3420f9-8d30-4108-9c47-b8805879efa1/” is not a valid UUID.']
+INFO 2026-05-02 08:06:52,722 middleware 14394 129113174042304 Response: GET /api/submissions/ [500] - 0.035s
+ERROR 2026-05-02 08:06:52,723 log 14394 129113174042304 Internal Server Error: /api/submissions/
+ERROR 2026-05-02 08:06:52,724 basehttp 14394 129113174042304 "GET /api/submissions/?assignment=2a3420f9-8d30-4108-9c47-b8805879efa1/ HTTP/1.1" 500 131
+INFO 2026-05-02 08:07:13,866 middleware 14394 129113174042304 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 08:07:13,897 middleware 14394 129113174042304 Response: GET /api/submissions/ [200] - 0.031s
+INFO 2026-05-02 08:09:36,179 middleware 14394 129113092257472 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-02 08:09:36,222 middleware 14394 129113092257472 Response: GET /api/auth/profile/ [200] - 0.043s
+INFO 2026-05-02 08:09:44,699 middleware 14394 129113092257472 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 08:09:44,726 middleware 14394 129113092257472 Response: GET /api/submissions/ [200] - 0.026s
+INFO 2026-05-02 08:13:08,244 middleware 14919 138774187075264 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 08:13:08,287 middleware 14919 138774187075264 Response: GET /api/submissions/ [200] - 0.044s
+INFO 2026-05-02 08:27:10,989 middleware 15494 123691880933056 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 08:27:11,031 middleware 15494 123691880933056 Response: GET /api/submissions/ [200] - 0.042s
+INFO 2026-05-02 08:27:50,528 middleware 15494 123691880933056 Request: GET /api/submissions/assignments/ from 127.0.0.1
+ERROR 2026-05-02 08:27:50,553 exceptions 15494 123691880933056 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2747, in to_python
+    return uuid.UUID(**{input_form: value})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/uuid.py", line 178, in __init__
+    raise ValueError('badly formed hexadecimal UUID string')
+ValueError: badly formed hexadecimal UUID string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2731, in get_prep_value
+    return self.to_python(value)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2749, in to_python
+    raise exceptions.ValidationError(
+django.core.exceptions.ValidationError: ['“assignments” is not a valid UUID.']
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-05-02 08:27:50,566 middleware 15494 123691880933056 Response: GET /api/submissions/assignments/ [404] - 0.038s
+WARNING 2026-05-02 08:27:50,567 log 15494 123691880933056 Not Found: /api/submissions/assignments/
+WARNING 2026-05-02 08:27:50,568 basehttp 15494 123691880933056 "GET /api/submissions/assignments/?assignment=2a3420f9-8d30-4108-9c47-b8805879efa1 HTTP/1.1" 404 62
+INFO 2026-05-02 08:28:09,025 middleware 15494 123691880933056 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-02 08:28:09,049 middleware 15494 123691880933056 Response: GET /api/submissions/assignment/ [200] - 0.024s
+INFO 2026-05-02 08:29:07,386 middleware 15494 123691880933056 Request: GET /api/submissions/my-assignment/ from 127.0.0.1
+INFO 2026-05-02 08:29:07,414 middleware 15494 123691880933056 Response: GET /api/submissions/my-assignment/ [200] - 0.028s
+INFO 2026-05-02 08:38:49,888 middleware 16790 135865464514240 Request: GET /api/submissions/my-assignment/ from 127.0.0.1
+INFO 2026-05-02 08:38:49,947 middleware 16790 135865464514240 Response: GET /api/submissions/my-assignment/ [200] - 0.059s
+INFO 2026-05-02 08:39:15,517 middleware 16790 135865464514240 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-02 08:39:15,557 middleware 16790 135865464514240 Response: GET /api/submissions/assignment/ [200] - 0.040s
+INFO 2026-05-02 13:05:32,254 middleware 19568 124499008677568 Request: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ from 127.0.0.1
+ERROR 2026-05-02 13:05:32,291 exceptions 19568 124499008677568 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 219, in status
+    submission = self.get_object()
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-02 13:05:32,296 middleware 19568 124499008677568 Response: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ [404] - 0.041s
+WARNING 2026-05-02 13:05:32,296 log 19568 124499008677568 Not Found: /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/
+WARNING 2026-05-02 13:05:32,297 basehttp 19568 124499008677568 "GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ HTTP/1.1" 404 62
+INFO 2026-05-02 13:07:36,936 middleware 19568 124498999236288 Request: GET /admin/submissions/submission/ad2d441d-2063-4854-ae2f-0930cc3ceb03/change/ from 127.0.0.1
+INFO 2026-05-02 13:07:37,181 middleware 19568 124498999236288 Response: GET /admin/submissions/submission/ad2d441d-2063-4854-ae2f-0930cc3ceb03/change/ [200] - 0.245s
+INFO 2026-05-02 13:07:37,314 middleware 19568 124498999236288 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 13:07:37,390 middleware 19568 124498999236288 Response: GET /admin/jsi18n/ [200] - 0.076s
+INFO 2026-05-02 13:14:06,344 middleware 19568 124498999236288 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 13:14:06,377 middleware 19568 124498999236288 Response: GET /api/submissions/ [200] - 0.033s
+INFO 2026-05-02 13:15:25,145 middleware 20030 139969738823360 Request: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ from 127.0.0.1
+ERROR 2026-05-02 13:15:25,184 exceptions 20030 139969738823360 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 219, in status
+    submission = self.get_object()
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-02 13:15:25,186 middleware 20030 139969738823360 Response: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ [404] - 0.041s
+WARNING 2026-05-02 13:15:25,186 log 20030 139969738823360 Not Found: /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/
+WARNING 2026-05-02 13:15:25,187 basehttp 20030 139969738823360 "GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ HTTP/1.1" 404 62
+INFO 2026-05-02 13:15:55,031 middleware 20030 139969738823360 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-02 13:15:55,099 middleware 20030 139969738823360 Response: GET /api/submissions/assignment/ [200] - 0.068s
+INFO 2026-05-02 13:16:51,908 middleware 20030 139969738823360 Request: GET /api/submissions/ad2d441d-2063-4854-ae2f-0930cc3ceb03/status/ from 127.0.0.1
+ERROR 2026-05-02 13:16:51,934 exceptions 20030 139969738823360 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 219, in status
+    submission = self.get_object()
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-02 13:16:51,935 middleware 20030 139969738823360 Response: GET /api/submissions/ad2d441d-2063-4854-ae2f-0930cc3ceb03/status/ [404] - 0.027s
+WARNING 2026-05-02 13:16:51,936 log 20030 139969738823360 Not Found: /api/submissions/ad2d441d-2063-4854-ae2f-0930cc3ceb03/status/
+WARNING 2026-05-02 13:16:51,936 basehttp 20030 139969738823360 "GET /api/submissions/ad2d441d-2063-4854-ae2f-0930cc3ceb03/status/ HTTP/1.1" 404 62
+INFO 2026-05-02 13:17:11,653 middleware 20030 139969738823360 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-02 13:17:11,689 middleware 20030 139969738823360 Response: GET /api/submissions/assignment/ [200] - 0.036s
+INFO 2026-05-02 13:18:02,168 middleware 20030 139969747216064 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 13:18:02,313 middleware 20030 139969747216064 Response: GET /admin/submissions/submission/ [200] - 0.145s
+INFO 2026-05-02 13:18:02,418 middleware 20030 139969747216064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 13:18:02,452 middleware 20030 139969747216064 Response: GET /admin/jsi18n/ [200] - 0.034s
+INFO 2026-05-02 13:18:04,568 middleware 20030 139969747216064 Request: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ from 127.0.0.1
+INFO 2026-05-02 13:18:04,694 middleware 20030 139969747216064 Response: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ [200] - 0.126s
+INFO 2026-05-02 13:18:04,829 middleware 20030 139969747216064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 13:18:04,857 middleware 20030 139969747216064 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-02 13:18:11,637 middleware 20030 139969747216064 Request: GET /media/submissions/2026/05/02/AiVsHuman_g2xa8WD.pdf from 127.0.0.1
+INFO 2026-05-02 13:18:11,705 middleware 20030 139969747216064 Response: GET /media/submissions/2026/05/02/AiVsHuman_g2xa8WD.pdf [200] - 0.068s
+INFO 2026-05-02 13:19:10,911 middleware 20030 139969717843648 Request: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ from 127.0.0.1
+ERROR 2026-05-02 13:19:10,945 exceptions 20030 139969717843648 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 219, in status
+    submission = self.get_object()
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-02 13:19:10,949 middleware 20030 139969717843648 Response: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ [404] - 0.038s
+WARNING 2026-05-02 13:19:10,949 log 20030 139969717843648 Not Found: /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/
+WARNING 2026-05-02 13:19:10,950 basehttp 20030 139969717843648 "GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ HTTP/1.1" 404 62
+INFO 2026-05-02 13:22:24,407 middleware 20715 125597850265280 Request: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ from 127.0.0.1
+INFO 2026-05-02 13:22:24,452 middleware 20715 125597850265280 Response: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ [200] - 0.046s
+INFO 2026-05-02 13:26:41,132 middleware 20715 125597840824000 Request: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ from 127.0.0.1
+INFO 2026-05-02 13:26:41,153 middleware 20715 125597840824000 Response: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ [200] - 0.021s
+INFO 2026-05-02 15:36:17,827 middleware 15391 130820811519680 Request: GET / from 127.0.0.1
+INFO 2026-05-02 15:36:17,875 middleware 15391 130820811519680 Response: GET / [404] - 0.048s
+WARNING 2026-05-02 15:36:17,877 log 15391 130820811519680 Not Found: /
+WARNING 2026-05-02 15:36:17,879 basehttp 15391 130820811519680 "GET / HTTP/1.1" 404 3810
+INFO 2026-05-02 15:36:18,218 middleware 15391 130820811519680 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-02 15:36:18,231 middleware 15391 130820811519680 Response: GET /favicon.ico [404] - 0.013s
+WARNING 2026-05-02 15:36:18,232 log 15391 130820811519680 Not Found: /favicon.ico
+WARNING 2026-05-02 15:36:18,233 basehttp 15391 130820811519680 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-02 15:36:20,389 middleware 15391 130820811519680 Request: GET /admin/ from 127.0.0.1
+INFO 2026-05-02 15:36:20,516 middleware 15391 130820811519680 Response: GET /admin/ [200] - 0.127s
+INFO 2026-05-02 15:36:27,845 middleware 15391 130820811519680 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-02 15:36:27,903 middleware 15391 130820811519680 Response: GET /admin/results/result/ [200] - 0.058s
+INFO 2026-05-02 15:36:28,013 middleware 15391 130820811519680 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:36:28,049 middleware 15391 130820811519680 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-02 15:36:34,700 middleware 15391 130820811519680 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 15:36:34,759 middleware 15391 130820811519680 Response: GET /admin/submissions/submission/ [200] - 0.060s
+INFO 2026-05-02 15:36:34,821 middleware 15391 130820811519680 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:36:34,843 middleware 15391 130820811519680 Response: GET /admin/jsi18n/ [200] - 0.022s
+INFO 2026-05-02 15:36:36,139 middleware 15391 130820811519680 Request: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ from 127.0.0.1
+INFO 2026-05-02 15:36:36,240 middleware 15391 130820811519680 Response: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ [200] - 0.101s
+INFO 2026-05-02 15:36:36,296 middleware 15391 130820811519680 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:36:36,323 middleware 15391 130820811519680 Response: GET /admin/jsi18n/ [200] - 0.026s
+INFO 2026-05-02 15:39:04,909 middleware 15391 130820803126976 Request: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ from 127.0.0.1
+INFO 2026-05-02 15:39:04,961 middleware 15391 130820803126976 Response: GET /api/submissions/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/status/ [200] - 0.051s
+INFO 2026-05-02 15:43:08,705 middleware 15391 130820811519680 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-02 15:43:08,994 middleware 15391 130820811519680 Response: POST /api/submissions/ [201] - 0.289s
+INFO 2026-05-02 15:43:50,795 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 15:43:50,923 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/ [200] - 0.128s
+INFO 2026-05-02 15:43:51,079 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:43:51,129 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.050s
+INFO 2026-05-02 15:43:55,572 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ from 127.0.0.1
+INFO 2026-05-02 15:43:55,810 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ [200] - 0.238s
+INFO 2026-05-02 15:43:55,962 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:43:56,014 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.053s
+INFO 2026-05-02 15:45:31,316 tasks 20544 129117267636352 📄 Extracting paragraphs from submission 457e67cf-5b54-4a49-9fed-9c08f7068cb2
+INFO 2026-05-02 15:45:43,226 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ from 127.0.0.1
+INFO 2026-05-02 15:45:43,386 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ [200] - 0.160s
+INFO 2026-05-02 15:45:43,514 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:45:43,556 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.041s
+INFO 2026-05-02 15:45:55,074 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 15:45:55,135 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/ [200] - 0.061s
+INFO 2026-05-02 15:45:55,281 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:45:55,320 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.039s
+INFO 2026-05-02 15:45:56,887 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ from 127.0.0.1
+INFO 2026-05-02 15:45:57,028 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ [200] - 0.141s
+INFO 2026-05-02 15:45:57,137 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:45:57,168 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.032s
+INFO 2026-05-02 15:46:05,645 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 15:46:05,736 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/ [200] - 0.091s
+INFO 2026-05-02 15:46:05,850 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:05,888 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-02 15:46:07,426 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/ad2d441d-2063-4854-ae2f-0930cc3ceb03/change/ from 127.0.0.1
+INFO 2026-05-02 15:46:07,556 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/ad2d441d-2063-4854-ae2f-0930cc3ceb03/change/ [200] - 0.130s
+INFO 2026-05-02 15:46:07,668 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:07,742 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.074s
+INFO 2026-05-02 15:46:11,899 middleware 15391 130820786517696 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-02 15:46:11,959 middleware 15391 130820786517696 Response: GET /admin/results/result/ [200] - 0.059s
+INFO 2026-05-02 15:46:12,131 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:12,174 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.043s
+INFO 2026-05-02 15:46:15,310 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 15:46:15,383 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/ [200] - 0.072s
+INFO 2026-05-02 15:46:15,444 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:15,476 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-05-02 15:46:16,833 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ from 127.0.0.1
+INFO 2026-05-02 15:46:16,945 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ [200] - 0.112s
+INFO 2026-05-02 15:46:17,049 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:17,087 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-02 15:46:22,633 tasks 20544 129117267636352 ✅ Received analysis for 7 paragraphs
+INFO 2026-05-02 15:46:22,696 tasks 20544 129117267636352 ✅ Submission 457e67cf-5b54-4a49-9fed-9c08f7068cb2 completed successfully
+INFO 2026-05-02 15:46:31,507 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 15:46:31,558 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/ [200] - 0.051s
+INFO 2026-05-02 15:46:31,648 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:31,672 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.024s
+INFO 2026-05-02 15:46:33,061 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ from 127.0.0.1
+INFO 2026-05-02 15:46:33,152 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/457e67cf-5b54-4a49-9fed-9c08f7068cb2/change/ [200] - 0.092s
+INFO 2026-05-02 15:46:33,311 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:33,384 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.073s
+INFO 2026-05-02 15:46:38,093 middleware 15391 130820786517696 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-02 15:46:38,136 middleware 15391 130820786517696 Response: GET /admin/results/result/ [200] - 0.043s
+INFO 2026-05-02 15:46:38,186 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:38,219 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-02 15:46:40,183 middleware 15391 130820786517696 Request: GET /admin/results/result/1/change/ from 127.0.0.1
+INFO 2026-05-02 15:46:40,254 middleware 15391 130820786517696 Response: GET /admin/results/result/1/change/ [200] - 0.071s
+INFO 2026-05-02 15:46:40,304 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:46:40,341 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-02 15:47:19,462 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-02 15:47:19,552 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/ [200] - 0.090s
+INFO 2026-05-02 15:47:19,622 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:47:19,664 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.042s
+INFO 2026-05-02 15:47:22,671 middleware 15391 130820786517696 Request: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ from 127.0.0.1
+INFO 2026-05-02 15:47:22,748 middleware 15391 130820786517696 Response: GET /admin/submissions/submission/a41b50be-3d69-4a6c-89a6-bc9e6c2b4167/change/ [200] - 0.076s
+INFO 2026-05-02 15:47:22,856 middleware 15391 130820786517696 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 15:47:22,885 middleware 15391 130820786517696 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-02 17:21:44,349 middleware 26010 137281179481792 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-02 17:21:44,414 middleware 26010 137281179481792 Response: GET /api/classes/ [200] - 0.065s
+INFO 2026-05-02 17:24:44,808 middleware 28093 130460247123648 Request: GET /api/classes/my_classes/ from 127.0.0.1
+INFO 2026-05-02 17:24:44,852 middleware 28093 130460247123648 Response: GET /api/classes/my_classes/ [200] - 0.044s
+INFO 2026-05-02 17:25:44,231 middleware 28815 127367252014784 Request: GET /api/classes/my_classes/ from 127.0.0.1
+INFO 2026-05-02 17:25:44,259 middleware 28815 127367252014784 Response: GET /api/classes/my_classes/ [200] - 0.028s
+INFO 2026-05-02 17:28:55,224 middleware 30084 125685686331072 Request: GET /api/classes/my_classes/ from 127.0.0.1
+INFO 2026-05-02 17:28:55,256 middleware 30084 125685686331072 Response: GET /api/classes/my_classes/ [200] - 0.032s
+INFO 2026-05-02 17:33:58,467 middleware 33126 123940065240768 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-02 17:33:58,499 middleware 33126 123940065240768 Response: GET /api/classes/enrolled/ [200] - 0.032s
+INFO 2026-05-02 17:41:24,443 middleware 33126 123940056848064 Request: GET / from 127.0.0.1
+INFO 2026-05-02 17:41:24,502 middleware 33126 123940056848064 Response: GET / [404] - 0.058s
+WARNING 2026-05-02 17:41:24,502 log 33126 123940056848064 Not Found: /
+WARNING 2026-05-02 17:41:24,503 basehttp 33126 123940056848064 "GET / HTTP/1.1" 404 3810
+INFO 2026-05-02 17:41:30,601 middleware 33126 123940056848064 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-02 17:41:30,714 middleware 33126 123940056848064 Response: GET /admin/classes/enrollment/ [200] - 0.112s
+INFO 2026-05-02 17:41:30,851 middleware 33126 123940056848064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 17:41:30,883 middleware 33126 123940056848064 Response: GET /admin/jsi18n/ [200] - 0.032s
+INFO 2026-05-02 17:41:35,815 middleware 33126 123940056848064 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-02 17:41:35,869 middleware 33126 123940056848064 Response: GET /admin/authentication/user/ [200] - 0.054s
+INFO 2026-05-02 17:41:35,931 middleware 33126 123940056848064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 17:41:35,959 middleware 33126 123940056848064 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-02 17:41:40,731 middleware 33126 123940056848064 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-02 17:41:40,773 middleware 33126 123940056848064 Response: GET /admin/classes/enrollment/ [200] - 0.042s
+INFO 2026-05-02 17:41:40,857 middleware 33126 123940056848064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 17:41:40,890 middleware 33126 123940056848064 Response: GET /admin/jsi18n/ [200] - 0.032s
+INFO 2026-05-02 17:41:42,570 middleware 33126 123940056848064 Request: GET /admin/classes/enrollment/add/ from 127.0.0.1
+INFO 2026-05-02 17:41:42,634 middleware 33126 123940056848064 Response: GET /admin/classes/enrollment/add/ [200] - 0.064s
+INFO 2026-05-02 17:41:42,765 middleware 33126 123940056848064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 17:41:42,803 middleware 33126 123940056848064 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-02 17:41:47,785 middleware 33126 123940056848064 Request: POST /admin/classes/enrollment/add/ from 127.0.0.1
+INFO 2026-05-02 17:41:47,824 middleware 33126 123940056848064 Response: POST /admin/classes/enrollment/add/ [302] - 0.039s
+INFO 2026-05-02 17:41:47,832 middleware 33126 123940056848064 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-02 17:41:47,900 middleware 33126 123940056848064 Response: GET /admin/classes/enrollment/ [200] - 0.068s
+INFO 2026-05-02 17:41:48,001 middleware 33126 123940056848064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 17:41:48,039 middleware 33126 123940056848064 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-02 17:41:52,718 middleware 33126 123940037965504 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-02 17:41:52,746 middleware 33126 123940037965504 Response: GET /api/classes/enrolled/ [200] - 0.027s
+INFO 2026-05-02 17:43:05,895 middleware 33126 123940029572800 Request: GET /api/classes/08Y025/enroll/ from 127.0.0.1
+ERROR 2026-05-02 17:43:05,915 exceptions 33126 123940029572800 Exception occurred: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2026-05-02 17:43:05,918 middleware 33126 123940029572800 Response: GET /api/classes/08Y025/enroll/ [405] - 0.023s
+WARNING 2026-05-02 17:43:05,919 log 33126 123940029572800 Method Not Allowed: /api/classes/08Y025/enroll/
+WARNING 2026-05-02 17:43:05,920 basehttp 33126 123940029572800 "GET /api/classes/08Y025/enroll/ HTTP/1.1" 405 96
+INFO 2026-05-02 17:43:10,873 middleware 33126 123940029572800 Request: POST /api/classes/08Y025/enroll/ from 127.0.0.1
+INFO 2026-05-02 17:43:10,901 middleware 33126 123940029572800 Response: POST /api/classes/08Y025/enroll/ [400] - 0.028s
+WARNING 2026-05-02 17:43:10,901 log 33126 123940029572800 Bad Request: /api/classes/08Y025/enroll/
+WARNING 2026-05-02 17:43:10,902 basehttp 33126 123940029572800 "POST /api/classes/08Y025/enroll/ HTTP/1.1" 400 28
+INFO 2026-05-02 17:43:19,294 middleware 33126 123940056848064 Request: POST /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-02 17:43:19,387 middleware 33126 123940056848064 Response: POST /admin/classes/enrollment/ [200] - 0.092s
+INFO 2026-05-02 17:43:20,541 middleware 33126 123940056848064 Request: POST /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-02 17:43:20,591 middleware 33126 123940056848064 Response: POST /admin/classes/enrollment/ [302] - 0.050s
+INFO 2026-05-02 17:43:20,599 middleware 33126 123940056848064 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-02 17:43:20,638 middleware 33126 123940056848064 Response: GET /admin/classes/enrollment/ [200] - 0.039s
+INFO 2026-05-02 17:43:20,736 middleware 33126 123940056848064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 17:43:20,804 middleware 33126 123940056848064 Response: GET /admin/jsi18n/ [200] - 0.068s
+INFO 2026-05-02 17:43:23,983 middleware 33126 123940029572800 Request: POST /api/classes/08Y025/enroll/ from 127.0.0.1
+INFO 2026-05-02 17:43:24,025 middleware 33126 123940029572800 Response: POST /api/classes/08Y025/enroll/ [200] - 0.041s
+INFO 2026-05-02 17:43:26,082 middleware 33126 123940056848064 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-02 17:43:26,126 middleware 33126 123940056848064 Response: GET /admin/classes/enrollment/ [200] - 0.044s
+INFO 2026-05-02 17:43:26,239 middleware 33126 123940056848064 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-02 17:43:26,274 middleware 33126 123940056848064 Response: GET /admin/jsi18n/ [200] - 0.035s

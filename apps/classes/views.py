@@ -3,7 +3,7 @@ from django.shortcuts import render
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from authentication.permissions import IsTeacher, IsStudent
+from apps.authentication.permissions import IsTeacher, IsStudent
 # Models import 
 from .models import Class, Enrollment, Assignment
 # Serializers
@@ -77,6 +77,13 @@ class ClassViewSet(viewsets.ModelViewSet):
         # Enroll student
         Enrollment.objects.create(student=request.user, class_obj=class_obj)
         return Response({'message':'Successfully enrolled', 'class':ClassSerializer(class_obj).data})
+
+    @action(detail=False, methods=['get'], permission_classes=[IsStudent])
+    def enrolled(self, request):
+        """Return all classes the authenticated student is enrolled in."""
+        classes = self.get_queryset()
+        serializer = self.get_serializer(classes, many=True)
+        return Response(serializer.data)
 
     @action(detail=True, methods=['post'])
     def assignments(self, request, code=None):

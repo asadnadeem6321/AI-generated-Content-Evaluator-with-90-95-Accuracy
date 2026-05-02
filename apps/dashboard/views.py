@@ -4,7 +4,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django.db.models import Count, Avg, Q
-from authentication.permissions import IsTeacher
+from apps.authentication.permissions import IsTeacher
 from apps.classes.models import Class, Assignment
 from apps.submissions.models import Submission
 from apps.results.models import Result
@@ -115,7 +115,9 @@ class DashboardViewSet(viewsets.ModelViewSet):
     def assignment_submissions(self, request, pk=None):
         """Get all submissions for an assignment"""
         assignment = Assignment.objects.get(id=pk, created_by=request.user)
-        submissions = assignment.submissions.all()
+        submissions = assignment.submissions.filter(
+            user__role='student'
+        )
         
         overview = []
         for submission in submissions:

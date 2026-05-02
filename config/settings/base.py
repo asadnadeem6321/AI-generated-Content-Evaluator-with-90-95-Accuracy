@@ -15,6 +15,7 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-change-this-in-produc
 
 # Application definition
 INSTALLED_APPS = [
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -33,7 +34,7 @@ INSTALLED_APPS = [
     # Local apps
     'apps.authentication.apps.AuthenticationConfig',  
     'apps.classes.apps.ClassesConfig',
-    'apps.submissions.apps.SubmissionsConfig',
+    'apps.submissions',
     'apps.results.apps.ResultsConfig',
     'apps.dashboard.apps.DashboardConfig',
     'apps.core.apps.CoreConfig',
@@ -280,7 +281,7 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 
 # ML Service Configuration
 ML_SERVICE_URL = config('ML_SERVICE_URL', default='http://localhost:8001')
-ML_SERVICE_API_KEY = config('ML_SERVICE_API_KEY', default='your-ml-api-key')
+ML_SERVICE_API_KEY = config('ML_SERVICE_API_KEY', default='ai-content-evaluator-by-salman-and-ali')
 
 # Processing settings
 PARAGRAPH_MIN_WORDS = 50 
