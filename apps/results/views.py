@@ -25,12 +25,22 @@ class ResultViewSet(viewsets.ReadOnlyModelViewSet):
     
     def get_queryset(self):
         user = self.request.user
+        assignment_id = self.request.query_params.get('assignment')
+
         if user.is_teacher():
-            # Teacher can see results from there classes
-            return Result.objects.filter(submission__class_obj__teacher = user)
-        else:
-            # Students and guest can only see their own results
-            return Result.objects.filter(submission__user=user)
+            # Teacher can see results from assignments they own
+            queryset = Result.objects.filter(
+                submission__assignment__class_obj__teacher=user
+            )
+            if assignment_id:
+                queryset = queryset.filter(submission__assignment_id=assignment_id)
+            return queryset
+
+        # Students and guest can only see their own results
+        queryset = Result.objects.filter(submission__user=user)
+        if assignment_id:
+            queryset = queryset.filter(submission__assignment_id=assignment_id)
+        return queryset
 
 
     @action(detail=True, methods=['get'])

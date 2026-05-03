@@ -2,7 +2,6 @@ celery -A config worker -l info -Q default,celery
 python manage.py runserver
 sudo docker-compose up -d
 sudo systemctl stop redis
-
 uvicorn app.main:app --reload --port 8001
 
 

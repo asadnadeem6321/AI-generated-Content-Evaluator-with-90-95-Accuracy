@@ -3,11 +3,67 @@ from django.utils import timezone
 from django.conf import settings
 import requests
 import re
+import base64
+from django.core.files.base import ContentFile
 from .models import Submission
 from apps.results.models import Result, ParagraphResult
 import logging
 
 logger = logging.getLogger(__name__)
+
+
+def save_report_pdf(result, report_payload):
+    """Store a report PDF file returned from the ML service."""
+    if not report_payload:
+        return
+
+    report_bytes = None
+    filename = f"report_{result.submission.id}.pdf"
+
+    # If the ML service returned a direct URL to the report
+    if isinstance(report_payload, str) and report_payload.startswith('http'):
+        response = requests.get(report_payload, timeout=300)
+        if response.status_code == 200:
+            report_bytes = response.content
+        else:
+            logger.warning('Could not download report PDF from URL: %s', report_payload)
+            return
+    elif isinstance(report_payload, str):
+        # Assume base64 encoded PDF content
+        try:
+            report_bytes = base64.b64decode(report_payload)
+        except Exception as exc:
+            logger.warning('Could not decode report PDF base64 payload: %s', exc)
+            return
+    elif isinstance(report_payload, dict):
+        if 'url' in report_payload:
+            response = requests.get(report_payload['url'], timeout=300)
+            if response.status_code == 200:
+                report_bytes = response.content
+            else:
+                logger.warning('Could not download report PDF from provided URL: %s', report_payload['url'])
+                return
+        elif 'content' in report_payload:
+            try:
+                report_bytes = base64.b64decode(report_payload['content'])
+            except Exception as exc:
+                logger.warning('Could not decode report PDF content field: %s', exc)
+                return
+        elif 'base64' in report_payload:
+            try:
+                report_bytes = base64.b64decode(report_payload['base64'])
+            except Exception as exc:
+                logger.warning('Could not decode report PDF base64 field: %s', exc)
+                return
+        elif 'pdf_report_base64' in report_payload:
+            try:
+                report_bytes = base64.b64decode(report_payload['pdf_report_base64'])
+            except Exception as exc:
+                logger.warning('Could not decode report PDF base64 field: %s', exc)
+                return
+
+    if report_bytes:
+        result.report_pdf.save(filename, ContentFile(report_bytes), save=True)
 
 
 @shared_task
@@ -107,6 +163,16 @@ def extract_paragraphs_from_pdf(submission_id):
                     'perplexity': para_data.get('perplexity')
                 }
             )
+
+        # Save report PDF if the ML service provided it
+        report_payload = (
+            ml_data.get('pdf_report_base64') or
+            ml_data.get('report_pdf') or
+            ml_data.get('report') or
+            ml_data.get('report_url')
+        )
+        if report_payload:
+            save_report_pdf(result, report_payload)
         
         # Update submission
         submission.total_paragraphs = paragraph_count
