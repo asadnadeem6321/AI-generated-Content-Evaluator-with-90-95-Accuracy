@@ -12,58 +12,79 @@ import logging
 logger = logging.getLogger(__name__)
 
 
+def extract_pdf_bytes(payload):
+    """Recursively search ML payload for PDF bytes or base64 content."""
+    if payload is None:
+        return None
+
+    if isinstance(payload, bytes):
+        return payload if payload.startswith(b'%PDF') else None
+
+    if isinstance(payload, str):
+        payload = payload.strip()
+        if not payload:
+            return None
+
+        if payload.startswith('http'):
+            response = requests.get(payload, timeout=300)
+            if response.status_code == 200 and response.content.startswith(b'%PDF'):
+                return response.content
+            return None
+
+        try:
+            decoded = base64.b64decode(payload, validate=False)
+            if decoded.startswith(b'%PDF'):
+                return decoded
+        except Exception:
+            return None
+
+        return None
+
+    if isinstance(payload, dict):
+        for candidate_key in [
+            'pdf_report_base64', 'report_pdf_base64', 'pdf_base64', 'report_base64',
+            'report_pdf', 'pdf_report', 'report', 'pdf'
+        ]:
+            if candidate_key in payload:
+                report_bytes = extract_pdf_bytes(payload[candidate_key])
+                if report_bytes:
+                    return report_bytes
+
+        for value in payload.values():
+            report_bytes = extract_pdf_bytes(value)
+            if report_bytes:
+                return report_bytes
+
+        return None
+
+    if isinstance(payload, (list, tuple)):
+        for value in payload:
+            report_bytes = extract_pdf_bytes(value)
+            if report_bytes:
+                return report_bytes
+
+    return None
+
 def save_report_pdf(result, report_payload):
-    """Store a report PDF file returned from the ML service."""
     if not report_payload:
+        print("❌ No payload")
         return
 
-    report_bytes = None
+    report_bytes = extract_pdf_bytes(report_payload)
+
+    if not report_bytes:
+        print("❌ PDF NOT EXTRACTED")
+        return
+
     filename = f"report_{result.submission.id}.pdf"
 
-    # If the ML service returned a direct URL to the report
-    if isinstance(report_payload, str) and report_payload.startswith('http'):
-        response = requests.get(report_payload, timeout=300)
-        if response.status_code == 200:
-            report_bytes = response.content
-        else:
-            logger.warning('Could not download report PDF from URL: %s', report_payload)
-            return
-    elif isinstance(report_payload, str):
-        # Assume base64 encoded PDF content
-        try:
-            report_bytes = base64.b64decode(report_payload)
-        except Exception as exc:
-            logger.warning('Could not decode report PDF base64 payload: %s', exc)
-            return
-    elif isinstance(report_payload, dict):
-        if 'url' in report_payload:
-            response = requests.get(report_payload['url'], timeout=300)
-            if response.status_code == 200:
-                report_bytes = response.content
-            else:
-                logger.warning('Could not download report PDF from provided URL: %s', report_payload['url'])
-                return
-        elif 'content' in report_payload:
-            try:
-                report_bytes = base64.b64decode(report_payload['content'])
-            except Exception as exc:
-                logger.warning('Could not decode report PDF content field: %s', exc)
-                return
-        elif 'base64' in report_payload:
-            try:
-                report_bytes = base64.b64decode(report_payload['base64'])
-            except Exception as exc:
-                logger.warning('Could not decode report PDF base64 field: %s', exc)
-                return
-        elif 'pdf_report_base64' in report_payload:
-            try:
-                report_bytes = base64.b64decode(report_payload['pdf_report_base64'])
-            except Exception as exc:
-                logger.warning('Could not decode report PDF base64 field: %s', exc)
-                return
+    result.report_pdf.save(
+        filename,
+        ContentFile(report_bytes),
+        save=True
+    )
 
-    if report_bytes:
-        result.report_pdf.save(filename, ContentFile(report_bytes), save=True)
+    print("✅ PDF SAVED")
 
 
 @shared_task
@@ -165,14 +186,7 @@ def extract_paragraphs_from_pdf(submission_id):
             )
 
         # Save report PDF if the ML service provided it
-        report_payload = (
-            ml_data.get('pdf_report_base64') or
-            ml_data.get('report_pdf') or
-            ml_data.get('report') or
-            ml_data.get('report_url')
-        )
-        if report_payload:
-            save_report_pdf(result, report_payload)
+        save_report_pdf(result, ml_data.get('pdf_report_base64'))
         
         # Update submission
         submission.total_paragraphs = paragraph_count

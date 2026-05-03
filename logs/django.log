@@ -5151,3 +5151,396 @@ INFO 2026-05-03 05:58:46,379 middleware 11182 133310953027264 Request: GET /api/
 INFO 2026-05-03 05:58:46,402 middleware 11182 133310953027264 Response: GET /api/results/2/report/ [404] - 0.023s
 WARNING 2026-05-03 05:58:46,403 log 11182 133310953027264 Not Found: /api/results/2/report/
 WARNING 2026-05-03 05:58:46,404 basehttp 11182 133310953027264 "GET /api/results/2/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 06:05:17,719 middleware 14545 127458803181248 Request: GET /api/results/2/report/ from 127.0.0.1
+INFO 2026-05-03 06:05:17,766 middleware 14545 127458803181248 Response: GET /api/results/2/report/ [404] - 0.048s
+WARNING 2026-05-03 06:05:17,767 log 14545 127458803181248 Not Found: /api/results/2/report/
+WARNING 2026-05-03 06:05:17,768 basehttp 14545 127458803181248 "GET /api/results/2/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 06:05:23,761 middleware 14545 127458803181248 Request: GET /api/results/2/report/ from 127.0.0.1
+INFO 2026-05-03 06:05:23,784 middleware 14545 127458803181248 Response: GET /api/results/2/report/ [404] - 0.023s
+WARNING 2026-05-03 06:05:23,785 log 14545 127458803181248 Not Found: /api/results/2/report/
+WARNING 2026-05-03 06:05:23,786 basehttp 14545 127458803181248 "GET /api/results/2/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 06:06:35,476 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:06:35,644 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ [200] - 0.167s
+INFO 2026-05-03 06:06:35,784 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:06:35,814 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.029s
+INFO 2026-05-03 06:06:41,366 middleware 14545 127458724542144 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:06:41,434 middleware 14545 127458724542144 Response: POST /admin/submissions/submission/ [200] - 0.068s
+INFO 2026-05-03 06:06:42,946 middleware 14545 127458724542144 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:06:43,020 middleware 14545 127458724542144 Response: POST /admin/submissions/submission/ [302] - 0.074s
+INFO 2026-05-03 06:06:43,030 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:06:43,105 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ [200] - 0.075s
+INFO 2026-05-03 06:06:43,211 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:06:43,258 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.047s
+INFO 2026-05-03 06:06:58,177 middleware 14545 127458724542144 Request: GET /admin/classes/assignment/ from 127.0.0.1
+INFO 2026-05-03 06:06:58,242 middleware 14545 127458724542144 Response: GET /admin/classes/assignment/ [200] - 0.065s
+INFO 2026-05-03 06:06:58,315 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:06:58,343 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-03 06:06:59,599 middleware 14545 127458724542144 Request: GET /admin/classes/assignment/833e3678-3ded-44a1-ac4c-e06bbba8ff21/change/ from 127.0.0.1
+INFO 2026-05-03 06:06:59,695 middleware 14545 127458724542144 Response: GET /admin/classes/assignment/833e3678-3ded-44a1-ac4c-e06bbba8ff21/change/ [200] - 0.096s
+INFO 2026-05-03 06:06:59,812 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:06:59,857 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.045s
+INFO 2026-05-03 06:07:19,567 middleware 14545 127458706708160 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 06:07:19,869 middleware 14545 127458706708160 Response: POST /api/submissions/ [201] - 0.303s
+INFO 2026-05-03 06:07:19,910 tasks 11808 127300687044736 📄 Extracting paragraphs from submission cfc076c5-7adb-4812-82cf-46a4e1dbac33
+INFO 2026-05-03 06:07:45,147 tasks 11808 127300687044736 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-03 06:07:45,183 tasks 11808 127300687044736 ✅ Submission cfc076c5-7adb-4812-82cf-46a4e1dbac33 completed successfully
+INFO 2026-05-03 06:07:53,499 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:07:53,580 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ [200] - 0.081s
+INFO 2026-05-03 06:07:53,661 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:07:53,691 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-05-03 06:07:55,116 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/cfc076c5-7adb-4812-82cf-46a4e1dbac33/change/ from 127.0.0.1
+INFO 2026-05-03 06:07:55,198 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/cfc076c5-7adb-4812-82cf-46a4e1dbac33/change/ [200] - 0.081s
+INFO 2026-05-03 06:07:55,253 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:07:55,294 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.041s
+INFO 2026-05-03 06:08:02,841 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:08:02,896 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ [200] - 0.054s
+INFO 2026-05-03 06:08:02,962 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:02,988 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.026s
+INFO 2026-05-03 06:08:08,301 middleware 14545 127458724542144 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:08:08,358 middleware 14545 127458724542144 Response: POST /admin/submissions/submission/ [200] - 0.057s
+INFO 2026-05-03 06:08:09,571 middleware 14545 127458724542144 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:08:09,627 middleware 14545 127458724542144 Response: POST /admin/submissions/submission/ [302] - 0.057s
+INFO 2026-05-03 06:08:09,638 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:08:09,702 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ [200] - 0.064s
+INFO 2026-05-03 06:08:09,826 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:09,880 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.054s
+INFO 2026-05-03 06:08:15,438 middleware 14545 127458724542144 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-03 06:08:15,485 middleware 14545 127458724542144 Response: GET /admin/results/result/ [200] - 0.047s
+INFO 2026-05-03 06:08:15,542 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:15,578 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-03 06:08:20,859 middleware 14545 127458724542144 Request: GET /admin/classes/assignment/ from 127.0.0.1
+INFO 2026-05-03 06:08:20,909 middleware 14545 127458724542144 Response: GET /admin/classes/assignment/ [200] - 0.050s
+INFO 2026-05-03 06:08:20,975 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:21,022 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.046s
+INFO 2026-05-03 06:08:23,823 middleware 14545 127458724542144 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-03 06:08:23,866 middleware 14545 127458724542144 Response: GET /admin/classes/enrollment/ [200] - 0.043s
+INFO 2026-05-03 06:08:23,913 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:23,947 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.034s
+INFO 2026-05-03 06:08:26,278 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:08:26,329 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ [200] - 0.052s
+INFO 2026-05-03 06:08:26,423 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:26,456 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-03 06:08:31,818 middleware 14545 127458692196032 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 06:08:31,870 middleware 14545 127458692196032 Response: POST /api/submissions/ [201] - 0.052s
+INFO 2026-05-03 06:08:31,902 tasks 11808 127300687044736 📄 Extracting paragraphs from submission ae3bcc9b-4b5d-43a4-99aa-fe16303d43fe
+INFO 2026-05-03 06:08:35,080 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:08:35,151 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ [200] - 0.070s
+INFO 2026-05-03 06:08:35,266 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:35,313 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.047s
+INFO 2026-05-03 06:08:38,811 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ae3bcc9b-4b5d-43a4-99aa-fe16303d43fe/change/ from 127.0.0.1
+INFO 2026-05-03 06:08:38,952 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ae3bcc9b-4b5d-43a4-99aa-fe16303d43fe/change/ [200] - 0.141s
+INFO 2026-05-03 06:08:39,123 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:08:39,156 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-03 06:08:55,358 tasks 11808 127300687044736 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-03 06:08:55,384 tasks 11808 127300687044736 ✅ Submission ae3bcc9b-4b5d-43a4-99aa-fe16303d43fe completed successfully
+INFO 2026-05-03 06:09:09,087 middleware 14545 127458724542144 Request: GET /admin/submissions/submission/ae3bcc9b-4b5d-43a4-99aa-fe16303d43fe/change/ from 127.0.0.1
+INFO 2026-05-03 06:09:09,175 middleware 14545 127458724542144 Response: GET /admin/submissions/submission/ae3bcc9b-4b5d-43a4-99aa-fe16303d43fe/change/ [200] - 0.088s
+INFO 2026-05-03 06:09:09,243 middleware 14545 127458724542144 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:09:09,273 middleware 14545 127458724542144 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-05-03 06:09:12,726 middleware 14545 127458692196032 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 06:09:12,758 middleware 14545 127458692196032 Response: GET /api/results/ [200] - 0.032s
+INFO 2026-05-03 06:09:31,020 middleware 14545 127458692196032 Request: GET /api/results/4/report/ from 127.0.0.1
+INFO 2026-05-03 06:09:31,040 middleware 14545 127458692196032 Response: GET /api/results/4/report/ [404] - 0.020s
+WARNING 2026-05-03 06:09:31,040 log 14545 127458692196032 Not Found: /api/results/4/report/
+WARNING 2026-05-03 06:09:31,041 basehttp 14545 127458692196032 "GET /api/results/4/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 06:11:34,321 middleware 15960 126077718488768 Request: GET /api/results/4/report/ from 127.0.0.1
+INFO 2026-05-03 06:11:34,359 middleware 15960 126077718488768 Response: GET /api/results/4/report/ [404] - 0.038s
+WARNING 2026-05-03 06:11:34,360 log 15960 126077718488768 Not Found: /api/results/4/report/
+WARNING 2026-05-03 06:11:34,360 basehttp 15960 126077718488768 "GET /api/results/4/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 06:11:58,826 middleware 15960 126077709047488 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-03 06:11:59,052 middleware 15960 126077709047488 Response: GET /admin/results/result/ [200] - 0.226s
+INFO 2026-05-03 06:11:59,139 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:11:59,193 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.054s
+INFO 2026-05-03 06:12:01,830 middleware 15960 126077709047488 Request: GET /admin/results/result/4/change/ from 127.0.0.1
+INFO 2026-05-03 06:12:01,920 middleware 15960 126077709047488 Response: GET /admin/results/result/4/change/ [200] - 0.090s
+INFO 2026-05-03 06:12:02,022 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:12:02,054 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.033s
+INFO 2026-05-03 06:12:40,215 middleware 15960 126077709047488 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-03 06:12:40,264 middleware 15960 126077709047488 Response: GET /admin/results/result/ [200] - 0.049s
+INFO 2026-05-03 06:12:40,363 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:12:40,390 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.027s
+INFO 2026-05-03 06:12:41,770 middleware 15960 126077709047488 Request: GET /admin/results/result/1/change/ from 127.0.0.1
+INFO 2026-05-03 06:12:41,832 middleware 15960 126077709047488 Response: GET /admin/results/result/1/change/ [200] - 0.061s
+INFO 2026-05-03 06:12:41,887 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:12:41,928 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.041s
+INFO 2026-05-03 06:12:53,790 middleware 15960 126077709047488 Request: GET /admin/results/paragraphresult/ from 127.0.0.1
+INFO 2026-05-03 06:12:53,842 middleware 15960 126077709047488 Response: GET /admin/results/paragraphresult/ [200] - 0.053s
+INFO 2026-05-03 06:12:53,901 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:12:53,943 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.042s
+INFO 2026-05-03 06:13:08,278 middleware 15960 126077709047488 Request: GET /admin/results/paragraphresult/16/change/ from 127.0.0.1
+INFO 2026-05-03 06:13:08,350 middleware 15960 126077709047488 Response: GET /admin/results/paragraphresult/16/change/ [200] - 0.072s
+INFO 2026-05-03 06:13:08,458 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:13:08,500 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.042s
+INFO 2026-05-03 06:14:09,317 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:14:09,375 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/ [200] - 0.058s
+INFO 2026-05-03 06:14:09,518 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:14:09,569 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.052s
+INFO 2026-05-03 06:14:12,717 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/add/ from 127.0.0.1
+INFO 2026-05-03 06:14:12,840 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/add/ [200] - 0.123s
+INFO 2026-05-03 06:14:12,941 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:14:12,994 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.053s
+INFO 2026-05-03 06:14:18,472 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:14:18,537 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/ [200] - 0.065s
+INFO 2026-05-03 06:14:18,616 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:14:18,665 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.049s
+INFO 2026-05-03 06:14:22,927 middleware 15960 126077709047488 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:14:22,983 middleware 15960 126077709047488 Response: POST /admin/submissions/submission/ [200] - 0.055s
+INFO 2026-05-03 06:14:24,402 middleware 15960 126077709047488 Request: POST /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:14:24,485 middleware 15960 126077709047488 Response: POST /admin/submissions/submission/ [302] - 0.083s
+INFO 2026-05-03 06:14:24,494 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:14:24,577 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/ [200] - 0.082s
+INFO 2026-05-03 06:14:24,706 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:14:24,752 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.046s
+INFO 2026-05-03 06:14:58,038 middleware 15960 126077486757568 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 06:14:58,315 middleware 15960 126077486757568 Response: POST /api/submissions/ [201] - 0.277s
+INFO 2026-05-03 06:14:58,363 tasks 11808 127300687044736 📄 Extracting paragraphs from submission c8a659ab-e06e-4dbc-b3ad-dda64891928f
+INFO 2026-05-03 06:15:06,767 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:15:06,840 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/ [200] - 0.073s
+INFO 2026-05-03 06:15:06,961 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:15:06,990 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-05-03 06:15:08,512 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ from 127.0.0.1
+INFO 2026-05-03 06:15:08,601 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ [200] - 0.089s
+INFO 2026-05-03 06:15:08,673 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:15:08,712 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.039s
+INFO 2026-05-03 06:15:11,691 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ from 127.0.0.1
+INFO 2026-05-03 06:15:11,843 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ [200] - 0.152s
+INFO 2026-05-03 06:15:12,020 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:15:12,051 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-05-03 06:15:26,900 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ from 127.0.0.1
+INFO 2026-05-03 06:15:27,039 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ [200] - 0.139s
+INFO 2026-05-03 06:15:27,209 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:15:27,250 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.041s
+INFO 2026-05-03 06:15:34,984 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ from 127.0.0.1
+INFO 2026-05-03 06:15:35,091 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ [200] - 0.106s
+INFO 2026-05-03 06:15:35,248 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:15:35,296 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.048s
+INFO 2026-05-03 06:15:45,348 tasks 11808 127300687044736 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-03 06:15:45,425 tasks 11808 127300687044736 ✅ Submission c8a659ab-e06e-4dbc-b3ad-dda64891928f completed successfully
+INFO 2026-05-03 06:15:52,044 middleware 15960 126077709047488 Request: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ from 127.0.0.1
+INFO 2026-05-03 06:15:52,131 middleware 15960 126077709047488 Response: GET /admin/submissions/submission/c8a659ab-e06e-4dbc-b3ad-dda64891928f/change/ [200] - 0.086s
+INFO 2026-05-03 06:15:52,265 middleware 15960 126077709047488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:15:52,305 middleware 15960 126077709047488 Response: GET /admin/jsi18n/ [200] - 0.040s
+INFO 2026-05-03 06:16:10,077 middleware 15960 126077709047488 Request: GET /api/results/5/report/ from 127.0.0.1
+INFO 2026-05-03 06:16:10,106 middleware 15960 126077709047488 Response: GET /api/results/5/report/ [404] - 0.031s
+WARNING 2026-05-03 06:16:10,107 log 15960 126077709047488 Not Found: /api/results/5/report/
+WARNING 2026-05-03 06:16:10,110 basehttp 15960 126077709047488 "GET /api/results/5/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 06:16:21,202 middleware 15960 126077709047488 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 06:16:21,270 middleware 15960 126077709047488 Response: GET /api/results/ [200] - 0.068s
+INFO 2026-05-03 06:16:39,957 middleware 15960 126077700654784 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-03 06:16:40,029 middleware 15960 126077700654784 Response: GET /admin/results/result/ [200] - 0.071s
+INFO 2026-05-03 06:16:40,190 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:16:40,234 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.044s
+INFO 2026-05-03 06:16:43,153 middleware 15960 126077700654784 Request: GET /admin/results/result/5/change/ from 127.0.0.1
+INFO 2026-05-03 06:16:43,220 middleware 15960 126077700654784 Response: GET /admin/results/result/5/change/ [200] - 0.067s
+INFO 2026-05-03 06:16:43,287 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:16:43,325 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-03 06:18:40,112 middleware 15960 126077464901312 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 06:18:40,258 middleware 15960 126077464901312 Response: POST /api/submissions/ [201] - 0.146s
+INFO 2026-05-03 06:18:40,415 tasks 11808 127300687044736 📄 Extracting paragraphs from submission eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6
+INFO 2026-05-03 06:18:47,241 middleware 15960 126077700654784 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 06:18:47,384 middleware 15960 126077700654784 Response: GET /admin/submissions/submission/ [200] - 0.143s
+INFO 2026-05-03 06:18:47,492 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:18:47,561 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.070s
+INFO 2026-05-03 06:18:48,995 middleware 15960 126077700654784 Request: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ from 127.0.0.1
+INFO 2026-05-03 06:18:49,143 middleware 15960 126077700654784 Response: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ [200] - 0.148s
+INFO 2026-05-03 06:18:49,230 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:18:49,291 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.061s
+INFO 2026-05-03 06:18:52,164 middleware 15960 126077700654784 Request: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ from 127.0.0.1
+INFO 2026-05-03 06:18:52,258 middleware 15960 126077700654784 Response: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ [200] - 0.094s
+INFO 2026-05-03 06:18:52,408 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:18:52,455 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.047s
+INFO 2026-05-03 06:19:04,248 middleware 15960 126077700654784 Request: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ from 127.0.0.1
+INFO 2026-05-03 06:19:04,339 middleware 15960 126077700654784 Response: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ [200] - 0.090s
+INFO 2026-05-03 06:19:04,463 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:19:04,492 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.029s
+INFO 2026-05-03 06:19:05,591 middleware 15960 126077700654784 Request: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ from 127.0.0.1
+INFO 2026-05-03 06:19:05,679 middleware 15960 126077700654784 Response: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ [200] - 0.088s
+INFO 2026-05-03 06:19:05,817 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:19:05,857 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.040s
+INFO 2026-05-03 06:20:42,647 middleware 15960 126077700654784 Request: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ from 127.0.0.1
+INFO 2026-05-03 06:20:42,794 middleware 15960 126077700654784 Response: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ [200] - 0.147s
+INFO 2026-05-03 06:20:43,016 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:20:43,063 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.047s
+INFO 2026-05-03 06:20:55,403 tasks 11808 127300687044736 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-03 06:20:55,448 tasks 11808 127300687044736 ✅ Submission eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6 completed successfully
+INFO 2026-05-03 06:20:58,812 middleware 15960 126077700654784 Request: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ from 127.0.0.1
+INFO 2026-05-03 06:20:58,899 middleware 15960 126077700654784 Response: GET /admin/submissions/submission/eb2c9b5a-2ead-4c1b-87a2-22de726c0bc6/change/ [200] - 0.087s
+INFO 2026-05-03 06:20:58,953 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:20:58,982 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.030s
+INFO 2026-05-03 06:21:06,097 middleware 15960 126077700654784 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-03 06:21:06,145 middleware 15960 126077700654784 Response: GET /admin/results/result/ [200] - 0.048s
+INFO 2026-05-03 06:21:06,214 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:21:06,251 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-03 06:21:08,096 middleware 15960 126077700654784 Request: GET /admin/results/result/6/change/ from 127.0.0.1
+INFO 2026-05-03 06:21:08,168 middleware 15960 126077700654784 Response: GET /admin/results/result/6/change/ [200] - 0.072s
+INFO 2026-05-03 06:21:08,218 middleware 15960 126077700654784 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 06:21:08,254 middleware 15960 126077700654784 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-03 08:57:27,937 middleware 23059 132128159299264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 08:57:28,244 middleware 23059 132128159299264 Response: POST /api/submissions/ [201] - 0.307s
+INFO 2026-05-03 08:57:28,298 tasks 21240 133053653209216 📄 Extracting paragraphs from submission 1383e791-e0ac-4547-84ea-cec0c1192a5d
+INFO 2026-05-03 08:57:34,069 middleware 23059 132128150906560 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 08:57:34,354 middleware 23059 132128150906560 Response: GET /admin/submissions/submission/ [200] - 0.285s
+INFO 2026-05-03 08:57:34,531 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 08:57:34,582 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.051s
+INFO 2026-05-03 08:57:37,198 middleware 23059 132128150906560 Request: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ from 127.0.0.1
+INFO 2026-05-03 08:57:37,352 middleware 23059 132128150906560 Response: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ [200] - 0.153s
+INFO 2026-05-03 08:57:37,534 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 08:57:37,611 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.076s
+INFO 2026-05-03 08:57:41,786 middleware 23059 132128150906560 Request: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ from 127.0.0.1
+INFO 2026-05-03 08:57:41,935 middleware 23059 132128150906560 Response: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ [200] - 0.149s
+INFO 2026-05-03 08:57:42,118 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 08:57:42,146 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-03 08:57:44,034 middleware 23059 132128150906560 Request: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ from 127.0.0.1
+INFO 2026-05-03 08:57:44,179 middleware 23059 132128150906560 Response: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ [200] - 0.145s
+INFO 2026-05-03 08:57:44,292 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 08:57:44,328 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-03 08:57:53,228 middleware 23059 132128150906560 Request: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ from 127.0.0.1
+INFO 2026-05-03 08:57:53,452 middleware 23059 132128150906560 Response: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ [200] - 0.224s
+INFO 2026-05-03 08:57:53,670 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 08:57:53,710 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.040s
+INFO 2026-05-03 08:58:25,520 tasks 21240 133053653209216 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-03 08:58:25,720 tasks 21240 133053653209216 ✅ Submission 1383e791-e0ac-4547-84ea-cec0c1192a5d completed successfully
+INFO 2026-05-03 09:01:13,098 middleware 23059 132128150906560 Request: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ from 127.0.0.1
+INFO 2026-05-03 09:01:13,187 middleware 23059 132128150906560 Response: GET /admin/submissions/submission/1383e791-e0ac-4547-84ea-cec0c1192a5d/change/ [200] - 0.088s
+INFO 2026-05-03 09:01:13,313 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:01:13,350 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.037s
+INFO 2026-05-03 09:01:17,182 middleware 23059 132128150906560 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-03 09:01:17,239 middleware 23059 132128150906560 Response: GET /admin/results/result/ [200] - 0.056s
+INFO 2026-05-03 09:01:17,361 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:01:17,399 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-03 09:01:19,356 middleware 23059 132128150906560 Request: GET /admin/results/result/7/change/ from 127.0.0.1
+INFO 2026-05-03 09:01:19,438 middleware 23059 132128150906560 Response: GET /admin/results/result/7/change/ [200] - 0.081s
+INFO 2026-05-03 09:01:19,497 middleware 23059 132128150906560 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:01:19,522 middleware 23059 132128150906560 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-05-03 09:01:24,060 middleware 23059 132128150906560 Request: GET /media/reports/2026/05/03/report_1383e791-e0ac-4547-84ea-cec0c1192a5d.pdf from 127.0.0.1
+INFO 2026-05-03 09:01:24,074 middleware 23059 132128150906560 Response: GET /media/reports/2026/05/03/report_1383e791-e0ac-4547-84ea-cec0c1192a5d.pdf [200] - 0.014s
+INFO 2026-05-03 09:32:09,395 middleware 23059 132128142513856 Request: GET /api/results/6/report/ from 127.0.0.1
+INFO 2026-05-03 09:32:09,414 middleware 23059 132128142513856 Response: GET /api/results/6/report/ [404] - 0.019s
+WARNING 2026-05-03 09:32:09,415 log 23059 132128142513856 Not Found: /api/results/6/report/
+WARNING 2026-05-03 09:32:09,415 basehttp 23059 132128142513856 "GET /api/results/6/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 09:32:17,703 middleware 23059 132128142513856 Request: GET /api/results/6/report/ from 127.0.0.1
+INFO 2026-05-03 09:32:17,725 middleware 23059 132128142513856 Response: GET /api/results/6/report/ [404] - 0.022s
+WARNING 2026-05-03 09:32:17,725 log 23059 132128142513856 Not Found: /api/results/6/report/
+WARNING 2026-05-03 09:32:17,726 basehttp 23059 132128142513856 "GET /api/results/6/report/ HTTP/1.1" 404 36
+INFO 2026-05-03 09:32:26,626 middleware 23059 132128142513856 Request: GET /api/results/7/report/ from 127.0.0.1
+INFO 2026-05-03 09:32:26,651 middleware 23059 132128142513856 Response: GET /api/results/7/report/ [200] - 0.025s
+INFO 2026-05-03 09:33:08,467 middleware 23059 132128142513856 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 09:33:08,507 middleware 23059 132128142513856 Response: GET /api/results/ [200] - 0.040s
+INFO 2026-05-03 09:34:13,501 middleware 23059 132128150906560 Request: GET /api/results/ from 127.0.0.1
+ERROR 2026-05-03 09:34:13,504 exceptions 23059 132128150906560 Exception occurred: {'detail': ErrorDetail(string='Authorization header must contain two space-delimited values', code='authentication_failed'), 'code': ErrorDetail(string='bad_authorization_header', code='authentication_failed')}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 45, in authenticate
+    raw_token = self.get_raw_token(header)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 88, in get_raw_token
+    raise AuthenticationFailed(
+rest_framework_simplejwt.exceptions.AuthenticationFailed: {'detail': ErrorDetail(string='Authorization header must contain two space-delimited values', code='authentication_failed'), 'code': ErrorDetail(string='bad_authorization_header', code='authentication_failed')}
+INFO 2026-05-03 09:34:13,506 middleware 23059 132128150906560 Response: GET /api/results/ [401] - 0.005s
+WARNING 2026-05-03 09:34:13,506 log 23059 132128150906560 Unauthorized: /api/results/
+WARNING 2026-05-03 09:34:13,507 basehttp 23059 132128150906560 "GET /api/results/ HTTP/1.1" 401 196
+INFO 2026-05-03 09:34:16,541 middleware 23059 132128150906560 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 09:34:16,580 middleware 23059 132128150906560 Response: GET /api/results/ [200] - 0.038s
+INFO 2026-05-03 09:36:12,463 middleware 23059 132128132024000 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-03 09:36:12,704 middleware 23059 132128132024000 Response: GET /admin/authentication/user/ [200] - 0.245s
+INFO 2026-05-03 09:36:12,827 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:36:12,894 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.067s
+INFO 2026-05-03 09:36:15,770 middleware 23059 132128132024000 Request: GET /admin/authentication/user/add/ from 127.0.0.1
+INFO 2026-05-03 09:36:15,961 middleware 23059 132128132024000 Response: GET /admin/authentication/user/add/ [200] - 0.191s
+INFO 2026-05-03 09:36:16,099 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:36:16,156 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.057s
+INFO 2026-05-03 09:37:08,806 middleware 23059 132128132024000 Request: POST /admin/authentication/user/add/ from 127.0.0.1
+INFO 2026-05-03 09:37:08,986 middleware 23059 132128132024000 Response: POST /admin/authentication/user/add/ [200] - 0.180s
+INFO 2026-05-03 09:37:09,118 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:37:09,198 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.080s
+INFO 2026-05-03 09:37:17,337 middleware 23059 132128132024000 Request: POST /admin/authentication/user/add/ from 127.0.0.1
+INFO 2026-05-03 09:37:17,485 middleware 23059 132128132024000 Response: POST /admin/authentication/user/add/ [200] - 0.149s
+INFO 2026-05-03 09:37:17,593 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:37:17,622 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-03 09:38:44,644 middleware 23059 132128115238592 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-05-03 09:38:54,187 middleware 23059 132128115238592 Response: POST /api/auth/register/ [201] - 9.543s
+INFO 2026-05-03 09:39:45,060 middleware 23059 132128123631296 Request: POST /api/auth/verify_otp/ from 127.0.0.1
+INFO 2026-05-03 09:39:45,131 middleware 23059 132128123631296 Response: POST /api/auth/verify_otp/ [201] - 0.070s
+INFO 2026-05-03 09:40:46,141 middleware 23059 132128132024000 Request: POST /admin/authentication/user/add/ from 127.0.0.1
+INFO 2026-05-03 09:40:46,383 middleware 23059 132128132024000 Response: POST /admin/authentication/user/add/ [200] - 0.242s
+INFO 2026-05-03 09:40:46,543 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:40:46,571 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.027s
+INFO 2026-05-03 09:40:48,400 middleware 23059 132128132024000 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-03 09:40:48,448 middleware 23059 132128132024000 Response: GET /admin/authentication/user/ [200] - 0.048s
+INFO 2026-05-03 09:40:48,577 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:40:48,603 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-05-03 09:40:51,524 middleware 23059 132128132024000 Request: GET /admin/classes/enrollment/ from 127.0.0.1
+INFO 2026-05-03 09:40:51,572 middleware 23059 132128132024000 Response: GET /admin/classes/enrollment/ [200] - 0.048s
+INFO 2026-05-03 09:40:51,675 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:40:51,703 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-03 09:40:56,632 middleware 23059 132128132024000 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-05-03 09:40:56,712 middleware 23059 132128132024000 Response: GET /admin/classes/class/ [200] - 0.080s
+INFO 2026-05-03 09:40:56,858 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:40:56,879 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.021s
+INFO 2026-05-03 09:41:01,194 middleware 23059 132128132024000 Request: GET /admin/classes/class/7/change/ from 127.0.0.1
+INFO 2026-05-03 09:41:01,256 middleware 23059 132128132024000 Response: GET /admin/classes/class/7/change/ [200] - 0.062s
+INFO 2026-05-03 09:41:01,349 middleware 23059 132128132024000 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:41:01,375 middleware 23059 132128132024000 Response: GET /admin/jsi18n/ [200] - 0.026s
+INFO 2026-05-03 09:41:06,091 middleware 23059 132128102647488 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-03 09:41:06,141 middleware 23059 132128102647488 Response: GET /admin/authentication/user/ [200] - 0.050s
+INFO 2026-05-03 09:41:06,203 middleware 23059 132128102647488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:41:06,239 middleware 23059 132128102647488 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-03 09:41:11,128 middleware 23059 132128102647488 Request: GET /admin/classes/class/ from 127.0.0.1
+INFO 2026-05-03 09:41:11,176 middleware 23059 132128102647488 Response: GET /admin/classes/class/ [200] - 0.047s
+INFO 2026-05-03 09:41:11,231 middleware 23059 132128102647488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:41:11,266 middleware 23059 132128102647488 Response: GET /admin/jsi18n/ [200] - 0.036s
+INFO 2026-05-03 09:41:14,488 middleware 23059 132128102647488 Request: GET /admin/classes/class/7/change/ from 127.0.0.1
+INFO 2026-05-03 09:41:14,548 middleware 23059 132128102647488 Response: GET /admin/classes/class/7/change/ [200] - 0.060s
+INFO 2026-05-03 09:41:14,641 middleware 23059 132128102647488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:41:14,666 middleware 23059 132128102647488 Response: GET /admin/jsi18n/ [200] - 0.025s
+INFO 2026-05-03 09:41:58,497 middleware 23059 132127622428352 Request: POST /api/classes/08Y025/students/ from 127.0.0.1
+ERROR 2026-05-03 09:41:58,526 exceptions 23059 132127622428352 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-05-03 09:41:58,537 middleware 23059 132127622428352 Response: POST /api/classes/08Y025/students/ [405] - 0.040s
+WARNING 2026-05-03 09:41:58,538 log 23059 132127622428352 Method Not Allowed: /api/classes/08Y025/students/
+WARNING 2026-05-03 09:41:58,540 basehttp 23059 132127622428352 "POST /api/classes/08Y025/students/ HTTP/1.1" 405 98
+INFO 2026-05-03 09:42:28,307 middleware 23059 132127622428352 Request: POST /api/classes/08Y025/enroll/ from 127.0.0.1
+INFO 2026-05-03 09:42:28,351 middleware 23059 132127622428352 Response: POST /api/classes/08Y025/enroll/ [200] - 0.044s
+INFO 2026-05-03 09:43:30,697 middleware 23059 132127614035648 Request: POST /api/submission/ from 127.0.0.1
+INFO 2026-05-03 09:43:30,724 middleware 23059 132127614035648 Response: POST /api/submission/ [404] - 0.028s
+WARNING 2026-05-03 09:43:30,725 log 23059 132127614035648 Not Found: /api/submission/
+WARNING 2026-05-03 09:43:30,726 basehttp 23059 132127614035648 "POST /api/submission/ HTTP/1.1" 404 3874
+INFO 2026-05-03 09:44:02,016 middleware 23059 132127614035648 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 09:44:02,186 middleware 23059 132127614035648 Response: POST /api/submissions/ [201] - 0.170s
+INFO 2026-05-03 09:44:02,252 tasks 21240 133053653209216 📄 Extracting paragraphs from submission 6f0799fc-d7f4-46ff-829e-5a4f8e94bdd5
+INFO 2026-05-03 09:44:11,985 middleware 23059 132128102647488 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 09:44:12,122 middleware 23059 132128102647488 Response: GET /admin/submissions/submission/ [200] - 0.137s
+INFO 2026-05-03 09:44:12,227 middleware 23059 132128102647488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:44:12,273 middleware 23059 132128102647488 Response: GET /admin/jsi18n/ [200] - 0.046s
+INFO 2026-05-03 09:44:13,811 middleware 23059 132128102647488 Request: GET /admin/submissions/submission/6f0799fc-d7f4-46ff-829e-5a4f8e94bdd5/change/ from 127.0.0.1
+INFO 2026-05-03 09:44:13,902 middleware 23059 132128102647488 Response: GET /admin/submissions/submission/6f0799fc-d7f4-46ff-829e-5a4f8e94bdd5/change/ [200] - 0.091s
+INFO 2026-05-03 09:44:14,055 middleware 23059 132128102647488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:44:14,106 middleware 23059 132128102647488 Response: GET /admin/jsi18n/ [200] - 0.051s
+INFO 2026-05-03 09:44:17,044 middleware 23059 132128102647488 Request: GET /admin/submissions/submission/6f0799fc-d7f4-46ff-829e-5a4f8e94bdd5/change/ from 127.0.0.1
+INFO 2026-05-03 09:44:17,163 middleware 23059 132128102647488 Response: GET /admin/submissions/submission/6f0799fc-d7f4-46ff-829e-5a4f8e94bdd5/change/ [200] - 0.119s
+INFO 2026-05-03 09:44:17,351 middleware 23059 132128102647488 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 09:44:17,388 middleware 23059 132128102647488 Response: GET /admin/jsi18n/ [200] - 0.037s
+INFO 2026-05-03 09:44:28,211 tasks 21240 133053653209216 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-03 09:44:28,252 tasks 21240 133053653209216 ✅ Submission 6f0799fc-d7f4-46ff-829e-5a4f8e94bdd5 completed successfully
+INFO 2026-05-03 09:44:34,365 middleware 23059 132127614035648 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 09:44:34,430 middleware 23059 132127614035648 Response: GET /api/results/ [200] - 0.066s
+INFO 2026-05-03 09:44:47,930 middleware 23059 132127614035648 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 09:44:47,968 middleware 23059 132127614035648 Response: GET /api/results/ [200] - 0.037s
+INFO 2026-05-03 09:45:27,677 middleware 23059 132127614035648 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 09:45:27,713 middleware 23059 132127614035648 Response: GET /api/results/ [200] - 0.036s
