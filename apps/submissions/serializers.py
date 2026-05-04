@@ -8,10 +8,11 @@ from apps.authentication.serializers import UserSerializer
 
 # 🔹 Submission Detail Serializer
 class SubmissionSerializer(serializers.ModelSerializer):
+    
     user = UserSerializer(read_only=True)
     file_url = serializers.SerializerMethodField()
     assignment_deadline = serializers.SerializerMethodField()
-
+    class_obj = serializers.SerializerMethodField()
     class Meta:
         model = Submission
         fields = [
@@ -71,6 +72,8 @@ class SubmissionCreateSerializer(serializers.ModelSerializer):
     class Meta:
         model = Submission
         fields = [
+
+            'id',
             'assignment',
             'assignment_name',
             'file'

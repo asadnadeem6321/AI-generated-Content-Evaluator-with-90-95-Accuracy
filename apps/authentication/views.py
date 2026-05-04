@@ -245,6 +245,33 @@ class AuthViewSet(viewsets.GenericViewSet):
             }
         }, status=status.HTTP_200_OK)
 
+
+    @action(detail=False, methods=['post'])
+    def guest_login(self, request):
+        """Guest login endpoint."""
+        serializer = LoginSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        email = serializer.validated_data['email']
+        password = serializer.validated_data['password']
+        user = authenticate(request, username=email, password=password)
+
+        if not user:
+            raise AuthenticationFailed('Invalid email or password')
+        if not user.is_active:
+            raise AuthenticationFailed('Account not verified. Please verify email OTP.')
+        if not user.is_guest():
+            raise PermissionDenied('Use the student login page for student accounts')
+
+        refresh = RefreshToken.for_user(user)
+        return Response({
+            'user': UserSerializer(user).data,
+            'tokens': {
+                'refresh': str(refresh),
+                'access': str(refresh.access_token),
+            }
+        }, status=status.HTTP_200_OK)
+
     def _send_otp_email(self, email, otp_code):
         subject = 'OTP verification for AI Content Evaluator'
         message = (

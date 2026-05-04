@@ -369,3 +369,49 @@ class SubmissionViewSet(viewsets.ModelViewSet):
             'message': f'Resumed {resumed_count} submissions',
             'resumed_count': resumed_count
         })
+
+#  seperate point for teachers and guests to evaluate documents without creating assignments, so they can use the same interface for quick checks without needing to set up an assignment.
+    @action(detail=False, methods=['post'])
+    def evaluate_document(self, request):
+        """
+        Teacher/Guest evaluates their own document (no assignment)
+        
+        POST /api/submissions/evaluate_document/
+        """
+        if not request.FILES.get('file'):
+            return Response(
+                {'error': 'PDF file is required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        file = request.FILES['file']
+        assignment_name = request.data.get('assignment_name', 'Document Evaluation')
+        
+        # Validate file type
+        if not file.name.endswith('.pdf'):
+            return Response(
+                {'error': 'Only PDF files are allowed'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        # Create submission without assignment
+        submission = Submission.objects.create(
+            user=request.user,
+            assignment=None,
+            assignment_name=assignment_name,
+            file=file,
+            original_filename=file.name,
+            file_size=file.size,
+            status='queued'
+        )
+        
+        # Queue for processing
+        from .tasks import queue_submission_processing
+        queue_submission_processing(
+            submission_id=str(submission.id),
+            user_role=request.user.role,
+            is_teacher_view=False
+        )
+        
+        serializer = self.get_serializer(submission)
+        return Response(serializer.data, status=status.HTTP_201_CREATED)

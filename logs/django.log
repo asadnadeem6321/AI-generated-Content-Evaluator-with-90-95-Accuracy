@@ -5544,3 +5544,1664 @@ INFO 2026-05-03 09:44:47,930 middleware 23059 132127614035648 Request: GET /api/
 INFO 2026-05-03 09:44:47,968 middleware 23059 132127614035648 Response: GET /api/results/ [200] - 0.037s
 INFO 2026-05-03 09:45:27,677 middleware 23059 132127614035648 Request: GET /api/results/ from 127.0.0.1
 INFO 2026-05-03 09:45:27,713 middleware 23059 132127614035648 Response: GET /api/results/ [200] - 0.036s
+INFO 2026-05-03 13:55:06,384 middleware 34045 133475886687936 Request: POST /api/auth/student_login/ from 127.0.0.1
+ERROR 2026-05-03 13:55:07,119 exceptions 34045 133475886687936 Exception occurred: Invalid email or password
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 62, in student_login
+    raise AuthenticationFailed('Invalid email or password')
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+INFO 2026-05-03 13:55:07,121 middleware 34045 133475886687936 Response: POST /api/auth/student_login/ [401] - 0.737s
+WARNING 2026-05-03 13:55:07,122 log 34045 133475886687936 Unauthorized: /api/auth/student_login/
+WARNING 2026-05-03 13:55:07,122 basehttp 34045 133475886687936 "POST /api/auth/student_login/ HTTP/1.1" 401 92
+INFO 2026-05-03 13:55:52,080 middleware 34045 133475886687936 Request: POST /api/auth/student_login/ from 127.0.0.1
+ERROR 2026-05-03 13:55:52,835 exceptions 34045 133475886687936 Exception occurred: Invalid email or password
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 62, in student_login
+    raise AuthenticationFailed('Invalid email or password')
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+INFO 2026-05-03 13:55:52,835 middleware 34045 133475886687936 Response: POST /api/auth/student_login/ [401] - 0.755s
+WARNING 2026-05-03 13:55:52,836 log 34045 133475886687936 Unauthorized: /api/auth/student_login/
+WARNING 2026-05-03 13:55:52,836 basehttp 34045 133475886687936 "POST /api/auth/student_login/ HTTP/1.1" 401 92
+INFO 2026-05-03 14:11:24,875 middleware 34045 133475886687936 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-05-03 14:11:25,636 middleware 34045 133475886687936 Response: POST /api/auth/student_login/ [200] - 0.761s
+INFO 2026-05-03 14:17:35,841 middleware 34045 133475886687936 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:17:35,898 middleware 34045 133475886687936 Response: GET /api/classes/enrolled/ [200] - 0.057s
+INFO 2026-05-03 14:17:35,941 middleware 34045 133475877246656 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:17:35,968 middleware 34045 133475877246656 Response: GET /api/classes/enrolled/ [200] - 0.026s
+INFO 2026-05-03 14:17:40,097 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:17:40,152 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.055s
+INFO 2026-05-03 14:17:40,196 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:17:40,233 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.037s
+INFO 2026-05-03 14:17:51,515 middleware 34045 133475877246656 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:17:51,548 middleware 34045 133475877246656 Response: GET /api/classes/enrolled/ [200] - 0.033s
+INFO 2026-05-03 14:17:51,554 middleware 34045 133475886687936 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:17:51,600 middleware 34045 133475886687936 Response: GET /api/classes/enrolled/ [200] - 0.046s
+INFO 2026-05-03 14:18:00,374 middleware 34045 133475886687936 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-05-03 14:18:00,406 middleware 34045 133475886687936 Response: POST /api/auth/logout/ [200] - 0.032s
+INFO 2026-05-03 14:21:02,500 middleware 34045 133475886687936 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-03 14:21:03,236 middleware 34045 133475886687936 Response: POST /api/auth/teacher_login/ [200] - 0.736s
+INFO 2026-05-03 14:21:13,534 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:21:13,566 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.033s
+INFO 2026-05-03 14:21:13,613 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:21:13,644 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:21:13,666 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.053s
+INFO 2026-05-03 14:21:13,698 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.054s
+INFO 2026-05-03 14:21:13,743 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:21:13,806 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.063s
+INFO 2026-05-03 14:21:19,545 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:21:19,581 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.037s
+INFO 2026-05-03 14:21:19,585 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:21:19,638 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.052s
+INFO 2026-05-03 14:21:23,480 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:21:23,528 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.047s
+INFO 2026-05-03 14:21:23,533 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:21:23,577 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.043s
+INFO 2026-05-03 14:21:23,635 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:21:23,700 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.066s
+INFO 2026-05-03 14:21:23,705 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:21:23,765 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.060s
+INFO 2026-05-03 14:21:27,107 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:21:27,151 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.044s
+INFO 2026-05-03 14:21:56,322 middleware 34045 133475886687936 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+INFO 2026-05-03 14:21:56,354 middleware 34045 133475886687936 Response: POST /api/classes/08Y025/assignments/ [201] - 0.032s
+INFO 2026-05-03 14:22:13,060 middleware 34045 133475886687936 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:22:13,088 middleware 34045 133475886687936 Response: GET /api/classes/enrolled/ [200] - 0.028s
+INFO 2026-05-03 14:22:13,097 middleware 34045 133475877246656 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:22:13,133 middleware 34045 133475877246656 Response: GET /api/classes/enrolled/ [200] - 0.036s
+INFO 2026-05-03 14:22:15,086 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:22:15,128 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.042s
+INFO 2026-05-03 14:22:15,132 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:22:15,193 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.061s
+INFO 2026-05-03 14:22:53,615 middleware 34045 133475886687936 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 14:22:53,969 middleware 34045 133475886687936 Response: POST /api/submissions/ [201] - 0.354s
+INFO 2026-05-03 14:22:54,337 tasks 21240 133053653209216 📄 Extracting paragraphs from submission fd425916-58ab-419e-8f4a-addc4bfc2dd8
+INFO 2026-05-03 14:22:59,837 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:22:59,870 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.033s
+INFO 2026-05-03 14:23:02,832 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:02,860 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.027s
+INFO 2026-05-03 14:23:03,705 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:23:03,710 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:03,760 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.055s
+INFO 2026-05-03 14:23:03,775 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:23:03,786 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.076s
+INFO 2026-05-03 14:23:03,797 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:03,860 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.085s
+INFO 2026-05-03 14:23:03,899 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.102s
+INFO 2026-05-03 14:23:03,945 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:03,996 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.051s
+INFO 2026-05-03 14:23:04,016 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:04,067 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.052s
+INFO 2026-05-03 14:23:05,832 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:05,859 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.027s
+INFO 2026-05-03 14:23:08,834 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:08,869 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.036s
+INFO 2026-05-03 14:23:11,833 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:11,878 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.045s
+INFO 2026-05-03 14:23:14,843 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:14,899 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.056s
+INFO 2026-05-03 14:23:17,836 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:17,867 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.031s
+INFO 2026-05-03 14:23:20,834 middleware 34045 133475886687936 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:20,867 middleware 34045 133475886687936 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.033s
+INFO 2026-05-03 14:23:21,022 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:21,023 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:23:21,092 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.069s
+INFO 2026-05-03 14:23:21,103 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:23:21,138 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.115s
+INFO 2026-05-03 14:23:21,158 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:21,185 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.082s
+INFO 2026-05-03 14:23:21,265 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.107s
+INFO 2026-05-03 14:23:21,272 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:21,388 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.116s
+INFO 2026-05-03 14:23:21,481 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:23:21,668 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.187s
+INFO 2026-05-03 14:23:22,447 tasks 21240 133053653209216 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 14:23:22,532 tasks 21240 133053653209216 ✅ Submission fd425916-58ab-419e-8f4a-addc4bfc2dd8 completed successfully
+INFO 2026-05-03 14:23:23,833 middleware 34045 133475877246656 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 14:23:23,855 middleware 34045 133475877246656 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.022s
+INFO 2026-05-03 14:24:38,384 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:24:38,385 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:24:38,438 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.055s
+INFO 2026-05-03 14:24:38,447 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:24:38,475 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.090s
+INFO 2026-05-03 14:24:38,478 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:24:38,503 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.056s
+INFO 2026-05-03 14:24:38,541 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.064s
+INFO 2026-05-03 14:24:38,587 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:24:38,641 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.053s
+INFO 2026-05-03 14:24:38,649 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:24:38,698 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.049s
+INFO 2026-05-03 14:25:12,554 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:25:12,556 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:12,598 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.044s
+INFO 2026-05-03 14:25:12,611 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:25:12,641 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.085s
+INFO 2026-05-03 14:25:12,656 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:12,670 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.059s
+INFO 2026-05-03 14:25:12,724 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.068s
+INFO 2026-05-03 14:25:12,734 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:12,785 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.051s
+INFO 2026-05-03 14:25:12,787 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:12,843 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.056s
+INFO 2026-05-03 14:25:37,817 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:37,818 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:25:37,873 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.055s
+INFO 2026-05-03 14:25:37,879 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:25:37,902 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.085s
+INFO 2026-05-03 14:25:37,916 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:37,929 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.052s
+INFO 2026-05-03 14:25:37,975 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.060s
+INFO 2026-05-03 14:25:38,022 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:38,061 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.039s
+INFO 2026-05-03 14:25:38,065 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:25:38,115 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.050s
+INFO 2026-05-03 14:27:30,550 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:27:30,553 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:27:30,609 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.057s
+INFO 2026-05-03 14:27:30,622 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:27:30,626 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.077s
+INFO 2026-05-03 14:27:30,630 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:27:30,667 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.045s
+INFO 2026-05-03 14:27:30,714 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.083s
+INFO 2026-05-03 14:42:52,132 middleware 34045 133475862734528 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:42:52,135 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:42:52,326 middleware 34045 133475862734528 Response: GET /api/classes/enrolled/ [200] - 0.195s
+INFO 2026-05-03 14:42:52,359 middleware 34045 133475877246656 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 14:42:52,389 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.254s
+INFO 2026-05-03 14:42:52,557 middleware 34045 133475877246656 Response: GET /api/classes/enrolled/ [200] - 0.198s
+INFO 2026-05-03 14:43:19,683 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:43:19,716 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.033s
+INFO 2026-05-03 14:43:19,720 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:43:19,759 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.039s
+INFO 2026-05-03 14:43:23,379 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/ from 127.0.0.1
+INFO 2026-05-03 14:43:23,403 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/ [200] - 0.024s
+INFO 2026-05-03 14:43:23,515 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:43:23,521 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-03 14:43:23,559 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/students/ [200] - 0.038s
+INFO 2026-05-03 14:43:23,568 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.053s
+INFO 2026-05-03 14:44:11,967 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:44:12,016 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.049s
+INFO 2026-05-03 14:44:12,022 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:44:12,063 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.041s
+INFO 2026-05-03 14:44:17,877 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:44:17,881 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:44:17,926 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.049s
+INFO 2026-05-03 14:44:17,941 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:44:17,971 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.090s
+INFO 2026-05-03 14:44:17,981 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:44:18,038 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.097s
+INFO 2026-05-03 14:44:18,089 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.108s
+INFO 2026-05-03 14:44:18,104 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:44:18,169 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.065s
+INFO 2026-05-03 14:44:18,172 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:44:18,219 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.046s
+INFO 2026-05-03 14:45:06,215 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:45:06,218 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:45:06,249 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.034s
+INFO 2026-05-03 14:45:06,263 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:45:06,292 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.073s
+INFO 2026-05-03 14:45:06,299 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:45:06,334 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.071s
+INFO 2026-05-03 14:45:06,371 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.072s
+INFO 2026-05-03 14:45:06,375 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:45:06,438 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.062s
+INFO 2026-05-03 14:45:06,481 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:45:06,525 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.044s
+INFO 2026-05-03 14:59:17,503 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:59:17,507 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:59:17,566 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.064s
+INFO 2026-05-03 14:59:17,586 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 14:59:17,612 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.105s
+INFO 2026-05-03 14:59:17,617 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:59:17,647 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.060s
+INFO 2026-05-03 14:59:17,686 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.070s
+INFO 2026-05-03 14:59:17,700 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:59:17,777 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.077s
+INFO 2026-05-03 14:59:17,781 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 14:59:17,882 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.101s
+INFO 2026-05-03 15:14:52,729 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:14:52,732 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:14:52,762 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.032s
+INFO 2026-05-03 15:14:52,771 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:14:52,783 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.051s
+INFO 2026-05-03 15:14:52,786 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:14:52,815 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.044s
+INFO 2026-05-03 15:14:52,842 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.056s
+INFO 2026-05-03 15:14:52,890 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:14:52,948 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.059s
+INFO 2026-05-03 15:14:52,958 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:14:53,070 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.112s
+INFO 2026-05-03 15:22:24,738 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:24,741 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:22:24,923 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.182s
+INFO 2026-05-03 15:22:24,946 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:22:25,022 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.284s
+INFO 2026-05-03 15:22:25,056 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:25,060 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.114s
+INFO 2026-05-03 15:22:25,181 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.125s
+INFO 2026-05-03 15:22:25,195 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:25,283 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.088s
+INFO 2026-05-03 15:22:25,294 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:25,363 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.072s
+INFO 2026-05-03 15:22:33,105 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:22:33,110 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:33,152 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.046s
+INFO 2026-05-03 15:22:33,157 middleware 34045 133475886687936 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:22:33,191 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.081s
+INFO 2026-05-03 15:22:33,195 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:33,235 middleware 34045 133475886687936 Response: GET /api/classes/ [200] - 0.078s
+INFO 2026-05-03 15:22:33,290 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.094s
+INFO 2026-05-03 15:22:33,297 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:33,385 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.088s
+INFO 2026-05-03 15:22:33,390 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:22:33,467 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.077s
+INFO 2026-05-03 15:27:50,115 middleware 34045 133475862734528 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:27:50,116 middleware 34045 133475886687936 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:27:50,164 middleware 34045 133475862734528 Response: GET /api/classes/ [200] - 0.049s
+INFO 2026-05-03 15:27:50,175 middleware 34045 133475877246656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 15:27:50,185 middleware 34045 133475886687936 Response: GET /api/classes/08Y025/assignment/ [200] - 0.069s
+INFO 2026-05-03 15:27:50,193 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:27:50,243 middleware 34045 133475877246656 Response: GET /api/classes/ [200] - 0.068s
+INFO 2026-05-03 15:27:50,291 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.098s
+INFO 2026-05-03 15:27:50,334 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:27:50,384 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.049s
+INFO 2026-05-03 15:27:50,392 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:27:50,458 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.066s
+INFO 2026-05-03 15:28:49,734 middleware 34045 133475862734528 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 15:28:49,770 middleware 34045 133475862734528 Response: GET /api/classes/enrolled/ [200] - 0.036s
+INFO 2026-05-03 15:28:49,774 middleware 34045 133475877246656 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 15:28:49,800 middleware 34045 133475877246656 Response: GET /api/classes/enrolled/ [200] - 0.026s
+INFO 2026-05-03 15:28:57,403 middleware 34045 133475877246656 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:28:57,448 middleware 34045 133475877246656 Response: GET /api/classes/08Y025/assignment/ [200] - 0.045s
+INFO 2026-05-03 15:28:57,452 middleware 34045 133475862734528 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 15:28:57,536 middleware 34045 133475862734528 Response: GET /api/classes/08Y025/assignment/ [200] - 0.084s
+INFO 2026-05-03 15:29:07,938 middleware 34045 133475862734528 Request: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ from 127.0.0.1
+INFO 2026-05-03 15:29:07,965 middleware 34045 133475862734528 Response: GET /api/submissions/fd425916-58ab-419e-8f4a-addc4bfc2dd8/status/ [200] - 0.027s
+INFO 2026-05-03 15:34:55,055 middleware 34045 133475862734528 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-05-03 15:34:55,089 middleware 34045 133475862734528 Response: POST /api/auth/logout/ [200] - 0.033s
+INFO 2026-05-03 15:36:44,723 middleware 34045 133475886687936 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-03 15:36:44,876 middleware 34045 133475886687936 Response: GET /admin/authentication/user/ [200] - 0.153s
+INFO 2026-05-03 15:36:45,032 middleware 34045 133475886687936 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 15:36:45,114 middleware 34045 133475886687936 Response: GET /admin/jsi18n/ [200] - 0.087s
+INFO 2026-05-03 15:36:45,446 middleware 34045 133475886687936 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-03 15:36:45,466 middleware 34045 133475886687936 Response: GET /favicon.ico [404] - 0.020s
+WARNING 2026-05-03 15:36:45,467 log 34045 133475886687936 Not Found: /favicon.ico
+WARNING 2026-05-03 15:36:45,468 basehttp 34045 133475886687936 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-03 15:38:59,681 middleware 34045 133475886687936 Request: GET /admin/ from 127.0.0.1
+INFO 2026-05-03 15:38:59,734 middleware 34045 133475886687936 Response: GET /admin/ [200] - 0.053s
+INFO 2026-05-03 15:39:06,769 middleware 34045 133475886687936 Request: GET /api/auth/register/ from 127.0.0.1
+ERROR 2026-05-03 15:39:06,772 exceptions 34045 133475886687936 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 15:39:06,777 middleware 34045 133475886687936 Response: GET /api/auth/register/ [401] - 0.008s
+WARNING 2026-05-03 15:39:06,778 log 34045 133475886687936 Unauthorized: /api/auth/register/
+WARNING 2026-05-03 15:39:06,779 basehttp 34045 133475886687936 "GET /api/auth/register/ HTTP/1.1" 401 132
+INFO 2026-05-03 15:41:26,838 middleware 34045 133475852244672 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-05-03 15:41:41,752 middleware 34045 133475852244672 Response: POST /api/auth/register/ [201] - 14.914s
+INFO 2026-05-03 15:43:02,403 middleware 34045 133475862734528 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-05-03 15:43:02,408 exceptions 34045 133475862734528 Exception occurred: {'username': [ErrorDetail(string='This field is required.', code='required')], 'password': [ErrorDetail(string='This field is required.', code='required')], 'confirm_password': [ErrorDetail(string='This field is required.', code='required')], 'first_name': [ErrorDetail(string='This field is required.', code='required')], 'last_name': [ErrorDetail(string='This field is required.', code='required')], 'role': [ErrorDetail(string='This field is required.', code='required')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 271, in register
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'username': [ErrorDetail(string='This field is required.', code='required')], 'password': [ErrorDetail(string='This field is required.', code='required')], 'confirm_password': [ErrorDetail(string='This field is required.', code='required')], 'first_name': [ErrorDetail(string='This field is required.', code='required')], 'last_name': [ErrorDetail(string='This field is required.', code='required')], 'role': [ErrorDetail(string='This field is required.', code='required')]}
+INFO 2026-05-03 15:43:02,412 middleware 34045 133475862734528 Response: POST /api/auth/register/ [400] - 0.009s
+WARNING 2026-05-03 15:43:02,412 log 34045 133475862734528 Bad Request: /api/auth/register/
+WARNING 2026-05-03 15:43:02,413 basehttp 34045 133475862734528 "POST /api/auth/register/ HTTP/1.1" 400 288
+INFO 2026-05-03 15:43:23,183 middleware 34045 133475862734528 Request: POST /api/auth/verify_otp/ from 127.0.0.1
+INFO 2026-05-03 15:43:23,289 middleware 34045 133475862734528 Response: POST /api/auth/verify_otp/ [201] - 0.106s
+INFO 2026-05-03 15:50:01,895 middleware 34045 133475886687936 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 15:50:02,186 middleware 34045 133475886687936 Response: POST /api/submissions/ [201] - 0.291s
+INFO 2026-05-03 15:50:02,598 tasks 21240 133053653209216 📄 Extracting paragraphs from submission e162f206-0264-472e-a057-f84594b7654c
+INFO 2026-05-03 15:50:19,274 middleware 34045 133475886687936 Request: POST /api/results/ from 127.0.0.1
+ERROR 2026-05-03 15:50:19,311 exceptions 34045 133475886687936 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-05-03 15:50:19,313 middleware 34045 133475886687936 Response: POST /api/results/ [405] - 0.038s
+WARNING 2026-05-03 15:50:19,314 log 34045 133475886687936 Method Not Allowed: /api/results/
+WARNING 2026-05-03 15:50:19,315 basehttp 34045 133475886687936 "POST /api/results/ HTTP/1.1" 405 98
+INFO 2026-05-03 15:50:19,953 tasks 21240 133053653209216 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 15:50:20,039 tasks 21240 133053653209216 ✅ Submission e162f206-0264-472e-a057-f84594b7654c completed successfully
+INFO 2026-05-03 15:50:25,562 middleware 34045 133475886687936 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 15:50:25,607 middleware 34045 133475886687936 Response: GET /api/results/ [200] - 0.046s
+INFO 2026-05-03 15:50:43,203 middleware 34045 133475877246656 Request: GET /media/reports/2026/05/03/report_e162f206-0264-472e-a057-f84594b7654c.pdf from 127.0.0.1
+INFO 2026-05-03 15:50:43,316 middleware 34045 133475877246656 Response: GET /media/reports/2026/05/03/report_e162f206-0264-472e-a057-f84594b7654c.pdf [200] - 0.113s
+INFO 2026-05-03 15:51:31,905 middleware 34045 133475495569088 Request: GET /api/submissions/ from 127.0.0.1
+ERROR 2026-05-03 15:51:31,961 basehttp 34045 133475495569088 "GET /api/submissions/ HTTP/1.1" 500 59
+INFO 2026-05-03 15:51:41,456 middleware 34045 133475495569088 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 15:51:41,512 middleware 34045 133475495569088 Response: POST /api/submissions/ [201] - 0.056s
+INFO 2026-05-03 15:51:41,553 tasks 21240 133053653209216 📄 Extracting paragraphs from submission ba81e44b-7851-47fa-8777-98cb51f4f190
+INFO 2026-05-03 15:51:53,125 tasks 21240 133053653209216 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 15:51:53,163 tasks 21240 133053653209216 ✅ Submission ba81e44b-7851-47fa-8777-98cb51f4f190 completed successfully
+INFO 2026-05-03 15:51:55,496 middleware 34045 133475495569088 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 15:51:55,546 middleware 34045 133475495569088 Response: GET /api/results/ [200] - 0.050s
+INFO 2026-05-03 15:52:34,766 middleware 34045 133475495569088 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 15:52:34,816 middleware 34045 133475495569088 Response: GET /api/results/ [200] - 0.049s
+INFO 2026-05-03 15:52:44,975 middleware 34045 133475495569088 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 15:52:45,036 middleware 34045 133475495569088 Response: GET /api/results/ [200] - 0.061s
+INFO 2026-05-03 15:57:26,632 middleware 47132 140279349765824 Request: GET /api/submissions/evaluate_document/ from 127.0.0.1
+ERROR 2026-05-03 15:57:26,668 exceptions 47132 140279349765824 Exception occurred: Method "GET" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "GET" not allowed.
+INFO 2026-05-03 15:57:26,670 middleware 47132 140279349765824 Response: GET /api/submissions/evaluate_document/ [405] - 0.038s
+WARNING 2026-05-03 15:57:26,670 log 47132 140279349765824 Method Not Allowed: /api/submissions/evaluate_document/
+WARNING 2026-05-03 15:57:26,671 basehttp 47132 140279349765824 "GET /api/submissions/evaluate_document/ HTTP/1.1" 405 96
+INFO 2026-05-03 15:57:32,385 middleware 47132 140279349765824 Request: POST /api/submissions/evaluate_document/ from 127.0.0.1
+INFO 2026-05-03 15:57:32,610 middleware 47132 140279349765824 Response: POST /api/submissions/evaluate_document/ [201] - 0.226s
+INFO 2026-05-03 15:57:32,655 tasks 21240 133053653209216 📄 Extracting paragraphs from submission f1f17d93-cdc4-42b8-81ee-a794240a901c
+INFO 2026-05-03 15:57:45,358 tasks 21240 133053653209216 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 15:57:45,412 tasks 21240 133053653209216 ✅ Submission f1f17d93-cdc4-42b8-81ee-a794240a901c completed successfully
+INFO 2026-05-03 15:58:25,062 middleware 47132 140279349765824 Request: GET /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/ from 127.0.0.1
+ERROR 2026-05-03 15:58:25,081 exceptions 47132 140279349765824 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'f1f17d93-cdc4-42b8-81ee-a794240a901c'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'f1f17d93-cdc4-42b8-81ee-a794240a901c'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-05-03 15:58:25,090 middleware 47132 140279349765824 Response: GET /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/ [404] - 0.029s
+WARNING 2026-05-03 15:58:25,091 log 47132 140279349765824 Not Found: /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/
+WARNING 2026-05-03 15:58:25,092 basehttp 47132 140279349765824 "GET /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/ HTTP/1.1" 404 62
+INFO 2026-05-03 15:58:55,867 middleware 47132 140279349765824 Request: GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/ from 127.0.0.1
+ERROR 2026-05-03 15:58:55,896 exceptions 47132 140279349765824 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 249, in status
+    submission = self.get_object()
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 65, in get_object
+    return super().get_object()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-03 15:58:55,897 middleware 47132 140279349765824 Response: GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/ [404] - 0.031s
+WARNING 2026-05-03 15:58:55,898 log 47132 140279349765824 Not Found: /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/
+WARNING 2026-05-03 15:58:55,899 basehttp 47132 140279349765824 "GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/ HTTP/1.1" 404 62
+INFO 2026-05-03 15:59:00,044 middleware 47132 140279349765824 Request: GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status from 127.0.0.1
+INFO 2026-05-03 15:59:00,063 middleware 47132 140279349765824 Response: GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status [404] - 0.018s
+INFO 2026-05-03 15:59:00,068 middleware 47132 140279349765824 Request: GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/ from 127.0.0.1
+ERROR 2026-05-03 15:59:00,096 exceptions 47132 140279349765824 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 249, in status
+    submission = self.get_object()
+                 ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/submissions/views.py", line 65, in get_object
+    return super().get_object()
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-03 15:59:00,098 middleware 47132 140279349765824 Response: GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/ [404] - 0.030s
+WARNING 2026-05-03 15:59:00,099 log 47132 140279349765824 Not Found: /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/
+WARNING 2026-05-03 15:59:00,099 basehttp 47132 140279349765824 "GET /api/submissions/f1f17d93-cdc4-42b8-81ee-a794240a901c/status/ HTTP/1.1" 404 62
+INFO 2026-05-03 15:59:14,454 middleware 47132 140279349765824 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 15:59:14,504 middleware 47132 140279349765824 Response: GET /api/results/ [200] - 0.050s
+INFO 2026-05-03 15:59:29,974 middleware 47132 140279265883840 Request: GET /admin/ from 127.0.0.1
+INFO 2026-05-03 15:59:30,148 middleware 47132 140279265883840 Response: GET /admin/ [200] - 0.175s
+INFO 2026-05-03 15:59:34,124 middleware 47132 140279265883840 Request: GET /admin/submissions/submission/ from 127.0.0.1
+INFO 2026-05-03 15:59:34,257 middleware 47132 140279265883840 Response: GET /admin/submissions/submission/ [200] - 0.133s
+INFO 2026-05-03 15:59:34,396 middleware 47132 140279265883840 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 15:59:34,452 middleware 47132 140279265883840 Response: GET /admin/jsi18n/ [200] - 0.056s
+INFO 2026-05-03 15:59:38,559 middleware 47132 140279265883840 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-03 15:59:38,628 middleware 47132 140279265883840 Response: GET /admin/results/result/ [200] - 0.069s
+INFO 2026-05-03 15:59:38,735 middleware 47132 140279265883840 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 15:59:38,761 middleware 47132 140279265883840 Response: GET /admin/jsi18n/ [200] - 0.026s
+INFO 2026-05-03 15:59:40,422 middleware 47132 140279265883840 Request: GET /admin/results/result/12/change/ from 127.0.0.1
+INFO 2026-05-03 15:59:40,538 middleware 47132 140279265883840 Response: GET /admin/results/result/12/change/ [200] - 0.116s
+INFO 2026-05-03 15:59:40,627 middleware 47132 140279265883840 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 15:59:40,656 middleware 47132 140279265883840 Response: GET /admin/jsi18n/ [200] - 0.029s
+INFO 2026-05-03 16:00:19,835 middleware 47132 140279247001280 Request: GET /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/report/ from 127.0.0.1
+ERROR 2026-05-03 16:00:19,857 exceptions 47132 140279247001280 Exception occurred: 
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2112, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'f1f17d93-cdc4-42b8-81ee-a794240a901c'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 633, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1548, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1378, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 30, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 362, in get_prep_lookup
+    return super().get_prep_lookup()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/lookups.py", line 88, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 2114, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'f1f17d93-cdc4-42b8-81ee-a794240a901c'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/results/views.py", line 49, in report
+    result = self.get_object()
+             ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 21, in get_object_or_404
+    raise Http404
+django.http.response.Http404
+INFO 2026-05-03 16:00:19,863 middleware 47132 140279247001280 Response: GET /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/report/ [404] - 0.027s
+WARNING 2026-05-03 16:00:19,863 log 47132 140279247001280 Not Found: /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/report/
+WARNING 2026-05-03 16:00:19,864 basehttp 47132 140279247001280 "GET /api/results/f1f17d93-cdc4-42b8-81ee-a794240a901c/report/ HTTP/1.1" 404 62
+INFO 2026-05-03 16:00:35,154 middleware 47132 140279247001280 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 16:00:35,218 middleware 47132 140279247001280 Response: GET /api/results/ [200] - 0.064s
+INFO 2026-05-03 16:01:15,077 middleware 47132 140279247001280 Request: GET /api/results/10/ from 127.0.0.1
+ERROR 2026-05-03 16:01:15,100 exceptions 47132 140279247001280 Exception occurred: No Result matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.results.models.Result.DoesNotExist: Result matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/mixins.py", line 54, in retrieve
+    instance = self.get_object()
+               ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Result matches the given query.
+INFO 2026-05-03 16:01:15,101 middleware 47132 140279247001280 Response: GET /api/results/10/ [404] - 0.024s
+WARNING 2026-05-03 16:01:15,101 log 47132 140279247001280 Not Found: /api/results/10/
+WARNING 2026-05-03 16:01:15,102 basehttp 47132 140279247001280 "GET /api/results/10/ HTTP/1.1" 404 62
+INFO 2026-05-03 16:06:14,969 middleware 47960 126912498230976 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 16:06:15,060 middleware 47960 126912498230976 Response: GET /api/results/ [200] - 0.091s
+INFO 2026-05-03 16:07:43,930 middleware 47960 126912487741120 Request: POST /api/submission/ from 127.0.0.1
+INFO 2026-05-03 16:07:43,946 middleware 47960 126912487741120 Response: POST /api/submission/ [404] - 0.016s
+WARNING 2026-05-03 16:07:43,946 log 47960 126912487741120 Not Found: /api/submission/
+WARNING 2026-05-03 16:07:43,947 basehttp 47960 126912487741120 "POST /api/submission/ HTTP/1.1" 404 3874
+INFO 2026-05-03 16:07:58,616 middleware 47960 126912487741120 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 16:07:58,853 middleware 47960 126912487741120 Response: POST /api/submissions/ [201] - 0.237s
+INFO 2026-05-03 16:07:58,930 tasks 21240 133053653209216 📄 Extracting paragraphs from submission ea64f690-7f7f-467e-b4d4-de6875fbf883
+INFO 2026-05-03 16:08:10,693 tasks 21240 133053653209216 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 16:08:10,736 tasks 21240 133053653209216 ✅ Submission ea64f690-7f7f-467e-b4d4-de6875fbf883 completed successfully
+INFO 2026-05-03 16:08:22,787 middleware 47960 126912487741120 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 16:08:22,835 middleware 47960 126912487741120 Response: GET /api/results/ [200] - 0.047s
+INFO 2026-05-03 16:30:29,748 middleware 47960 126912473228992 Request: POST /api/auth/register/ from 127.0.0.1
+ERROR 2026-05-03 16:30:30,019 exceptions 47960 126912473228992 Exception occurred: {'last_name': [ErrorDetail(string='This field may not be blank.', code='blank')]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 271, in register
+    serializer.is_valid(raise_exception=True)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/serializers.py", line 235, in is_valid
+    raise ValidationError(self.errors)
+rest_framework.exceptions.ValidationError: {'last_name': [ErrorDetail(string='This field may not be blank.', code='blank')]}
+INFO 2026-05-03 16:30:30,053 middleware 47960 126912473228992 Response: POST /api/auth/register/ [400] - 0.308s
+WARNING 2026-05-03 16:30:30,058 log 47960 126912473228992 Bad Request: /api/auth/register/
+WARNING 2026-05-03 16:30:30,058 basehttp 47960 126912473228992 "POST /api/auth/register/ HTTP/1.1" 400 92
+INFO 2026-05-03 16:36:02,493 middleware 47960 126912473228992 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-05-03 16:36:11,977 middleware 47960 126912473228992 Response: POST /api/auth/register/ [201] - 9.484s
+INFO 2026-05-03 16:37:33,329 middleware 47960 126912257062592 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-03 16:37:33,480 middleware 47960 126912257062592 Response: GET /admin/authentication/user/ [200] - 0.151s
+INFO 2026-05-03 16:37:33,628 middleware 47960 126912257062592 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 16:37:33,682 middleware 47960 126912257062592 Response: GET /admin/jsi18n/ [200] - 0.054s
+INFO 2026-05-03 16:37:35,767 middleware 47960 126912257062592 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-03 16:37:35,816 middleware 47960 126912257062592 Response: GET /admin/authentication/user/ [200] - 0.049s
+INFO 2026-05-03 16:37:35,873 middleware 47960 126912257062592 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 16:37:35,903 middleware 47960 126912257062592 Response: GET /admin/jsi18n/ [200] - 0.029s
+INFO 2026-05-03 16:39:33,513 middleware 47960 126912473228992 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-05-03 16:39:42,132 middleware 47960 126912473228992 Response: POST /api/auth/register/ [201] - 8.619s
+INFO 2026-05-03 16:41:46,631 middleware 47960 126912473228992 Request: POST /api/auth/register/ from 127.0.0.1
+INFO 2026-05-03 16:41:56,427 middleware 47960 126912473228992 Response: POST /api/auth/register/ [201] - 9.795s
+INFO 2026-05-03 17:21:05,896 middleware 47960 126912498230976 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 17:21:05,900 middleware 47960 126912487741120 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-03 17:21:05,904 exceptions 47960 126912498230976 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2026-05-03 17:21:05,908 exceptions 47960 126912487741120 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 17:21:05,910 middleware 47960 126912498230976 Response: GET /api/classes/ [401] - 0.014s
+INFO 2026-05-03 17:21:05,911 middleware 47960 126912487741120 Response: GET /api/classes/08Y025/assignment/ [401] - 0.011s
+WARNING 2026-05-03 17:21:05,912 log 47960 126912498230976 Unauthorized: /api/classes/
+WARNING 2026-05-03 17:21:05,913 log 47960 126912487741120 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 17:21:05,915 basehttp 47960 126912498230976 "GET /api/classes/ HTTP/1.1" 401 132
+WARNING 2026-05-03 17:21:05,918 basehttp 47960 126912487741120 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+INFO 2026-05-03 17:21:05,934 middleware 47960 126912473228992 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-05-03 17:21:05,937 exceptions 47960 126912473228992 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 17:21:05,935 middleware 47960 126912498230976 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 17:21:05,939 middleware 47960 126912473228992 Response: GET /api/classes/ [401] - 0.005s
+ERROR 2026-05-03 17:21:05,940 exceptions 47960 126912498230976 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+WARNING 2026-05-03 17:21:05,942 log 47960 126912473228992 Unauthorized: /api/classes/
+INFO 2026-05-03 17:21:05,943 middleware 47960 126912498230976 Response: GET /api/classes/08Y025/assignment/ [401] - 0.009s
+WARNING 2026-05-03 17:21:05,945 log 47960 126912498230976 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 17:21:05,944 basehttp 47960 126912473228992 "GET /api/classes/ HTTP/1.1" 401 132
+WARNING 2026-05-03 17:21:05,947 basehttp 47960 126912498230976 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+INFO 2026-05-03 17:32:55,118 middleware 54531 134431720335040 Request: GET /admin/authentication/user/12/change/ from 127.0.0.1
+INFO 2026-05-03 17:32:55,389 middleware 54531 134431720335040 Response: GET /admin/authentication/user/12/change/ [200] - 0.271s
+INFO 2026-05-03 17:32:55,524 middleware 54531 134431720335040 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-03 17:32:55,571 middleware 54531 134431720335040 Response: GET /admin/jsi18n/ [200] - 0.046s
+INFO 2026-05-03 17:42:46,567 middleware 54531 134431711942336 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-05-03 17:42:46,577 exceptions 54531 134431711942336 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 17:42:46,582 middleware 54531 134431711942336 Response: GET /api/classes/ [401] - 0.015s
+WARNING 2026-05-03 17:42:46,583 log 54531 134431711942336 Unauthorized: /api/classes/
+WARNING 2026-05-03 17:42:46,587 basehttp 54531 134431711942336 "GET /api/classes/ HTTP/1.1" 401 132
+INFO 2026-05-03 17:42:46,589 middleware 54531 134431720335040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 17:42:46,597 middleware 54531 134431711942336 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-05-03 17:42:46,599 exceptions 54531 134431720335040 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2026-05-03 17:42:46,603 exceptions 54531 134431711942336 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 17:42:46,607 middleware 54531 134431720335040 Response: GET /api/classes/08Y025/assignment/ [401] - 0.017s
+INFO 2026-05-03 17:42:46,609 middleware 54531 134431711942336 Response: GET /api/classes/ [401] - 0.012s
+WARNING 2026-05-03 17:42:46,609 log 54531 134431720335040 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 17:42:46,613 basehttp 54531 134431720335040 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+WARNING 2026-05-03 17:42:46,612 log 54531 134431711942336 Unauthorized: /api/classes/
+WARNING 2026-05-03 17:42:46,614 basehttp 54531 134431711942336 "GET /api/classes/ HTTP/1.1" 401 132
+INFO 2026-05-03 17:42:46,628 middleware 54531 134431701452480 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-03 17:42:46,655 exceptions 54531 134431701452480 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 17:42:46,658 middleware 54531 134431701452480 Response: GET /api/classes/08Y025/assignment/ [401] - 0.030s
+WARNING 2026-05-03 17:42:46,659 log 54531 134431701452480 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 17:42:46,661 basehttp 54531 134431701452480 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+INFO 2026-05-03 17:49:48,432 middleware 54531 134431711942336 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 17:49:48,434 middleware 54531 134431701452480 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-05-03 17:49:48,438 exceptions 54531 134431711942336 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2026-05-03 17:49:48,443 exceptions 54531 134431701452480 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 17:49:48,447 middleware 54531 134431701452480 Response: GET /api/classes/ [401] - 0.013s
+INFO 2026-05-03 17:49:48,445 middleware 54531 134431711942336 Response: GET /api/classes/08Y025/assignment/ [401] - 0.013s
+WARNING 2026-05-03 17:49:48,449 log 54531 134431701452480 Unauthorized: /api/classes/
+WARNING 2026-05-03 17:49:48,450 log 54531 134431711942336 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 17:49:48,453 basehttp 54531 134431711942336 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+WARNING 2026-05-03 17:49:48,451 basehttp 54531 134431701452480 "GET /api/classes/ HTTP/1.1" 401 132
+INFO 2026-05-03 17:49:48,469 middleware 54531 134431720335040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 17:49:48,471 middleware 54531 134431701452480 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-03 17:49:48,476 exceptions 54531 134431720335040 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2026-05-03 17:49:48,481 exceptions 54531 134431701452480 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 17:49:48,482 middleware 54531 134431720335040 Response: GET /api/classes/ [401] - 0.013s
+INFO 2026-05-03 17:49:48,487 middleware 54531 134431701452480 Response: GET /api/classes/08Y025/assignment/ [401] - 0.016s
+WARNING 2026-05-03 17:49:48,491 log 54531 134431701452480 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 17:49:48,490 log 54531 134431720335040 Unauthorized: /api/classes/
+WARNING 2026-05-03 17:49:48,492 basehttp 54531 134431720335040 "GET /api/classes/ HTTP/1.1" 401 132
+WARNING 2026-05-03 17:49:48,494 basehttp 54531 134431701452480 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+INFO 2026-05-03 18:19:50,071 middleware 59053 123153236879040 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-03 18:19:51,146 middleware 59053 123153236879040 Response: POST /api/auth/teacher_login/ [200] - 1.075s
+INFO 2026-05-03 18:19:52,470 middleware 59053 123153137260224 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:19:52,486 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:52,528 middleware 59053 123153137260224 Response: GET /api/classes/ [200] - 0.058s
+INFO 2026-05-03 18:19:52,541 middleware 59053 123153236879040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:19:52,604 middleware 59053 123153236879040 Response: GET /api/classes/ [200] - 0.063s
+INFO 2026-05-03 18:19:52,608 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.122s
+INFO 2026-05-03 18:19:52,653 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:52,702 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.048s
+INFO 2026-05-03 18:19:52,746 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:52,788 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.043s
+INFO 2026-05-03 18:19:52,794 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:52,858 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.064s
+INFO 2026-05-03 18:19:57,911 middleware 59053 123153236879040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:19:57,917 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:57,975 middleware 59053 123153236879040 Response: GET /api/classes/ [200] - 0.064s
+INFO 2026-05-03 18:19:57,987 middleware 59053 123153137260224 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:19:58,050 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.133s
+INFO 2026-05-03 18:19:58,070 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:58,096 middleware 59053 123153137260224 Response: GET /api/classes/ [200] - 0.109s
+INFO 2026-05-03 18:19:58,149 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.078s
+INFO 2026-05-03 18:19:58,155 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:58,261 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.106s
+INFO 2026-05-03 18:19:58,308 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:19:58,362 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.054s
+INFO 2026-05-03 18:20:08,865 middleware 59053 123153137260224 Request: DELETE /api/classes/assignments/ffbae67f-b595-46d1-a363-a49755499a62/ from 127.0.0.1
+INFO 2026-05-03 18:20:08,915 middleware 59053 123153137260224 Response: DELETE /api/classes/assignments/ffbae67f-b595-46d1-a363-a49755499a62/ [204] - 0.051s
+INFO 2026-05-03 18:20:11,611 middleware 59053 123153137260224 Request: DELETE /api/classes/assignments/833e3678-3ded-44a1-ac4c-e06bbba8ff21/ from 127.0.0.1
+INFO 2026-05-03 18:20:11,646 middleware 59053 123153137260224 Response: DELETE /api/classes/assignments/833e3678-3ded-44a1-ac4c-e06bbba8ff21/ [204] - 0.035s
+INFO 2026-05-03 18:20:14,273 middleware 59053 123153137260224 Request: DELETE /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ from 127.0.0.1
+INFO 2026-05-03 18:20:14,325 middleware 59053 123153137260224 Response: DELETE /api/classes/assignments/2a3420f9-8d30-4108-9c47-b8805879efa1/ [204] - 0.051s
+INFO 2026-05-03 18:20:35,909 middleware 59053 123153137260224 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+INFO 2026-05-03 18:20:35,944 middleware 59053 123153137260224 Response: POST /api/classes/08Y025/assignments/ [201] - 0.035s
+INFO 2026-05-03 18:20:41,353 middleware 59053 123153137260224 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-05-03 18:20:41,390 middleware 59053 123153137260224 Response: POST /api/auth/logout/ [200] - 0.036s
+INFO 2026-05-03 18:20:56,181 middleware 59053 123153137260224 Request: POST /api/auth/student_login/ from 127.0.0.1
+ERROR 2026-05-03 18:20:56,949 exceptions 59053 123153137260224 Exception occurred: Invalid email or password
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 62, in student_login
+    raise AuthenticationFailed('Invalid email or password')
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+INFO 2026-05-03 18:20:56,951 middleware 59053 123153137260224 Response: POST /api/auth/student_login/ [401] - 0.770s
+WARNING 2026-05-03 18:20:56,951 log 59053 123153137260224 Unauthorized: /api/auth/student_login/
+WARNING 2026-05-03 18:20:56,952 basehttp 59053 123153137260224 "POST /api/auth/student_login/ HTTP/1.1" 401 92
+INFO 2026-05-03 18:21:03,117 middleware 59053 123153137260224 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-05-03 18:21:03,868 middleware 59053 123153137260224 Response: POST /api/auth/student_login/ [200] - 0.752s
+INFO 2026-05-03 18:21:27,577 middleware 59053 123153137260224 Request: POST /api/auth/student_login/ from 127.0.0.1
+ERROR 2026-05-03 18:21:28,342 exceptions 59053 123153137260224 Exception occurred: Invalid email or password
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 62, in student_login
+    raise AuthenticationFailed('Invalid email or password')
+rest_framework.exceptions.AuthenticationFailed: Invalid email or password
+INFO 2026-05-03 18:21:28,342 middleware 59053 123153137260224 Response: POST /api/auth/student_login/ [401] - 0.766s
+WARNING 2026-05-03 18:21:28,343 log 59053 123153137260224 Unauthorized: /api/auth/student_login/
+WARNING 2026-05-03 18:21:28,343 basehttp 59053 123153137260224 "POST /api/auth/student_login/ HTTP/1.1" 401 92
+INFO 2026-05-03 18:21:34,709 middleware 59053 123153137260224 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-05-03 18:21:35,479 middleware 59053 123153137260224 Response: POST /api/auth/student_login/ [200] - 0.770s
+INFO 2026-05-03 18:24:48,213 middleware 59053 123153236879040 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:24:48,252 middleware 59053 123153236879040 Response: GET /api/classes/enrolled/ [200] - 0.039s
+INFO 2026-05-03 18:24:48,295 middleware 59053 123153137260224 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:24:48,330 middleware 59053 123153137260224 Response: GET /api/classes/enrolled/ [200] - 0.035s
+INFO 2026-05-03 18:24:49,905 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:24:49,942 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.037s
+INFO 2026-05-03 18:24:49,946 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:24:49,995 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.049s
+INFO 2026-05-03 18:25:04,248 middleware 59053 123153236879040 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 18:25:04,583 middleware 59053 123153236879040 Response: POST /api/submissions/ [201] - 0.335s
+INFO 2026-05-03 18:25:05,287 tasks 59222 125624346341504 📄 Extracting paragraphs from submission 5b8dec58-2257-42b2-89b8-de2cea993fac
+INFO 2026-05-03 18:25:10,292 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:10,364 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.072s
+INFO 2026-05-03 18:25:11,286 middleware 59053 123153236879040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:25:11,294 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:25:11,336 middleware 59053 123153236879040 Response: GET /api/classes/ [200] - 0.051s
+INFO 2026-05-03 18:25:11,359 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:25:11,390 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.095s
+INFO 2026-05-03 18:25:11,397 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:25:11,445 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.086s
+INFO 2026-05-03 18:25:11,516 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.121s
+INFO 2026-05-03 18:25:11,527 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:25:11,656 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.129s
+INFO 2026-05-03 18:25:11,662 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:25:11,717 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.055s
+INFO 2026-05-03 18:25:13,251 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:13,279 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.028s
+INFO 2026-05-03 18:25:14,900 middleware 59053 123153236879040 Request: GET /api/submissions/assignment/ from 127.0.0.1
+ERROR 2026-05-03 18:25:14,935 exceptions 59053 123153236879040 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-03 18:25:14,937 middleware 59053 123153236879040 Response: GET /api/submissions/assignment/ [403] - 0.036s
+WARNING 2026-05-03 18:25:14,938 log 59053 123153236879040 Forbidden: /api/submissions/assignment/
+WARNING 2026-05-03 18:25:14,939 basehttp 59053 123153236879040 "GET /api/submissions/assignment/?assignment=486630b9-b79c-475e-968c-4dbf2d829d83 HTTP/1.1" 403 142
+INFO 2026-05-03 18:25:16,246 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:16,283 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.036s
+INFO 2026-05-03 18:25:19,246 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:19,270 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.024s
+INFO 2026-05-03 18:25:22,247 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:22,298 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.051s
+INFO 2026-05-03 18:25:25,245 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:25,281 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.036s
+INFO 2026-05-03 18:25:28,244 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:28,276 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.032s
+INFO 2026-05-03 18:25:31,244 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:31,266 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.022s
+INFO 2026-05-03 18:25:31,667 tasks 59222 125624346341504 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 18:25:31,762 tasks 59222 125624346341504 ✅ Submission 5b8dec58-2257-42b2-89b8-de2cea993fac completed successfully
+INFO 2026-05-03 18:25:34,243 middleware 59053 123153236879040 Request: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ from 127.0.0.1
+INFO 2026-05-03 18:25:34,263 middleware 59053 123153236879040 Response: GET /api/submissions/5b8dec58-2257-42b2-89b8-de2cea993fac/status/ [200] - 0.020s
+INFO 2026-05-03 18:26:11,705 middleware 59053 123153236879040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:26:11,707 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:26:11,745 middleware 59053 123153236879040 Response: GET /api/classes/ [200] - 0.040s
+INFO 2026-05-03 18:26:11,750 middleware 59053 123153137260224 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:26:11,761 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.054s
+INFO 2026-05-03 18:26:11,770 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:26:11,832 middleware 59053 123153137260224 Response: GET /api/classes/ [200] - 0.082s
+INFO 2026-05-03 18:26:11,841 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.072s
+INFO 2026-05-03 18:26:11,886 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:26:11,939 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.054s
+INFO 2026-05-03 18:26:11,947 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:26:11,994 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.047s
+INFO 2026-05-03 18:26:19,290 middleware 59053 123153236879040 Request: GET /api/submissions/assignment/ from 127.0.0.1
+ERROR 2026-05-03 18:26:19,320 exceptions 59053 123153236879040 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-03 18:26:19,323 middleware 59053 123153236879040 Response: GET /api/submissions/assignment/ [403] - 0.033s
+WARNING 2026-05-03 18:26:19,325 log 59053 123153236879040 Forbidden: /api/submissions/assignment/
+WARNING 2026-05-03 18:26:19,328 basehttp 59053 123153236879040 "GET /api/submissions/assignment/?assignment=486630b9-b79c-475e-968c-4dbf2d829d83 HTTP/1.1" 403 142
+INFO 2026-05-03 18:28:35,757 middleware 59053 123153236879040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:28:35,758 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:35,800 middleware 59053 123153236879040 Response: GET /api/classes/ [200] - 0.043s
+INFO 2026-05-03 18:28:35,801 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.042s
+INFO 2026-05-03 18:28:35,803 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:28:35,813 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:35,855 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.052s
+INFO 2026-05-03 18:28:35,890 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.077s
+INFO 2026-05-03 18:28:35,897 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:35,938 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.041s
+INFO 2026-05-03 18:28:35,981 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:36,029 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.048s
+INFO 2026-05-03 18:28:40,988 middleware 59053 123153154045632 Request: GET /api/submissions/assignment/ from 127.0.0.1
+ERROR 2026-05-03 18:28:41,022 exceptions 59053 123153154045632 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-03 18:28:41,024 middleware 59053 123153154045632 Response: GET /api/submissions/assignment/ [403] - 0.036s
+WARNING 2026-05-03 18:28:41,024 log 59053 123153154045632 Forbidden: /api/submissions/assignment/
+WARNING 2026-05-03 18:28:41,025 basehttp 59053 123153154045632 "GET /api/submissions/assignment/?assignment=486630b9-b79c-475e-968c-4dbf2d829d83 HTTP/1.1" 403 142
+INFO 2026-05-03 18:28:43,130 middleware 59053 123153154045632 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:28:43,131 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:43,175 middleware 59053 123153154045632 Response: GET /api/classes/ [200] - 0.045s
+INFO 2026-05-03 18:28:43,186 middleware 59053 123153137260224 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:28:43,206 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.075s
+INFO 2026-05-03 18:28:43,218 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:43,239 middleware 59053 123153137260224 Response: GET /api/classes/ [200] - 0.053s
+INFO 2026-05-03 18:28:43,277 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.058s
+INFO 2026-05-03 18:28:43,321 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:43,360 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.039s
+INFO 2026-05-03 18:28:43,369 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:28:43,403 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.035s
+INFO 2026-05-03 18:28:46,399 middleware 59053 123153154045632 Request: GET /api/submissions/assignment/ from 127.0.0.1
+ERROR 2026-05-03 18:28:46,426 exceptions 59053 123153154045632 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-03 18:28:46,429 middleware 59053 123153154045632 Response: GET /api/submissions/assignment/ [403] - 0.030s
+WARNING 2026-05-03 18:28:46,431 log 59053 123153154045632 Forbidden: /api/submissions/assignment/
+WARNING 2026-05-03 18:28:46,432 basehttp 59053 123153154045632 "GET /api/submissions/assignment/?assignment=486630b9-b79c-475e-968c-4dbf2d829d83 HTTP/1.1" 403 142
+INFO 2026-05-03 18:28:56,998 middleware 59053 123153154045632 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-05-03 18:28:57,044 middleware 59053 123153154045632 Response: POST /api/auth/logout/ [200] - 0.046s
+INFO 2026-05-03 18:29:01,186 middleware 59053 123153154045632 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-05-03 18:29:01,187 exceptions 59053 123153154045632 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 18:29:01,189 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:29:01,190 middleware 59053 123153154045632 Response: GET /api/classes/ [401] - 0.004s
+ERROR 2026-05-03 18:29:01,190 exceptions 59053 123153137260224 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+WARNING 2026-05-03 18:29:01,192 log 59053 123153154045632 Unauthorized: /api/classes/
+INFO 2026-05-03 18:29:01,194 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [401] - 0.005s
+WARNING 2026-05-03 18:29:01,195 basehttp 59053 123153154045632 "GET /api/classes/ HTTP/1.1" 401 132
+WARNING 2026-05-03 18:29:01,196 log 59053 123153137260224 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 18:29:01,197 basehttp 59053 123153137260224 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+INFO 2026-05-03 18:29:01,198 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-05-03 18:29:01,202 exceptions 59053 123153145652928 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 18:29:01,205 middleware 59053 123153145652928 Response: GET /api/classes/ [401] - 0.007s
+INFO 2026-05-03 18:29:01,205 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+WARNING 2026-05-03 18:29:01,207 log 59053 123153145652928 Unauthorized: /api/classes/
+WARNING 2026-05-03 18:29:01,209 basehttp 59053 123153145652928 "GET /api/classes/ HTTP/1.1" 401 132
+ERROR 2026-05-03 18:29:01,208 exceptions 59053 123153154045632 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 18:29:01,210 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [401] - 0.005s
+WARNING 2026-05-03 18:29:01,211 log 59053 123153154045632 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 18:29:01,212 basehttp 59053 123153154045632 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+INFO 2026-05-03 18:29:08,722 middleware 59053 123153154045632 Request: GET /api/classes/ from 127.0.0.1
+ERROR 2026-05-03 18:29:08,723 exceptions 59053 123153154045632 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 18:29:08,726 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:29:08,727 middleware 59053 123153154045632 Response: GET /api/classes/ [401] - 0.004s
+ERROR 2026-05-03 18:29:08,727 exceptions 59053 123153145652928 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 18:29:08,730 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [401] - 0.004s
+WARNING 2026-05-03 18:29:08,729 log 59053 123153154045632 Unauthorized: /api/classes/
+WARNING 2026-05-03 18:29:08,731 log 59053 123153145652928 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 18:29:08,731 basehttp 59053 123153154045632 "GET /api/classes/ HTTP/1.1" 401 132
+WARNING 2026-05-03 18:29:08,733 basehttp 59053 123153145652928 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+INFO 2026-05-03 18:29:08,738 middleware 59053 123153137260224 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:29:08,740 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-03 18:29:08,742 exceptions 59053 123153137260224 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+ERROR 2026-05-03 18:29:08,744 exceptions 59053 123153236879040 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-03 18:29:08,745 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [401] - 0.005s
+INFO 2026-05-03 18:29:08,745 middleware 59053 123153137260224 Response: GET /api/classes/ [401] - 0.006s
+WARNING 2026-05-03 18:29:08,746 log 59053 123153236879040 Unauthorized: /api/classes/08Y025/assignment/
+WARNING 2026-05-03 18:29:08,747 basehttp 59053 123153236879040 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 401 132
+WARNING 2026-05-03 18:29:08,747 log 59053 123153137260224 Unauthorized: /api/classes/
+WARNING 2026-05-03 18:29:08,750 basehttp 59053 123153137260224 "GET /api/classes/ HTTP/1.1" 401 132
+INFO 2026-05-03 18:30:38,232 middleware 59053 123153137260224 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-03 18:30:38,997 middleware 59053 123153137260224 Response: POST /api/auth/teacher_login/ [200] - 0.764s
+INFO 2026-05-03 18:30:41,066 middleware 59053 123153137260224 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:30:41,070 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:30:41,105 middleware 59053 123153137260224 Response: GET /api/classes/ [200] - 0.039s
+INFO 2026-05-03 18:30:41,112 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:30:41,143 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.074s
+INFO 2026-05-03 18:30:41,153 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:30:41,184 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.072s
+INFO 2026-05-03 18:30:41,218 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.065s
+INFO 2026-05-03 18:30:41,269 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:30:41,336 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.067s
+INFO 2026-05-03 18:30:41,353 middleware 59053 123153137260224 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:30:41,407 middleware 59053 123153137260224 Response: GET /api/classes/08Y025/assignment/ [200] - 0.054s
+INFO 2026-05-03 18:30:44,459 middleware 59053 123153137260224 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:30:44,582 middleware 59053 123153137260224 Response: GET /api/submissions/assignment/ [200] - 0.123s
+INFO 2026-05-03 18:30:44,671 middleware 59053 123153137260224 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 18:30:44,703 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-03 18:30:44,783 middleware 59053 123153137260224 Response: GET /api/results/ [200] - 0.112s
+INFO 2026-05-03 18:30:44,809 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/students/ [200] - 0.106s
+INFO 2026-05-03 18:30:58,780 middleware 59053 123153128867520 Request: GET /media/reports/2026/05/03/report_5b8dec58-2257-42b2-89b8-de2cea993fac.pdf from 127.0.0.1
+INFO 2026-05-03 18:30:58,805 middleware 59053 123153128867520 Response: GET /media/reports/2026/05/03/report_5b8dec58-2257-42b2-89b8-de2cea993fac.pdf [200] - 0.025s
+INFO 2026-05-03 18:31:51,836 middleware 59053 123153128867520 Request: GET /media/reports/2026/05/03/report_5b8dec58-2257-42b2-89b8-de2cea993fac.pdf from 127.0.0.1
+INFO 2026-05-03 18:31:51,840 middleware 59053 123153128867520 Response: GET /media/reports/2026/05/03/report_5b8dec58-2257-42b2-89b8-de2cea993fac.pdf [304] - 0.004s
+INFO 2026-05-03 18:32:48,731 middleware 59053 123153128867520 Request: GET /media/reports/2026/05/03/report_5b8dec58-2257-42b2-89b8-de2cea993fac.pdf from 127.0.0.1
+INFO 2026-05-03 18:32:48,732 middleware 59053 123153128867520 Response: GET /media/reports/2026/05/03/report_5b8dec58-2257-42b2-89b8-de2cea993fac.pdf [304] - 0.001s
+INFO 2026-05-03 18:38:19,204 middleware 59053 123153128867520 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:38:19,270 middleware 59053 123153128867520 Response: GET /api/submissions/assignment/ [200] - 0.066s
+INFO 2026-05-03 18:38:19,319 middleware 59053 123153128867520 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 18:38:19,337 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-03 18:38:19,442 middleware 59053 123153128867520 Response: GET /api/results/ [200] - 0.124s
+INFO 2026-05-03 18:38:19,482 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/students/ [200] - 0.144s
+INFO 2026-05-03 18:42:56,660 middleware 59053 123153154045632 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-05-03 18:42:57,414 middleware 59053 123153154045632 Response: POST /api/auth/student_login/ [200] - 0.753s
+INFO 2026-05-03 18:44:29,889 middleware 59053 123153128867520 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:44:29,920 middleware 59053 123153128867520 Response: GET /api/classes/enrolled/ [200] - 0.030s
+INFO 2026-05-03 18:44:29,963 middleware 59053 123153154045632 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:44:29,997 middleware 59053 123153154045632 Response: GET /api/classes/enrolled/ [200] - 0.034s
+INFO 2026-05-03 18:44:33,305 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:44:33,358 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.053s
+INFO 2026-05-03 18:44:33,402 middleware 59053 123153128867520 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:44:33,448 middleware 59053 123153128867520 Response: GET /api/classes/08Y025/assignment/ [200] - 0.046s
+INFO 2026-05-03 18:45:59,435 middleware 59053 123153128867520 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:45:59,474 middleware 59053 123153128867520 Response: GET /api/classes/enrolled/ [200] - 0.039s
+INFO 2026-05-03 18:45:59,477 middleware 59053 123153154045632 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:45:59,510 middleware 59053 123153154045632 Response: GET /api/classes/enrolled/ [200] - 0.034s
+INFO 2026-05-03 18:46:00,589 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:00,626 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.037s
+INFO 2026-05-03 18:46:00,631 middleware 59053 123153128867520 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:00,673 middleware 59053 123153128867520 Response: GET /api/classes/08Y025/assignment/ [200] - 0.043s
+INFO 2026-05-03 18:46:03,854 middleware 59053 123153128867520 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:03,894 middleware 59053 123153128867520 Response: GET /api/classes/08Y025/assignment/ [200] - 0.040s
+INFO 2026-05-03 18:46:03,900 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:03,936 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.036s
+INFO 2026-05-03 18:46:17,430 middleware 59053 123153154045632 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 18:46:17,497 middleware 59053 123153154045632 Response: POST /api/submissions/ [201] - 0.067s
+INFO 2026-05-03 18:46:17,525 tasks 59222 125624346341504 📄 Extracting paragraphs from submission 2513ec4c-c0cb-4095-8adb-8a24e3624708
+INFO 2026-05-03 18:46:22,558 middleware 59053 123153154045632 Request: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ from 127.0.0.1
+INFO 2026-05-03 18:46:22,596 middleware 59053 123153154045632 Response: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ [200] - 0.038s
+INFO 2026-05-03 18:46:25,551 middleware 59053 123153154045632 Request: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ from 127.0.0.1
+INFO 2026-05-03 18:46:25,586 middleware 59053 123153154045632 Response: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ [200] - 0.034s
+INFO 2026-05-03 18:46:28,557 middleware 59053 123153154045632 Request: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ from 127.0.0.1
+INFO 2026-05-03 18:46:28,591 middleware 59053 123153154045632 Response: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ [200] - 0.034s
+INFO 2026-05-03 18:46:31,555 middleware 59053 123153154045632 Request: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ from 127.0.0.1
+INFO 2026-05-03 18:46:31,609 middleware 59053 123153154045632 Response: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ [200] - 0.055s
+INFO 2026-05-03 18:46:34,552 middleware 59053 123153154045632 Request: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ from 127.0.0.1
+INFO 2026-05-03 18:46:34,580 middleware 59053 123153154045632 Response: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ [200] - 0.028s
+INFO 2026-05-03 18:46:37,552 middleware 59053 123153154045632 Request: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ from 127.0.0.1
+INFO 2026-05-03 18:46:37,586 middleware 59053 123153154045632 Response: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ [200] - 0.034s
+INFO 2026-05-03 18:46:40,341 tasks 59222 125624346341504 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 18:46:40,384 tasks 59222 125624346341504 ✅ Submission 2513ec4c-c0cb-4095-8adb-8a24e3624708 completed successfully
+INFO 2026-05-03 18:46:40,574 middleware 59053 123153154045632 Request: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ from 127.0.0.1
+INFO 2026-05-03 18:46:40,643 middleware 59053 123153154045632 Response: GET /api/submissions/2513ec4c-c0cb-4095-8adb-8a24e3624708/status/ [200] - 0.069s
+INFO 2026-05-03 18:46:41,701 middleware 59053 123153137260224 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:46:41,702 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:41,755 middleware 59053 123153137260224 Response: GET /api/classes/ [200] - 0.055s
+INFO 2026-05-03 18:46:41,756 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.054s
+INFO 2026-05-03 18:46:41,767 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:46:41,779 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:41,812 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.045s
+INFO 2026-05-03 18:46:41,850 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.072s
+INFO 2026-05-03 18:46:41,860 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:41,907 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.052s
+INFO 2026-05-03 18:46:41,914 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:41,958 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.044s
+INFO 2026-05-03 18:46:48,936 middleware 59053 123153120474816 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:49,001 middleware 59053 123153120474816 Response: GET /api/submissions/assignment/ [200] - 0.065s
+INFO 2026-05-03 18:46:49,068 middleware 59053 123153120474816 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 18:46:49,080 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-03 18:46:49,170 middleware 59053 123153120474816 Response: GET /api/results/ [200] - 0.102s
+INFO 2026-05-03 18:46:49,175 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/students/ [200] - 0.094s
+INFO 2026-05-03 18:46:57,942 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:46:57,946 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:57,980 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.037s
+INFO 2026-05-03 18:46:57,993 middleware 59053 123153236879040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:46:58,030 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.084s
+INFO 2026-05-03 18:46:58,040 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:58,089 middleware 59053 123153236879040 Response: GET /api/classes/ [200] - 0.096s
+INFO 2026-05-03 18:46:58,117 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.077s
+INFO 2026-05-03 18:46:58,120 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:58,168 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.047s
+INFO 2026-05-03 18:46:58,211 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:46:58,245 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.034s
+INFO 2026-05-03 18:47:01,206 middleware 59053 123153145652928 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:47:01,265 middleware 59053 123153145652928 Response: GET /api/submissions/assignment/ [200] - 0.059s
+INFO 2026-05-03 18:47:01,305 middleware 59053 123153145652928 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 18:47:01,311 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-03 18:47:01,397 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/students/ [200] - 0.086s
+INFO 2026-05-03 18:47:01,440 middleware 59053 123153145652928 Response: GET /api/results/ [200] - 0.135s
+INFO 2026-05-03 18:48:06,587 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:06,589 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:48:06,653 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.064s
+INFO 2026-05-03 18:48:06,661 middleware 59053 123153120474816 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:48:06,661 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.074s
+INFO 2026-05-03 18:48:06,684 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:06,731 middleware 59053 123153120474816 Response: GET /api/classes/ [200] - 0.070s
+INFO 2026-05-03 18:48:06,749 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.065s
+INFO 2026-05-03 18:48:06,793 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:06,833 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.040s
+INFO 2026-05-03 18:48:06,836 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:06,882 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.047s
+INFO 2026-05-03 18:48:08,132 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:48:08,166 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.035s
+INFO 2026-05-03 18:48:08,172 middleware 59053 123153120474816 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:48:08,212 middleware 59053 123153120474816 Response: GET /api/classes/ [200] - 0.040s
+INFO 2026-05-03 18:48:10,048 middleware 59053 123153120474816 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:48:10,052 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:10,085 middleware 59053 123153120474816 Response: GET /api/classes/ [200] - 0.037s
+INFO 2026-05-03 18:48:10,106 middleware 59053 123153236879040 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:48:10,122 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.070s
+INFO 2026-05-03 18:48:10,132 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:10,178 middleware 59053 123153236879040 Response: GET /api/classes/ [200] - 0.072s
+INFO 2026-05-03 18:48:10,210 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.078s
+INFO 2026-05-03 18:48:10,257 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:10,303 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.046s
+INFO 2026-05-03 18:48:10,317 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:10,394 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.077s
+INFO 2026-05-03 18:48:29,123 middleware 59053 123153120474816 Request: POST /api/classes/08Y025/assignments/ from 127.0.0.1
+INFO 2026-05-03 18:48:29,159 middleware 59053 123153120474816 Response: POST /api/classes/08Y025/assignments/ [201] - 0.036s
+INFO 2026-05-03 18:48:36,553 middleware 59053 123153154045632 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:48:36,596 middleware 59053 123153154045632 Response: GET /api/classes/enrolled/ [200] - 0.043s
+INFO 2026-05-03 18:48:36,600 middleware 59053 123153128867520 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-03 18:48:36,638 middleware 59053 123153128867520 Response: GET /api/classes/enrolled/ [200] - 0.038s
+INFO 2026-05-03 18:48:38,344 middleware 59053 123153128867520 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:38,397 middleware 59053 123153128867520 Response: GET /api/classes/08Y025/assignment/ [200] - 0.053s
+INFO 2026-05-03 18:48:38,401 middleware 59053 123153154045632 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:38,457 middleware 59053 123153154045632 Response: GET /api/classes/08Y025/assignment/ [200] - 0.056s
+INFO 2026-05-03 18:48:50,229 middleware 59053 123153154045632 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-03 18:48:50,271 middleware 59053 123153154045632 Response: POST /api/submissions/ [201] - 0.042s
+INFO 2026-05-03 18:48:50,308 tasks 59222 125624346341504 📄 Extracting paragraphs from submission adeb2894-2c76-4cd3-80ba-020b007767eb
+INFO 2026-05-03 18:48:55,291 middleware 59053 123153154045632 Request: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ from 127.0.0.1
+INFO 2026-05-03 18:48:55,328 middleware 59053 123153154045632 Response: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ [200] - 0.037s
+INFO 2026-05-03 18:48:56,122 middleware 59053 123153120474816 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:48:56,202 middleware 59053 123153120474816 Response: GET /api/submissions/assignment/ [200] - 0.080s
+INFO 2026-05-03 18:48:56,317 middleware 59053 123153120474816 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 18:48:56,328 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-03 18:48:56,534 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/students/ [200] - 0.201s
+INFO 2026-05-03 18:48:56,563 middleware 59053 123153120474816 Response: GET /api/results/ [200] - 0.246s
+INFO 2026-05-03 18:48:58,283 middleware 59053 123153154045632 Request: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ from 127.0.0.1
+INFO 2026-05-03 18:48:58,325 middleware 59053 123153154045632 Response: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ [200] - 0.042s
+INFO 2026-05-03 18:49:01,283 middleware 59053 123153154045632 Request: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ from 127.0.0.1
+INFO 2026-05-03 18:49:01,321 middleware 59053 123153154045632 Response: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ [200] - 0.039s
+INFO 2026-05-03 18:49:04,282 middleware 59053 123153154045632 Request: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ from 127.0.0.1
+INFO 2026-05-03 18:49:04,325 middleware 59053 123153154045632 Response: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ [200] - 0.044s
+INFO 2026-05-03 18:49:07,281 middleware 59053 123153154045632 Request: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ from 127.0.0.1
+INFO 2026-05-03 18:49:07,316 middleware 59053 123153154045632 Response: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ [200] - 0.035s
+INFO 2026-05-03 18:49:09,000 tasks 59222 125624346341504 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-03 18:49:09,038 tasks 59222 125624346341504 ✅ Submission adeb2894-2c76-4cd3-80ba-020b007767eb completed successfully
+INFO 2026-05-03 18:49:10,285 middleware 59053 123153154045632 Request: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ from 127.0.0.1
+INFO 2026-05-03 18:49:10,312 middleware 59053 123153154045632 Response: GET /api/submissions/adeb2894-2c76-4cd3-80ba-020b007767eb/status/ [200] - 0.028s
+INFO 2026-05-03 18:49:23,845 middleware 59053 123153236879040 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:49:23,848 middleware 59053 123153120474816 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:49:23,907 middleware 59053 123153120474816 Response: GET /api/classes/ [200] - 0.059s
+INFO 2026-05-03 18:49:23,917 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 18:49:23,920 middleware 59053 123153236879040 Response: GET /api/classes/08Y025/assignment/ [200] - 0.075s
+INFO 2026-05-03 18:49:23,926 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:49:24,038 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.121s
+INFO 2026-05-03 18:49:24,060 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.134s
+INFO 2026-05-03 18:49:24,104 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:49:24,166 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.062s
+INFO 2026-05-03 18:49:24,175 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:49:24,232 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.057s
+INFO 2026-05-03 18:49:26,964 middleware 59053 123153120474816 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-03 18:49:27,024 middleware 59053 123153120474816 Response: GET /api/submissions/assignment/ [200] - 0.060s
+INFO 2026-05-03 18:49:27,050 middleware 59053 123153120474816 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-03 18:49:27,052 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/students/ from 127.0.0.1
+INFO 2026-05-03 18:49:27,159 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/students/ [200] - 0.107s
+INFO 2026-05-03 18:49:27,172 middleware 59053 123153120474816 Response: GET /api/results/ [200] - 0.122s
+INFO 2026-05-03 18:49:29,293 middleware 59053 123153111033536 Request: GET /media/reports/2026/05/03/report_adeb2894-2c76-4cd3-80ba-020b007767eb.pdf from 127.0.0.1
+INFO 2026-05-03 18:49:29,295 middleware 59053 123153111033536 Response: GET /media/reports/2026/05/03/report_adeb2894-2c76-4cd3-80ba-020b007767eb.pdf [200] - 0.003s
+INFO 2026-05-03 18:49:51,486 middleware 59053 123153111033536 Request: GET /media/submissions/2026/05/03/MSalmanKhan_FIA_Application_lAHcZak.pdf from 127.0.0.1
+INFO 2026-05-03 18:49:51,488 middleware 59053 123153111033536 Response: GET /media/submissions/2026/05/03/MSalmanKhan_FIA_Application_lAHcZak.pdf [200] - 0.002s
+INFO 2026-05-03 19:21:18,278 middleware 59053 123153154045632 Request: GET /admin/authentication/user/12/change/ from 127.0.0.1
+INFO 2026-05-03 19:21:18,705 middleware 59053 123153154045632 Response: GET /admin/authentication/user/12/change/ [200] - 0.426s
+INFO 2026-05-03 19:21:29,608 middleware 59053 123153120474816 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 19:21:29,613 middleware 59053 123153111033536 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 19:21:29,693 middleware 59053 123153120474816 Response: GET /api/classes/ [200] - 0.085s
+INFO 2026-05-03 19:21:29,708 middleware 59053 123153145652928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-03 19:21:29,714 middleware 59053 123153111033536 Response: GET /api/classes/08Y025/assignment/ [200] - 0.102s
+INFO 2026-05-03 19:21:29,725 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 19:21:29,780 middleware 59053 123153145652928 Response: GET /api/classes/ [200] - 0.072s
+INFO 2026-05-03 19:21:29,807 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.082s
+INFO 2026-05-03 19:21:29,891 middleware 59053 123153120474816 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 19:21:29,928 middleware 59053 123153120474816 Response: GET /api/classes/08Y025/assignment/ [200] - 0.037s
+INFO 2026-05-03 19:21:29,930 middleware 59053 123153145652928 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-03 19:21:29,964 middleware 59053 123153145652928 Response: GET /api/classes/08Y025/assignment/ [200] - 0.034s
+INFO 2026-05-04 04:36:55,803 middleware 7762 135640647722688 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-04 04:36:56,573 middleware 7762 135640647722688 Response: POST /api/auth/teacher_login/ [200] - 0.770s
+INFO 2026-05-04 04:36:57,719 middleware 7762 135640647722688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:36:57,737 middleware 7762 135640570132160 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:36:57,789 middleware 7762 135640647722688 Response: GET /api/classes/ [200] - 0.070s
+INFO 2026-05-04 04:36:57,812 middleware 7762 135640570132160 Response: GET /api/classes/08Y025/assignment/ [200] - 0.075s
+INFO 2026-05-04 04:36:57,835 middleware 7762 135640553346752 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:36:57,864 middleware 7762 135640647722688 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:36:57,879 middleware 7762 135640553346752 Response: GET /api/classes/ [200] - 0.044s
+INFO 2026-05-04 04:36:57,915 middleware 7762 135640647722688 Response: GET /api/classes/08Y025/assignment/ [200] - 0.051s
+INFO 2026-05-04 04:36:57,960 middleware 7762 135640553346752 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:36:58,030 middleware 7762 135640553346752 Response: GET /api/classes/08Y025/assignment/ [200] - 0.070s
+INFO 2026-05-04 04:36:58,041 middleware 7762 135640647722688 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:36:58,084 middleware 7762 135640647722688 Response: GET /api/classes/08Y025/assignment/ [200] - 0.043s
+INFO 2026-05-04 04:37:09,731 middleware 7762 135640543905472 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-05-04 04:37:10,470 middleware 7762 135640543905472 Response: POST /api/auth/student_login/ [200] - 0.739s
+INFO 2026-05-04 04:37:42,865 middleware 7762 135640647722688 Request: DELETE /api/classes/assignments/b04c7376-20d3-422d-aaab-fbdc0f77aa81/ from 127.0.0.1
+INFO 2026-05-04 04:37:42,914 middleware 7762 135640647722688 Response: DELETE /api/classes/assignments/b04c7376-20d3-422d-aaab-fbdc0f77aa81/ [204] - 0.050s
+INFO 2026-05-04 04:37:45,445 middleware 7762 135640647722688 Request: DELETE /api/classes/assignments/486630b9-b79c-475e-968c-4dbf2d829d83/ from 127.0.0.1
+INFO 2026-05-04 04:37:45,491 middleware 7762 135640647722688 Response: DELETE /api/classes/assignments/486630b9-b79c-475e-968c-4dbf2d829d83/ [204] - 0.046s
+INFO 2026-05-04 04:37:48,348 middleware 7762 135640647722688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:37:48,380 middleware 7762 135640647722688 Response: GET /api/classes/ [200] - 0.032s
+INFO 2026-05-04 04:37:48,383 middleware 7762 135640553346752 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:37:48,419 middleware 7762 135640553346752 Response: GET /api/classes/ [200] - 0.036s
+INFO 2026-05-04 04:37:53,270 middleware 7762 135640553346752 Request: DELETE /api/classes/08Y025/ from 127.0.0.1
+INFO 2026-05-04 04:37:53,302 middleware 7762 135640553346752 Response: DELETE /api/classes/08Y025/ [204] - 0.032s
+INFO 2026-05-04 04:38:16,318 middleware 7762 135640553346752 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:38:16,349 middleware 7762 135640553346752 Response: GET /api/classes/ [200] - 0.032s
+INFO 2026-05-04 04:38:16,352 middleware 7762 135640647722688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:38:16,383 middleware 7762 135640647722688 Response: GET /api/classes/ [200] - 0.031s
+INFO 2026-05-04 04:38:33,187 middleware 7762 135640647722688 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:38:33,215 middleware 7762 135640647722688 Response: POST /api/classes/ [201] - 0.028s
+INFO 2026-05-04 04:38:33,226 middleware 7762 135640647722688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:38:33,249 middleware 7762 135640647722688 Response: GET /api/classes/ [200] - 0.023s
+INFO 2026-05-04 04:38:45,190 middleware 7762 135640647722688 Request: GET /api/classes/Q5KUG8/ from 127.0.0.1
+INFO 2026-05-04 04:38:45,229 middleware 7762 135640647722688 Response: GET /api/classes/Q5KUG8/ [200] - 0.039s
+INFO 2026-05-04 04:38:45,337 middleware 7762 135640647722688 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 04:38:45,344 middleware 7762 135640553346752 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:38:45,370 middleware 7762 135640647722688 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.033s
+INFO 2026-05-04 04:38:45,374 middleware 7762 135640553346752 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.029s
+INFO 2026-05-04 04:38:52,426 middleware 7762 135640553346752 Request: GET /api/classes/Q5KUG8/ from 127.0.0.1
+INFO 2026-05-04 04:38:52,450 middleware 7762 135640553346752 Response: GET /api/classes/Q5KUG8/ [200] - 0.025s
+INFO 2026-05-04 04:38:55,674 middleware 7762 135640553346752 Request: PATCH /api/classes/Q5KUG8/ from 127.0.0.1
+INFO 2026-05-04 04:38:55,705 middleware 7762 135640553346752 Response: PATCH /api/classes/Q5KUG8/ [200] - 0.032s
+INFO 2026-05-04 04:38:55,714 middleware 7762 135640553346752 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:38:55,745 middleware 7762 135640553346752 Response: GET /api/classes/ [200] - 0.030s
+INFO 2026-05-04 04:39:00,367 middleware 7762 135640543905472 Request: POST /api/classes/Q5KUG8/enroll/ from 127.0.0.1
+INFO 2026-05-04 04:39:00,403 middleware 7762 135640543905472 Response: POST /api/classes/Q5KUG8/enroll/ [200] - 0.036s
+INFO 2026-05-04 04:39:04,090 middleware 7762 135640535512768 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 04:39:04,119 middleware 7762 135640535512768 Response: GET /api/classes/enrolled/ [200] - 0.029s
+INFO 2026-05-04 04:39:04,162 middleware 7762 135640543905472 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 04:39:04,190 middleware 7762 135640543905472 Response: GET /api/classes/enrolled/ [200] - 0.028s
+INFO 2026-05-04 04:39:05,680 middleware 7762 135640543905472 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:39:05,705 middleware 7762 135640543905472 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.025s
+INFO 2026-05-04 04:39:05,749 middleware 7762 135640535512768 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:39:05,779 middleware 7762 135640535512768 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.030s
+INFO 2026-05-04 04:39:13,776 middleware 7762 135640553346752 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:39:13,817 middleware 7762 135640553346752 Response: GET /api/classes/ [200] - 0.041s
+INFO 2026-05-04 04:39:13,826 middleware 7762 135640647722688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:39:13,865 middleware 7762 135640647722688 Response: GET /api/classes/ [200] - 0.039s
+INFO 2026-05-04 04:39:15,843 middleware 7762 135640647722688 Request: GET /api/classes/Q5KUG8/ from 127.0.0.1
+INFO 2026-05-04 04:39:15,863 middleware 7762 135640647722688 Response: GET /api/classes/Q5KUG8/ [200] - 0.021s
+INFO 2026-05-04 04:39:15,889 middleware 7762 135640647722688 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 04:39:15,890 middleware 7762 135640553346752 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:39:15,930 middleware 7762 135640647722688 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.041s
+INFO 2026-05-04 04:39:15,931 middleware 7762 135640553346752 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.041s
+INFO 2026-05-04 04:39:34,809 middleware 7762 135640647722688 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:39:34,810 middleware 7762 135640553346752 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-04 04:39:34,844 exceptions 7762 135640553346752 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 109, in assignment
+    class_obj = self.get_object()
+                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-04 04:39:34,850 middleware 7762 135640647722688 Response: GET /api/classes/ [200] - 0.041s
+INFO 2026-05-04 04:39:34,862 middleware 7762 135640553346752 Response: GET /api/classes/08Y025/assignment/ [404] - 0.052s
+WARNING 2026-05-04 04:39:34,865 log 7762 135640553346752 Not Found: /api/classes/08Y025/assignment/
+WARNING 2026-05-04 04:39:34,867 basehttp 7762 135640553346752 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 404 62
+INFO 2026-05-04 04:39:34,870 middleware 7762 135640570132160 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:39:34,885 middleware 7762 135640647722688 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-04 04:39:34,921 exceptions 7762 135640647722688 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 109, in assignment
+    class_obj = self.get_object()
+                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-04 04:39:34,924 middleware 7762 135640647722688 Response: GET /api/classes/08Y025/assignment/ [404] - 0.039s
+WARNING 2026-05-04 04:39:34,925 log 7762 135640647722688 Not Found: /api/classes/08Y025/assignment/
+WARNING 2026-05-04 04:39:34,928 basehttp 7762 135640647722688 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 404 62
+INFO 2026-05-04 04:39:34,947 middleware 7762 135640570132160 Response: GET /api/classes/ [200] - 0.078s
+INFO 2026-05-04 04:39:34,968 middleware 7762 135640570132160 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-04 04:39:35,017 exceptions 7762 135640570132160 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 109, in assignment
+    class_obj = self.get_object()
+                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-04 04:39:35,019 middleware 7762 135640570132160 Response: GET /api/classes/08Y025/assignment/ [404] - 0.051s
+WARNING 2026-05-04 04:39:35,020 log 7762 135640570132160 Not Found: /api/classes/08Y025/assignment/
+WARNING 2026-05-04 04:39:35,021 basehttp 7762 135640570132160 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 404 62
+INFO 2026-05-04 04:39:35,062 middleware 7762 135640647722688 Request: GET /api/classes/08Y025/assignment/ from 127.0.0.1
+ERROR 2026-05-04 04:39:35,094 exceptions 7762 135640647722688 Exception occurred: No Class matches the given query.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 85, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 647, in get
+    raise self.model.DoesNotExist(
+apps.classes.models.Class.DoesNotExist: Class matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/classes/views.py", line 109, in assignment
+    class_obj = self.get_object()
+                ^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 96, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/shortcuts.py", line 87, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No Class matches the given query.
+INFO 2026-05-04 04:39:35,095 middleware 7762 135640647722688 Response: GET /api/classes/08Y025/assignment/ [404] - 0.033s
+WARNING 2026-05-04 04:39:35,096 log 7762 135640647722688 Not Found: /api/classes/08Y025/assignment/
+WARNING 2026-05-04 04:39:35,097 basehttp 7762 135640647722688 "GET /api/classes/08Y025/assignment/ HTTP/1.1" 404 62
+INFO 2026-05-04 04:39:38,721 middleware 7762 135640647722688 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:39:38,745 middleware 7762 135640647722688 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.025s
+INFO 2026-05-04 04:39:59,789 middleware 7762 135640647722688 Request: POST /api/classes/Q5KUG8/assignments/ from 127.0.0.1
+INFO 2026-05-04 04:39:59,829 middleware 7762 135640647722688 Response: POST /api/classes/Q5KUG8/assignments/ [201] - 0.040s
+INFO 2026-05-04 04:40:03,713 middleware 7762 135640647722688 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:40:03,755 middleware 7762 135640647722688 Response: GET /api/submissions/assignment/ [200] - 0.042s
+INFO 2026-05-04 04:40:03,825 middleware 7762 135640570132160 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 04:40:03,872 middleware 7762 135640647722688 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 04:40:03,987 middleware 7762 135640570132160 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.161s
+INFO 2026-05-04 04:40:04,019 middleware 7762 135640647722688 Response: GET /api/results/ [200] - 0.147s
+INFO 2026-05-04 04:40:14,516 middleware 7762 135640535512768 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 04:40:14,554 middleware 7762 135640535512768 Response: GET /api/classes/enrolled/ [200] - 0.038s
+INFO 2026-05-04 04:40:14,558 middleware 7762 135640543905472 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 04:40:14,590 middleware 7762 135640543905472 Response: GET /api/classes/enrolled/ [200] - 0.032s
+INFO 2026-05-04 04:40:16,479 middleware 7762 135640543905472 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:40:16,523 middleware 7762 135640543905472 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.044s
+INFO 2026-05-04 04:40:16,526 middleware 7762 135640535512768 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:40:16,561 middleware 7762 135640535512768 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.035s
+INFO 2026-05-04 04:40:42,203 middleware 7762 135640535512768 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-04 04:40:42,532 middleware 7762 135640535512768 Response: POST /api/submissions/ [201] - 0.329s
+INFO 2026-05-04 04:40:42,579 tasks 6721 135939087974528 📄 Extracting paragraphs from submission da81056d-1ec9-4d24-b2d5-3c66c8af2646
+INFO 2026-05-04 04:40:47,612 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:40:47,655 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.043s
+INFO 2026-05-04 04:40:50,585 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:40:50,615 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.030s
+INFO 2026-05-04 04:40:51,479 middleware 7762 135640647722688 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:40:51,550 middleware 7762 135640647722688 Response: GET /api/submissions/assignment/ [200] - 0.071s
+INFO 2026-05-04 04:40:51,593 middleware 7762 135640647722688 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 04:40:51,616 middleware 7762 135640570132160 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 04:40:51,718 middleware 7762 135640647722688 Response: GET /api/results/ [200] - 0.124s
+INFO 2026-05-04 04:40:51,739 middleware 7762 135640570132160 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.123s
+INFO 2026-05-04 04:40:53,585 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:40:53,619 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.033s
+INFO 2026-05-04 04:40:56,593 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:40:56,623 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.029s
+INFO 2026-05-04 04:40:59,585 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:40:59,627 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.041s
+INFO 2026-05-04 04:41:02,585 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:41:02,613 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.029s
+INFO 2026-05-04 04:41:05,587 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:41:05,651 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.063s
+INFO 2026-05-04 04:41:08,585 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:41:08,616 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.031s
+INFO 2026-05-04 04:41:11,586 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:41:11,630 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.045s
+INFO 2026-05-04 04:41:14,588 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:41:14,626 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.038s
+INFO 2026-05-04 04:41:17,589 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:41:17,725 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.136s
+INFO 2026-05-04 04:41:19,046 tasks 6721 135939087974528 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-04 04:41:19,088 tasks 6721 135939087974528 ✅ Submission da81056d-1ec9-4d24-b2d5-3c66c8af2646 completed successfully
+INFO 2026-05-04 04:41:20,587 middleware 7762 135640535512768 Request: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ from 127.0.0.1
+INFO 2026-05-04 04:41:20,613 middleware 7762 135640535512768 Response: GET /api/submissions/da81056d-1ec9-4d24-b2d5-3c66c8af2646/status/ [200] - 0.026s
+INFO 2026-05-04 04:41:29,072 middleware 7762 135640570132160 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:41:29,077 middleware 7762 135640647722688 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:41:29,109 middleware 7762 135640570132160 Response: GET /api/classes/ [200] - 0.037s
+INFO 2026-05-04 04:41:29,114 middleware 7762 135640553346752 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 04:41:29,130 middleware 7762 135640647722688 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.052s
+INFO 2026-05-04 04:41:29,134 middleware 7762 135640570132160 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:41:29,154 middleware 7762 135640553346752 Response: GET /api/classes/ [200] - 0.041s
+INFO 2026-05-04 04:41:29,185 middleware 7762 135640570132160 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.052s
+INFO 2026-05-04 04:41:29,229 middleware 7762 135640553346752 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:41:29,267 middleware 7762 135640553346752 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.038s
+INFO 2026-05-04 04:41:29,269 middleware 7762 135640570132160 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:41:29,307 middleware 7762 135640570132160 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.038s
+INFO 2026-05-04 04:41:32,402 middleware 7762 135640570132160 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 04:41:32,446 middleware 7762 135640570132160 Response: GET /api/submissions/assignment/ [200] - 0.045s
+INFO 2026-05-04 04:41:32,478 middleware 7762 135640570132160 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 04:41:32,488 middleware 7762 135640553346752 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 04:41:32,595 middleware 7762 135640570132160 Response: GET /api/results/ [200] - 0.117s
+INFO 2026-05-04 04:41:32,596 middleware 7762 135640553346752 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.107s
+INFO 2026-05-04 04:41:50,604 middleware 7762 135640521000640 Request: GET /media/reports/2026/05/04/report_da81056d-1ec9-4d24-b2d5-3c66c8af2646.pdf from 127.0.0.1
+INFO 2026-05-04 04:41:50,618 middleware 7762 135640521000640 Response: GET /media/reports/2026/05/04/report_da81056d-1ec9-4d24-b2d5-3c66c8af2646.pdf [200] - 0.014s
+INFO 2026-05-04 04:41:50,972 middleware 7762 135640521000640 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-04 04:41:51,019 middleware 7762 135640521000640 Response: GET /favicon.ico [404] - 0.047s
+WARNING 2026-05-04 04:41:51,020 log 7762 135640521000640 Not Found: /favicon.ico
+WARNING 2026-05-04 04:41:51,022 basehttp 7762 135640521000640 "GET /favicon.ico HTTP/1.1" 404 3861
