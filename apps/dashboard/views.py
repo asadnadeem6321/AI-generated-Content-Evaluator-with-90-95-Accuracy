@@ -4,6 +4,7 @@ from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django.db.models import Count, Avg, Q
+from apps.authentication.models import User
 from apps.authentication.permissions import IsTeacher
 from apps.classes.models import Class, Assignment
 from apps.submissions.models import Submission
@@ -155,3 +156,33 @@ class DashboardViewSet(viewsets.ModelViewSet):
         submission.delete()
         
         return Response({'message': 'Submission deleted'})
+    
+
+
+    @action(detail=False, methods=['get'])
+    def teacher_overview(self, request):
+        """Get teacher's overall statistics"""
+        teacher = request.user
+        
+        # Total classes created
+        total_classes = Class.objects.filter(teacher=teacher).count()
+        
+        # Total students (fix: use 'enrollment' not 'enrollments')
+        total_students = User.objects.filter(
+            enrollment__class_obj__teacher=teacher
+        ).distinct().count()
+        
+        # Total assignments created
+        total_assignments = Assignment.objects.filter(created_by=teacher).count()
+        
+        # Total submissions received
+        total_submissions = Submission.objects.filter(
+            assignment__class_obj__teacher=teacher
+        ).count()
+        
+        return Response({
+            'total_classes': total_classes,
+            'total_students': total_students,
+            'total_assignments': total_assignments,
+            'total_submissions': total_submissions
+        })

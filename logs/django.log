@@ -7205,3 +7205,107 @@ INFO 2026-05-04 04:41:50,972 middleware 7762 135640521000640 Request: GET /favic
 INFO 2026-05-04 04:41:51,019 middleware 7762 135640521000640 Response: GET /favicon.ico [404] - 0.047s
 WARNING 2026-05-04 04:41:51,020 log 7762 135640521000640 Not Found: /favicon.ico
 WARNING 2026-05-04 04:41:51,022 basehttp 7762 135640521000640 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-04 04:55:04,428 middleware 11436 139125187405504 Request: GET / from 127.0.0.1
+INFO 2026-05-04 04:55:04,473 middleware 11436 139125187405504 Response: GET / [404] - 0.045s
+WARNING 2026-05-04 04:55:04,475 log 11436 139125187405504 Not Found: /
+WARNING 2026-05-04 04:55:04,477 basehttp 11436 139125187405504 "GET / HTTP/1.1" 404 3810
+INFO 2026-05-04 04:55:07,321 middleware 11436 139125187405504 Request: GET /admin/ from 127.0.0.1
+INFO 2026-05-04 04:55:07,537 middleware 11436 139125187405504 Response: GET /admin/ [200] - 0.216s
+INFO 2026-05-04 04:55:09,278 middleware 11436 139125187405504 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-04 04:55:09,345 middleware 11436 139125187405504 Response: GET /admin/authentication/user/ [200] - 0.067s
+INFO 2026-05-04 04:55:09,478 middleware 11436 139125187405504 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-04 04:55:09,516 middleware 11436 139125187405504 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-04 04:55:11,382 middleware 11436 139125187405504 Request: GET /admin/authentication/user/12/change/ from 127.0.0.1
+INFO 2026-05-04 04:55:11,686 middleware 11436 139125187405504 Response: GET /admin/authentication/user/12/change/ [200] - 0.304s
+INFO 2026-05-04 04:55:11,822 middleware 11436 139125187405504 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-04 04:55:11,860 middleware 11436 139125187405504 Response: GET /admin/jsi18n/ [200] - 0.038s
+INFO 2026-05-04 04:55:35,790 middleware 11436 139125167474368 Request: POST /api/auth/guest_login/ from 127.0.0.1
+INFO 2026-05-04 04:55:36,687 middleware 11436 139125167474368 Response: POST /api/auth/guest_login/ [200] - 0.897s
+INFO 2026-05-04 04:56:52,195 middleware 11436 139125179012800 Request: POST /api/dashboard/teacher_overview/ from 127.0.0.1
+ERROR 2026-05-04 04:56:52,217 exceptions 11436 139125179012800 Exception occurred: Method "POST" not allowed.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 167, in http_method_not_allowed
+    raise exceptions.MethodNotAllowed(request.method)
+rest_framework.exceptions.MethodNotAllowed: Method "POST" not allowed.
+INFO 2026-05-04 04:56:52,219 middleware 11436 139125179012800 Response: POST /api/dashboard/teacher_overview/ [405] - 0.024s
+WARNING 2026-05-04 04:56:52,219 log 11436 139125179012800 Method Not Allowed: /api/dashboard/teacher_overview/
+WARNING 2026-05-04 04:56:52,220 basehttp 11436 139125179012800 "POST /api/dashboard/teacher_overview/ HTTP/1.1" 405 98
+INFO 2026-05-04 04:56:57,729 middleware 11436 139125179012800 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+ERROR 2026-05-04 04:56:57,748 exceptions 11436 139125179012800 Exception occurred: Cannot resolve keyword 'enrollments' into field. Choices are: assignments_created, classes_enrolled, classes_teaching, created_at, date_joined, email, enrollment, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, otp_verifications, outstandingtoken, password, paused_submissions, role, submissions, updated_at, user_permissions, username
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 175, in teacher_overview
+    total_students = User.objects.filter(
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'enrollments' into field. Choices are: assignments_created, classes_enrolled, classes_teaching, created_at, date_joined, email, enrollment, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, otp_verifications, outstandingtoken, password, paused_submissions, role, submissions, updated_at, user_permissions, username
+INFO 2026-05-04 04:56:57,754 middleware 11436 139125179012800 Response: GET /api/dashboard/teacher_overview/ [500] - 0.025s
+ERROR 2026-05-04 04:56:57,754 log 11436 139125179012800 Internal Server Error: /api/dashboard/teacher_overview/
+ERROR 2026-05-04 04:56:57,755 basehttp 11436 139125179012800 "GET /api/dashboard/teacher_overview/ HTTP/1.1" 500 442
+INFO 2026-05-04 04:57:02,847 middleware 11436 139125179012800 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+ERROR 2026-05-04 04:57:02,867 exceptions 11436 139125179012800 Exception occurred: Cannot resolve keyword 'enrollments' into field. Choices are: assignments_created, classes_enrolled, classes_teaching, created_at, date_joined, email, enrollment, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, otp_verifications, outstandingtoken, password, paused_submissions, role, submissions, updated_at, user_permissions, username
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 175, in teacher_overview
+    total_students = User.objects.filter(
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'enrollments' into field. Choices are: assignments_created, classes_enrolled, classes_teaching, created_at, date_joined, email, enrollment, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, otp_verifications, outstandingtoken, password, paused_submissions, role, submissions, updated_at, user_permissions, username
+INFO 2026-05-04 04:57:02,868 middleware 11436 139125179012800 Response: GET /api/dashboard/teacher_overview/ [500] - 0.021s
+ERROR 2026-05-04 04:57:02,869 log 11436 139125179012800 Internal Server Error: /api/dashboard/teacher_overview/
+ERROR 2026-05-04 04:57:02,869 basehttp 11436 139125179012800 "GET /api/dashboard/teacher_overview/ HTTP/1.1" 500 442
+INFO 2026-05-04 04:58:25,609 middleware 12362 136423619421888 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-04 04:58:25,657 middleware 12362 136423619421888 Response: GET /api/dashboard/teacher_overview/ [200] - 0.047s
