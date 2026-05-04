@@ -1,11 +1,13 @@
 from django.shortcuts import render
 from rest_framework import viewsets, status
+import datetime
+from django.utils import timezone
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from django.db.models import Count, Avg, Q
 from apps.authentication.models import User
-from apps.authentication.permissions import IsTeacher
+from apps.authentication.permissions import IsStudent, IsTeacher
 from apps.classes.models import Class, Assignment
 from apps.submissions.models import Submission
 from apps.results.models import Result
@@ -19,7 +21,7 @@ from .serializers import (
 
 class DashboardViewSet(viewsets.ModelViewSet):
     """Teacher Dashboard statics"""
-    permission_classes = [IsTeacher]
+    permission_classes = [IsAuthenticated]
 
     @action(detail=False, methods=['get'])
     def class_statistics(self, request):
@@ -185,4 +187,94 @@ class DashboardViewSet(viewsets.ModelViewSet):
             'total_students': total_students,
             'total_assignments': total_assignments,
             'total_submissions': total_submissions
+        })
+
+    @action(detail=False, methods=['get'])
+    def teacher_overview(self, request):
+        """Get teacher's overall statistics"""
+        teacher = request.user
+        
+        # Total classes created
+        total_classes = Class.objects.filter(teacher=teacher).count()
+        
+        # Total students (fix: use 'enrollment' not 'enrollments')
+        total_students = User.objects.filter(
+            enrollment__class_obj__teacher=teacher
+        ).distinct().count()
+        
+        # Total assignments created
+        total_assignments = Assignment.objects.filter(created_by=teacher).count()
+        
+        # Total submissions received
+        total_submissions = Submission.objects.filter(
+            assignment__class_obj__teacher=teacher
+        ).count()
+        
+        return Response({
+            'total_classes': total_classes,
+            'total_students': total_students,
+            'total_assignments': total_assignments,
+            'total_submissions': total_submissions
+        })
+
+
+
+
+    @action(detail=False, methods=['get'])
+    def student_overview(self, request):
+        """Get student overall statistics"""
+        
+        student = request.user
+
+        # ✅ Classes student is enrolled in
+        joined_classes = Class.objects.filter(
+            enrollement__student=student
+        ).distinct()
+
+        total_classes = joined_classes.count()
+
+        # ✅ All assignments from those classes
+        assignments = Assignment.objects.filter(
+            class_obj__in=joined_classes
+        )
+
+        total_assignments = assignments.count()
+
+        # ✅ Submissions by student (FIXED: user not student)
+        submissions = Submission.objects.filter(user=student)
+
+        total_submissions = submissions.count()
+
+        # ✅ Completed reports (results ready)
+        completed_reports = submissions.filter(status='completed').count()
+
+        # ✅ Pending assignments (not submitted yet)
+        pending_assignments = assignments.exclude(
+            id__in=submissions.values_list('assignment_id', flat=True)
+        ).count()
+
+        # ✅ Recent assignments (upcoming deadlines)
+        recent_assignments = assignments.filter(
+            deadline__gte=timezone.now()
+        ).exclude(
+            id__in=submissions.values_list('assignment_id', flat=True)
+        ).order_by('deadline')[:5]
+
+        recent_data = [
+            {
+                "id": a.id,
+                "title": a.title,
+                "class": a.class_obj.name,
+                "deadline": a.deadline,
+            }
+            for a in recent_assignments
+        ]
+
+        return Response({
+            "total_classes": total_classes,
+            "total_assignments": total_assignments,
+            "total_submissions": total_submissions,
+            "completed_reports": completed_reports,
+            "pending_assignments": pending_assignments,
+            "recent_assignments": recent_data
         })

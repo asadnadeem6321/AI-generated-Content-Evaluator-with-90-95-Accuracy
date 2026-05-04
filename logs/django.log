@@ -7309,3 +7309,785 @@ ERROR 2026-05-04 04:57:02,869 log 11436 139125179012800 Internal Server Error: /
 ERROR 2026-05-04 04:57:02,869 basehttp 11436 139125179012800 "GET /api/dashboard/teacher_overview/ HTTP/1.1" 500 442
 INFO 2026-05-04 04:58:25,609 middleware 12362 136423619421888 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
 INFO 2026-05-04 04:58:25,657 middleware 12362 136423619421888 Response: GET /api/dashboard/teacher_overview/ [200] - 0.047s
+INFO 2026-05-04 05:06:33,814 middleware 12497 136795303962304 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:06:33,851 middleware 12497 136795303962304 Response: GET /api/classes/enrolled/ [200] - 0.036s
+INFO 2026-05-04 05:06:33,857 middleware 12497 136795295569600 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:06:33,880 middleware 12497 136795295569600 Response: GET /api/classes/enrolled/ [200] - 0.023s
+INFO 2026-05-04 05:07:08,390 middleware 12497 136795286128320 Request: POST /api/auth/guest_login/ from 127.0.0.1
+INFO 2026-05-04 05:07:09,125 middleware 12497 136795286128320 Response: POST /api/auth/guest_login/ [200] - 0.735s
+INFO 2026-05-04 05:12:38,955 middleware 15297 131918560487104 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-04 05:12:39,703 middleware 15297 131918560487104 Response: POST /api/auth/teacher_login/ [200] - 0.748s
+INFO 2026-05-04 05:12:55,350 middleware 15297 131918560487104 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:12:55,352 middleware 15297 131918551045824 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:12:55,403 middleware 15297 131918551045824 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.052s
+INFO 2026-05-04 05:12:55,417 middleware 15297 131918560487104 Response: GET /api/classes/ [200] - 0.067s
+INFO 2026-05-04 05:12:55,424 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:12:55,431 middleware 15297 131918551045824 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:12:55,500 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.076s
+INFO 2026-05-04 05:12:55,509 middleware 15297 131918551045824 Response: GET /api/classes/ [200] - 0.077s
+INFO 2026-05-04 05:12:55,560 middleware 15297 131918551045824 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:12:55,611 middleware 15297 131918551045824 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.051s
+INFO 2026-05-04 05:12:55,655 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:12:55,692 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.038s
+INFO 2026-05-04 05:13:51,657 middleware 15297 131918542653120 Request: POST /api/classes/Q5KUG8/assignments/ from 127.0.0.1
+INFO 2026-05-04 05:13:51,703 middleware 15297 131918542653120 Response: POST /api/classes/Q5KUG8/assignments/ [201] - 0.046s
+INFO 2026-05-04 05:13:54,729 middleware 15297 131918542653120 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:13:54,773 middleware 15297 131918542653120 Response: GET /api/submissions/assignment/ [200] - 0.045s
+INFO 2026-05-04 05:13:54,849 middleware 15297 131918542653120 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:13:54,871 middleware 15297 131918551045824 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:13:54,943 middleware 15297 131918551045824 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.072s
+INFO 2026-05-04 05:13:54,981 middleware 15297 131918542653120 Response: GET /api/results/ [200] - 0.133s
+INFO 2026-05-04 05:14:13,128 middleware 15297 131918534260416 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:14:13,171 middleware 15297 131918534260416 Response: GET /api/classes/enrolled/ [200] - 0.044s
+INFO 2026-05-04 05:14:13,180 middleware 15297 131918525867712 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:14:13,236 middleware 15297 131918525867712 Response: GET /api/classes/enrolled/ [200] - 0.055s
+INFO 2026-05-04 05:14:15,497 middleware 15297 131918525867712 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:14:15,545 middleware 15297 131918525867712 Response: GET /api/classes/enrolled/ [200] - 0.048s
+INFO 2026-05-04 05:14:15,554 middleware 15297 131918534260416 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:14:15,620 middleware 15297 131918534260416 Response: GET /api/classes/enrolled/ [200] - 0.066s
+INFO 2026-05-04 05:14:17,243 middleware 15297 131918534260416 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:14:17,291 middleware 15297 131918534260416 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.048s
+INFO 2026-05-04 05:14:17,293 middleware 15297 131918525867712 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:14:17,341 middleware 15297 131918525867712 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.048s
+INFO 2026-05-04 05:14:50,054 middleware 15297 131918525867712 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-04 05:14:50,320 middleware 15297 131918525867712 Response: POST /api/submissions/ [201] - 0.266s
+INFO 2026-05-04 05:14:50,598 tasks 6721 135939087974528 📄 Extracting paragraphs from submission 4859f604-205e-4d61-9295-582d2a5a0c9d
+INFO 2026-05-04 05:14:55,333 middleware 15297 131918525867712 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:14:55,357 middleware 15297 131918525867712 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.023s
+INFO 2026-05-04 05:14:56,937 middleware 15297 131918542653120 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:14:56,948 middleware 15297 131918551045824 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:14:57,028 middleware 15297 131918542653120 Response: GET /api/classes/ [200] - 0.091s
+INFO 2026-05-04 05:14:57,049 middleware 15297 131918560487104 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:14:57,090 middleware 15297 131918551045824 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.142s
+INFO 2026-05-04 05:14:57,094 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:14:57,133 middleware 15297 131918560487104 Response: GET /api/classes/ [200] - 0.083s
+INFO 2026-05-04 05:14:57,188 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.094s
+INFO 2026-05-04 05:14:57,203 middleware 15297 131918560487104 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:14:57,273 middleware 15297 131918560487104 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.069s
+INFO 2026-05-04 05:14:57,280 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:14:57,360 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.080s
+INFO 2026-05-04 05:14:58,330 middleware 15297 131918525867712 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:14:58,365 middleware 15297 131918525867712 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.035s
+INFO 2026-05-04 05:15:00,160 middleware 15297 131918542653120 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:15:00,247 middleware 15297 131918542653120 Response: GET /api/submissions/assignment/ [200] - 0.087s
+INFO 2026-05-04 05:15:00,348 middleware 15297 131918542653120 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:15:00,350 middleware 15297 131918560487104 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:15:00,432 middleware 15297 131918560487104 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.082s
+INFO 2026-05-04 05:15:00,533 middleware 15297 131918542653120 Response: GET /api/results/ [200] - 0.185s
+INFO 2026-05-04 05:15:01,334 middleware 15297 131918525867712 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:15:01,379 middleware 15297 131918525867712 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.045s
+INFO 2026-05-04 05:15:04,332 middleware 15297 131918525867712 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:15:04,364 middleware 15297 131918525867712 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.032s
+INFO 2026-05-04 05:15:07,332 middleware 15297 131918525867712 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:15:07,365 middleware 15297 131918525867712 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.033s
+INFO 2026-05-04 05:15:10,332 middleware 15297 131918525867712 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:15:10,367 middleware 15297 131918525867712 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.035s
+INFO 2026-05-04 05:15:10,569 tasks 6721 135939087974528 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-04 05:15:10,644 tasks 6721 135939087974528 ✅ Submission 4859f604-205e-4d61-9295-582d2a5a0c9d completed successfully
+INFO 2026-05-04 05:15:13,335 middleware 15297 131918525867712 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:15:13,364 middleware 15297 131918525867712 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.029s
+INFO 2026-05-04 05:15:18,850 middleware 15297 131918175663808 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-04 05:15:18,880 middleware 15297 131918175663808 Response: GET /api/dashboard/teacher_overview/ [200] - 0.030s
+INFO 2026-05-04 05:15:45,094 middleware 15297 131918542653120 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:15:45,096 middleware 15297 131918560487104 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:15:45,142 middleware 15297 131918542653120 Response: GET /api/classes/ [200] - 0.048s
+INFO 2026-05-04 05:15:45,148 middleware 15297 131918551045824 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:15:45,190 middleware 15297 131918560487104 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.094s
+INFO 2026-05-04 05:15:45,203 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:15:45,227 middleware 15297 131918551045824 Response: GET /api/classes/ [200] - 0.079s
+INFO 2026-05-04 05:15:45,271 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.068s
+INFO 2026-05-04 05:15:45,282 middleware 15297 131918551045824 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:15:45,336 middleware 15297 131918551045824 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.054s
+INFO 2026-05-04 05:15:45,345 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:15:45,385 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.040s
+INFO 2026-05-04 05:15:46,446 middleware 15297 131918542653120 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:15:46,478 middleware 15297 131918542653120 Response: GET /api/classes/ [200] - 0.032s
+INFO 2026-05-04 05:15:46,481 middleware 15297 131918551045824 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:15:46,530 middleware 15297 131918551045824 Response: GET /api/classes/ [200] - 0.049s
+INFO 2026-05-04 05:15:58,621 middleware 15297 131918551045824 Request: POST /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:15:58,650 middleware 15297 131918551045824 Response: POST /api/classes/ [201] - 0.029s
+INFO 2026-05-04 05:15:58,660 middleware 15297 131918551045824 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:15:58,689 middleware 15297 131918551045824 Response: GET /api/classes/ [200] - 0.029s
+INFO 2026-05-04 05:16:02,699 middleware 15297 131918551045824 Request: GET /api/classes/FK2TDY/ from 127.0.0.1
+INFO 2026-05-04 05:16:02,724 middleware 15297 131918551045824 Response: GET /api/classes/FK2TDY/ [200] - 0.025s
+INFO 2026-05-04 05:16:02,799 middleware 15297 131918542653120 Request: GET /api/classes/FK2TDY/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:16:02,837 middleware 15297 131918551045824 Request: GET /api/classes/FK2TDY/students/ from 127.0.0.1
+INFO 2026-05-04 05:16:02,838 middleware 15297 131918542653120 Response: GET /api/classes/FK2TDY/assignment/ [200] - 0.038s
+INFO 2026-05-04 05:16:02,880 middleware 15297 131918551045824 Response: GET /api/classes/FK2TDY/students/ [200] - 0.043s
+INFO 2026-05-04 05:16:05,551 middleware 15297 131918551045824 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:16:05,555 middleware 15297 131918542653120 Request: GET /api/classes/FK2TDY/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:16:05,604 middleware 15297 131918542653120 Response: GET /api/classes/FK2TDY/assignment/ [200] - 0.048s
+INFO 2026-05-04 05:16:05,610 middleware 15297 131918560487104 Request: GET /api/classes/FK2TDY/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:16:05,646 middleware 15297 131918551045824 Response: GET /api/classes/ [200] - 0.096s
+INFO 2026-05-04 05:16:05,649 middleware 15297 131918542653120 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:16:05,672 middleware 15297 131918560487104 Response: GET /api/classes/FK2TDY/assignment/ [200] - 0.062s
+INFO 2026-05-04 05:16:05,703 middleware 15297 131918542653120 Response: GET /api/classes/ [200] - 0.055s
+INFO 2026-05-04 05:16:05,746 middleware 15297 131918542653120 Request: GET /api/classes/FK2TDY/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:16:05,782 middleware 15297 131918542653120 Response: GET /api/classes/FK2TDY/assignment/ [200] - 0.036s
+INFO 2026-05-04 05:16:05,826 middleware 15297 131918560487104 Request: GET /api/classes/FK2TDY/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:16:05,864 middleware 15297 131918560487104 Response: GET /api/classes/FK2TDY/assignment/ [200] - 0.037s
+INFO 2026-05-04 05:16:38,948 middleware 15297 131918560487104 Request: POST /api/classes/FK2TDY/assignments/ from 127.0.0.1
+INFO 2026-05-04 05:16:38,984 middleware 15297 131918560487104 Response: POST /api/classes/FK2TDY/assignments/ [201] - 0.036s
+INFO 2026-05-04 05:17:47,509 middleware 15297 131918167271104 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-04 05:17:47,539 middleware 15297 131918167271104 Response: GET /api/dashboard/teacher_overview/ [200] - 0.030s
+INFO 2026-05-04 05:20:02,809 middleware 15297 131918525867712 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:20:02,848 middleware 15297 131918525867712 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.039s
+INFO 2026-05-04 05:20:02,851 middleware 15297 131918534260416 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:20:02,900 middleware 15297 131918534260416 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.049s
+INFO 2026-05-04 05:20:07,692 middleware 15297 131918534260416 Request: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ from 127.0.0.1
+INFO 2026-05-04 05:20:07,722 middleware 15297 131918534260416 Response: GET /api/submissions/4859f604-205e-4d61-9295-582d2a5a0c9d/status/ [200] - 0.030s
+INFO 2026-05-04 05:20:11,935 middleware 15297 131918560487104 Request: DELETE /api/classes/assignments/a273a8e2-4b3a-4723-b660-4bd0b67f4c98/ from 127.0.0.1
+INFO 2026-05-04 05:20:11,978 middleware 15297 131918560487104 Response: DELETE /api/classes/assignments/a273a8e2-4b3a-4723-b660-4bd0b67f4c98/ [204] - 0.043s
+INFO 2026-05-04 05:20:15,039 middleware 15297 131918560487104 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:20:15,075 middleware 15297 131918560487104 Response: GET /api/classes/ [200] - 0.036s
+INFO 2026-05-04 05:20:15,083 middleware 15297 131918542653120 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:20:15,132 middleware 15297 131918542653120 Response: GET /api/classes/ [200] - 0.050s
+INFO 2026-05-04 05:20:18,697 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/ from 127.0.0.1
+INFO 2026-05-04 05:20:18,722 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/ [200] - 0.025s
+INFO 2026-05-04 05:20:18,758 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:20:18,763 middleware 15297 131918560487104 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:20:18,797 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.039s
+INFO 2026-05-04 05:20:18,822 middleware 15297 131918560487104 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.059s
+INFO 2026-05-04 05:20:24,084 middleware 15297 131918542653120 Request: DELETE /api/classes/assignments/0ec9c2d1-de84-454f-b2ef-1e7f99e0b9c0/ from 127.0.0.1
+INFO 2026-05-04 05:20:24,124 middleware 15297 131918542653120 Response: DELETE /api/classes/assignments/0ec9c2d1-de84-454f-b2ef-1e7f99e0b9c0/ [204] - 0.039s
+INFO 2026-05-04 05:20:26,063 middleware 15297 131918542653120 Request: DELETE /api/classes/assignments/ad2597eb-4b38-4e43-8b6f-91cde6df2b44/ from 127.0.0.1
+INFO 2026-05-04 05:20:26,096 middleware 15297 131918542653120 Response: DELETE /api/classes/assignments/ad2597eb-4b38-4e43-8b6f-91cde6df2b44/ [204] - 0.033s
+INFO 2026-05-04 05:20:31,593 middleware 15297 131918158878400 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-04 05:20:31,620 middleware 15297 131918158878400 Response: GET /api/dashboard/teacher_overview/ [200] - 0.026s
+INFO 2026-05-04 05:20:50,937 middleware 15297 131918542653120 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:20:50,939 middleware 15297 131918560487104 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:20:50,979 middleware 15297 131918560487104 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.040s
+INFO 2026-05-04 05:20:50,980 middleware 15297 131918542653120 Response: GET /api/classes/ [200] - 0.043s
+INFO 2026-05-04 05:20:50,992 middleware 15297 131918551045824 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:20:50,996 middleware 15297 131918150485696 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:20:51,062 middleware 15297 131918551045824 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.069s
+INFO 2026-05-04 05:20:51,078 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:20:51,085 middleware 15297 131918150485696 Response: GET /api/classes/ [200] - 0.089s
+INFO 2026-05-04 05:20:51,135 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.057s
+INFO 2026-05-04 05:20:51,143 middleware 15297 131918150485696 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:20:51,187 middleware 15297 131918150485696 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.044s
+INFO 2026-05-04 05:21:08,950 middleware 15297 131918150485696 Request: POST /api/classes/Q5KUG8/assignments/ from 127.0.0.1
+INFO 2026-05-04 05:21:08,990 middleware 15297 131918150485696 Response: POST /api/classes/Q5KUG8/assignments/ [201] - 0.040s
+INFO 2026-05-04 05:21:13,206 middleware 15297 131918534260416 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:21:13,234 middleware 15297 131918534260416 Response: GET /api/classes/enrolled/ [200] - 0.028s
+INFO 2026-05-04 05:21:13,238 middleware 15297 131918525867712 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:21:13,273 middleware 15297 131918525867712 Response: GET /api/classes/enrolled/ [200] - 0.035s
+INFO 2026-05-04 05:21:14,599 middleware 15297 131918525867712 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:21:14,635 middleware 15297 131918525867712 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.036s
+INFO 2026-05-04 05:21:14,638 middleware 15297 131918534260416 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:21:14,675 middleware 15297 131918534260416 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.037s
+INFO 2026-05-04 05:21:24,642 middleware 15297 131918534260416 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-04 05:21:24,707 middleware 15297 131918534260416 Response: POST /api/submissions/ [201] - 0.065s
+INFO 2026-05-04 05:21:24,740 tasks 6721 135939087974528 📄 Extracting paragraphs from submission 7d81cd04-48e0-45eb-a66b-50f5f554cbf6
+INFO 2026-05-04 05:21:29,724 middleware 15297 131918534260416 Request: GET /api/submissions/7d81cd04-48e0-45eb-a66b-50f5f554cbf6/status/ from 127.0.0.1
+INFO 2026-05-04 05:21:29,758 middleware 15297 131918534260416 Response: GET /api/submissions/7d81cd04-48e0-45eb-a66b-50f5f554cbf6/status/ [200] - 0.034s
+INFO 2026-05-04 05:21:32,722 middleware 15297 131918534260416 Request: GET /api/submissions/7d81cd04-48e0-45eb-a66b-50f5f554cbf6/status/ from 127.0.0.1
+INFO 2026-05-04 05:21:32,758 middleware 15297 131918534260416 Response: GET /api/submissions/7d81cd04-48e0-45eb-a66b-50f5f554cbf6/status/ [200] - 0.036s
+INFO 2026-05-04 05:21:34,702 tasks 6721 135939087974528 ✅ Received analysis for 3 paragraphs
+INFO 2026-05-04 05:21:34,742 tasks 6721 135939087974528 ✅ Submission 7d81cd04-48e0-45eb-a66b-50f5f554cbf6 completed successfully
+INFO 2026-05-04 05:21:34,776 middleware 15297 131918150485696 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:21:34,830 middleware 15297 131918150485696 Response: GET /api/submissions/assignment/ [200] - 0.054s
+INFO 2026-05-04 05:21:34,892 middleware 15297 131918150485696 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:21:34,894 middleware 15297 131918542653120 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:21:34,963 middleware 15297 131918150485696 Response: GET /api/results/ [200] - 0.071s
+INFO 2026-05-04 05:21:34,978 middleware 15297 131918542653120 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.084s
+INFO 2026-05-04 05:21:35,718 middleware 15297 131918534260416 Request: GET /api/submissions/7d81cd04-48e0-45eb-a66b-50f5f554cbf6/status/ from 127.0.0.1
+INFO 2026-05-04 05:21:35,743 middleware 15297 131918534260416 Response: GET /api/submissions/7d81cd04-48e0-45eb-a66b-50f5f554cbf6/status/ [200] - 0.025s
+INFO 2026-05-04 05:21:38,557 middleware 15297 131918142092992 Request: GET /media/reports/2026/05/04/report_7d81cd04-48e0-45eb-a66b-50f5f554cbf6.pdf from 127.0.0.1
+INFO 2026-05-04 05:21:38,590 middleware 15297 131918142092992 Response: GET /media/reports/2026/05/04/report_7d81cd04-48e0-45eb-a66b-50f5f554cbf6.pdf [200] - 0.033s
+INFO 2026-05-04 05:21:59,408 middleware 15297 131918125307584 Request: GET /api/result/ from 127.0.0.1
+INFO 2026-05-04 05:21:59,427 middleware 15297 131918125307584 Response: GET /api/result/ [404] - 0.018s
+WARNING 2026-05-04 05:21:59,427 log 15297 131918125307584 Not Found: /api/result/
+WARNING 2026-05-04 05:21:59,428 basehttp 15297 131918125307584 "GET /api/result/ HTTP/1.1" 404 3861
+INFO 2026-05-04 05:22:02,648 middleware 15297 131918125307584 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:22:02,681 middleware 15297 131918125307584 Response: GET /api/results/ [200] - 0.033s
+INFO 2026-05-04 05:22:24,352 middleware 15297 131918125307584 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:22:24,376 middleware 15297 131918125307584 Response: GET /api/results/ [200] - 0.025s
+INFO 2026-05-04 05:33:27,357 middleware 17574 124237979313856 Request: DELETE /api/classes/assignments/18dad91e-bd4e-46bc-80d0-8ccd942bc4c8/ from 127.0.0.1
+INFO 2026-05-04 05:33:27,419 middleware 17574 124237979313856 Response: DELETE /api/classes/assignments/18dad91e-bd4e-46bc-80d0-8ccd942bc4c8/ [204] - 0.061s
+INFO 2026-05-04 05:33:42,774 middleware 17574 124237979313856 Request: POST /api/classes/Q5KUG8/assignments/ from 127.0.0.1
+INFO 2026-05-04 05:33:42,820 middleware 17574 124237979313856 Response: POST /api/classes/Q5KUG8/assignments/ [201] - 0.046s
+INFO 2026-05-04 05:33:46,163 middleware 17574 124237901723328 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:33:46,199 middleware 17574 124237901723328 Response: GET /api/classes/enrolled/ [200] - 0.036s
+INFO 2026-05-04 05:33:46,202 middleware 17574 124237893330624 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:33:46,238 middleware 17574 124237893330624 Response: GET /api/classes/enrolled/ [200] - 0.035s
+INFO 2026-05-04 05:33:47,261 middleware 17574 124237893330624 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:33:47,304 middleware 17574 124237893330624 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.043s
+INFO 2026-05-04 05:33:47,307 middleware 17574 124237901723328 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:33:47,353 middleware 17574 124237901723328 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.046s
+INFO 2026-05-04 05:34:11,822 middleware 17574 124237901723328 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-04 05:34:12,111 middleware 17574 124237901723328 Response: POST /api/submissions/ [201] - 0.289s
+INFO 2026-05-04 05:34:12,148 tasks 6721 135939087974528 📄 Extracting paragraphs from submission b687598c-d26f-4746-a5ce-1968b55d5637
+INFO 2026-05-04 05:34:16,384 middleware 17574 124237979313856 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:16,432 middleware 17574 124237979313856 Response: GET /api/classes/ [200] - 0.048s
+INFO 2026-05-04 05:34:16,449 middleware 17574 124237877769920 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:16,493 middleware 17574 124237877769920 Response: GET /api/classes/ [200] - 0.044s
+INFO 2026-05-04 05:34:17,039 middleware 17574 124237877769920 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:17,042 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:17,081 middleware 17574 124237877769920 Response: GET /api/classes/ [200] - 0.042s
+INFO 2026-05-04 05:34:17,101 middleware 17574 124237869377216 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:17,108 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.066s
+INFO 2026-05-04 05:34:17,115 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:17,159 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:17,220 middleware 17574 124237869377216 Response: GET /api/classes/ [200] - 0.119s
+INFO 2026-05-04 05:34:17,239 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.080s
+INFO 2026-05-04 05:34:17,240 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.125s
+INFO 2026-05-04 05:34:17,291 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:17,363 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.072s
+INFO 2026-05-04 05:34:17,388 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:17,460 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.072s
+INFO 2026-05-04 05:34:19,548 middleware 17574 124237869377216 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:19,601 middleware 17574 124237869377216 Response: GET /api/submissions/assignment/ [200] - 0.053s
+INFO 2026-05-04 05:34:19,716 middleware 17574 124237869377216 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:34:19,727 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:34:19,811 middleware 17574 124237869377216 Response: GET /api/results/ [200] - 0.094s
+INFO 2026-05-04 05:34:19,820 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.093s
+INFO 2026-05-04 05:34:20,168 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:20,245 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.077s
+INFO 2026-05-04 05:34:23,129 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:23,180 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.050s
+INFO 2026-05-04 05:34:26,129 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:26,154 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.024s
+INFO 2026-05-04 05:34:29,128 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:29,177 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.050s
+INFO 2026-05-04 05:34:32,132 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:32,194 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.062s
+INFO 2026-05-04 05:34:33,247 middleware 17574 124237877769920 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:33,264 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:33,337 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.073s
+INFO 2026-05-04 05:34:33,348 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:33,359 middleware 17574 124237877769920 Response: GET /api/classes/ [200] - 0.111s
+INFO 2026-05-04 05:34:33,362 middleware 17574 124237869377216 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:33,442 middleware 17574 124237869377216 Response: GET /api/classes/ [200] - 0.079s
+INFO 2026-05-04 05:34:33,456 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.108s
+INFO 2026-05-04 05:34:33,483 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:33,557 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.075s
+INFO 2026-05-04 05:34:33,608 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:33,689 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.081s
+INFO 2026-05-04 05:34:35,129 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:35,163 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.034s
+INFO 2026-05-04 05:34:35,471 middleware 17574 124237869377216 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:35,557 middleware 17574 124237869377216 Response: GET /api/submissions/assignment/ [200] - 0.086s
+INFO 2026-05-04 05:34:35,599 middleware 17574 124237869377216 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:34:35,605 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:34:35,693 middleware 17574 124237869377216 Response: GET /api/results/ [200] - 0.094s
+INFO 2026-05-04 05:34:35,741 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.136s
+INFO 2026-05-04 05:34:38,208 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:38,259 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.051s
+INFO 2026-05-04 05:34:38,618 middleware 17574 124237979313856 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:38,635 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:38,736 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.101s
+INFO 2026-05-04 05:34:38,752 middleware 17574 124237979313856 Response: GET /api/classes/ [200] - 0.134s
+INFO 2026-05-04 05:34:38,764 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:38,780 middleware 17574 124237869377216 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:38,854 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.090s
+INFO 2026-05-04 05:34:38,873 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:38,887 middleware 17574 124237869377216 Response: GET /api/classes/ [200] - 0.108s
+INFO 2026-05-04 05:34:38,926 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.053s
+INFO 2026-05-04 05:34:39,037 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:39,114 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.077s
+INFO 2026-05-04 05:34:41,126 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:41,160 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.033s
+INFO 2026-05-04 05:34:42,564 middleware 17574 124237877769920 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:42,627 middleware 17574 124237877769920 Response: GET /api/submissions/assignment/ [200] - 0.063s
+INFO 2026-05-04 05:34:42,685 middleware 17574 124237877769920 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:34:42,695 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:34:42,772 middleware 17574 124237877769920 Response: GET /api/results/ [200] - 0.088s
+INFO 2026-05-04 05:34:42,785 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.090s
+INFO 2026-05-04 05:34:44,142 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:44,240 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.098s
+INFO 2026-05-04 05:34:47,126 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:47,147 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.021s
+INFO 2026-05-04 05:34:50,120 tasks 6721 135939087974528 ✅ Received analysis for 4 paragraphs
+INFO 2026-05-04 05:34:50,128 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:50,152 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.024s
+INFO 2026-05-04 05:34:50,157 tasks 6721 135939087974528 ✅ Submission b687598c-d26f-4746-a5ce-1968b55d5637 completed successfully
+INFO 2026-05-04 05:34:53,131 middleware 17574 124237901723328 Request: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ from 127.0.0.1
+INFO 2026-05-04 05:34:53,174 middleware 17574 124237901723328 Response: GET /api/submissions/b687598c-d26f-4746-a5ce-1968b55d5637/status/ [200] - 0.043s
+INFO 2026-05-04 05:34:55,591 middleware 17574 124237869377216 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:55,601 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:55,640 middleware 17574 124237869377216 Response: GET /api/classes/ [200] - 0.050s
+INFO 2026-05-04 05:34:55,650 middleware 17574 124237979313856 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:34:55,664 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.063s
+INFO 2026-05-04 05:34:55,673 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:55,719 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.046s
+INFO 2026-05-04 05:34:55,725 middleware 17574 124237979313856 Response: GET /api/classes/ [200] - 0.075s
+INFO 2026-05-04 05:34:55,765 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:55,812 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.047s
+INFO 2026-05-04 05:34:55,856 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:55,892 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.035s
+INFO 2026-05-04 05:34:59,002 middleware 17574 124237869377216 Request: GET /api/submissions/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:34:59,066 middleware 17574 124237869377216 Response: GET /api/submissions/assignment/ [200] - 0.064s
+INFO 2026-05-04 05:34:59,110 middleware 17574 124237869377216 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:34:59,112 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:34:59,196 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.084s
+INFO 2026-05-04 05:34:59,198 middleware 17574 124237869377216 Response: GET /api/results/ [200] - 0.088s
+INFO 2026-05-04 05:35:03,205 middleware 17574 124237860984512 Request: GET /media/reports/2026/05/04/report_b687598c-d26f-4746-a5ce-1968b55d5637.pdf from 127.0.0.1
+INFO 2026-05-04 05:35:03,218 middleware 17574 124237860984512 Response: GET /media/reports/2026/05/04/report_b687598c-d26f-4746-a5ce-1968b55d5637.pdf [200] - 0.013s
+INFO 2026-05-04 05:35:21,528 middleware 17574 124237844199104 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:35:21,597 middleware 17574 124237844199104 Response: GET /api/results/ [200] - 0.068s
+INFO 2026-05-04 05:42:01,537 middleware 17574 124237901723328 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:42:01,931 middleware 17574 124237901723328 Response: GET /api/classes/enrolled/ [200] - 0.397s
+INFO 2026-05-04 05:42:01,955 middleware 17574 124237893330624 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:42:01,996 middleware 17574 124237893330624 Response: GET /api/classes/enrolled/ [200] - 0.041s
+INFO 2026-05-04 05:42:08,798 middleware 17574 124237877769920 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:42:08,799 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:42:08,865 middleware 17574 124237877769920 Response: GET /api/classes/ [200] - 0.067s
+INFO 2026-05-04 05:42:08,904 middleware 17574 124237869377216 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:42:08,933 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.134s
+INFO 2026-05-04 05:42:08,953 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:42:08,963 middleware 17574 124237869377216 Response: GET /api/classes/ [200] - 0.059s
+INFO 2026-05-04 05:42:09,034 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.081s
+INFO 2026-05-04 05:42:09,044 middleware 17574 124237869377216 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:42:09,094 middleware 17574 124237869377216 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.049s
+INFO 2026-05-04 05:42:09,097 middleware 17574 124237877769920 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:42:09,145 middleware 17574 124237877769920 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.048s
+INFO 2026-05-04 05:42:10,632 middleware 17574 124237877769920 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:42:10,648 middleware 17574 124237869377216 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-04 05:42:10,651 middleware 17574 124237852591808 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-04 05:42:10,878 middleware 17574 124237877769920 Response: GET /api/results/ [200] - 0.245s
+INFO 2026-05-04 05:42:10,886 middleware 17574 124237852591808 Response: GET /api/submissions/ [200] - 0.235s
+INFO 2026-05-04 05:42:10,908 middleware 17574 124237860984512 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-04 05:42:10,920 middleware 17574 124237869377216 Response: GET /api/dashboard/teacher_overview/ [200] - 0.272s
+INFO 2026-05-04 05:42:10,945 middleware 17574 124237852591808 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-04 05:42:10,975 middleware 17574 124237877769920 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-04 05:42:11,080 middleware 17574 124237852591808 Response: GET /api/results/ [200] - 0.135s
+INFO 2026-05-04 05:42:11,082 middleware 17574 124237860984512 Response: GET /api/submissions/ [200] - 0.174s
+INFO 2026-05-04 05:42:11,115 middleware 17574 124237877769920 Response: GET /api/dashboard/teacher_overview/ [200] - 0.140s
+INFO 2026-05-04 05:50:40,478 middleware 17574 124237893330624 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:50:40,511 middleware 17574 124237893330624 Response: GET /api/classes/enrolled/ [200] - 0.033s
+INFO 2026-05-04 05:50:40,515 middleware 17574 124237901723328 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 05:50:40,551 middleware 17574 124237901723328 Response: GET /api/classes/enrolled/ [200] - 0.036s
+INFO 2026-05-04 05:50:45,861 middleware 17574 124237979313856 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:50:45,898 middleware 17574 124237979313856 Response: GET /api/classes/ [200] - 0.037s
+INFO 2026-05-04 05:50:45,903 middleware 17574 124237860984512 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:50:45,945 middleware 17574 124237860984512 Response: GET /api/classes/ [200] - 0.042s
+INFO 2026-05-04 05:50:49,692 middleware 17574 124237860984512 Request: GET /api/classes/Q5KUG8/ from 127.0.0.1
+INFO 2026-05-04 05:50:49,724 middleware 17574 124237860984512 Response: GET /api/classes/Q5KUG8/ [200] - 0.032s
+INFO 2026-05-04 05:50:49,780 middleware 17574 124237860984512 Request: GET /api/classes/Q5KUG8/students/ from 127.0.0.1
+INFO 2026-05-04 05:50:49,790 middleware 17574 124237979313856 Request: GET /api/classes/Q5KUG8/assignment/ from 127.0.0.1
+INFO 2026-05-04 05:50:49,826 middleware 17574 124237860984512 Response: GET /api/classes/Q5KUG8/students/ [200] - 0.046s
+INFO 2026-05-04 05:50:49,849 middleware 17574 124237979313856 Response: GET /api/classes/Q5KUG8/assignment/ [200] - 0.060s
+INFO 2026-05-04 05:50:53,092 middleware 17574 124237979313856 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:50:53,133 middleware 17574 124237979313856 Response: GET /api/classes/ [200] - 0.042s
+INFO 2026-05-04 05:50:53,139 middleware 17574 124237860984512 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-04 05:50:53,180 middleware 17574 124237860984512 Response: GET /api/classes/ [200] - 0.041s
+INFO 2026-05-04 05:56:36,291 middleware 20291 125018733274816 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 05:56:36,325 exceptions 20291 125018733274816 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-04 05:56:36,326 middleware 20291 125018733274816 Response: GET /api/dashboard/student_overview/ [403] - 0.035s
+WARNING 2026-05-04 05:56:36,327 log 20291 125018733274816 Forbidden: /api/dashboard/student_overview/
+WARNING 2026-05-04 05:56:36,327 basehttp 20291 125018733274816 "GET /api/dashboard/student_overview/ HTTP/1.1" 403 142
+INFO 2026-05-04 05:57:24,805 middleware 20521 127501374318272 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 05:57:24,842 exceptions 20521 127501374318272 Exception occurred: Cannot resolve keyword 'enrollment' into field. Choices are: assignments, code, created_at, description, enrollement, id, is_active, name, students, teacher, teacher_id, updated_at
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 200, in student_overview
+    joined_classes = Class.objects.filter(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'enrollment' into field. Choices are: assignments, code, created_at, description, enrollement, id, is_active, name, students, teacher, teacher_id, updated_at
+INFO 2026-05-04 05:57:24,849 middleware 20521 127501374318272 Response: GET /api/dashboard/student_overview/ [500] - 0.044s
+ERROR 2026-05-04 05:57:24,849 log 20521 127501374318272 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 05:57:24,850 basehttp 20521 127501374318272 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 243
+INFO 2026-05-04 05:57:56,154 middleware 20580 125144460682944 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 05:57:56,178 exceptions 20580 125144460682944 Exception occurred: Cannot resolve keyword 'enrollment' into field. Choices are: assignments, code, created_at, description, enrollement, id, is_active, name, students, teacher, teacher_id, updated_at
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 202, in student_overview
+    joined_classes = Class.objects.filter(
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'enrollment' into field. Choices are: assignments, code, created_at, description, enrollement, id, is_active, name, students, teacher, teacher_id, updated_at
+INFO 2026-05-04 05:57:56,182 middleware 20580 125144460682944 Response: GET /api/dashboard/student_overview/ [500] - 0.028s
+ERROR 2026-05-04 05:57:56,183 log 20580 125144460682944 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 05:57:56,183 basehttp 20580 125144460682944 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 243
+INFO 2026-05-04 05:58:48,625 middleware 20740 137288741807808 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 05:58:48,653 exceptions 20740 137288741807808 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-04 05:58:48,654 middleware 20740 137288741807808 Response: GET /api/dashboard/student_overview/ [403] - 0.029s
+WARNING 2026-05-04 05:58:48,655 log 20740 137288741807808 Forbidden: /api/dashboard/student_overview/
+WARNING 2026-05-04 05:58:48,655 basehttp 20740 137288741807808 "GET /api/dashboard/student_overview/ HTTP/1.1" 403 142
+INFO 2026-05-04 05:58:51,205 middleware 20740 137288741807808 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 05:58:51,222 exceptions 20740 137288741807808 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-04 05:58:51,223 middleware 20740 137288741807808 Response: GET /api/dashboard/student_overview/ [403] - 0.018s
+WARNING 2026-05-04 05:58:51,224 log 20740 137288741807808 Forbidden: /api/dashboard/student_overview/
+WARNING 2026-05-04 05:58:51,225 basehttp 20740 137288741807808 "GET /api/dashboard/student_overview/ HTTP/1.1" 403 142
+INFO 2026-05-04 05:59:08,428 middleware 20801 129141546415808 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 05:59:08,463 exceptions 20801 129141546415808 Exception occurred: Cannot resolve keyword 'student' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 215, in student_overview
+    submitted = Submission.objects.filter(student=student)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'student' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+INFO 2026-05-04 05:59:08,469 middleware 20801 129141546415808 Response: GET /api/dashboard/student_overview/ [500] - 0.041s
+ERROR 2026-05-04 05:59:08,469 log 20801 129141546415808 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 05:59:08,470 basehttp 20801 129141546415808 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 407
+INFO 2026-05-04 05:59:22,570 middleware 20869 137365084432064 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 05:59:22,597 exceptions 20869 137365084432064 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-04 05:59:22,600 middleware 20869 137365084432064 Response: GET /api/dashboard/student_overview/ [403] - 0.030s
+WARNING 2026-05-04 05:59:22,601 log 20869 137365084432064 Forbidden: /api/dashboard/student_overview/
+WARNING 2026-05-04 05:59:22,604 basehttp 20869 137365084432064 "GET /api/dashboard/student_overview/ HTTP/1.1" 403 142
+INFO 2026-05-04 06:01:24,953 middleware 21012 125720331282112 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:01:24,998 exceptions 21012 125720331282112 Exception occurred: Cannot resolve keyword 'student' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 217, in student_overview
+    submitted = Submission.objects.filter(student=student)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'student' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+INFO 2026-05-04 06:01:25,017 middleware 21012 125720331282112 Response: GET /api/dashboard/student_overview/ [500] - 0.064s
+ERROR 2026-05-04 06:01:25,017 log 21012 125720331282112 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 06:01:25,018 basehttp 21012 125720331282112 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 407
+INFO 2026-05-04 06:01:29,246 middleware 21012 125720331282112 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:01:29,276 exceptions 21012 125720331282112 Exception occurred: Cannot resolve keyword 'student' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 217, in student_overview
+    submitted = Submission.objects.filter(student=student)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'student' into field. Choices are: assignment, assignment_id, assignment_name, extension_granted, extension_reason, extension_requested, file, file_size, id, is_paused, original_filename, paused_at, paused_by, paused_by_id, processed_at, processed_paragraphs, result, status, submitted_at, total_paragraphs, user, user_id
+INFO 2026-05-04 06:01:29,278 middleware 21012 125720331282112 Response: GET /api/dashboard/student_overview/ [500] - 0.033s
+ERROR 2026-05-04 06:01:29,279 log 21012 125720331282112 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 06:01:29,282 basehttp 21012 125720331282112 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 407
+INFO 2026-05-04 06:02:35,946 middleware 21197 138635214055104 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:02:35,992 exceptions 21197 138635214055104 Exception occurred: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 228, in student_overview
+    recent_assignments = assignments.filter(
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+INFO 2026-05-04 06:02:35,998 middleware 21197 138635214055104 Response: GET /api/dashboard/student_overview/ [500] - 0.052s
+ERROR 2026-05-04 06:02:35,999 log 21197 138635214055104 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 06:02:35,999 basehttp 21197 138635214055104 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 289
+INFO 2026-05-04 06:02:40,729 middleware 21197 138635214055104 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:02:40,760 exceptions 21197 138635214055104 Exception occurred: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 228, in student_overview
+    recent_assignments = assignments.filter(
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+INFO 2026-05-04 06:02:40,762 middleware 21197 138635214055104 Response: GET /api/dashboard/student_overview/ [500] - 0.033s
+ERROR 2026-05-04 06:02:40,762 log 21197 138635214055104 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 06:02:40,763 basehttp 21197 138635214055104 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 289
+INFO 2026-05-04 06:04:55,453 middleware 21357 133829952005824 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:04:55,504 exceptions 21357 133829952005824 Exception occurred: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 228, in student_overview
+    recent_assignments = assignments.filter(
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+INFO 2026-05-04 06:04:55,510 middleware 21357 133829952005824 Response: GET /api/dashboard/student_overview/ [500] - 0.057s
+ERROR 2026-05-04 06:04:55,510 log 21357 133829952005824 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 06:04:55,511 basehttp 21357 133829952005824 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 289
+INFO 2026-05-04 06:04:58,202 middleware 21357 133829952005824 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:04:58,233 exceptions 21357 133829952005824 Exception occurred: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/dashboard/views.py", line 228, in student_overview
+    recent_assignments = assignments.filter(
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1602, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1634, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1484, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1296, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'due_date' into field. Choices are: allow_late_submissions, class_obj, class_obj_id, created_at, created_by, created_by_id, deadline, description, id, is_active, max_score, submissions, title, updated_at
+INFO 2026-05-04 06:04:58,235 middleware 21357 133829952005824 Response: GET /api/dashboard/student_overview/ [500] - 0.033s
+ERROR 2026-05-04 06:04:58,235 log 21357 133829952005824 Internal Server Error: /api/dashboard/student_overview/
+ERROR 2026-05-04 06:04:58,236 basehttp 21357 133829952005824 "GET /api/dashboard/student_overview/ HTTP/1.1" 500 289
+INFO 2026-05-04 06:07:25,867 middleware 21694 128271202117312 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:07:25,898 exceptions 21694 128271202117312 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-04 06:07:25,900 middleware 21694 128271202117312 Response: GET /api/dashboard/student_overview/ [403] - 0.033s
+WARNING 2026-05-04 06:07:25,900 log 21694 128271202117312 Forbidden: /api/dashboard/student_overview/
+WARNING 2026-05-04 06:07:25,901 basehttp 21694 128271202117312 "GET /api/dashboard/student_overview/ HTTP/1.1" 403 142
+INFO 2026-05-04 06:08:56,299 middleware 21834 127814708750016 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+ERROR 2026-05-04 06:08:56,333 exceptions 21834 127814708750016 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-04 06:08:56,335 middleware 21834 127814708750016 Response: GET /api/dashboard/student_overview/ [403] - 0.035s
+WARNING 2026-05-04 06:08:56,336 log 21834 127814708750016 Forbidden: /api/dashboard/student_overview/
+WARNING 2026-05-04 06:08:56,337 basehttp 21834 127814708750016 "GET /api/dashboard/student_overview/ HTTP/1.1" 403 142
+INFO 2026-05-04 06:10:03,892 middleware 22008 130446670161600 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-04 06:10:03,949 middleware 22008 130446670161600 Response: GET /api/dashboard/student_overview/ [200] - 0.056s
+INFO 2026-05-04 06:12:06,687 middleware 22008 130446660720320 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 06:12:06,723 middleware 22008 130446660720320 Response: GET /api/classes/enrolled/ [200] - 0.036s
+INFO 2026-05-04 06:12:06,734 middleware 22008 130446652327616 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-04 06:12:06,774 middleware 22008 130446652327616 Response: GET /api/classes/enrolled/ [200] - 0.041s
+INFO 2026-05-04 06:13:54,782 middleware 22229 135526818510528 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-04 06:13:54,831 middleware 22229 135526818510528 Response: GET /api/dashboard/student_overview/ [200] - 0.049s

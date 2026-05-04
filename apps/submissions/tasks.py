@@ -157,8 +157,7 @@ def extract_paragraphs_from_pdf(submission_id):
             submission=submission,
             ai_percentage=document_summary['average_ai_percentage'],
             human_percentage=document_summary['average_human_percentage'],
-            grammar_score=0.0,  # Not calculated in BERT approach
-            total_paragraphs=paragraph_count,
+            grammar_score=document_summary.get('average_grammar_score') or document_summary.get('grammar_score', 0),            total_paragraphs=paragraph_count,
             ai_paragraphs=document_summary['paragraphs_flagged_as_ai'],
             is_complete=True,
             completed_paragraphs=paragraph_count
