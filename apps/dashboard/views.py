@@ -226,34 +226,28 @@ class DashboardViewSet(viewsets.ModelViewSet):
         
         student = request.user
 
-        # ✅ Classes student is enrolled in
         joined_classes = Class.objects.filter(
             enrollement__student=student
         ).distinct()
 
         total_classes = joined_classes.count()
 
-        # ✅ All assignments from those classes
         assignments = Assignment.objects.filter(
             class_obj__in=joined_classes
         )
 
         total_assignments = assignments.count()
 
-        # ✅ Submissions by student (FIXED: user not student)
         submissions = Submission.objects.filter(user=student)
 
         total_submissions = submissions.count()
 
-        # ✅ Completed reports (results ready)
         completed_reports = submissions.filter(status='completed').count()
 
-        # ✅ Pending assignments (not submitted yet)
         pending_assignments = assignments.exclude(
             id__in=submissions.values_list('assignment_id', flat=True)
         ).count()
 
-        # ✅ Recent assignments (upcoming deadlines)
         recent_assignments = assignments.filter(
             deadline__gte=timezone.now()
         ).exclude(
