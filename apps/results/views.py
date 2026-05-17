@@ -1,3 +1,4 @@
+from django.db.models import Q
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
@@ -30,7 +31,9 @@ class ResultViewSet(viewsets.ReadOnlyModelViewSet):
         if user.is_teacher():
             # Teacher can see results from assignments they own
             queryset = Result.objects.filter(
-                submission__assignment__class_obj__teacher=user
+
+                  Q(submission__assignment__class_obj__teacher=user) |  # 👈 class submissions
+                  Q(submission__user=user, submission__assignment__isnull=True)
             )
             if assignment_id:
                 queryset = queryset.filter(submission__assignment_id=assignment_id)

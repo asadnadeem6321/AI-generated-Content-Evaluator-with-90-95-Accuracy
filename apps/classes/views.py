@@ -1,3 +1,4 @@
+from django.db.models import Count
 from rest_framework import viewsets, status, serializers
 from django.shortcuts import render
 from rest_framework.decorators import action
@@ -45,15 +46,28 @@ class ClassViewSet(viewsets.ModelViewSet):
             return [IsStudent()]
         return [IsAuthenticated()]
     
+    # def get_queryset(self):
+    #     """Guest can't see or access classes"""
+    #     user = self.request.user
+    #     if user.is_teacher():
+    #         return Class.objects.filter(teacher=user)
+    #     elif user.is_student():
+    #         return Class.objects.filter(students=user)
+    #     else:
+    #         return Class.objects.none()  # Guest can't see classes
+
     def get_queryset(self):
-        """Guest can't see or access classes"""
         user = self.request.user
         if user.is_teacher():
-            return Class.objects.filter(teacher=user)
+            return Class.objects.filter(teacher=user).annotate(
+                student_count=Count('enrollement')  # 👈 note your typo: "enrollement"
+            )
         elif user.is_student():
-            return Class.objects.filter(students=user)
+            return Class.objects.filter(students=user).annotate(
+                student_count=Count('enrollement')
+            )
         else:
-            return Class.objects.none()  # Guest can't see classes
+            return Class.objects.none()
 
     def perform_create(self, serializer):
         serializer.save(teacher=self.request.user)
@@ -97,7 +111,6 @@ class ClassViewSet(viewsets.ModelViewSet):
             title=serializer.validated_data['title'],
             description=serializer.validated_data.get('description', ''),
             deadline=serializer.validated_data['deadline'],
-            max_score=serializer.validated_data['max_score'],
             allow_late_submissions=serializer.validated_data.get('allow_late_submissions', False),
             created_by=request.user,
         )

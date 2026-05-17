@@ -8,6 +8,7 @@ class ClassSerializer(serializers.ModelSerializer):
     teacher = UserSerializer(read_only=True)
     student_count = serializers.IntegerField(read_only=True)
 
+
     class Meta:
         model = Class
         fields =['id', 'name', 'code', 'description', 'teacher', 'student_count', 'is_active', 'created_at']
@@ -51,7 +52,7 @@ class AssignmentSerializer(serializers.ModelSerializer):
         model = Assignment
         fields = [
             'id', 'class_obj', 'title', 'description', 'deadline', 
-            'max_score', 'created_by', 'created_at', 'updated_at',
+            'created_by', 'created_at', 'updated_at',
             'is_active', 'allow_late_submissions', 'submission_count',
             'is_past_deadline'
         ]
@@ -63,7 +64,7 @@ class AssignmentCreateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Assignment
-        fields = ['class_id', 'title', 'description', 'deadline', 'max_score', 'allow_late_submissions']
+        fields = ['class_id', 'title', 'description', 'deadline',  'allow_late_submissions']
 
     def validate_deadline(self, value):
         if value < timezone.now():
@@ -74,4 +75,4 @@ class AssignmentUpdateSerializer(serializers.ModelSerializer):
     """Serializer for updating assignment"""
     class Meta:
         model = Assignment
-        fields = ['title', 'description', 'deadline', 'max_score', 'is_active', 'allow_late_submissions']
+        fields = ['title', 'description', 'deadline',  'is_active', 'allow_late_submissions']

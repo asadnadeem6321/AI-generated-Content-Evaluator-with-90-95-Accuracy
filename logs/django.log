@@ -18037,3 +18037,332 @@ INFO 2026-05-13 10:55:28,337 middleware 29466 134084998194880 Request: GET /api/
 INFO 2026-05-13 10:55:28,801 middleware 29466 134084998194880 Response: GET /api/auth/profile/ [200] - 0.464s
 INFO 2026-05-13 10:55:28,808 middleware 29466 134084909065920 Request: GET /api/auth/profile/ from 127.0.0.1
 INFO 2026-05-13 10:55:28,838 middleware 29466 134084909065920 Response: GET /api/auth/profile/ [200] - 0.030s
+INFO 2026-05-17 22:46:22,476 middleware 14512 4192 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-17 22:46:24,827 middleware 14512 4192 Response: POST /api/auth/teacher_login/ [200] - 2.351s
+INFO 2026-05-17 22:46:26,317 middleware 14512 4192 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,338 middleware 14512 14372 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,339 middleware 14512 15168 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,418 middleware 14512 880 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,547 middleware 14512 4192 Response: GET /api/results/ [200] - 0.230s
+INFO 2026-05-17 22:46:26,566 middleware 14512 14372 Response: GET /api/submissions/ [200] - 0.228s
+INFO 2026-05-17 22:46:26,567 middleware 14512 15168 Response: GET /api/dashboard/teacher_overview/ [200] - 0.228s
+INFO 2026-05-17 22:46:26,574 middleware 14512 15816 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,585 middleware 14512 4192 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,588 middleware 14512 15168 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,611 middleware 14512 880 Response: GET /api/auth/profile/ [200] - 0.193s
+INFO 2026-05-17 22:46:26,636 middleware 14512 14372 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-17 22:46:26,744 middleware 14512 15816 Response: GET /api/results/ [200] - 0.170s
+INFO 2026-05-17 22:46:26,757 middleware 14512 15168 Response: GET /api/submissions/ [200] - 0.168s
+INFO 2026-05-17 22:46:26,774 middleware 14512 4192 Response: GET /api/dashboard/teacher_overview/ [200] - 0.189s
+INFO 2026-05-17 22:46:26,792 middleware 14512 14372 Response: GET /api/auth/profile/ [200] - 0.156s
+INFO 2026-05-17 22:46:31,502 middleware 14512 4192 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:46:31,629 middleware 14512 4192 Response: GET /api/classes/ [200] - 0.128s
+INFO 2026-05-17 22:46:31,634 middleware 14512 14372 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:46:31,765 middleware 14512 14372 Response: GET /api/classes/ [200] - 0.131s
+INFO 2026-05-17 22:47:03,455 middleware 14512 14372 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:47:03,607 middleware 14512 14372 Response: GET /api/classes/ [200] - 0.152s
+INFO 2026-05-17 22:47:03,626 middleware 14512 4192 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:47:03,670 middleware 14512 14372 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 22:47:03,782 middleware 14512 4192 Response: GET /api/classes/ [200] - 0.157s
+INFO 2026-05-17 22:47:03,841 middleware 14512 14372 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.171s
+INFO 2026-05-17 22:47:03,851 middleware 14512 4192 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 22:47:03,984 middleware 14512 4192 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.134s
+INFO 2026-05-17 22:47:39,518 middleware 14512 15952 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,316 middleware 14512 15952 Response: POST /api/auth/student_login/ [200] - 1.798s
+INFO 2026-05-17 22:47:41,446 middleware 14512 8028 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,452 middleware 14512 16000 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,453 middleware 14512 15952 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,455 middleware 14512 2740 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,577 middleware 14512 16000 Response: GET /api/submissions/ [200] - 0.125s
+INFO 2026-05-17 22:47:41,600 middleware 14512 8028 Response: GET /api/auth/profile/ [200] - 0.154s
+INFO 2026-05-17 22:47:41,622 middleware 14512 14832 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,649 middleware 14512 15952 Response: GET /api/results/ [200] - 0.195s
+INFO 2026-05-17 22:47:41,658 middleware 14512 2740 Response: GET /api/dashboard/student_overview/ [200] - 0.203s
+INFO 2026-05-17 22:47:41,659 middleware 14512 16000 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,667 middleware 14512 8028 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,675 middleware 14512 15952 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-17 22:47:41,813 middleware 14512 14832 Response: GET /api/submissions/ [200] - 0.192s
+INFO 2026-05-17 22:47:41,835 middleware 14512 16000 Response: GET /api/auth/profile/ [200] - 0.175s
+INFO 2026-05-17 22:47:41,850 middleware 14512 8028 Response: GET /api/results/ [200] - 0.183s
+INFO 2026-05-17 22:47:41,855 middleware 14512 15952 Response: GET /api/dashboard/student_overview/ [200] - 0.180s
+INFO 2026-05-17 22:47:51,863 middleware 14512 8028 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-17 22:47:51,951 middleware 14512 8028 Response: GET /api/classes/enrolled/ [200] - 0.088s
+INFO 2026-05-17 22:47:51,954 middleware 14512 15952 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-17 22:47:52,048 middleware 14512 15952 Response: GET /api/classes/enrolled/ [200] - 0.094s
+INFO 2026-05-17 22:47:59,711 middleware 14512 4192 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:47:59,845 middleware 14512 4192 Response: GET /api/classes/ [200] - 0.134s
+INFO 2026-05-17 22:47:59,860 middleware 14512 14372 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:48:00,033 middleware 14512 14372 Response: GET /api/classes/ [200] - 0.173s
+INFO 2026-05-17 22:48:06,361 middleware 14512 15952 Request: POST /api/classes/YQGZ07/enroll/ from 127.0.0.1
+INFO 2026-05-17 22:48:06,502 middleware 14512 15952 Response: POST /api/classes/YQGZ07/enroll/ [200] - 0.140s
+INFO 2026-05-17 22:48:08,707 middleware 14512 15952 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-17 22:48:08,832 middleware 14512 15952 Response: GET /api/classes/enrolled/ [200] - 0.125s
+INFO 2026-05-17 22:48:08,836 middleware 14512 8028 Request: GET /api/classes/enrolled/ from 127.0.0.1
+INFO 2026-05-17 22:48:08,963 middleware 14512 8028 Response: GET /api/classes/enrolled/ [200] - 0.127s
+INFO 2026-05-17 22:48:10,761 middleware 14512 8028 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 22:48:10,858 middleware 14512 8028 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.098s
+INFO 2026-05-17 22:48:10,863 middleware 14512 15952 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 22:48:10,975 middleware 14512 15952 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.112s
+INFO 2026-05-17 22:48:19,330 middleware 14512 14372 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:48:19,562 middleware 14512 14372 Response: GET /api/classes/ [200] - 0.232s
+INFO 2026-05-17 22:48:19,600 middleware 14512 4192 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:48:19,739 middleware 14512 4192 Response: GET /api/classes/ [200] - 0.139s
+INFO 2026-05-17 22:58:58,474 middleware 14512 9928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:58:58,706 middleware 14512 9928 Response: GET /api/classes/ [200] - 0.232s
+INFO 2026-05-17 22:58:58,721 middleware 14512 9928 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 22:58:58,770 middleware 14512 12800 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 22:58:58,881 middleware 14512 9928 Response: GET /api/classes/ [200] - 0.160s
+INFO 2026-05-17 22:58:58,919 middleware 14512 12800 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.149s
+INFO 2026-05-17 22:58:58,944 middleware 14512 9928 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 22:58:59,076 middleware 14512 9928 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.132s
+INFO 2026-05-17 22:59:05,338 middleware 14512 9928 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 22:59:05,441 middleware 14512 9928 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.104s
+INFO 2026-05-17 22:59:26,720 middleware 14512 9928 Request: POST /api/classes/YQGZ07/assignments/ from 127.0.0.1
+ERROR 2026-05-17 22:59:26,895 exceptions 14512 9928 Exception occurred: 'max_score'
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "P:\New Fyp\ace_backend\apps\classes\views.py", line 100, in assignments
+    max_score=serializer.validated_data['max_score'],
+              ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'max_score'
+INFO 2026-05-17 22:59:26,913 middleware 14512 9928 Response: POST /api/classes/YQGZ07/assignments/ [500] - 0.193s
+ERROR 2026-05-17 22:59:26,918 log 14512 9928 Internal Server Error: /api/classes/YQGZ07/assignments/
+ERROR 2026-05-17 22:59:26,920 basehttp 14512 9928 "POST /api/classes/YQGZ07/assignments/ HTTP/1.1" 500 74
+INFO 2026-05-17 23:08:36,398 middleware 8752 9864 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 23:08:36,737 middleware 8752 9864 Response: GET /api/classes/ [200] - 0.339s
+INFO 2026-05-17 23:08:36,747 middleware 8752 7332 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 23:08:36,815 middleware 8752 9864 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:08:36,923 middleware 8752 7332 Response: GET /api/classes/ [200] - 0.177s
+INFO 2026-05-17 23:08:36,945 middleware 8752 9864 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.130s
+INFO 2026-05-17 23:08:36,976 middleware 8752 9864 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:08:37,107 middleware 8752 9864 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.130s
+INFO 2026-05-17 23:08:39,180 middleware 8752 9864 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 23:08:39,380 middleware 8752 9864 Response: GET /api/classes/ [200] - 0.200s
+INFO 2026-05-17 23:08:39,393 middleware 8752 7332 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 23:08:39,656 middleware 8752 7332 Response: GET /api/classes/ [200] - 0.263s
+INFO 2026-05-17 23:12:44,251 middleware 6324 16884 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 23:12:44,814 middleware 6324 16884 Response: GET /api/classes/ [200] - 0.563s
+INFO 2026-05-17 23:12:44,826 middleware 6324 16824 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-17 23:12:44,921 middleware 6324 16884 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:12:45,022 middleware 6324 16824 Response: GET /api/classes/ [200] - 0.195s
+INFO 2026-05-17 23:12:45,069 middleware 6324 16884 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.148s
+INFO 2026-05-17 23:12:45,087 middleware 6324 16824 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:12:45,230 middleware 6324 16824 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.143s
+INFO 2026-05-17 23:12:46,895 middleware 6324 16824 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:12:47,045 middleware 6324 16824 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.149s
+INFO 2026-05-17 23:12:55,148 middleware 6324 16824 Request: POST /api/classes/YQGZ07/assignments/ from 127.0.0.1
+ERROR 2026-05-17 23:12:55,270 exceptions 6324 16824 Exception occurred: 'max_score'
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "P:\New Fyp\ace_backend\apps\classes\views.py", line 114, in assignments
+    max_score=serializer.validated_data['max_score'],
+              ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+KeyError: 'max_score'
+INFO 2026-05-17 23:12:55,273 middleware 6324 16824 Response: POST /api/classes/YQGZ07/assignments/ [500] - 0.125s
+ERROR 2026-05-17 23:12:55,276 log 6324 16824 Internal Server Error: /api/classes/YQGZ07/assignments/
+ERROR 2026-05-17 23:12:55,278 basehttp 6324 16824 "POST /api/classes/YQGZ07/assignments/ HTTP/1.1" 500 74
+INFO 2026-05-17 23:14:48,216 middleware 13044 17172 Request: POST /api/classes/YQGZ07/assignments/ from 127.0.0.1
+INFO 2026-05-17 23:14:48,501 middleware 13044 17172 Response: POST /api/classes/YQGZ07/assignments/ [201] - 0.285s
+INFO 2026-05-17 23:14:48,747 middleware 13044 17172 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:14:49,053 middleware 13044 17172 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.306s
+INFO 2026-05-17 23:16:58,264 middleware 13044 17172 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 23:16:59,108 middleware 13044 17172 Response: POST /api/submissions/ [201] - 0.844s
+INFO 2026-05-17 23:17:04,387 middleware 13044 17172 Request: GET /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/status/ from 127.0.0.1
+ERROR 2026-05-17 23:17:06,019 exceptions 13044 17172 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 249, in status
+    submission = self.get_object()
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 65, in get_object
+    return super().get_object()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+        "No %s matches the given query." % queryset.model._meta.object_name
+    )
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-17 23:17:06,168 middleware 13044 17172 Response: GET /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/status/ [404] - 1.782s
+WARNING 2026-05-17 23:17:06,540 log 13044 17172 Not Found: /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/status/
+INFO 2026-05-17 23:17:12,303 middleware 13044 17220 Request: GET /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/status/ from 127.0.0.1
+ERROR 2026-05-17 23:17:12,452 exceptions 13044 17220 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 249, in status
+    submission = self.get_object()
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 65, in get_object
+    return super().get_object()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+        "No %s matches the given query." % queryset.model._meta.object_name
+    )
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-17 23:17:12,457 middleware 13044 17220 Response: GET /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/status/ [404] - 0.155s
+WARNING 2026-05-17 23:17:12,466 log 13044 17220 Not Found: /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/status/
+WARNING 2026-05-17 23:17:12,468 basehttp 13044 17220 "GET /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/status/ HTTP/1.1" 404 118
+INFO 2026-05-17 23:18:49,347 middleware 14844 13876 Request: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ from 127.0.0.1
+INFO 2026-05-17 23:18:49,436 middleware 14844 13876 Response: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ [404] - 0.089s
+WARNING 2026-05-17 23:18:49,438 log 14844 13876 Not Found: /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/
+WARNING 2026-05-17 23:18:49,451 basehttp 14844 13876 "POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ HTTP/1.1" 404 16740
+INFO 2026-05-17 23:41:15,855 middleware 10872 7072 Request: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ from 127.0.0.1
+ERROR 2026-05-17 23:41:16,171 exceptions 10872 7072 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 760, in terminate
+    submission = self.get_object()
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 523, in get_object
+    return super().get_object()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+        "No %s matches the given query." % queryset.model._meta.object_name
+    )
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-17 23:41:16,197 middleware 10872 7072 Response: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ [404] - 0.342s
+WARNING 2026-05-17 23:41:16,206 log 10872 7072 Not Found: /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/
+WARNING 2026-05-17 23:41:16,211 basehttp 10872 7072 "POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ HTTP/1.1" 404 118
+INFO 2026-05-17 23:42:00,908 middleware 10872 13248 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:42:01,121 middleware 10872 13248 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.213s
+INFO 2026-05-17 23:42:01,127 middleware 10872 11476 Request: GET /api/classes/YQGZ07/assignment/ from 127.0.0.1
+INFO 2026-05-17 23:42:01,264 middleware 10872 11476 Response: GET /api/classes/YQGZ07/assignment/ [200] - 0.137s
+INFO 2026-05-17 23:42:05,389 middleware 10872 11476 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-05-17 23:42:05,490 middleware 10872 11476 Response: POST /api/auth/logout/ [200] - 0.101s
+INFO 2026-05-17 23:42:46,710 middleware 10872 11476 Request: POST /api/auth/guest_login/ from 127.0.0.1
+INFO 2026-05-17 23:42:48,611 middleware 10872 11476 Response: POST /api/auth/guest_login/ [200] - 1.901s
+INFO 2026-05-17 23:42:48,884 middleware 10872 11476 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-17 23:42:48,987 middleware 10872 11476 Response: GET /api/auth/profile/ [200] - 0.103s
+INFO 2026-05-17 23:42:48,990 middleware 10872 13248 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-17 23:42:49,064 middleware 10872 13248 Response: GET /api/auth/profile/ [200] - 0.074s
+INFO 2026-05-17 23:43:00,991 middleware 10872 13248 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 23:43:01,547 middleware 10872 13248 Response: POST /api/submissions/ [201] - 0.556s
+INFO 2026-05-17 23:43:08,798 middleware 10872 13248 Request: GET /api/submissions/9f892d10-8569-4f74-9488-62fa0fbb06a2/status/ from 127.0.0.1
+INFO 2026-05-17 23:43:08,883 middleware 10872 13248 Response: GET /api/submissions/9f892d10-8569-4f74-9488-62fa0fbb06a2/status/ [200] - 0.085s
+INFO 2026-05-17 23:43:11,753 middleware 10872 13248 Request: GET /api/submissions/9f892d10-8569-4f74-9488-62fa0fbb06a2/status/ from 127.0.0.1
+INFO 2026-05-17 23:43:11,964 middleware 10872 13248 Response: GET /api/submissions/9f892d10-8569-4f74-9488-62fa0fbb06a2/status/ [200] - 0.211s
+INFO 2026-05-17 23:43:13,854 middleware 10872 13248 Request: POST /api/submissions/9f892d10-8569-4f74-9488-62fa0fbb06a2/terminate/ from 127.0.0.1
+INFO 2026-05-17 23:43:14,021 middleware 10872 13248 Response: POST /api/submissions/9f892d10-8569-4f74-9488-62fa0fbb06a2/terminate/ [200] - 0.167s
+INFO 2026-05-17 23:43:45,791 middleware 10872 13248 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 23:43:45,903 middleware 10872 13248 Response: POST /api/submissions/ [201] - 0.111s
+INFO 2026-05-17 23:43:46,249 tasks 15428 8744 Processing submission febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a
+INFO 2026-05-17 23:43:50,929 middleware 10872 13248 Request: GET /api/submissions/febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a/status/ from 127.0.0.1
+INFO 2026-05-17 23:43:51,974 middleware 10872 13248 Response: GET /api/submissions/febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a/status/ [200] - 1.045s
+INFO 2026-05-17 23:43:53,881 middleware 10872 13248 Request: POST /api/submissions/febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a/terminate/ from 127.0.0.1
+INFO 2026-05-17 23:43:53,922 middleware 10872 11476 Request: GET /api/submissions/febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a/status/ from 127.0.0.1
+INFO 2026-05-17 23:43:54,214 middleware 10872 13248 Response: POST /api/submissions/febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a/terminate/ [200] - 0.333s
+INFO 2026-05-17 23:43:54,240 middleware 10872 11476 Response: GET /api/submissions/febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a/status/ [200] - 0.318s
+INFO 2026-05-17 23:44:34,196 tasks 15428 8744 Submission febdedb2-4d9a-4c81-b5a0-2cb4e6d82e3a terminated during ML call — discarding result
+INFO 2026-05-17 23:47:45,083 middleware 10872 10908 Request: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ from 127.0.0.1
+ERROR 2026-05-17 23:47:45,230 exceptions 10872 10908 Exception occurred: No Submission matches the given query.
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 90, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+apps.submissions.models.Submission.DoesNotExist: Submission matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 760, in terminate
+    submission = self.get_object()
+  File "P:\New Fyp\ace_backend\apps\submissions\views.py", line 523, in get_object
+    return super().get_object()
+           ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 100, in get_object
+    obj = get_object_or_404(queryset, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\rest_framework\generics.py", line 19, in get_object_or_404
+    return _get_object_or_404(queryset, *filter_args, **filter_kwargs)
+  File "C:\Users\M HASSAN KHAN\AppData\Local\Programs\Python\Python313\Lib\site-packages\django\shortcuts.py", line 92, in get_object_or_404
+    raise Http404(
+        "No %s matches the given query." % queryset.model._meta.object_name
+    )
+django.http.response.Http404: No Submission matches the given query.
+INFO 2026-05-17 23:47:45,247 middleware 10872 10908 Response: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ [404] - 0.164s
+WARNING 2026-05-17 23:47:45,254 log 10872 10908 Not Found: /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/
+WARNING 2026-05-17 23:47:45,257 basehttp 10872 10908 "POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ HTTP/1.1" 404 118
+INFO 2026-05-17 23:50:56,012 middleware 10532 6224 Request: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ from 127.0.0.1
+INFO 2026-05-17 23:50:56,349 middleware 10532 6224 Response: POST /api/submissions/aa731751-9760-48ab-ac41-91269208acb7/terminate/ [200] - 0.337s
+INFO 2026-05-17 23:51:21,114 middleware 10532 6224 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-17 23:51:21,725 middleware 10532 6224 Response: POST /api/submissions/ [201] - 0.611s
+INFO 2026-05-17 23:51:22,046 tasks 15428 8744 Processing submission 1b673f07-7781-464c-a73e-7598e2a1ef92
+INFO 2026-05-17 23:51:26,903 middleware 10532 6224 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:27,217 middleware 10532 6224 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.313s
+INFO 2026-05-17 23:51:29,747 middleware 10532 6224 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:29,998 middleware 10532 6224 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.250s
+INFO 2026-05-17 23:51:32,758 middleware 10532 6224 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:32,937 middleware 10532 6224 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.179s
+INFO 2026-05-17 23:51:35,783 middleware 10532 6224 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:36,445 middleware 10532 6224 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.662s
+INFO 2026-05-17 23:51:38,747 middleware 10532 6224 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:38,922 middleware 10532 6224 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.175s
+INFO 2026-05-17 23:51:41,762 middleware 10532 6224 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:41,930 middleware 10532 6224 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.168s
+INFO 2026-05-17 23:51:44,814 middleware 10532 6224 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:44,953 middleware 10532 6224 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.140s
+INFO 2026-05-17 23:51:47,757 middleware 10532 15336 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:48,135 middleware 10532 15336 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.377s
+INFO 2026-05-17 23:51:48,452 tasks 15428 8744 Received analysis for 1 paragraphs
+INFO 2026-05-17 23:51:48,486 tasks 15428 8744 PDF report saved for submission 1b673f07-7781-464c-a73e-7598e2a1ef92
+INFO 2026-05-17 23:51:48,490 tasks 15428 8744 Submission 1b673f07-7781-464c-a73e-7598e2a1ef92 completed (1 paragraphs)
+INFO 2026-05-17 23:51:50,968 middleware 10532 15336 Request: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ from 127.0.0.1
+INFO 2026-05-17 23:51:51,393 middleware 10532 15336 Response: GET /api/submissions/1b673f07-7781-464c-a73e-7598e2a1ef92/status/ [200] - 0.425s
+INFO 2026-05-17 23:51:51,554 middleware 10532 15336 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-17 23:51:51,775 middleware 10532 15336 Response: GET /api/results/ [200] - 0.221s

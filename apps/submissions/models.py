@@ -12,11 +12,13 @@ class Submission(models.Model):
         ('queued', 'Queued'),
         ('processing', 'Processing'),
         ('completed', 'Completed'),
-        ('failed', 'Failed'),  
+        ('failed', 'Failed'),
+        ('terminated', 'Terminated'),
     ]
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='submissions')
+    task_id = models.CharField(max_length=255, null=True, blank=True)
     
     # here i link this to assignment model in class app
     assignment = models.ForeignKey(

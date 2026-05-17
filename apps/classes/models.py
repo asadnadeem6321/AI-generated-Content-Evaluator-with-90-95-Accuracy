@@ -82,7 +82,7 @@ class Assignment(models.Model):
     description = models.TextField(blank=True, help_text='Assignment instructions')
     
     deadline = models.DateTimeField(help_text='Submission deadline')
-    max_score = models.DecimalField(max_digits=5, decimal_places=2, default=100.00)
+
 
     created_by = models.ForeignKey(User, on_delete=models.CASCADE, related_name='assignments_created')
     created_at = models.DateTimeField(auto_now_add=True)
