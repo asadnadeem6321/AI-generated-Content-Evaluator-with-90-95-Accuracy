@@ -1,4 +1,4 @@
-celery -A config worker -l info -Q default,celery
+celery -A config worker -l info -Q submissions,default,celery
 python manage.py runserver
 sudo docker-compose up -d
 sudo systemctl stop redis
