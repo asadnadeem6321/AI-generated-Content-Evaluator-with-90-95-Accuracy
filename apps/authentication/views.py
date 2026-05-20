@@ -138,7 +138,7 @@ class AuthViewSet(viewsets.GenericViewSet):
             }
         }, status=status.HTTP_200_OK)
 
-    # ── ADMIN LOGIN ────────────────────────────────────────────────────────────
+    #  ADMIN LOGIN 
     @action(detail=False, methods=['post'])
     def admin_login(self, request):
         """Admin login — superusers only. Returns JWT tokens."""
@@ -167,7 +167,7 @@ class AuthViewSet(viewsets.GenericViewSet):
             }
         }, status=status.HTTP_200_OK)
 
-    # ── LIST ALL USERS ─────────────────────────────────────────────────────────
+    #  LIST ALL USERS ─
     @action(detail=False, methods=['get'], url_path='admin/users')
     def admin_list_users(self, request):
         """Return all users with their details. Superuser only."""
@@ -177,8 +177,19 @@ class AuthViewSet(viewsets.GenericViewSet):
             'role', 'is_active', 'date_joined'
         )
         return Response(list(users), status=status.HTTP_200_OK)
+    
+    #  Total student teachers and guests count
+    @action(detail=False, methods=['get'], url_path='admin/stats')
+    def admin_stats(self, request):
+        """Return total count of each role. Superuser only."""
+        return Response({
+            'total_students': User.objects.filter(role='student').count(),
+            'total_teachers': User.objects.filter(role='teacher').count(),
+            'total_guests':   User.objects.filter(role='guest').count(),
+            'total_users':    User.objects.count(),
+        }, status=status.HTTP_200_OK)
 
-    # ── DELETE USER BY ID ──────────────────────────────────────────────────────
+    #  DELETE USER BY ID 
     @action(detail=False, methods=['delete'], url_path='admin/users/(?P<user_id>[^/.]+)')
     def admin_delete_user(self, request, user_id=None):
         """Delete any user by ID. Superuser only."""
@@ -190,7 +201,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         user.delete()
         return Response({'message': 'User deleted successfully'}, status=status.HTTP_204_NO_CONTENT)
 
-    # ── CHANGE PASSWORD (logged in) ────────────────────────────────────────────
+    #  CHANGE PASSWORD (logged in) 
     @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
     def change_password(self, request):
         current_password = request.data.get('current_password')
@@ -220,7 +231,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         EmailService.send_password_change_notification(user)
         return Response({"message": "Password successfully updated"}, status=status.HTTP_200_OK)
 
-    # ── CHANGE PASSWORD VIA OTP (logged in) ────────────────────────────────────
+    #  CHANGE PASSWORD VIA OTP (logged in) 
     @action(detail=False, methods=["post"], permission_classes=[IsAuthenticated])
     def change_password_otp(self, request):
         user = request.user
@@ -230,7 +241,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         except Exception:
             return Response({'error': 'Failed to send OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    # ── CHANGE PASSWORD VIA OTP (logged out) ──────────────────────────────────
+    #  CHANGE PASSWORD VIA OTP (logged out) 
     @action(detail=False, methods=["post"], permission_classes=[AllowAny])
     def change_password_otp_logout(self, request):
         email = request.data.get("email")
@@ -245,7 +256,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         except Exception:
             return Response({'error': 'Failed to send OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-    # ── CONFIRM OTP TO CHANGE PASSWORD ─────────────────────────────────────────
+    #  CONFIRM OTP TO CHANGE PASSWORD ─
     @action(detail=False, methods=["post"])
     def confirm_password_otp(self, request):
         email = request.data.get('email')
@@ -280,7 +291,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         EmailService.send_password_change_notification(user)
         return Response({"message": "Password successfully updated"}, status=status.HTTP_200_OK)
 
-    # ── LOGOUT ─
+    #  LOGOUT ─
     @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
     def logout(self, request):
         refresh_token = request.data.get('refresh')
@@ -293,7 +304,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         except Exception as e:
             return Response({'error': f'{e}, token is not valid'}, status=status.HTTP_400_BAD_REQUEST)
 
-    # ── DELETE OWN ACCOUNT ─────────────────────────────────────────────────────
+    #  DELETE OWN ACCOUNT ─
     @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
     def delete_account(self, request):
         user = request.user
@@ -303,7 +314,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         except Exception as e:
             return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
 
-    # ── REGISTER ───────────────────────────────────────────────────────────────
+    #  REGISTER ─
     def _send_otp_email(self, email, otp_code):
         subject = 'OTP verification for AI Content Evaluator'
         message = (
@@ -361,7 +372,7 @@ class AuthViewSet(viewsets.GenericViewSet):
             'detail': 'OTP sent to provided email. Complete verification to activate your account.'
         }, status=status.HTTP_201_CREATED)
 
-    # ── VERIFY OTP ─────────────────────────────────────────────────────────────
+    #  VERIFY OTP ─
     @action(detail=False, methods=['post'])
     def verify_otp(self, request):
         serializer = VerifyOTPSerializer(data=request.data)
@@ -404,7 +415,7 @@ class AuthViewSet(viewsets.GenericViewSet):
             }
         }, status=status.HTTP_201_CREATED)
 
-    # ── RESEND OTP ─────────────────────────────────────────────────────────────
+    #  RESEND OTP ─
     @action(detail=False, methods=['post'])
     def resend_otp(self, request):
         serializer = ResendOTPSerializer(data=request.data)
@@ -427,7 +438,7 @@ class AuthViewSet(viewsets.GenericViewSet):
 
         return Response({'detail': 'A new OTP was sent to your email.'}, status=status.HTTP_200_OK)
 
-    # ── PROFILE 
+    #  PROFILE 
     @action(detail=False, methods=['get', 'put', 'patch'])
     def profile(self, request):
         if request.method == 'GET':
