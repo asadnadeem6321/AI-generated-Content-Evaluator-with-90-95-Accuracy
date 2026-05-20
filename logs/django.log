@@ -18760,3 +18760,1387 @@ INFO 2026-05-17 19:44:49,226 middleware 89829 131182675072704 Request: GET /api/
 INFO 2026-05-17 19:44:49,257 middleware 89829 131182675072704 Response: GET /api/submissions/e84a33e1-a501-4641-a8a9-e1ead46bedd1/status/ [200] - 0.031s
 INFO 2026-05-17 19:44:49,329 middleware 89829 131182675072704 Request: GET /api/results/ from 127.0.0.1
 INFO 2026-05-17 19:44:49,394 middleware 89829 131182675072704 Response: GET /api/results/ [200] - 0.065s
+INFO 2026-05-18 05:30:21,308 middleware 6627 132972970763968 Request: GET /admin/results/result/149/change/ from 127.0.0.1
+INFO 2026-05-18 05:30:21,860 middleware 6627 132972970763968 Response: GET /admin/results/result/149/change/ [200] - 0.552s
+INFO 2026-05-18 05:30:22,617 middleware 6627 132972970763968 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-18 05:30:22,636 middleware 6627 132972970763968 Response: GET /favicon.ico [404] - 0.019s
+WARNING 2026-05-18 05:30:22,637 log 6627 132972970763968 Not Found: /favicon.ico
+WARNING 2026-05-18 05:30:22,638 basehttp 6627 132972970763968 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-18 05:31:46,342 middleware 6627 132972962371264 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-18 05:31:47,196 middleware 6627 132972962371264 Response: POST /api/auth/teacher_login/ [200] - 0.854s
+INFO 2026-05-18 05:31:48,693 middleware 6627 132972590134976 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,696 middleware 6627 132972962371264 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,695 middleware 6627 132972573349568 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,697 middleware 6627 132972942440128 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,760 middleware 6627 132972590134976 Response: GET /api/auth/profile/ [200] - 0.067s
+INFO 2026-05-18 05:31:48,844 middleware 6627 132972950832832 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,847 middleware 6627 132972962371264 Response: GET /api/dashboard/teacher_overview/ [200] - 0.151s
+INFO 2026-05-18 05:31:48,874 middleware 6627 132972573349568 Response: GET /api/submissions/ [200] - 0.179s
+INFO 2026-05-18 05:31:48,888 middleware 6627 132972950832832 Response: GET /api/auth/profile/ [200] - 0.044s
+INFO 2026-05-18 05:31:48,900 middleware 6627 132972950832832 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,916 middleware 6627 132972942440128 Response: GET /api/results/ [200] - 0.219s
+INFO 2026-05-18 05:31:48,920 middleware 6627 132972962371264 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,965 middleware 6627 132972573349568 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:31:48,982 middleware 6627 132972950832832 Response: GET /api/dashboard/teacher_overview/ [200] - 0.082s
+INFO 2026-05-18 05:31:49,047 middleware 6627 132972962371264 Response: GET /api/submissions/ [200] - 0.127s
+INFO 2026-05-18 05:31:49,091 middleware 6627 132972573349568 Response: GET /api/results/ [200] - 0.126s
+INFO 2026-05-18 05:32:05,095 middleware 6627 132972962371264 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,099 middleware 6627 132972573349568 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,113 middleware 6627 132972950832832 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,114 middleware 6627 132972942440128 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,155 middleware 6627 132972962371264 Response: GET /api/auth/profile/ [200] - 0.060s
+INFO 2026-05-18 05:32:05,188 middleware 6627 132972590134976 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,222 middleware 6627 132972573349568 Response: GET /api/dashboard/teacher_overview/ [200] - 0.122s
+INFO 2026-05-18 05:32:05,232 middleware 6627 132972962371264 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,266 middleware 6627 132972950832832 Response: GET /api/submissions/ [200] - 0.153s
+INFO 2026-05-18 05:32:05,272 middleware 6627 132972573349568 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,286 middleware 6627 132972590134976 Response: GET /api/auth/profile/ [200] - 0.098s
+INFO 2026-05-18 05:32:05,339 middleware 6627 132972962371264 Response: GET /api/dashboard/teacher_overview/ [200] - 0.107s
+INFO 2026-05-18 05:32:05,364 middleware 6627 132972942440128 Response: GET /api/results/ [200] - 0.250s
+INFO 2026-05-18 05:32:05,375 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:32:05,394 middleware 6627 132972573349568 Response: GET /api/submissions/ [200] - 0.122s
+INFO 2026-05-18 05:32:05,473 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.099s
+INFO 2026-05-18 05:32:49,081 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:32:49,315 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.233s
+INFO 2026-05-18 05:32:49,417 tasks 6921 125950657052800 Processing submission c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2
+INFO 2026-05-18 05:32:54,344 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:32:54,384 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.040s
+INFO 2026-05-18 05:32:57,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:32:57,362 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.032s
+INFO 2026-05-18 05:33:00,338 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:00,390 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.052s
+INFO 2026-05-18 05:33:03,335 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:03,378 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.043s
+INFO 2026-05-18 05:33:06,336 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:06,385 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.049s
+INFO 2026-05-18 05:33:09,329 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:09,363 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.034s
+INFO 2026-05-18 05:33:12,334 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:12,374 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.040s
+INFO 2026-05-18 05:33:15,333 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:15,370 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.038s
+INFO 2026-05-18 05:33:18,337 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:18,405 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.069s
+INFO 2026-05-18 05:33:21,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:21,367 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.036s
+INFO 2026-05-18 05:33:24,336 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:24,381 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.045s
+INFO 2026-05-18 05:33:27,333 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:27,396 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.063s
+INFO 2026-05-18 05:33:30,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:30,365 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.035s
+INFO 2026-05-18 05:33:33,331 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:33,379 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.047s
+INFO 2026-05-18 05:33:36,376 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:36,558 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.182s
+INFO 2026-05-18 05:33:39,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:39,367 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.036s
+INFO 2026-05-18 05:33:42,332 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:42,370 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.038s
+INFO 2026-05-18 05:33:45,336 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:45,367 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.031s
+INFO 2026-05-18 05:33:48,333 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:48,394 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.061s
+INFO 2026-05-18 05:33:51,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:51,370 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.040s
+INFO 2026-05-18 05:33:54,333 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:54,372 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.039s
+INFO 2026-05-18 05:33:57,329 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:33:57,363 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.034s
+INFO 2026-05-18 05:34:00,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:00,369 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.039s
+INFO 2026-05-18 05:34:03,335 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:03,390 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.055s
+INFO 2026-05-18 05:34:06,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:06,382 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.052s
+INFO 2026-05-18 05:34:09,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:09,370 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.040s
+INFO 2026-05-18 05:34:12,399 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:12,672 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.273s
+INFO 2026-05-18 05:34:15,330 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:15,355 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.026s
+INFO 2026-05-18 05:34:18,338 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:18,376 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.038s
+INFO 2026-05-18 05:34:21,336 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:21,372 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.036s
+INFO 2026-05-18 05:34:24,339 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:24,396 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.057s
+INFO 2026-05-18 05:34:27,342 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:27,396 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.054s
+INFO 2026-05-18 05:34:29,694 tasks 6921 125950657052800 Received analysis for 14 paragraphs
+INFO 2026-05-18 05:34:29,755 tasks 6921 125950657052800 PDF report saved for submission c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2
+INFO 2026-05-18 05:34:29,760 tasks 6921 125950657052800 Submission c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2 completed (14 paragraphs)
+INFO 2026-05-18 05:34:30,332 middleware 6627 132972962371264 Request: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:30,357 middleware 6627 132972962371264 Response: GET /api/submissions/c7bec20b-a958-4f9f-bdb7-bc3f50ecd2f2/status/ [200] - 0.025s
+INFO 2026-05-18 05:34:30,417 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:34:30,476 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.060s
+INFO 2026-05-18 05:34:52,099 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:34:52,133 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.034s
+INFO 2026-05-18 05:34:52,178 tasks 6921 125950657052800 Processing submission 82fd3071-4359-4667-8a18-f32477330ac1
+INFO 2026-05-18 05:34:57,165 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:34:57,199 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.034s
+INFO 2026-05-18 05:35:00,158 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:00,195 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.037s
+INFO 2026-05-18 05:35:03,158 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:03,208 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.051s
+INFO 2026-05-18 05:35:06,155 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:06,197 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.042s
+INFO 2026-05-18 05:35:09,154 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:09,179 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.025s
+INFO 2026-05-18 05:35:12,156 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:12,208 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.052s
+INFO 2026-05-18 05:35:15,162 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:15,193 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.031s
+INFO 2026-05-18 05:35:18,166 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:18,207 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.041s
+INFO 2026-05-18 05:35:21,164 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:21,262 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.098s
+INFO 2026-05-18 05:35:24,154 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:24,189 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.036s
+INFO 2026-05-18 05:35:27,158 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:27,257 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.099s
+INFO 2026-05-18 05:35:30,160 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:30,218 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.058s
+INFO 2026-05-18 05:35:33,155 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:33,204 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.048s
+INFO 2026-05-18 05:35:36,157 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:36,209 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.053s
+INFO 2026-05-18 05:35:39,164 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:39,213 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.049s
+INFO 2026-05-18 05:35:42,158 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:42,200 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.042s
+INFO 2026-05-18 05:35:45,152 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:45,186 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.034s
+INFO 2026-05-18 05:35:48,165 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:48,217 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.053s
+INFO 2026-05-18 05:35:51,156 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:51,195 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.039s
+INFO 2026-05-18 05:35:54,165 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:54,226 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.061s
+INFO 2026-05-18 05:35:57,172 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:35:57,276 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.104s
+INFO 2026-05-18 05:36:00,196 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:00,345 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.149s
+INFO 2026-05-18 05:36:03,158 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:03,204 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.046s
+INFO 2026-05-18 05:36:06,156 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:06,192 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.036s
+INFO 2026-05-18 05:36:09,158 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:09,205 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.047s
+INFO 2026-05-18 05:36:12,181 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:12,293 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.112s
+INFO 2026-05-18 05:36:15,168 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:15,295 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.127s
+INFO 2026-05-18 05:36:18,154 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:18,190 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.036s
+INFO 2026-05-18 05:36:21,156 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:21,196 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.040s
+INFO 2026-05-18 05:36:23,583 tasks 6921 125950657052800 Received analysis for 17 paragraphs
+INFO 2026-05-18 05:36:23,627 tasks 6921 125950657052800 PDF report saved for submission 82fd3071-4359-4667-8a18-f32477330ac1
+INFO 2026-05-18 05:36:23,633 tasks 6921 125950657052800 Submission 82fd3071-4359-4667-8a18-f32477330ac1 completed (17 paragraphs)
+INFO 2026-05-18 05:36:24,159 middleware 6627 132972962371264 Request: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ from 127.0.0.1
+INFO 2026-05-18 05:36:24,188 middleware 6627 132972962371264 Response: GET /api/submissions/82fd3071-4359-4667-8a18-f32477330ac1/status/ [200] - 0.030s
+INFO 2026-05-18 05:36:24,246 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:36:24,309 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.063s
+INFO 2026-05-18 05:37:19,260 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:37:19,292 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.031s
+INFO 2026-05-18 05:37:19,355 tasks 6921 125950657052800 Processing submission 2ef629cd-4f02-4abc-a8ce-49da2b75e7ad
+INFO 2026-05-18 05:37:21,903 tasks 6921 125950657052800 Received analysis for 1 paragraphs
+INFO 2026-05-18 05:37:21,922 tasks 6921 125950657052800 PDF report saved for submission 2ef629cd-4f02-4abc-a8ce-49da2b75e7ad
+INFO 2026-05-18 05:37:21,926 tasks 6921 125950657052800 Submission 2ef629cd-4f02-4abc-a8ce-49da2b75e7ad completed (1 paragraphs)
+INFO 2026-05-18 05:37:24,316 middleware 6627 132972962371264 Request: GET /api/submissions/2ef629cd-4f02-4abc-a8ce-49da2b75e7ad/status/ from 127.0.0.1
+INFO 2026-05-18 05:37:24,343 middleware 6627 132972962371264 Response: GET /api/submissions/2ef629cd-4f02-4abc-a8ce-49da2b75e7ad/status/ [200] - 0.027s
+INFO 2026-05-18 05:37:24,459 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:37:24,575 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.116s
+INFO 2026-05-18 05:37:57,126 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:37:57,174 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.048s
+INFO 2026-05-18 05:37:57,216 tasks 6921 125950657052800 Processing submission 3db56987-103e-4b30-a72e-749532ae95b7
+INFO 2026-05-18 05:38:02,206 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:02,241 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.035s
+INFO 2026-05-18 05:38:05,193 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:05,227 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.035s
+INFO 2026-05-18 05:38:08,197 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:08,240 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.043s
+INFO 2026-05-18 05:38:11,193 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:11,227 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.034s
+INFO 2026-05-18 05:38:14,193 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:14,225 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.032s
+INFO 2026-05-18 05:38:17,194 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:17,232 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.038s
+INFO 2026-05-18 05:38:20,193 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:20,218 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.026s
+INFO 2026-05-18 05:38:20,237 tasks 6921 125950657052800 Received analysis for 9 paragraphs
+INFO 2026-05-18 05:38:20,258 tasks 6921 125950657052800 PDF report saved for submission 3db56987-103e-4b30-a72e-749532ae95b7
+INFO 2026-05-18 05:38:20,262 tasks 6921 125950657052800 Submission 3db56987-103e-4b30-a72e-749532ae95b7 completed (9 paragraphs)
+INFO 2026-05-18 05:38:23,192 middleware 6627 132972962371264 Request: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ from 127.0.0.1
+INFO 2026-05-18 05:38:23,216 middleware 6627 132972962371264 Response: GET /api/submissions/3db56987-103e-4b30-a72e-749532ae95b7/status/ [200] - 0.024s
+INFO 2026-05-18 05:38:23,273 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:38:23,340 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.067s
+INFO 2026-05-18 05:39:16,454 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:39:16,491 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.037s
+INFO 2026-05-18 05:39:16,543 tasks 6921 125950657052800 Processing submission 9ee9d5dc-2917-440b-aacf-394e3d5b805c
+INFO 2026-05-18 05:39:21,534 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:21,575 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.041s
+INFO 2026-05-18 05:39:24,515 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:24,554 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.039s
+INFO 2026-05-18 05:39:27,517 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:27,576 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.059s
+INFO 2026-05-18 05:39:30,515 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:30,550 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.035s
+INFO 2026-05-18 05:39:33,515 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:33,561 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.046s
+INFO 2026-05-18 05:39:36,513 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:36,545 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.032s
+INFO 2026-05-18 05:39:39,511 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:39,536 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.025s
+INFO 2026-05-18 05:39:40,071 tasks 6921 125950657052800 Received analysis for 9 paragraphs
+INFO 2026-05-18 05:39:40,095 tasks 6921 125950657052800 PDF report saved for submission 9ee9d5dc-2917-440b-aacf-394e3d5b805c
+INFO 2026-05-18 05:39:40,099 tasks 6921 125950657052800 Submission 9ee9d5dc-2917-440b-aacf-394e3d5b805c completed (9 paragraphs)
+INFO 2026-05-18 05:39:42,512 middleware 6627 132972962371264 Request: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ from 127.0.0.1
+INFO 2026-05-18 05:39:42,534 middleware 6627 132972962371264 Response: GET /api/submissions/9ee9d5dc-2917-440b-aacf-394e3d5b805c/status/ [200] - 0.023s
+INFO 2026-05-18 05:39:42,593 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:39:42,665 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.073s
+INFO 2026-05-18 05:40:05,156 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:40:05,189 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.033s
+INFO 2026-05-18 05:40:05,244 tasks 6921 125950657052800 Processing submission 54c73d5d-d478-499e-8416-0f05e6d0e7be
+INFO 2026-05-18 05:40:07,294 tasks 6921 125950657052800 Received analysis for 1 paragraphs
+INFO 2026-05-18 05:40:07,317 tasks 6921 125950657052800 PDF report saved for submission 54c73d5d-d478-499e-8416-0f05e6d0e7be
+INFO 2026-05-18 05:40:07,321 tasks 6921 125950657052800 Submission 54c73d5d-d478-499e-8416-0f05e6d0e7be completed (1 paragraphs)
+INFO 2026-05-18 05:40:10,214 middleware 6627 132972962371264 Request: GET /api/submissions/54c73d5d-d478-499e-8416-0f05e6d0e7be/status/ from 127.0.0.1
+INFO 2026-05-18 05:40:10,240 middleware 6627 132972962371264 Response: GET /api/submissions/54c73d5d-d478-499e-8416-0f05e6d0e7be/status/ [200] - 0.026s
+INFO 2026-05-18 05:40:10,338 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:40:10,417 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.079s
+INFO 2026-05-18 05:44:43,142 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:44:43,203 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.062s
+INFO 2026-05-18 05:44:43,425 tasks 6921 125950657052800 Processing submission 9c2cfdda-e552-44ff-b4dc-408414d8a7aa
+INFO 2026-05-18 05:44:46,559 tasks 6921 125950657052800 Received analysis for 1 paragraphs
+INFO 2026-05-18 05:44:46,606 tasks 6921 125950657052800 PDF report saved for submission 9c2cfdda-e552-44ff-b4dc-408414d8a7aa
+INFO 2026-05-18 05:44:46,612 tasks 6921 125950657052800 Submission 9c2cfdda-e552-44ff-b4dc-408414d8a7aa completed (1 paragraphs)
+INFO 2026-05-18 05:44:48,242 middleware 6627 132972962371264 Request: GET /api/submissions/9c2cfdda-e552-44ff-b4dc-408414d8a7aa/status/ from 127.0.0.1
+INFO 2026-05-18 05:44:48,266 middleware 6627 132972962371264 Response: GET /api/submissions/9c2cfdda-e552-44ff-b4dc-408414d8a7aa/status/ [200] - 0.024s
+INFO 2026-05-18 05:44:48,369 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:44:48,448 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.079s
+INFO 2026-05-18 05:46:40,984 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:46:41,036 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.052s
+INFO 2026-05-18 05:46:41,104 tasks 6921 125950657052800 Processing submission e19f0357-9fc3-4428-8598-2a7c881b853b
+INFO 2026-05-18 05:46:46,105 middleware 6627 132972962371264 Request: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ from 127.0.0.1
+INFO 2026-05-18 05:46:46,154 middleware 6627 132972962371264 Response: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ [200] - 0.049s
+INFO 2026-05-18 05:46:49,080 middleware 6627 132972962371264 Request: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ from 127.0.0.1
+INFO 2026-05-18 05:46:49,124 middleware 6627 132972962371264 Response: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ [200] - 0.044s
+INFO 2026-05-18 05:46:52,080 middleware 6627 132972962371264 Request: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ from 127.0.0.1
+INFO 2026-05-18 05:46:52,117 middleware 6627 132972962371264 Response: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ [200] - 0.037s
+INFO 2026-05-18 05:46:55,080 middleware 6627 132972962371264 Request: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ from 127.0.0.1
+INFO 2026-05-18 05:46:55,126 middleware 6627 132972962371264 Response: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ [200] - 0.046s
+INFO 2026-05-18 05:46:58,080 middleware 6627 132972962371264 Request: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ from 127.0.0.1
+INFO 2026-05-18 05:46:58,113 middleware 6627 132972962371264 Response: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ [200] - 0.033s
+INFO 2026-05-18 05:47:01,082 middleware 6627 132972962371264 Request: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ from 127.0.0.1
+INFO 2026-05-18 05:47:01,125 middleware 6627 132972962371264 Response: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ [200] - 0.044s
+INFO 2026-05-18 05:47:04,028 tasks 6921 125950657052800 Received analysis for 4 paragraphs
+INFO 2026-05-18 05:47:04,053 tasks 6921 125950657052800 PDF report saved for submission e19f0357-9fc3-4428-8598-2a7c881b853b
+INFO 2026-05-18 05:47:04,058 tasks 6921 125950657052800 Submission e19f0357-9fc3-4428-8598-2a7c881b853b completed (4 paragraphs)
+INFO 2026-05-18 05:47:04,082 middleware 6627 132972962371264 Request: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ from 127.0.0.1
+INFO 2026-05-18 05:47:04,122 middleware 6627 132972962371264 Response: GET /api/submissions/e19f0357-9fc3-4428-8598-2a7c881b853b/status/ [200] - 0.040s
+INFO 2026-05-18 05:47:04,203 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:47:04,341 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.138s
+INFO 2026-05-18 05:48:18,585 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:48:18,618 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.032s
+INFO 2026-05-18 05:48:18,656 tasks 6921 125950657052800 Processing submission e7ec94ac-d14a-45fa-b3da-2b43fb254c9a
+INFO 2026-05-18 05:48:23,216 tasks 6921 125950657052800 Received analysis for 3 paragraphs
+INFO 2026-05-18 05:48:23,251 tasks 6921 125950657052800 PDF report saved for submission e7ec94ac-d14a-45fa-b3da-2b43fb254c9a
+INFO 2026-05-18 05:48:23,255 tasks 6921 125950657052800 Submission e7ec94ac-d14a-45fa-b3da-2b43fb254c9a completed (3 paragraphs)
+INFO 2026-05-18 05:48:23,652 middleware 6627 132972962371264 Request: GET /api/submissions/e7ec94ac-d14a-45fa-b3da-2b43fb254c9a/status/ from 127.0.0.1
+INFO 2026-05-18 05:48:23,677 middleware 6627 132972962371264 Response: GET /api/submissions/e7ec94ac-d14a-45fa-b3da-2b43fb254c9a/status/ [200] - 0.026s
+INFO 2026-05-18 05:48:23,778 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:48:23,873 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.095s
+INFO 2026-05-18 05:49:27,742 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:49:27,799 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.056s
+INFO 2026-05-18 05:49:27,872 tasks 6921 125950657052800 Processing submission 01f40078-5e04-414d-abe7-90aeb62757e4
+INFO 2026-05-18 05:49:32,842 middleware 6627 132972962371264 Request: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ from 127.0.0.1
+INFO 2026-05-18 05:49:32,881 middleware 6627 132972962371264 Response: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ [200] - 0.039s
+INFO 2026-05-18 05:49:35,829 middleware 6627 132972962371264 Request: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ from 127.0.0.1
+INFO 2026-05-18 05:49:35,866 middleware 6627 132972962371264 Response: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ [200] - 0.037s
+INFO 2026-05-18 05:49:38,837 middleware 6627 132972962371264 Request: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ from 127.0.0.1
+INFO 2026-05-18 05:49:38,873 middleware 6627 132972962371264 Response: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ [200] - 0.036s
+INFO 2026-05-18 05:49:40,010 tasks 6921 125950657052800 Received analysis for 6 paragraphs
+INFO 2026-05-18 05:49:40,054 tasks 6921 125950657052800 PDF report saved for submission 01f40078-5e04-414d-abe7-90aeb62757e4
+INFO 2026-05-18 05:49:40,058 tasks 6921 125950657052800 Submission 01f40078-5e04-414d-abe7-90aeb62757e4 completed (6 paragraphs)
+INFO 2026-05-18 05:49:41,826 middleware 6627 132972962371264 Request: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ from 127.0.0.1
+INFO 2026-05-18 05:49:41,851 middleware 6627 132972962371264 Response: GET /api/submissions/01f40078-5e04-414d-abe7-90aeb62757e4/status/ [200] - 0.026s
+INFO 2026-05-18 05:49:41,912 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:49:42,006 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.094s
+INFO 2026-05-18 05:50:40,723 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:50:40,796 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.073s
+INFO 2026-05-18 05:50:40,864 tasks 6921 125950657052800 Processing submission 52bbd4a7-9380-472d-b60d-b49fc30d7f67
+INFO 2026-05-18 05:50:45,824 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:50:45,863 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.038s
+INFO 2026-05-18 05:50:48,821 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:50:48,862 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.041s
+INFO 2026-05-18 05:50:51,817 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:50:51,851 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.034s
+INFO 2026-05-18 05:50:54,819 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:50:54,846 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.027s
+INFO 2026-05-18 05:50:57,827 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:50:57,874 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.047s
+INFO 2026-05-18 05:51:00,824 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:00,883 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.058s
+INFO 2026-05-18 05:51:03,820 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:03,859 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.039s
+INFO 2026-05-18 05:51:06,823 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:06,868 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.045s
+INFO 2026-05-18 05:51:09,819 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:09,859 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.041s
+INFO 2026-05-18 05:51:12,823 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:12,871 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.049s
+INFO 2026-05-18 05:51:15,823 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:15,860 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.037s
+INFO 2026-05-18 05:51:18,823 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:18,877 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.054s
+INFO 2026-05-18 05:51:21,818 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:21,853 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.036s
+INFO 2026-05-18 05:51:24,819 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:24,851 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.032s
+INFO 2026-05-18 05:51:27,866 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:28,016 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.144s
+INFO 2026-05-18 05:51:30,818 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:30,852 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.034s
+INFO 2026-05-18 05:51:33,823 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:33,855 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.032s
+INFO 2026-05-18 05:51:36,827 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:36,875 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.048s
+INFO 2026-05-18 05:51:39,821 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:39,865 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.043s
+INFO 2026-05-18 05:51:42,868 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:42,999 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.130s
+INFO 2026-05-18 05:51:45,823 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:45,885 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.061s
+INFO 2026-05-18 05:51:48,820 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:48,860 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.040s
+INFO 2026-05-18 05:51:51,827 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:51,877 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.049s
+INFO 2026-05-18 05:51:54,819 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:54,854 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.035s
+INFO 2026-05-18 05:51:57,849 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:51:57,986 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.137s
+INFO 2026-05-18 05:52:00,836 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:00,993 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.157s
+INFO 2026-05-18 05:52:03,819 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:03,855 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.036s
+INFO 2026-05-18 05:52:06,820 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:06,853 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.033s
+INFO 2026-05-18 05:52:09,827 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:09,873 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.046s
+INFO 2026-05-18 05:52:12,875 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:13,056 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.181s
+INFO 2026-05-18 05:52:15,853 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:16,113 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.260s
+INFO 2026-05-18 05:52:18,822 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:18,863 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.042s
+INFO 2026-05-18 05:52:21,816 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:21,847 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.030s
+INFO 2026-05-18 05:52:24,837 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:24,976 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.139s
+INFO 2026-05-18 05:52:27,823 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:27,859 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.036s
+INFO 2026-05-18 05:52:30,821 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:30,851 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.030s
+INFO 2026-05-18 05:52:33,822 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:33,868 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.046s
+INFO 2026-05-18 05:52:35,843 tasks 6921 125950657052800 Received analysis for 68 paragraphs
+INFO 2026-05-18 05:52:35,911 tasks 6921 125950657052800 PDF report saved for submission 52bbd4a7-9380-472d-b60d-b49fc30d7f67
+INFO 2026-05-18 05:52:35,922 tasks 6921 125950657052800 Submission 52bbd4a7-9380-472d-b60d-b49fc30d7f67 completed (68 paragraphs)
+INFO 2026-05-18 05:52:36,818 middleware 6627 132972962371264 Request: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ from 127.0.0.1
+INFO 2026-05-18 05:52:36,842 middleware 6627 132972962371264 Response: GET /api/submissions/52bbd4a7-9380-472d-b60d-b49fc30d7f67/status/ [200] - 0.025s
+INFO 2026-05-18 05:52:36,904 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:52:36,996 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.091s
+INFO 2026-05-18 05:53:59,002 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:53:59,043 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.041s
+INFO 2026-05-18 05:53:59,079 tasks 6921 125950657052800 Processing submission 0bb6c179-0762-4089-a7bd-285eed3539bc
+INFO 2026-05-18 05:54:04,079 middleware 6627 132972962371264 Request: GET /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/status/ from 127.0.0.1
+INFO 2026-05-18 05:54:04,120 middleware 6627 132972962371264 Response: GET /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/status/ [200] - 0.041s
+INFO 2026-05-18 05:54:07,070 middleware 6627 132972962371264 Request: GET /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/status/ from 127.0.0.1
+INFO 2026-05-18 05:54:07,099 middleware 6627 132972962371264 Response: GET /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/status/ [200] - 0.030s
+INFO 2026-05-18 05:54:10,069 middleware 6627 132972962371264 Request: GET /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/status/ from 127.0.0.1
+INFO 2026-05-18 05:54:10,105 middleware 6627 132972962371264 Response: GET /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/status/ [200] - 0.036s
+INFO 2026-05-18 05:54:12,753 middleware 6627 132972962371264 Request: POST /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/terminate/ from 127.0.0.1
+INFO 2026-05-18 05:54:12,812 middleware 6627 132972962371264 Response: POST /api/submissions/0bb6c179-0762-4089-a7bd-285eed3539bc/terminate/ [200] - 0.059s
+INFO 2026-05-18 05:55:29,176 tasks 6921 125950657052800 Submission 0bb6c179-0762-4089-a7bd-285eed3539bc terminated during ML call — discarding result
+INFO 2026-05-18 05:56:12,316 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:56:12,353 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.036s
+INFO 2026-05-18 05:56:12,408 tasks 6921 125950657052800 Processing submission dce8a318-9596-43fa-865f-c4d54d0c8366
+INFO 2026-05-18 05:56:17,387 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:17,445 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.057s
+INFO 2026-05-18 05:56:20,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:20,422 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.046s
+INFO 2026-05-18 05:56:23,381 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:23,422 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.041s
+INFO 2026-05-18 05:56:26,375 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:26,407 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.031s
+INFO 2026-05-18 05:56:29,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:29,415 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.039s
+INFO 2026-05-18 05:56:32,373 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:32,405 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.032s
+INFO 2026-05-18 05:56:35,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:35,498 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.123s
+INFO 2026-05-18 05:56:38,375 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:38,423 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.048s
+INFO 2026-05-18 05:56:41,377 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:41,412 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.035s
+INFO 2026-05-18 05:56:44,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:44,422 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.046s
+INFO 2026-05-18 05:56:47,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:47,420 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.044s
+INFO 2026-05-18 05:56:50,397 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:50,586 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.189s
+INFO 2026-05-18 05:56:53,407 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:53,569 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.162s
+INFO 2026-05-18 05:56:56,377 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:56,439 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.061s
+INFO 2026-05-18 05:56:59,374 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:56:59,407 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.033s
+INFO 2026-05-18 05:57:02,377 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:02,413 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.036s
+INFO 2026-05-18 05:57:05,377 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:05,415 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.038s
+INFO 2026-05-18 05:57:08,397 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:08,586 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.189s
+INFO 2026-05-18 05:57:11,373 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:11,408 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.035s
+INFO 2026-05-18 05:57:14,392 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:14,499 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.107s
+INFO 2026-05-18 05:57:17,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:17,414 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.038s
+INFO 2026-05-18 05:57:20,374 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:20,409 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.035s
+INFO 2026-05-18 05:57:23,377 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:23,420 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.044s
+INFO 2026-05-18 05:57:26,413 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:26,738 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.325s
+INFO 2026-05-18 05:57:29,380 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:29,420 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.040s
+INFO 2026-05-18 05:57:32,408 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:32,567 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.159s
+INFO 2026-05-18 05:57:35,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:35,416 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.040s
+INFO 2026-05-18 05:57:38,384 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:38,421 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.038s
+INFO 2026-05-18 05:57:41,373 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:41,404 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.031s
+INFO 2026-05-18 05:57:44,405 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:44,572 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.167s
+INFO 2026-05-18 05:57:47,389 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:47,509 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.120s
+INFO 2026-05-18 05:57:50,414 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:50,560 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.146s
+INFO 2026-05-18 05:57:53,378 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:53,437 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.058s
+INFO 2026-05-18 05:57:56,373 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:56,401 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.029s
+INFO 2026-05-18 05:57:59,421 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:57:59,559 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.138s
+INFO 2026-05-18 05:58:02,397 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:58:02,497 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.100s
+INFO 2026-05-18 05:58:05,378 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:58:05,420 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.043s
+INFO 2026-05-18 05:58:08,373 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:58:08,404 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.031s
+INFO 2026-05-18 05:58:08,847 tasks 6921 125950657052800 Received analysis for 131 paragraphs
+INFO 2026-05-18 05:58:08,946 tasks 6921 125950657052800 PDF report saved for submission dce8a318-9596-43fa-865f-c4d54d0c8366
+INFO 2026-05-18 05:58:08,950 tasks 6921 125950657052800 Submission dce8a318-9596-43fa-865f-c4d54d0c8366 completed (131 paragraphs)
+INFO 2026-05-18 05:58:11,376 middleware 6627 132972962371264 Request: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ from 127.0.0.1
+INFO 2026-05-18 05:58:11,403 middleware 6627 132972962371264 Response: GET /api/submissions/dce8a318-9596-43fa-865f-c4d54d0c8366/status/ [200] - 0.027s
+INFO 2026-05-18 05:58:11,466 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:58:11,558 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.092s
+INFO 2026-05-18 05:58:49,214 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:58:49,272 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.057s
+INFO 2026-05-18 05:58:49,316 tasks 6921 125950657052800 Processing submission d0f2f37c-1170-4993-9322-2ddcc9c7aa70
+INFO 2026-05-18 05:58:54,313 middleware 6627 132972962371264 Request: GET /api/submissions/d0f2f37c-1170-4993-9322-2ddcc9c7aa70/status/ from 127.0.0.1
+INFO 2026-05-18 05:58:54,388 middleware 6627 132972962371264 Response: GET /api/submissions/d0f2f37c-1170-4993-9322-2ddcc9c7aa70/status/ [200] - 0.075s
+INFO 2026-05-18 05:58:54,778 tasks 6921 125950657052800 Received analysis for 2 paragraphs
+INFO 2026-05-18 05:58:54,810 tasks 6921 125950657052800 PDF report saved for submission d0f2f37c-1170-4993-9322-2ddcc9c7aa70
+INFO 2026-05-18 05:58:54,818 tasks 6921 125950657052800 Submission d0f2f37c-1170-4993-9322-2ddcc9c7aa70 completed (2 paragraphs)
+INFO 2026-05-18 05:58:57,292 middleware 6627 132972962371264 Request: GET /api/submissions/d0f2f37c-1170-4993-9322-2ddcc9c7aa70/status/ from 127.0.0.1
+INFO 2026-05-18 05:58:57,321 middleware 6627 132972962371264 Response: GET /api/submissions/d0f2f37c-1170-4993-9322-2ddcc9c7aa70/status/ [200] - 0.029s
+INFO 2026-05-18 05:58:57,375 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 05:58:57,490 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.115s
+INFO 2026-05-18 05:59:32,258 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 05:59:32,329 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.071s
+INFO 2026-05-18 05:59:32,462 tasks 6921 125950657052800 Processing submission d37cac96-439a-4a4a-b126-585ccff055a7
+INFO 2026-05-18 05:59:37,373 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:37,417 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.045s
+INFO 2026-05-18 05:59:40,363 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:40,397 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.034s
+INFO 2026-05-18 05:59:43,368 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:43,412 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.043s
+INFO 2026-05-18 05:59:46,360 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:46,397 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.037s
+INFO 2026-05-18 05:59:49,363 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:49,401 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.037s
+INFO 2026-05-18 05:59:52,363 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:52,399 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.036s
+INFO 2026-05-18 05:59:55,368 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:55,445 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.077s
+INFO 2026-05-18 05:59:58,363 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 05:59:58,399 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.036s
+INFO 2026-05-18 06:00:01,364 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:01,399 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.035s
+INFO 2026-05-18 06:00:04,370 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:04,416 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.046s
+INFO 2026-05-18 06:00:07,363 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:07,406 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.043s
+INFO 2026-05-18 06:00:10,361 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:10,405 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.043s
+INFO 2026-05-18 06:00:13,389 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:13,522 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.133s
+INFO 2026-05-18 06:00:16,390 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:16,520 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.131s
+INFO 2026-05-18 06:00:19,394 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:19,582 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.187s
+INFO 2026-05-18 06:00:22,388 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:22,555 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.167s
+INFO 2026-05-18 06:00:25,378 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:25,507 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.129s
+INFO 2026-05-18 06:00:28,383 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:28,494 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.111s
+INFO 2026-05-18 06:00:31,387 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:31,486 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.099s
+INFO 2026-05-18 06:00:34,365 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:34,406 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.041s
+INFO 2026-05-18 06:00:37,360 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:37,403 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.043s
+INFO 2026-05-18 06:00:40,364 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:40,410 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.046s
+INFO 2026-05-18 06:00:43,370 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:43,404 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.034s
+INFO 2026-05-18 06:00:46,361 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:46,419 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.058s
+INFO 2026-05-18 06:00:49,371 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:49,404 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.033s
+INFO 2026-05-18 06:00:52,364 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:52,410 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.045s
+INFO 2026-05-18 06:00:55,391 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:55,520 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.129s
+INFO 2026-05-18 06:00:58,362 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:00:58,401 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.039s
+INFO 2026-05-18 06:01:01,359 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:01,400 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.040s
+INFO 2026-05-18 06:01:04,360 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:04,408 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.049s
+INFO 2026-05-18 06:01:07,396 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:07,496 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.100s
+INFO 2026-05-18 06:01:10,389 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:10,530 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.141s
+INFO 2026-05-18 06:01:13,362 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:13,390 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.028s
+INFO 2026-05-18 06:01:16,358 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:16,387 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.029s
+INFO 2026-05-18 06:01:19,381 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:19,490 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.109s
+INFO 2026-05-18 06:01:22,401 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:22,514 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.113s
+INFO 2026-05-18 06:01:25,365 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:25,404 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.039s
+INFO 2026-05-18 06:01:28,361 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:28,399 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.038s
+INFO 2026-05-18 06:01:31,358 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:31,391 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.032s
+INFO 2026-05-18 06:01:31,859 tasks 6921 125950657052800 Received analysis for 131 paragraphs
+INFO 2026-05-18 06:01:31,953 tasks 6921 125950657052800 PDF report saved for submission d37cac96-439a-4a4a-b126-585ccff055a7
+INFO 2026-05-18 06:01:31,963 tasks 6921 125950657052800 Submission d37cac96-439a-4a4a-b126-585ccff055a7 completed (131 paragraphs)
+INFO 2026-05-18 06:01:34,358 middleware 6627 132972962371264 Request: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ from 127.0.0.1
+INFO 2026-05-18 06:01:34,383 middleware 6627 132972962371264 Response: GET /api/submissions/d37cac96-439a-4a4a-b126-585ccff055a7/status/ [200] - 0.025s
+INFO 2026-05-18 06:01:34,443 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:01:34,539 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.095s
+INFO 2026-05-18 06:02:16,882 middleware 6627 132972590134976 Request: GET /media/reports/2026/05/18/report_d37cac96-439a-4a4a-b126-585ccff055a7.pdf from 127.0.0.1
+INFO 2026-05-18 06:02:16,898 middleware 6627 132972590134976 Response: GET /media/reports/2026/05/18/report_d37cac96-439a-4a4a-b126-585ccff055a7.pdf [200] - 0.016s
+INFO 2026-05-18 06:06:08,009 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:06:08,074 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.065s
+INFO 2026-05-18 06:06:08,130 tasks 6921 125950657052800 Processing submission 6759343c-3ff2-499d-aa0a-0f3c8d5e69f5
+INFO 2026-05-18 06:06:12,114 tasks 6921 125950657052800 Received analysis for 3 paragraphs
+INFO 2026-05-18 06:06:12,134 tasks 6921 125950657052800 PDF report saved for submission 6759343c-3ff2-499d-aa0a-0f3c8d5e69f5
+INFO 2026-05-18 06:06:12,138 tasks 6921 125950657052800 Submission 6759343c-3ff2-499d-aa0a-0f3c8d5e69f5 completed (3 paragraphs)
+INFO 2026-05-18 06:06:13,100 middleware 6627 132972962371264 Request: GET /api/submissions/6759343c-3ff2-499d-aa0a-0f3c8d5e69f5/status/ from 127.0.0.1
+INFO 2026-05-18 06:06:13,126 middleware 6627 132972962371264 Response: GET /api/submissions/6759343c-3ff2-499d-aa0a-0f3c8d5e69f5/status/ [200] - 0.026s
+INFO 2026-05-18 06:06:13,227 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:06:13,327 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.100s
+INFO 2026-05-18 06:10:43,788 middleware 6627 132972962371264 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:10:43,850 middleware 6627 132972962371264 Response: POST /api/submissions/ [201] - 0.062s
+INFO 2026-05-18 06:10:43,906 tasks 6921 125950657052800 Processing submission c2c21ca6-abb4-4d1e-81eb-276d585f9fbf
+INFO 2026-05-18 06:10:48,911 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:10:48,942 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.031s
+INFO 2026-05-18 06:10:51,910 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:10:51,947 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.037s
+INFO 2026-05-18 06:10:54,904 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:10:54,951 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.048s
+INFO 2026-05-18 06:10:57,905 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:10:57,944 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.040s
+INFO 2026-05-18 06:11:00,905 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:11:00,947 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.042s
+INFO 2026-05-18 06:11:03,904 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:11:03,949 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.045s
+INFO 2026-05-18 06:11:06,905 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:11:06,948 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.043s
+INFO 2026-05-18 06:11:09,910 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:11:09,953 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.043s
+INFO 2026-05-18 06:11:12,120 tasks 6921 125950657052800 Received analysis for 18 paragraphs
+INFO 2026-05-18 06:11:12,164 tasks 6921 125950657052800 PDF report saved for submission c2c21ca6-abb4-4d1e-81eb-276d585f9fbf
+INFO 2026-05-18 06:11:12,176 tasks 6921 125950657052800 Submission c2c21ca6-abb4-4d1e-81eb-276d585f9fbf completed (18 paragraphs)
+INFO 2026-05-18 06:11:12,911 middleware 6627 132972962371264 Request: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ from 127.0.0.1
+INFO 2026-05-18 06:11:12,939 middleware 6627 132972962371264 Response: GET /api/submissions/c2c21ca6-abb4-4d1e-81eb-276d585f9fbf/status/ [200] - 0.028s
+INFO 2026-05-18 06:11:13,000 middleware 6627 132972962371264 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:11:13,104 middleware 6627 132972962371264 Response: GET /api/results/ [200] - 0.104s
+INFO 2026-05-18 06:21:41,062 middleware 21661 123816830297792 Request: GET /admin/results/result/ from 127.0.0.1
+INFO 2026-05-18 06:21:41,431 middleware 21661 123816830297792 Response: GET /admin/results/result/ [200] - 0.369s
+INFO 2026-05-18 06:21:41,531 middleware 21661 123816830297792 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-18 06:21:41,562 middleware 21661 123816830297792 Response: GET /admin/jsi18n/ [200] - 0.031s
+INFO 2026-05-18 06:21:43,240 middleware 21661 123816830297792 Request: GET /admin/results/result/171/change/ from 127.0.0.1
+INFO 2026-05-18 06:21:43,548 middleware 21661 123816830297792 Response: GET /admin/results/result/171/change/ [200] - 0.308s
+INFO 2026-05-18 06:21:43,618 middleware 21661 123816830297792 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-18 06:21:43,646 middleware 21661 123816830297792 Response: GET /admin/jsi18n/ [200] - 0.028s
+INFO 2026-05-18 06:21:47,987 middleware 21661 123816830297792 Request: GET /media/reports/2026/05/18/report_c2c21ca6-abb4-4d1e-81eb-276d585f9fbf.pdf from 127.0.0.1
+INFO 2026-05-18 06:21:48,061 middleware 21661 123816830297792 Response: GET /media/reports/2026/05/18/report_c2c21ca6-abb4-4d1e-81eb-276d585f9fbf.pdf [200] - 0.074s
+INFO 2026-05-18 06:23:15,790 middleware 21661 123816810366656 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:23:15,987 middleware 21661 123816810366656 Response: POST /api/submissions/ [201] - 0.197s
+INFO 2026-05-18 06:23:16,054 tasks 6921 125950657052800 Processing submission 31431f8c-6cf2-447d-b04a-d3a580476d43
+INFO 2026-05-18 06:23:21,035 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:21,076 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.042s
+INFO 2026-05-18 06:23:24,013 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:24,054 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.040s
+INFO 2026-05-18 06:23:27,013 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:27,058 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.045s
+INFO 2026-05-18 06:23:30,010 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:30,055 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.045s
+INFO 2026-05-18 06:23:33,020 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:33,060 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.040s
+INFO 2026-05-18 06:23:36,014 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:36,053 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.039s
+INFO 2026-05-18 06:23:39,018 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:39,059 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.041s
+INFO 2026-05-18 06:23:42,014 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:42,079 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.065s
+INFO 2026-05-18 06:23:45,014 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:45,079 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.065s
+INFO 2026-05-18 06:23:48,013 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:48,054 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.041s
+INFO 2026-05-18 06:23:51,013 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:51,052 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.039s
+INFO 2026-05-18 06:23:54,020 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:54,074 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.054s
+INFO 2026-05-18 06:23:56,094 tasks 6921 125950657052800 Received analysis for 9 paragraphs
+INFO 2026-05-18 06:23:56,131 tasks 6921 125950657052800 PDF report saved for submission 31431f8c-6cf2-447d-b04a-d3a580476d43
+INFO 2026-05-18 06:23:56,142 tasks 6921 125950657052800 Submission 31431f8c-6cf2-447d-b04a-d3a580476d43 completed (9 paragraphs)
+INFO 2026-05-18 06:23:57,015 middleware 21661 123816810366656 Request: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ from 127.0.0.1
+INFO 2026-05-18 06:23:57,040 middleware 21661 123816810366656 Response: GET /api/submissions/31431f8c-6cf2-447d-b04a-d3a580476d43/status/ [200] - 0.025s
+INFO 2026-05-18 06:23:57,095 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:23:57,206 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.111s
+INFO 2026-05-18 06:24:05,626 middleware 21661 123816830297792 Request: GET /media/reports/2026/05/18/report_31431f8c-6cf2-447d-b04a-d3a580476d43.pdf from 127.0.0.1
+INFO 2026-05-18 06:24:05,627 middleware 21661 123816830297792 Response: GET /media/reports/2026/05/18/report_31431f8c-6cf2-447d-b04a-d3a580476d43.pdf [200] - 0.001s
+INFO 2026-05-18 06:25:29,325 middleware 21661 123816810366656 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:25:29,358 middleware 21661 123816810366656 Response: POST /api/submissions/ [201] - 0.033s
+INFO 2026-05-18 06:25:29,419 tasks 6921 125950657052800 Processing submission 964f328c-8c6a-4846-a49b-ab3bc2a46352
+INFO 2026-05-18 06:25:34,390 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:34,446 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.056s
+INFO 2026-05-18 06:25:37,400 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:37,456 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.056s
+INFO 2026-05-18 06:25:40,386 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:40,457 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.071s
+INFO 2026-05-18 06:25:43,378 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:43,413 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.035s
+INFO 2026-05-18 06:25:46,376 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:46,410 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.034s
+INFO 2026-05-18 06:25:49,392 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:49,430 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.038s
+INFO 2026-05-18 06:25:52,383 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:52,422 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.040s
+INFO 2026-05-18 06:25:55,379 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:55,416 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.036s
+INFO 2026-05-18 06:25:58,377 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:25:58,424 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.047s
+INFO 2026-05-18 06:26:01,375 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:26:01,424 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.049s
+INFO 2026-05-18 06:26:04,381 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:26:04,432 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.051s
+INFO 2026-05-18 06:26:07,379 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:26:07,432 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.052s
+INFO 2026-05-18 06:26:08,402 tasks 6921 125950657052800 Received analysis for 9 paragraphs
+INFO 2026-05-18 06:26:08,435 tasks 6921 125950657052800 PDF report saved for submission 964f328c-8c6a-4846-a49b-ab3bc2a46352
+INFO 2026-05-18 06:26:08,440 tasks 6921 125950657052800 Submission 964f328c-8c6a-4846-a49b-ab3bc2a46352 completed (9 paragraphs)
+INFO 2026-05-18 06:26:10,375 middleware 21661 123816810366656 Request: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ from 127.0.0.1
+INFO 2026-05-18 06:26:10,402 middleware 21661 123816810366656 Response: GET /api/submissions/964f328c-8c6a-4846-a49b-ab3bc2a46352/status/ [200] - 0.027s
+INFO 2026-05-18 06:26:10,457 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:26:10,551 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.095s
+INFO 2026-05-18 06:26:15,519 middleware 21661 123816830297792 Request: GET /media/reports/2026/05/18/report_964f328c-8c6a-4846-a49b-ab3bc2a46352.pdf from 127.0.0.1
+INFO 2026-05-18 06:26:15,522 middleware 21661 123816830297792 Response: GET /media/reports/2026/05/18/report_964f328c-8c6a-4846-a49b-ab3bc2a46352.pdf [200] - 0.003s
+INFO 2026-05-18 06:29:02,817 middleware 21661 123816810366656 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:29:02,862 middleware 21661 123816810366656 Response: POST /api/submissions/ [201] - 0.044s
+INFO 2026-05-18 06:29:02,931 tasks 6921 125950657052800 Processing submission d6bd012c-100d-4499-a6fa-0a5e0d6959c2
+INFO 2026-05-18 06:29:07,905 middleware 21661 123816810366656 Request: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ from 127.0.0.1
+INFO 2026-05-18 06:29:07,942 middleware 21661 123816810366656 Response: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ [200] - 0.038s
+INFO 2026-05-18 06:29:10,890 middleware 21661 123816810366656 Request: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ from 127.0.0.1
+INFO 2026-05-18 06:29:10,937 middleware 21661 123816810366656 Response: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ [200] - 0.048s
+INFO 2026-05-18 06:29:13,896 middleware 21661 123816810366656 Request: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ from 127.0.0.1
+INFO 2026-05-18 06:29:13,935 middleware 21661 123816810366656 Response: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ [200] - 0.038s
+INFO 2026-05-18 06:29:16,888 middleware 21661 123816810366656 Request: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ from 127.0.0.1
+INFO 2026-05-18 06:29:16,922 middleware 21661 123816810366656 Response: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ [200] - 0.034s
+INFO 2026-05-18 06:29:17,335 tasks 6921 125950657052800 Received analysis for 1 paragraphs
+INFO 2026-05-18 06:29:17,358 tasks 6921 125950657052800 PDF report saved for submission d6bd012c-100d-4499-a6fa-0a5e0d6959c2
+INFO 2026-05-18 06:29:17,363 tasks 6921 125950657052800 Submission d6bd012c-100d-4499-a6fa-0a5e0d6959c2 completed (1 paragraphs)
+INFO 2026-05-18 06:29:19,884 middleware 21661 123816810366656 Request: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ from 127.0.0.1
+INFO 2026-05-18 06:29:19,910 middleware 21661 123816810366656 Response: GET /api/submissions/d6bd012c-100d-4499-a6fa-0a5e0d6959c2/status/ [200] - 0.026s
+INFO 2026-05-18 06:29:19,967 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:29:20,067 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.100s
+INFO 2026-05-18 06:29:23,184 middleware 21661 123816830297792 Request: GET /media/reports/2026/05/18/report_d6bd012c-100d-4499-a6fa-0a5e0d6959c2.pdf from 127.0.0.1
+INFO 2026-05-18 06:29:23,184 middleware 21661 123816830297792 Response: GET /media/reports/2026/05/18/report_d6bd012c-100d-4499-a6fa-0a5e0d6959c2.pdf [200] - 0.001s
+INFO 2026-05-18 06:57:14,495 middleware 21661 123816810366656 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:57:14,726 middleware 21661 123816810366656 Response: POST /api/submissions/ [201] - 0.231s
+INFO 2026-05-18 06:57:14,784 tasks 6921 125950657052800 Processing submission f0cd9a3d-064d-44f2-83e1-9a10dce1cdcd
+INFO 2026-05-18 06:57:17,823 tasks 6921 125950657052800 Received analysis for 1 paragraphs
+INFO 2026-05-18 06:57:17,850 tasks 6921 125950657052800 PDF report saved for submission f0cd9a3d-064d-44f2-83e1-9a10dce1cdcd
+INFO 2026-05-18 06:57:17,854 tasks 6921 125950657052800 Submission f0cd9a3d-064d-44f2-83e1-9a10dce1cdcd completed (1 paragraphs)
+INFO 2026-05-18 06:57:19,756 middleware 21661 123816810366656 Request: GET /api/submissions/f0cd9a3d-064d-44f2-83e1-9a10dce1cdcd/status/ from 127.0.0.1
+INFO 2026-05-18 06:57:19,783 middleware 21661 123816810366656 Response: GET /api/submissions/f0cd9a3d-064d-44f2-83e1-9a10dce1cdcd/status/ [200] - 0.027s
+INFO 2026-05-18 06:57:19,886 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:57:19,988 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.101s
+INFO 2026-05-18 06:57:48,700 middleware 21661 123816821905088 Request: GET /admin/authentication/user/ from 127.0.0.1
+INFO 2026-05-18 06:57:48,896 middleware 21661 123816821905088 Response: GET /admin/authentication/user/ [200] - 0.196s
+INFO 2026-05-18 06:57:49,049 middleware 21661 123816821905088 Request: GET /admin/jsi18n/ from 127.0.0.1
+INFO 2026-05-18 06:57:49,124 middleware 21661 123816821905088 Response: GET /admin/jsi18n/ [200] - 0.075s
+INFO 2026-05-18 06:58:01,018 middleware 21661 123816810366656 Request: POST /api/auth/guest_login/ from 127.0.0.1
+INFO 2026-05-18 06:58:01,757 middleware 21661 123816810366656 Response: POST /api/auth/guest_login/ [200] - 0.739s
+INFO 2026-05-18 06:58:02,136 middleware 21661 123816810366656 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:58:02,167 middleware 21661 123816810366656 Response: GET /api/auth/profile/ [200] - 0.030s
+INFO 2026-05-18 06:58:02,172 middleware 21661 123816592275136 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:58:02,203 middleware 21661 123816592275136 Response: GET /api/auth/profile/ [200] - 0.031s
+INFO 2026-05-18 06:58:11,342 middleware 21661 123816592275136 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-05-18 06:58:11,382 middleware 21661 123816592275136 Response: POST /api/auth/logout/ [200] - 0.040s
+INFO 2026-05-18 06:58:18,782 middleware 21661 123816592275136 Request: POST /api/auth/guest_login/ from 127.0.0.1
+INFO 2026-05-18 06:58:19,508 middleware 21661 123816592275136 Response: POST /api/auth/guest_login/ [200] - 0.725s
+INFO 2026-05-18 06:58:19,592 middleware 21661 123816592275136 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:58:19,636 middleware 21661 123816592275136 Response: GET /api/auth/profile/ [200] - 0.044s
+INFO 2026-05-18 06:58:19,640 middleware 21661 123816810366656 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:58:19,673 middleware 21661 123816810366656 Response: GET /api/auth/profile/ [200] - 0.033s
+INFO 2026-05-18 06:58:31,045 middleware 21661 123816810366656 Request: POST /api/auth/logout/ from 127.0.0.1
+INFO 2026-05-18 06:58:31,083 middleware 21661 123816810366656 Response: POST /api/auth/logout/ [200] - 0.039s
+INFO 2026-05-18 06:59:09,311 middleware 21661 123816810366656 Request: POST /api/auth/teacher_login/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,029 middleware 21661 123816810366656 Response: POST /api/auth/teacher_login/ [200] - 0.718s
+INFO 2026-05-18 06:59:10,401 middleware 21661 123816810366656 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,408 middleware 21661 123816592275136 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,422 middleware 21661 123816830297792 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,428 middleware 21661 123816583882432 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,461 middleware 21661 123816810366656 Response: GET /api/auth/profile/ [200] - 0.060s
+INFO 2026-05-18 06:59:10,468 middleware 21661 123816575489728 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,508 middleware 21661 123816592275136 Response: GET /api/dashboard/teacher_overview/ [200] - 0.100s
+INFO 2026-05-18 06:59:10,544 middleware 21661 123816810366656 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,573 middleware 21661 123816575489728 Response: GET /api/auth/profile/ [200] - 0.106s
+INFO 2026-05-18 06:59:10,578 middleware 21661 123816830297792 Response: GET /api/submissions/ [200] - 0.156s
+INFO 2026-05-18 06:59:10,589 middleware 21661 123816592275136 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,644 middleware 21661 123816810366656 Response: GET /api/dashboard/teacher_overview/ [200] - 0.100s
+INFO 2026-05-18 06:59:10,666 middleware 21661 123816592275136 Response: GET /api/submissions/ [200] - 0.077s
+INFO 2026-05-18 06:59:10,706 middleware 21661 123816583882432 Response: GET /api/results/ [200] - 0.278s
+INFO 2026-05-18 06:59:10,709 middleware 21661 123816592275136 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:59:10,803 middleware 21661 123816592275136 Response: GET /api/results/ [200] - 0.094s
+INFO 2026-05-18 06:59:21,026 middleware 21661 123816592275136 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,032 middleware 21661 123816810366656 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,034 middleware 21661 123816583882432 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,036 middleware 21661 123816830297792 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,088 middleware 21661 123816592275136 Response: GET /api/auth/profile/ [200] - 0.063s
+INFO 2026-05-18 06:59:21,120 middleware 21661 123816575489728 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,131 middleware 21661 123816583882432 Response: GET /api/dashboard/teacher_overview/ [200] - 0.097s
+INFO 2026-05-18 06:59:21,151 middleware 21661 123816592275136 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,167 middleware 21661 123816810366656 Response: GET /api/submissions/ [200] - 0.135s
+INFO 2026-05-18 06:59:21,170 middleware 21661 123816583882432 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,201 middleware 21661 123816575489728 Response: GET /api/auth/profile/ [200] - 0.081s
+INFO 2026-05-18 06:59:21,240 middleware 21661 123816592275136 Response: GET /api/dashboard/teacher_overview/ [200] - 0.089s
+INFO 2026-05-18 06:59:21,265 middleware 21661 123816583882432 Response: GET /api/submissions/ [200] - 0.095s
+INFO 2026-05-18 06:59:21,324 middleware 21661 123816830297792 Response: GET /api/results/ [200] - 0.288s
+INFO 2026-05-18 06:59:21,326 middleware 21661 123816583882432 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:59:21,426 middleware 21661 123816583882432 Response: GET /api/results/ [200] - 0.100s
+INFO 2026-05-18 06:59:28,429 middleware 21661 123816830297792 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 06:59:28,498 middleware 21661 123816830297792 Response: GET /api/classes/ [200] - 0.069s
+INFO 2026-05-18 06:59:28,542 middleware 21661 123816583882432 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 06:59:28,577 middleware 21661 123816583882432 Response: GET /api/classes/ [200] - 0.035s
+INFO 2026-05-18 06:59:29,961 middleware 21661 123816583882432 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 06:59:29,994 middleware 21661 123816592275136 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 06:59:30,024 middleware 21661 123816583882432 Response: GET /api/classes/ [200] - 0.063s
+INFO 2026-05-18 06:59:30,029 middleware 21661 123816830297792 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 06:59:30,093 middleware 21661 123816830297792 Response: GET /api/classes/ [200] - 0.064s
+INFO 2026-05-18 06:59:30,122 middleware 21661 123816592275136 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.127s
+INFO 2026-05-18 06:59:30,165 middleware 21661 123816830297792 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 06:59:30,225 middleware 21661 123816830297792 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.061s
+INFO 2026-05-18 06:59:30,228 middleware 21661 123816592275136 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 06:59:30,291 middleware 21661 123816592275136 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.063s
+INFO 2026-05-18 06:59:30,296 middleware 21661 123816830297792 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 06:59:30,347 middleware 21661 123816830297792 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.052s
+INFO 2026-05-18 06:59:31,385 middleware 21661 123816830297792 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,390 middleware 21661 123816592275136 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,393 middleware 21661 123816583882432 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,409 middleware 21661 123816575489728 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,434 middleware 21661 123816830297792 Response: GET /api/auth/profile/ [200] - 0.049s
+INFO 2026-05-18 06:59:31,438 middleware 21661 123816810366656 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,536 middleware 21661 123816592275136 Response: GET /api/dashboard/teacher_overview/ [200] - 0.146s
+INFO 2026-05-18 06:59:31,537 middleware 21661 123816583882432 Response: GET /api/submissions/ [200] - 0.145s
+INFO 2026-05-18 06:59:31,539 middleware 21661 123816810366656 Response: GET /api/auth/profile/ [200] - 0.101s
+INFO 2026-05-18 06:59:31,543 middleware 21661 123816830297792 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,576 middleware 21661 123816810366656 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,610 middleware 21661 123816830297792 Response: GET /api/dashboard/teacher_overview/ [200] - 0.067s
+INFO 2026-05-18 06:59:31,660 middleware 21661 123816810366656 Response: GET /api/submissions/ [200] - 0.084s
+INFO 2026-05-18 06:59:31,692 middleware 21661 123816575489728 Response: GET /api/results/ [200] - 0.282s
+INFO 2026-05-18 06:59:31,694 middleware 21661 123816830297792 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 06:59:31,782 middleware 21661 123816830297792 Response: GET /api/results/ [200] - 0.088s
+INFO 2026-05-18 07:14:42,834 middleware 21661 123816810366656 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 07:14:42,853 middleware 21661 123816575489728 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 07:14:42,867 middleware 21661 123816592275136 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 07:14:42,870 middleware 21661 123816821905088 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 07:14:42,911 middleware 21661 123816810366656 Response: GET /api/auth/profile/ [200] - 0.077s
+INFO 2026-05-18 07:14:42,931 middleware 21661 123816830297792 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 07:14:42,972 middleware 21661 123816575489728 Response: GET /api/dashboard/teacher_overview/ [200] - 0.118s
+INFO 2026-05-18 07:14:43,024 middleware 21661 123816810366656 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 07:14:43,041 middleware 21661 123816830297792 Response: GET /api/auth/profile/ [200] - 0.110s
+INFO 2026-05-18 07:14:43,075 middleware 21661 123816592275136 Response: GET /api/submissions/ [200] - 0.209s
+INFO 2026-05-18 07:14:43,101 middleware 21661 123816575489728 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 07:14:43,142 middleware 21661 123816810366656 Response: GET /api/dashboard/teacher_overview/ [200] - 0.118s
+INFO 2026-05-18 07:14:43,176 middleware 21661 123816575489728 Response: GET /api/submissions/ [200] - 0.075s
+INFO 2026-05-18 07:14:43,211 middleware 21661 123816821905088 Response: GET /api/results/ [200] - 0.341s
+INFO 2026-05-18 07:14:43,214 middleware 21661 123816575489728 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 07:14:43,338 middleware 21661 123816575489728 Response: GET /api/results/ [200] - 0.124s
+INFO 2026-05-18 07:15:37,686 middleware 21661 123816575489728 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 07:15:37,741 middleware 21661 123816575489728 Response: POST /api/submissions/ [201] - 0.055s
+INFO 2026-05-18 07:15:37,788 tasks 6921 125950657052800 Processing submission 46293237-fcf2-4f94-bd57-e2d035057619
+INFO 2026-05-18 07:15:40,779 tasks 6921 125950657052800 Received analysis for 1 paragraphs
+INFO 2026-05-18 07:15:40,798 tasks 6921 125950657052800 PDF report saved for submission 46293237-fcf2-4f94-bd57-e2d035057619
+INFO 2026-05-18 07:15:40,801 tasks 6921 125950657052800 Submission 46293237-fcf2-4f94-bd57-e2d035057619 completed (1 paragraphs)
+INFO 2026-05-18 07:15:42,775 middleware 21661 123816575489728 Request: GET /api/submissions/46293237-fcf2-4f94-bd57-e2d035057619/status/ from 127.0.0.1
+INFO 2026-05-18 07:15:42,801 middleware 21661 123816575489728 Response: GET /api/submissions/46293237-fcf2-4f94-bd57-e2d035057619/status/ [200] - 0.026s
+INFO 2026-05-18 07:15:42,906 middleware 21661 123816575489728 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 07:15:43,022 middleware 21661 123816575489728 Response: GET /api/results/ [200] - 0.116s
+INFO 2026-05-18 07:42:29,423 middleware 21661 123816810366656 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 07:42:29,502 middleware 21661 123816810366656 Response: POST /api/submissions/ [201] - 0.079s
+INFO 2026-05-18 07:42:29,577 tasks 6921 125950657052800 Processing submission fb2ac482-829c-4139-b6fc-f6068729dbf6
+INFO 2026-05-18 07:42:34,540 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:34,590 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.050s
+INFO 2026-05-18 07:42:37,532 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:37,577 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.045s
+INFO 2026-05-18 07:42:40,529 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:40,598 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.069s
+INFO 2026-05-18 07:42:43,526 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:43,564 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.039s
+INFO 2026-05-18 07:42:46,526 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:46,578 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.052s
+INFO 2026-05-18 07:42:49,533 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:49,577 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.044s
+INFO 2026-05-18 07:42:52,525 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:52,555 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.030s
+INFO 2026-05-18 07:42:55,530 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:55,567 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.037s
+INFO 2026-05-18 07:42:58,525 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:42:58,557 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.031s
+INFO 2026-05-18 07:43:01,528 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:01,585 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.057s
+INFO 2026-05-18 07:43:04,531 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:04,582 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.051s
+INFO 2026-05-18 07:43:07,544 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:07,581 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.037s
+INFO 2026-05-18 07:43:10,524 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:10,550 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.026s
+INFO 2026-05-18 07:43:13,526 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:13,565 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.040s
+INFO 2026-05-18 07:43:16,527 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:16,563 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.036s
+INFO 2026-05-18 07:43:19,526 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:19,550 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.024s
+INFO 2026-05-18 07:43:22,530 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:22,574 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.044s
+INFO 2026-05-18 07:43:25,530 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:25,564 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.034s
+INFO 2026-05-18 07:43:28,529 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:28,576 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.047s
+INFO 2026-05-18 07:43:31,528 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:31,590 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.061s
+INFO 2026-05-18 07:43:34,542 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:34,644 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.103s
+INFO 2026-05-18 07:43:37,556 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:37,712 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.157s
+INFO 2026-05-18 07:43:40,527 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:40,564 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.037s
+INFO 2026-05-18 07:43:43,527 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:43,568 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.041s
+INFO 2026-05-18 07:43:46,532 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:46,577 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.045s
+INFO 2026-05-18 07:43:49,526 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:49,563 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.036s
+INFO 2026-05-18 07:43:52,525 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:52,554 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.029s
+INFO 2026-05-18 07:43:52,804 tasks 6921 125950657052800 Received analysis for 14 paragraphs
+INFO 2026-05-18 07:43:52,842 tasks 6921 125950657052800 PDF report saved for submission fb2ac482-829c-4139-b6fc-f6068729dbf6
+INFO 2026-05-18 07:43:52,846 tasks 6921 125950657052800 Submission fb2ac482-829c-4139-b6fc-f6068729dbf6 completed (14 paragraphs)
+INFO 2026-05-18 07:43:55,527 middleware 21661 123816810366656 Request: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ from 127.0.0.1
+INFO 2026-05-18 07:43:55,552 middleware 21661 123816810366656 Response: GET /api/submissions/fb2ac482-829c-4139-b6fc-f6068729dbf6/status/ [200] - 0.025s
+INFO 2026-05-18 07:43:55,609 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 07:43:55,701 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.091s
+INFO 2026-05-18 07:45:28,366 middleware 21661 123816810366656 Request: POST /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 07:45:28,415 middleware 21661 123816810366656 Response: POST /api/submissions/ [201] - 0.048s
+INFO 2026-05-18 07:45:28,512 tasks 6921 125950657052800 Processing submission ce2525db-0a8e-4ff8-8f58-084b12d1b68b
+INFO 2026-05-18 07:45:33,454 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:33,497 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.043s
+INFO 2026-05-18 07:45:36,443 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:36,486 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.043s
+INFO 2026-05-18 07:45:39,446 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:39,485 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.039s
+INFO 2026-05-18 07:45:42,443 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:42,486 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.043s
+INFO 2026-05-18 07:45:45,440 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:45,481 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.041s
+INFO 2026-05-18 07:45:48,442 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:48,474 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.032s
+INFO 2026-05-18 07:45:51,442 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:51,486 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.044s
+INFO 2026-05-18 07:45:54,456 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:54,520 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.064s
+INFO 2026-05-18 07:45:57,442 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:45:57,483 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.041s
+INFO 2026-05-18 07:46:00,447 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:00,493 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.046s
+INFO 2026-05-18 07:46:03,441 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:03,473 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.033s
+INFO 2026-05-18 07:46:06,442 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:06,485 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.043s
+INFO 2026-05-18 07:46:09,448 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:09,493 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.045s
+INFO 2026-05-18 07:46:12,444 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:12,487 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.043s
+INFO 2026-05-18 07:46:15,442 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:15,493 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.051s
+INFO 2026-05-18 07:46:18,439 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:18,466 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.027s
+INFO 2026-05-18 07:46:21,443 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:21,488 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.045s
+INFO 2026-05-18 07:46:24,456 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:24,503 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.047s
+INFO 2026-05-18 07:46:27,445 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:27,488 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.044s
+INFO 2026-05-18 07:46:30,440 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:30,467 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.028s
+INFO 2026-05-18 07:46:33,445 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:33,475 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.030s
+INFO 2026-05-18 07:46:36,444 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:36,488 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.044s
+INFO 2026-05-18 07:46:39,449 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:39,498 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.049s
+INFO 2026-05-18 07:46:42,443 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:42,476 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.033s
+INFO 2026-05-18 07:46:45,446 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:45,498 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.052s
+INFO 2026-05-18 07:46:48,439 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:48,465 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.026s
+INFO 2026-05-18 07:46:48,707 tasks 6921 125950657052800 Received analysis for 17 paragraphs
+INFO 2026-05-18 07:46:48,747 tasks 6921 125950657052800 PDF report saved for submission ce2525db-0a8e-4ff8-8f58-084b12d1b68b
+INFO 2026-05-18 07:46:48,752 tasks 6921 125950657052800 Submission ce2525db-0a8e-4ff8-8f58-084b12d1b68b completed (17 paragraphs)
+INFO 2026-05-18 07:46:51,447 middleware 21661 123816810366656 Request: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ from 127.0.0.1
+INFO 2026-05-18 07:46:51,480 middleware 21661 123816810366656 Response: GET /api/submissions/ce2525db-0a8e-4ff8-8f58-084b12d1b68b/status/ [200] - 0.032s
+INFO 2026-05-18 07:46:51,535 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 07:46:51,629 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.095s
+INFO 2026-05-18 10:01:37,325 middleware 21661 123816810366656 Request: GET /media/reports/2026/05/18/report_ce2525db-0a8e-4ff8-8f58-084b12d1b68b.pdf from 127.0.0.1
+INFO 2026-05-18 10:01:37,328 middleware 21661 123816810366656 Response: GET /media/reports/2026/05/18/report_ce2525db-0a8e-4ff8-8f58-084b12d1b68b.pdf [200] - 0.003s
+INFO 2026-05-18 10:01:37,749 middleware 21661 123816810366656 Request: GET /favicon.ico from 127.0.0.1
+INFO 2026-05-18 10:01:37,809 middleware 21661 123816810366656 Response: GET /favicon.ico [404] - 0.059s
+WARNING 2026-05-18 10:01:37,813 log 21661 123816810366656 Not Found: /favicon.ico
+WARNING 2026-05-18 10:01:37,816 basehttp 21661 123816810366656 "GET /favicon.ico HTTP/1.1" 404 3861
+INFO 2026-05-18 10:07:12,407 middleware 21661 123816592275136 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,420 middleware 21661 123816830297792 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,426 middleware 21661 123816583882432 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,429 middleware 21661 123816821905088 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,481 middleware 21661 123816592275136 Response: GET /api/auth/profile/ [200] - 0.075s
+INFO 2026-05-18 10:07:12,518 middleware 21661 123816830297792 Response: GET /api/submissions/ [200] - 0.099s
+INFO 2026-05-18 10:07:12,524 middleware 21661 123816583882432 Response: GET /api/dashboard/teacher_overview/ [200] - 0.099s
+INFO 2026-05-18 10:07:12,554 middleware 21661 123816575489728 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,573 middleware 21661 123816592275136 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,575 middleware 21661 123816810366656 Request: GET /api/dashboard/teacher_overview/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,631 middleware 21661 123816575489728 Response: GET /api/auth/profile/ [200] - 0.078s
+INFO 2026-05-18 10:07:12,651 middleware 21661 123816592275136 Response: GET /api/submissions/ [200] - 0.078s
+INFO 2026-05-18 10:07:12,665 middleware 21661 123816810366656 Response: GET /api/dashboard/teacher_overview/ [200] - 0.091s
+INFO 2026-05-18 10:07:12,708 middleware 21661 123816821905088 Response: GET /api/results/ [200] - 0.279s
+INFO 2026-05-18 10:07:12,751 middleware 21661 123816592275136 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 10:07:12,920 middleware 21661 123816592275136 Response: GET /api/results/ [200] - 0.169s
+INFO 2026-05-18 10:07:32,586 middleware 21661 123816592275136 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 10:07:32,590 middleware 21661 123816821905088 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:07:32,640 middleware 21661 123816592275136 Response: GET /api/classes/ [200] - 0.054s
+INFO 2026-05-18 10:07:32,653 middleware 21661 123816810366656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 10:07:32,726 middleware 21661 123816810366656 Response: GET /api/classes/ [200] - 0.073s
+INFO 2026-05-18 10:07:32,750 middleware 21661 123816821905088 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.160s
+INFO 2026-05-18 10:07:32,760 middleware 21661 123816810366656 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:07:32,854 middleware 21661 123816810366656 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.094s
+INFO 2026-05-18 10:07:32,900 middleware 21661 123816821905088 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:07:32,970 middleware 21661 123816821905088 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.070s
+INFO 2026-05-18 10:07:32,973 middleware 21661 123816810366656 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:07:33,038 middleware 21661 123816810366656 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.065s
+INFO 2026-05-18 10:08:49,561 middleware 21661 123816810366656 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 10:08:49,571 middleware 21661 123816821905088 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:08:49,660 middleware 21661 123816810366656 Response: GET /api/classes/ [200] - 0.099s
+INFO 2026-05-18 10:08:49,678 middleware 21661 123816592275136 Request: GET /api/classes/ from 127.0.0.1
+INFO 2026-05-18 10:08:49,790 middleware 21661 123816821905088 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.220s
+INFO 2026-05-18 10:08:49,808 middleware 21661 123816810366656 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:08:49,811 middleware 21661 123816592275136 Response: GET /api/classes/ [200] - 0.134s
+INFO 2026-05-18 10:08:49,916 middleware 21661 123816810366656 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.108s
+INFO 2026-05-18 10:08:49,929 middleware 21661 123816592275136 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:08:50,047 middleware 21661 123816592275136 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.118s
+INFO 2026-05-18 10:08:50,052 middleware 21661 123816810366656 Request: GET /api/classes/8NTQ2P/assignment/ from 127.0.0.1
+INFO 2026-05-18 10:08:50,165 middleware 21661 123816810366656 Response: GET /api/classes/8NTQ2P/assignment/ [200] - 0.113s
+INFO 2026-05-18 10:09:16,833 middleware 21661 123816810366656 Request: POST /api/auth/guest_login/ from 127.0.0.1
+INFO 2026-05-18 10:09:17,538 middleware 21661 123816810366656 Response: POST /api/auth/guest_login/ [200] - 0.705s
+INFO 2026-05-18 10:09:17,759 middleware 21661 123816810366656 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:09:17,798 middleware 21661 123816810366656 Response: GET /api/auth/profile/ [200] - 0.039s
+INFO 2026-05-18 10:09:17,800 middleware 21661 123816592275136 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:09:17,831 middleware 21661 123816592275136 Response: GET /api/auth/profile/ [200] - 0.031s
+INFO 2026-05-18 10:10:04,018 middleware 21661 123816592275136 Request: POST /api/auth/student_login/ from 127.0.0.1
+INFO 2026-05-18 10:10:04,739 middleware 21661 123816592275136 Response: POST /api/auth/student_login/ [200] - 0.721s
+INFO 2026-05-18 10:10:04,901 middleware 21661 123816592275136 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:10:04,928 middleware 21661 123816821905088 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 10:10:04,941 middleware 21661 123816575489728 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 10:10:04,958 middleware 21661 123816810366656 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-18 10:10:04,971 middleware 21661 123816592275136 Response: GET /api/auth/profile/ [200] - 0.069s
+INFO 2026-05-18 10:10:04,987 middleware 21661 123816592275136 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:10:05,094 middleware 21661 123816592275136 Response: GET /api/auth/profile/ [200] - 0.107s
+INFO 2026-05-18 10:10:05,100 middleware 21661 123816810366656 Response: GET /api/dashboard/student_overview/ [200] - 0.142s
+INFO 2026-05-18 10:10:05,112 middleware 21661 123816821905088 Response: GET /api/submissions/ [200] - 0.183s
+INFO 2026-05-18 10:10:05,117 middleware 21661 123816583882432 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 10:10:05,143 middleware 21661 123816592275136 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-18 10:10:05,154 middleware 21661 123816575489728 Response: GET /api/results/ [200] - 0.213s
+INFO 2026-05-18 10:10:05,158 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 10:10:05,209 middleware 21661 123816583882432 Response: GET /api/submissions/ [200] - 0.092s
+INFO 2026-05-18 10:10:05,224 middleware 21661 123816592275136 Response: GET /api/dashboard/student_overview/ [200] - 0.081s
+INFO 2026-05-18 10:10:05,248 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.090s
+INFO 2026-05-18 10:10:28,874 middleware 21661 123816567097024 Request: GET /media/reports/2026/05/13/report_f9aa550a-4cbf-4c20-a7e4-21d6ed0c7ab4.pdf from 127.0.0.1
+INFO 2026-05-18 10:10:28,881 middleware 21661 123816567097024 Response: GET /media/reports/2026/05/13/report_f9aa550a-4cbf-4c20-a7e4-21d6ed0c7ab4.pdf [200] - 0.007s
+INFO 2026-05-18 10:22:34,806 middleware 21661 123816567097024 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:22:34,807 middleware 21661 123816583882432 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-18 10:22:34,808 middleware 21661 123816810366656 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 10:22:34,817 middleware 21661 123816821905088 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 10:22:34,868 middleware 21661 123816567097024 Response: GET /api/auth/profile/ [200] - 0.063s
+INFO 2026-05-18 10:22:34,893 middleware 21661 123816583882432 Response: GET /api/dashboard/student_overview/ [200] - 0.086s
+INFO 2026-05-18 10:22:34,906 middleware 21661 123816830297792 Request: GET /api/auth/profile/ from 127.0.0.1
+INFO 2026-05-18 10:22:34,907 middleware 21661 123816567097024 Request: GET /api/dashboard/student_overview/ from 127.0.0.1
+INFO 2026-05-18 10:22:34,943 middleware 21661 123816810366656 Response: GET /api/submissions/ [200] - 0.135s
+INFO 2026-05-18 10:22:34,954 middleware 21661 123816583882432 Request: GET /api/submissions/ from 127.0.0.1
+INFO 2026-05-18 10:22:35,101 middleware 21661 123816830297792 Response: GET /api/auth/profile/ [200] - 0.195s
+INFO 2026-05-18 10:22:35,111 middleware 21661 123816821905088 Response: GET /api/results/ [200] - 0.289s
+INFO 2026-05-18 10:22:35,144 middleware 21661 123816567097024 Response: GET /api/dashboard/student_overview/ [200] - 0.237s
+INFO 2026-05-18 10:22:35,149 middleware 21661 123816810366656 Request: GET /api/results/ from 127.0.0.1
+INFO 2026-05-18 10:22:35,178 middleware 21661 123816583882432 Response: GET /api/submissions/ [200] - 0.223s
+INFO 2026-05-18 10:22:35,247 middleware 21661 123816810366656 Response: GET /api/results/ [200] - 0.098s
+INFO 2026-05-20 17:35:39,985 middleware 27000 130826162398912 Request: POST /api/auth/admin_login/ from 127.0.0.1
+INFO 2026-05-20 17:35:40,078 middleware 27000 130826162398912 Response: POST /api/auth/admin_login/ [404] - 0.093s
+WARNING 2026-05-20 17:35:40,084 log 27000 130826162398912 Not Found: /api/auth/admin_login/
+WARNING 2026-05-20 17:35:40,086 basehttp 27000 130826162398912 "POST /api/auth/admin_login/ HTTP/1.1" 404 11248
+INFO 2026-05-20 17:36:25,452 middleware 27000 130826162398912 Request: POST /api/auth/admin_login from 127.0.0.1
+INFO 2026-05-20 17:36:25,480 middleware 27000 130826162398912 Response: POST /api/auth/admin_login [404] - 0.028s
+WARNING 2026-05-20 17:36:25,482 log 27000 130826162398912 Not Found: /api/auth/admin_login
+WARNING 2026-05-20 17:36:25,487 basehttp 27000 130826162398912 "POST /api/auth/admin_login HTTP/1.1" 404 11245
+INFO 2026-05-20 17:36:48,544 middleware 27742 139380019685056 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:36:48,566 exceptions 27742 139380019685056 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-05-20 17:36:48,569 middleware 27742 139380019685056 Response: POST /api/auth/admin_login/ [401] - 0.025s
+WARNING 2026-05-20 17:36:48,570 log 27742 139380019685056 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:36:48,570 basehttp 27742 139380019685056 "POST /api/auth/admin_login/ HTTP/1.1" 401 252
+INFO 2026-05-20 17:42:27,217 middleware 28326 124783246173888 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:42:27,237 exceptions 28326 124783246173888 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-05-20 17:42:27,240 middleware 28326 124783246173888 Response: POST /api/auth/admin_login/ [401] - 0.023s
+WARNING 2026-05-20 17:42:27,241 log 28326 124783246173888 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:42:27,242 basehttp 28326 124783246173888 "POST /api/auth/admin_login/ HTTP/1.1" 401 252
+INFO 2026-05-20 17:43:00,344 middleware 28440 130668230076096 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:43:00,352 exceptions 28440 130668230076096 Exception occurred: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 414, in initial
+    self.perform_authentication(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 324, in perform_authentication
+    request.user
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 227, in user
+    self._authenticate()
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/request.py", line 380, in _authenticate
+    user_auth_tuple = authenticator.authenticate(self)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 49, in authenticate
+    validated_token = self.get_validated_token(raw_token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework_simplejwt/authentication.py", line 113, in get_validated_token
+    raise InvalidToken(
+rest_framework_simplejwt.exceptions.InvalidToken: {'detail': ErrorDetail(string='Given token not valid for any token type', code='token_not_valid'), 'code': ErrorDetail(string='token_not_valid', code='token_not_valid'), 'messages': [{'token_class': ErrorDetail(string='AccessToken', code='token_not_valid'), 'token_type': ErrorDetail(string='access', code='token_not_valid'), 'message': ErrorDetail(string='Token is invalid or expired', code='token_not_valid')}]}
+INFO 2026-05-20 17:43:00,354 middleware 28440 130668230076096 Response: POST /api/auth/admin_login/ [401] - 0.010s
+WARNING 2026-05-20 17:43:00,354 log 28440 130668230076096 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:43:00,356 basehttp 28440 130668230076096 "POST /api/auth/admin_login/ HTTP/1.1" 401 252
+INFO 2026-05-20 17:43:13,271 middleware 28440 130668230076096 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:43:13,273 exceptions 28440 130668230076096 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 468, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:43:13,274 middleware 28440 130668230076096 Response: POST /api/auth/admin_login/ [401] - 0.002s
+WARNING 2026-05-20 17:43:13,274 log 28440 130668230076096 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:43:13,275 basehttp 28440 130668230076096 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:43:40,415 middleware 28440 130668230076096 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:43:40,416 exceptions 28440 130668230076096 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 468, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:43:40,417 middleware 28440 130668230076096 Response: POST /api/auth/admin_login/ [401] - 0.003s
+WARNING 2026-05-20 17:43:40,418 log 28440 130668230076096 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:43:40,420 basehttp 28440 130668230076096 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:43:46,515 middleware 28440 130668230076096 Request: POST /api/auth/admin_login/ from 127.0.0.1
+INFO 2026-05-20 17:43:46,516 middleware 28440 130668230076096 Response: POST /api/auth/admin_login/ [400] - 0.001s
+WARNING 2026-05-20 17:43:46,517 log 28440 130668230076096 Bad Request: /api/auth/admin_login/
+WARNING 2026-05-20 17:43:46,517 basehttp 28440 130668230076096 "POST /api/auth/admin_login/ HTTP/1.1" 400 43
+INFO 2026-05-20 17:45:33,038 middleware 28803 137131930416832 Request: POST /api/auth/admin_login/ from 127.0.0.1
+INFO 2026-05-20 17:45:33,040 middleware 28803 137131930416832 Response: POST /api/auth/admin_login/ [400] - 0.002s
+WARNING 2026-05-20 17:45:33,046 log 28803 137131930416832 Bad Request: /api/auth/admin_login/
+WARNING 2026-05-20 17:45:33,048 basehttp 28803 137131930416832 "POST /api/auth/admin_login/ HTTP/1.1" 400 43
+INFO 2026-05-20 17:46:08,557 middleware 28930 132557788149440 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:46:08,560 exceptions 28930 132557788149440 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 468, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:46:08,562 middleware 28930 132557788149440 Response: POST /api/auth/admin_login/ [401] - 0.005s
+WARNING 2026-05-20 17:46:08,563 log 28930 132557788149440 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:46:08,563 basehttp 28930 132557788149440 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:46:32,856 middleware 28930 132557788149440 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:46:32,857 exceptions 28930 132557788149440 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 468, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:46:32,858 middleware 28930 132557788149440 Response: POST /api/auth/admin_login/ [401] - 0.002s
+WARNING 2026-05-20 17:46:32,859 log 28930 132557788149440 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:46:32,861 basehttp 28930 132557788149440 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:47:25,174 middleware 28930 132557788149440 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:47:25,175 exceptions 28930 132557788149440 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 468, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:47:25,177 middleware 28930 132557788149440 Response: POST /api/auth/admin_login/ [401] - 0.002s
+WARNING 2026-05-20 17:47:25,177 log 28930 132557788149440 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:47:25,178 basehttp 28930 132557788149440 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:49:48,890 middleware 29170 131101192353472 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:49:48,893 exceptions 29170 131101192353472 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 468, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:49:48,896 middleware 29170 131101192353472 Response: POST /api/auth/admin_login/ [401] - 0.005s
+WARNING 2026-05-20 17:49:48,896 log 29170 131101192353472 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:49:48,898 basehttp 29170 131101192353472 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:50:39,780 middleware 29450 131998080296640 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:50:39,783 exceptions 29450 131998080296640 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 470, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:50:39,784 middleware 29450 131998080296640 Response: POST /api/auth/admin_login/ [401] - 0.004s
+WARNING 2026-05-20 17:50:39,785 log 29450 131998080296640 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:50:39,785 basehttp 29450 131998080296640 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:51:19,567 middleware 29628 134311881733824 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:51:19,568 exceptions 29628 134311881733824 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 470, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:51:19,570 middleware 29628 134311881733824 Response: POST /api/auth/admin_login/ [401] - 0.003s
+WARNING 2026-05-20 17:51:19,570 log 29628 134311881733824 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:51:19,571 basehttp 29628 134311881733824 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:52:40,693 middleware 29628 134311873341120 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:52:40,694 exceptions 29628 134311873341120 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 470, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:52:40,695 middleware 29628 134311873341120 Response: POST /api/auth/admin_login/ [401] - 0.002s
+WARNING 2026-05-20 17:52:40,695 log 29628 134311873341120 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:52:40,696 basehttp 29628 134311873341120 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:53:29,118 middleware 29965 130346486068928 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 17:53:29,119 exceptions 29965 130346486068928 Exception occurred: Invalid admin credentials
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/salman/FYP/Backend/ace_backend/apps/authentication/views.py", line 468, in admin_login
+    raise AuthenticationFailed('Invalid admin credentials')
+rest_framework.exceptions.AuthenticationFailed: Invalid admin credentials
+INFO 2026-05-20 17:53:29,121 middleware 29965 130346486068928 Response: POST /api/auth/admin_login/ [401] - 0.003s
+WARNING 2026-05-20 17:53:29,121 log 29965 130346486068928 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 17:53:29,121 basehttp 29965 130346486068928 "POST /api/auth/admin_login/ HTTP/1.1" 401 92
+INFO 2026-05-20 17:54:30,951 middleware 30046 124918822856384 Request: POST /api/auth/admin_login/ from 127.0.0.1
+INFO 2026-05-20 17:54:30,953 middleware 30046 124918822856384 Response: POST /api/auth/admin_login/ [200] - 0.002s
+INFO 2026-05-20 17:56:02,717 middleware 30046 124918814463680 Request: GET /api/auth/admin/users/ from 127.0.0.1
+ERROR 2026-05-20 17:56:02,718 exceptions 30046 124918814463680 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-20 17:56:02,719 middleware 30046 124918814463680 Response: GET /api/auth/admin/users/ [403] - 0.003s
+WARNING 2026-05-20 17:56:02,720 log 30046 124918814463680 Forbidden: /api/auth/admin/users/
+WARNING 2026-05-20 17:56:02,720 basehttp 30046 124918814463680 "GET /api/auth/admin/users/ HTTP/1.1" 403 132
+INFO 2026-05-20 17:57:35,105 middleware 30046 124918806070976 Request: GET /api/auth/admin/users/ from 127.0.0.1
+ERROR 2026-05-20 17:57:35,105 exceptions 30046 124918806070976 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-20 17:57:35,106 middleware 30046 124918806070976 Response: GET /api/auth/admin/users/ [403] - 0.002s
+WARNING 2026-05-20 17:57:35,107 log 30046 124918806070976 Forbidden: /api/auth/admin/users/
+WARNING 2026-05-20 17:57:35,107 basehttp 30046 124918806070976 "GET /api/auth/admin/users/ HTTP/1.1" 403 132
+INFO 2026-05-20 17:58:01,247 middleware 30046 124918806070976 Request: GET /api/auth/admin/users/ from 127.0.0.1
+ERROR 2026-05-20 17:58:01,248 exceptions 30046 124918806070976 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-20 17:58:01,249 middleware 30046 124918806070976 Response: GET /api/auth/admin/users/ [403] - 0.002s
+WARNING 2026-05-20 17:58:01,253 log 30046 124918806070976 Forbidden: /api/auth/admin/users/
+WARNING 2026-05-20 17:58:01,254 basehttp 30046 124918806070976 "GET /api/auth/admin/users/ HTTP/1.1" 403 132
+INFO 2026-05-20 17:58:22,071 middleware 30046 124918806070976 Request: GET /api/auth/admin/users/ from 127.0.0.1
+ERROR 2026-05-20 17:58:22,072 exceptions 30046 124918806070976 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-20 17:58:22,073 middleware 30046 124918806070976 Response: GET /api/auth/admin/users/ [403] - 0.002s
+WARNING 2026-05-20 17:58:22,074 log 30046 124918806070976 Forbidden: /api/auth/admin/users/
+WARNING 2026-05-20 17:58:22,075 basehttp 30046 124918806070976 "GET /api/auth/admin/users/ HTTP/1.1" 403 132
+INFO 2026-05-20 18:00:51,718 middleware 30462 131510163203776 Request: GET /api/auth/admin/users/ from 127.0.0.1
+ERROR 2026-05-20 18:00:51,719 exceptions 30462 131510163203776 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-20 18:00:51,720 middleware 30462 131510163203776 Response: GET /api/auth/admin/users/ [403] - 0.003s
+WARNING 2026-05-20 18:00:51,721 log 30462 131510163203776 Forbidden: /api/auth/admin/users/
+WARNING 2026-05-20 18:00:51,721 basehttp 30462 131510163203776 "GET /api/auth/admin/users/ HTTP/1.1" 403 142
+INFO 2026-05-20 18:01:50,399 middleware 30595 131305145624256 Request: GET /api/auth/admin/users/ from 127.0.0.1
+ERROR 2026-05-20 18:01:50,400 exceptions 30595 131305145624256 Exception occurred: You do not have permission to perform this action.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 175, in permission_denied
+    raise exceptions.PermissionDenied(detail=message, code=code)
+rest_framework.exceptions.PermissionDenied: You do not have permission to perform this action.
+INFO 2026-05-20 18:01:50,401 middleware 30595 131305145624256 Response: GET /api/auth/admin/users/ [403] - 0.003s
+WARNING 2026-05-20 18:01:50,402 log 30595 131305145624256 Forbidden: /api/auth/admin/users/
+WARNING 2026-05-20 18:01:50,402 basehttp 30595 131305145624256 "GET /api/auth/admin/users/ HTTP/1.1" 403 142
+INFO 2026-05-20 18:05:15,059 middleware 30794 124613481719488 Request: POST /api/auth/admin_login/ from 127.0.0.1
+ERROR 2026-05-20 18:05:15,061 exceptions 30794 124613481719488 Exception occurred: Authentication credentials were not provided.
+Traceback (most recent call last):
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 333, in check_permissions
+    self.permission_denied(
+  File "/home/salman/FYP/Backend/env/lib/python3.12/site-packages/rest_framework/views.py", line 174, in permission_denied
+    raise exceptions.NotAuthenticated()
+rest_framework.exceptions.NotAuthenticated: Authentication credentials were not provided.
+INFO 2026-05-20 18:05:15,062 middleware 30794 124613481719488 Response: POST /api/auth/admin_login/ [401] - 0.003s
+WARNING 2026-05-20 18:05:15,063 log 30794 124613481719488 Unauthorized: /api/auth/admin_login/
+WARNING 2026-05-20 18:05:15,064 basehttp 30794 124613481719488 "POST /api/auth/admin_login/ HTTP/1.1" 401 132
+INFO 2026-05-20 18:08:44,882 middleware 31495 137328747079360 Request: POST /api/auth/admin_login/ from 127.0.0.1
+INFO 2026-05-20 18:08:45,730 middleware 31495 137328747079360 Response: POST /api/auth/admin_login/ [200] - 0.848s
+INFO 2026-05-20 18:11:16,227 middleware 31495 137328737638080 Request: GET /api/auth/admin/users/ from 127.0.0.1
+INFO 2026-05-20 18:11:16,253 middleware 31495 137328737638080 Response: GET /api/auth/admin/users/ [200] - 0.026s
+INFO 2026-05-20 18:12:38,642 middleware 31495 137328729245376 Request: DELETE /api/auth/admin/users/11/ from 127.0.0.1
+INFO 2026-05-20 18:12:38,740 middleware 31495 137328729245376 Response: DELETE /api/auth/admin/users/11/ [204] - 0.098s

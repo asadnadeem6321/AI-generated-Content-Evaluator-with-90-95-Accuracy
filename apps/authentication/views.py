@@ -1,13 +1,14 @@
+import os
 from django.shortcuts import render
 from django.contrib.auth import authenticate
 from rest_framework import viewsets, serializers, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
-from rest_framework.permissions import AllowAny, IsAuthenticated
+from rest_framework.permissions import AllowAny, IsAuthenticated, BasePermission
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.exceptions import AuthenticationFailed, PermissionDenied
 
-# Models import 
+# Models import
 from datetime import timedelta
 from secrets import randbelow
 
@@ -28,7 +29,12 @@ from .serializers import (
     ResendOTPSerializer,
 )
 
-# Create your views here.
+
+class IsSuperUser(BasePermission):
+    """Allow access only to superusers."""
+    def has_permission(self, request, view):
+        return bool(request.user and request.user.is_authenticated and request.user.is_superuser)
+
 
 class AuthViewSet(viewsets.GenericViewSet):
 
@@ -42,12 +48,18 @@ class AuthViewSet(viewsets.GenericViewSet):
         if self.action == 'resend_otp':
             return ResendOTPSerializer
         return UserSerializer
-    
+
     def get_permissions(self):
-        if self.action in ['register', 'student_login', 'teacher_login','guest_login', 'verify_otp', 'resend_otp', 'change_password_otp_logout', 'confirm_password_otp']:
+        if self.action in [
+            'register', 'student_login', 'teacher_login', 'guest_login',
+            'verify_otp', 'resend_otp', 'change_password_otp_logout',
+            'confirm_password_otp', 'admin_login',
+        ]:
             return [AllowAny()]
+        if self.action in ['admin_list_users', 'admin_delete_user']:
+            return [IsSuperUser()]
         return [IsAuthenticated()]
-    
+
     @action(detail=False, methods=['post'])
     def student_login(self, request):
         """Student login endpoint."""
@@ -73,151 +85,6 @@ class AuthViewSet(viewsets.GenericViewSet):
                 'access': str(refresh.access_token),
             }
         }, status=status.HTTP_200_OK)
-
-# Update password using old password ------------------------------------------------------------
-    @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
-    def change_password(self, request):
-        current_password = request.data.get('current_password')
-        new_password = request.data.get('new_password')
-        confirm_password = request.data.get('confirm_password')
-        user = request.user
-        
-        # validating all fields 
-        if not current_password or not new_password or not confirm_password:
-            return Response({"error": "Fill all fields"}, status=status.HTTP_400_BAD_REQUEST)
-        
-        # checking new and confirm passwords if they are same
-        if new_password != confirm_password:
-            return Response({"error": "Passwords don't match"}, status=status.HTTP_400_BAD_REQUEST)
-        
-        # checking the current password if exist in the database
-        if not user.check_password(current_password):
-            return Response({"error": "Current password is incorrect"}, status=status.HTTP_400_BAD_REQUEST)
-        
-        if current_password == new_password:  # Add this check
-            return Response({"error": "New password must be different"}, status=status.HTTP_400_BAD_REQUEST)
-        
-        # validating password 
-        try:
-            validate_password_strength(new_password)
-        except serializers.ValidationError as e:  # Add 'as e'
-            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-        
-        # Change password
-        user.set_password(new_password)
-        user.save()
-        
-        # Send notification (don't return it)
-        EmailService.send_password_change_notification(user)
-        
-        # Return success response
-        return Response({"message": "Password successfully updated"}, status=status.HTTP_200_OK)
-
-# Update password using email OTP if he user is login
-    @action(detail=False, methods=["post"], permission_classes=[IsAuthenticated])
-    def change_password_otp(self, request):
-        user = request.user # current user
-        email = request.user.email # current user's email
-        
-        try:
-            return OTPService.generate_send_otp(email, user.first_name, user.last_name)
-        except Exception as e:
-            return Response({'error': 'Failed to send OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        
-# Update password using email OTP if he user is not login
-    @action(detail=False, methods=["post"], permission_classes=[AllowAny])
-    def change_password_otp_logout(self, request):
-
-        email = request.data.get("email") # current user's email
-        if not email:
-            return Response({'error':'Email required'}, status=status.HTTP_400_BAD_REQUEST)
-        try: 
-            user = User.objects.get(email=email) 
-        except User.DoesNotExist:
-            return Response({'error':'User does not exists'}, status=status.HTTP_400_BAD_REQUEST)
-        try:
-            return OTPService.generate_send_otp(email, user.first_name, user.last_name)
-        except Exception:
-            return Response({'error': 'Failed to send OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        
-
-# confirm otp to change password
-    @action(detail=False, methods=["post"])
-    def confirm_password_otp(self, request):
-        email = request.data.get('email') # current user's email
-        new_password = request.data.get("new_password")
-        confirm_password = request.data.get("confirm_password")
-        otp_code = request.data.get("otp_code")
-
-
-        # check that the user with this email exists or not
-        try:
-            user = User.objects.get(email=email) #current user
-        except:
-            return Response({"error":"Email does not exist"}, status=status.HTTP_400_BAD_REQUEST)
-
-        # checking for blank fields
-        if not new_password or not confirm_password or not otp_code:
-            return Response ({"error":"Fields are not filled"}, status=status.HTTP_400_BAD_REQUEST)
-        
-        # checking new and confirm passwords if they are same
-        if new_password != confirm_password:
-            return Response ({"error":"New password and confirm password are not same"}, status=status.HTTP_400_BAD_REQUEST)
-
-
-        otp, error_response = OTPService.verify_otp(email, otp_code)
-        if error_response:
-           return error_response
-
-        try:
-            validate_password_strength(new_password)
-        except serializers.ValidationError as e:
-            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
-
-        # saving otp as used 
-        otp.is_used = True
-        otp.save()
-        # saving new password of user
-        user.set_password(new_password)
-        user.save()
-
-
-        #change password
-        
-        EmailService.send_password_change_notification(user)
-        return Response({"message": "Password successfully updated"}, status=status.HTTP_200_OK)
-
-        
-
-#logout user ----------------------------------------------------------------------------
-    @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
-    def logout(self, request):
-        refresh_token = request.data.get('refresh')
-
-        if not refresh_token:
-            return Response ({'error':'Refresh token required'}, status=status.HTTP_400_BAD_REQUEST)
-        
-        try:
-            token = RefreshToken(refresh_token)
-            token.blacklist()
-            return Response ({'message':'logout successfully'}, status=status.HTTP_200_OK)
-        except Exception as e:
-            return Response ({'error':f'{e}, token is not valid'}, status=status.HTTP_400_BAD_REQUEST)
-        
-
-
-# delete the user account -----------------------------------------------------------------------
-
-    @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
-    def delete_account(self, request):
-        user = request.user
-        try:
-            user.delete()
-            return Response ({'message':'User delete successfully'}, status=status.HTTP_204_NO_CONTENT)
-        except Exception as e:
-            return Response ({'error':f'{e}, token is not valid'}, status=status.HTTP_400_BAD_REQUEST)
-
-
 
     @action(detail=False, methods=['post'])
     def teacher_login(self, request):
@@ -245,7 +112,6 @@ class AuthViewSet(viewsets.GenericViewSet):
             }
         }, status=status.HTTP_200_OK)
 
-
     @action(detail=False, methods=['post'])
     def guest_login(self, request):
         """Guest login endpoint."""
@@ -272,28 +138,187 @@ class AuthViewSet(viewsets.GenericViewSet):
             }
         }, status=status.HTTP_200_OK)
 
+    # ── ADMIN LOGIN ────────────────────────────────────────────────────────────
+    @action(detail=False, methods=['post'])
+    def admin_login(self, request):
+        """Admin login — superusers only. Returns JWT tokens."""
+        email = request.data.get('email')
+        password = request.data.get('password')
+
+        if not email or not password:
+            return Response(
+                {'error': 'Email and password are required'},
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+        user = authenticate(request, username=email, password=password)
+
+        if not user:
+            raise AuthenticationFailed('Invalid email or password')
+        if not user.is_superuser:
+            raise PermissionDenied('Admin access only')
+
+        refresh = RefreshToken.for_user(user)
+        return Response({
+            'user': UserSerializer(user).data,
+            'tokens': {
+                'refresh': str(refresh),
+                'access': str(refresh.access_token),
+            }
+        }, status=status.HTTP_200_OK)
+
+    # ── LIST ALL USERS ─────────────────────────────────────────────────────────
+    @action(detail=False, methods=['get'], url_path='admin/users')
+    def admin_list_users(self, request):
+        """Return all users with their details. Superuser only."""
+        users = User.objects.all().values(
+            'id', 'email', 'username',
+            'first_name', 'last_name',
+            'role', 'is_active', 'date_joined'
+        )
+        return Response(list(users), status=status.HTTP_200_OK)
+
+    # ── DELETE USER BY ID ──────────────────────────────────────────────────────
+    @action(detail=False, methods=['delete'], url_path='admin/users/(?P<user_id>[^/.]+)')
+    def admin_delete_user(self, request, user_id=None):
+        """Delete any user by ID. Superuser only."""
+        try:
+            user = User.objects.get(id=user_id)
+        except User.DoesNotExist:
+            return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+
+        user.delete()
+        return Response({'message': 'User deleted successfully'}, status=status.HTTP_204_NO_CONTENT)
+
+    # ── CHANGE PASSWORD (logged in) ────────────────────────────────────────────
+    @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
+    def change_password(self, request):
+        current_password = request.data.get('current_password')
+        new_password = request.data.get('new_password')
+        confirm_password = request.data.get('confirm_password')
+        user = request.user
+
+        if not current_password or not new_password or not confirm_password:
+            return Response({"error": "Fill all fields"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if new_password != confirm_password:
+            return Response({"error": "Passwords don't match"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if not user.check_password(current_password):
+            return Response({"error": "Current password is incorrect"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if current_password == new_password:
+            return Response({"error": "New password must be different"}, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            validate_password_strength(new_password)
+        except serializers.ValidationError as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        user.set_password(new_password)
+        user.save()
+        EmailService.send_password_change_notification(user)
+        return Response({"message": "Password successfully updated"}, status=status.HTTP_200_OK)
+
+    # ── CHANGE PASSWORD VIA OTP (logged in) ────────────────────────────────────
+    @action(detail=False, methods=["post"], permission_classes=[IsAuthenticated])
+    def change_password_otp(self, request):
+        user = request.user
+        email = request.user.email
+        try:
+            return OTPService.generate_send_otp(email, user.first_name, user.last_name)
+        except Exception:
+            return Response({'error': 'Failed to send OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    # ── CHANGE PASSWORD VIA OTP (logged out) ──────────────────────────────────
+    @action(detail=False, methods=["post"], permission_classes=[AllowAny])
+    def change_password_otp_logout(self, request):
+        email = request.data.get("email")
+        if not email:
+            return Response({'error': 'Email required'}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            return Response({'error': 'User does not exist'}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            return OTPService.generate_send_otp(email, user.first_name, user.last_name)
+        except Exception:
+            return Response({'error': 'Failed to send OTP'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+    # ── CONFIRM OTP TO CHANGE PASSWORD ─────────────────────────────────────────
+    @action(detail=False, methods=["post"])
+    def confirm_password_otp(self, request):
+        email = request.data.get('email')
+        new_password = request.data.get("new_password")
+        confirm_password = request.data.get("confirm_password")
+        otp_code = request.data.get("otp_code")
+
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            return Response({"error": "Email does not exist"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if not new_password or not confirm_password or not otp_code:
+            return Response({"error": "Fields are not filled"}, status=status.HTTP_400_BAD_REQUEST)
+
+        if new_password != confirm_password:
+            return Response({"error": "New password and confirm password are not same"}, status=status.HTTP_400_BAD_REQUEST)
+
+        otp, error_response = OTPService.verify_otp(email, otp_code)
+        if error_response:
+            return error_response
+
+        try:
+            validate_password_strength(new_password)
+        except serializers.ValidationError as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+        otp.is_used = True
+        otp.save()
+        user.set_password(new_password)
+        user.save()
+        EmailService.send_password_change_notification(user)
+        return Response({"message": "Password successfully updated"}, status=status.HTTP_200_OK)
+
+    # ── LOGOUT ─
+    @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
+    def logout(self, request):
+        refresh_token = request.data.get('refresh')
+        if not refresh_token:
+            return Response({'error': 'Refresh token required'}, status=status.HTTP_400_BAD_REQUEST)
+        try:
+            token = RefreshToken(refresh_token)
+            token.blacklist()
+            return Response({'message': 'Logout successful'}, status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response({'error': f'{e}, token is not valid'}, status=status.HTTP_400_BAD_REQUEST)
+
+    # ── DELETE OWN ACCOUNT ─────────────────────────────────────────────────────
+    @action(detail=False, methods=['post'], permission_classes=[IsAuthenticated])
+    def delete_account(self, request):
+        user = request.user
+        try:
+            user.delete()
+            return Response({'message': 'User deleted successfully'}, status=status.HTTP_204_NO_CONTENT)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+    # ── REGISTER ───────────────────────────────────────────────────────────────
     def _send_otp_email(self, email, otp_code):
         subject = 'OTP verification for AI Content Evaluator'
         message = (
-            'Here is your OTP to confirm login to ai content evaluator\n\n'
+            'Here is your OTP to confirm login to AI Content Evaluator\n\n'
             f'{otp_code}\n\n'
-            'expires in 20 min'
+            'Expires in 20 minutes.'
         )
         from_email = settings.DEFAULT_FROM_EMAIL or settings.EMAIL_HOST_USER
-        recipient_list = [email]
-        send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+        send_mail(subject, message, from_email, [email], fail_silently=False)
 
     def _generate_otp(self):
         return f"{randbelow(10000):04d}"
 
     @action(detail=False, methods=['post'])
     def register(self, request):
-        '''
-        User Registration
-
-        Endpoints:
-        POST /api/auth/register/
-        '''
         serializer = RegisterSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         validated_data = serializer.validated_data
@@ -336,9 +361,9 @@ class AuthViewSet(viewsets.GenericViewSet):
             'detail': 'OTP sent to provided email. Complete verification to activate your account.'
         }, status=status.HTTP_201_CREATED)
 
+    # ── VERIFY OTP ─────────────────────────────────────────────────────────────
     @action(detail=False, methods=['post'])
     def verify_otp(self, request):
-        """Verify the OTP and create the account after successful OTP verification."""
         serializer = VerifyOTPSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
@@ -348,7 +373,7 @@ class AuthViewSet(viewsets.GenericViewSet):
         try:
             pending = PendingUserRegistration.objects.get(email=email)
         except PendingUserRegistration.DoesNotExist:
-            raise AuthenticationFailed('Invalid email or otp')
+            raise AuthenticationFailed('Invalid email or OTP')
 
         if not pending.is_valid_otp(otp_code):
             raise AuthenticationFailed('Invalid or expired OTP')
@@ -379,9 +404,9 @@ class AuthViewSet(viewsets.GenericViewSet):
             }
         }, status=status.HTTP_201_CREATED)
 
+    # ── RESEND OTP ─────────────────────────────────────────────────────────────
     @action(detail=False, methods=['post'])
     def resend_otp(self, request):
-        """Resend a new OTP for pending registration."""
         serializer = ResendOTPSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
 
@@ -401,25 +426,15 @@ class AuthViewSet(viewsets.GenericViewSet):
         self._send_otp_email(pending.email, otp_code)
 
         return Response({'detail': 'A new OTP was sent to your email.'}, status=status.HTTP_200_OK)
-    
 
+    # ── PROFILE 
     @action(detail=False, methods=['get', 'put', 'patch'])
     def profile(self, request):
-        '''
-        Get or update user profile
-
-        used in dashboard to show user profile and update it
-
-        Endpoints:
-        GET /api/auth/profile/
-        PUT /api/auth/profile/
-        '''
-        if request.method == 'get':
+        if request.method == 'GET':
             serializer = UserSerializer(request.user)
             return Response(serializer.data)
-        
-        serializer = UserSerializer(request.user, data = request.data, partial=True )
+
+        serializer = UserSerializer(request.user, data=request.data, partial=True)
         serializer.is_valid(raise_exception=True)
         serializer.save()
         return Response(serializer.data)
-        
