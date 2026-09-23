@@ -282,15 +282,6 @@ docker-compose down
 
 ---
 
-## 👨‍💻 Authors
-
-| Name                 | Roll No                                       |
-| -------------------- | --------------------------------------------- |
-| Muhammad Salman Khan | https://www.linkedin.com/in/salman-khan-cw/   |
-| Ali Hassan           | https://www.linkedin.com/in/ali-hassan-dev01/ |
-
----
-
 ## 🙏 Acknowledgments
 
 - Dataset sources and academic writing contributors
